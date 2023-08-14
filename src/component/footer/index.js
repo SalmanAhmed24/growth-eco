@@ -2,7 +2,7 @@ import Image from "next/image";
 import "./footer.scss";
 import localFont from "@next/font/local";
 const futuraHv = localFont({
-  src: "../../app/fonts/FutuHV.ttf",
+  src: "../../app/fonts/FutuHv.ttf",
   weight: "400",
   style: "normal",
 });

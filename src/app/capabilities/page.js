@@ -6,7 +6,7 @@ import WhyCap from "@/component/whyCap";
 import Testimonials from "@/component/testimonials";
 import FAQs from "@/component/faq";
 const futuraHv = localFont({
-  src: "../fonts/FutuHV.ttf",
+  src: "../fonts/FutuHv.ttf",
   weight: "400",
   style: "normal",
 });

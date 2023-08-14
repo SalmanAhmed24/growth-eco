@@ -11,7 +11,7 @@ import "swiper/css/effect-coverflow";
 import localFont from "@next/font/local";
 import "../../app/capabilities/capabilities.scss";
 const futuraHv = localFont({
-  src: "../../app/fonts/FutuHV.ttf",
+  src: "../../app/fonts/FutuHv.ttf",
   weight: "400",
   style: "normal",
 });

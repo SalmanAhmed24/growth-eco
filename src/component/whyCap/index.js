@@ -3,7 +3,7 @@ import "./whyCap.scss";
 import localFont from "@next/font/local";
 import Image from "next/image";
 const futuraHv = localFont({
-  src: "../../app/fonts/FutuHV.ttf",
+  src: "../../app/fonts/FutuHv.ttf",
   weight: "400",
   style: "normal",
 });
