@@ -11,7 +11,7 @@ import FAQs from "@/component/faq";
 import MobileSlider from "@/component/mobileSlider";
 import Testimonials from "@/component/testimonials";
 const futuraHv = localFont({
-  src: "./fonts/FutuHV.ttf",
+  src: "./fonts/FutuHv.ttf",
   weight: "400",
   style: "normal",
 });
