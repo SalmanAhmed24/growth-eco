@@ -46,8 +46,8 @@
     height: 400px;
             }
             @include from-320-575{
-                background-position-y:-100px;
-                height: 500px;
+                background-position-y:-140px;
+                height: 600px;
                 background-image: url('../../../public/case-mobile-header.png');
             }
                 .header-content-wrap{
@@ -155,6 +155,7 @@ padding: 10px 20px;
 .no-bg{
     margin-bottom: 100px;
     background-image: none;
+    padding-top: 50px;
     @include from-575-992{
         height: auto;
         padding: 30px 20px;

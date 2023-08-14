@@ -1,13 +1,46 @@
+@mixin from-992-1300{
+    @media screen and (min-width:992.67px) and (max-width:1300px) {
+        @content;
+    }
+}
+@mixin from-1300-1700{
+    @media screen and (min-width:1300px) and (max-width:1700px) {
+        @content;
+    }
+}
+@mixin from-575-992{
+    @media screen and (min-width:575.67px) and (max-width:992px) {
+        @content;
+    }
+}
+@mixin from-320-575{
+    @media screen and (min-width:320.67px) and (max-width:575px) {
+        @content;
+    }
+}
+@mixin from-320-992{
+    @media screen and (min-width:320.67px) and (max-width:992px) {
+        @content;
+    }
+}
 .blog-con{
     .blog-header{
         background-image: url('../../../public/blog-header-bg.png');
         background-position: center;
         background-size: cover;
+        background-color: #385db9;
         background-repeat: no-repeat;
         padding:30px 70px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: fit-content;
+        @include from-320-575{
+            background-image: url('../../../public/blog-mobile-header.png');
+            height: 500px;
+            background-size: cover;
+            background-color: #4663ad;
+        }
             h1{
                 font-size: 32px;
                 color: #fff;
@@ -16,11 +49,30 @@
                 text-align: center;
                 text-transform: capitalize;
                 width: 70%;
+                @include from-320-992{
+                    font-size: 30px;
+                }
+                @include from-320-575{
+                    width: 90%;
+                }
             }
             .blog-img{
                 align-self: center;
                 width: 90%;
                 height: 90%;
+                @include from-575-992{
+                    width: 50%;
+                    height: auto;
+                }
+                @include from-320-575{
+                    display: none;
+                }
+            }
+            .blog-img-m{
+                display: none;
+                @include from-320-575{
+                    display: block;
+                }
             }
             .exp-link{
                 align-self: center;
@@ -42,9 +94,29 @@
     display: flex;
     flex-wrap: nowrap;
     padding: 70px 100px;
+    @include from-992-1300{
+        padding: 30px 50px;
+    }
+    @include from-320-992{
+        padding: 30px 20px;
+        flex-wrap: wrap;
+    }
         .main-article{
             width: 50%;
             padding-right: 20px;
+            @include from-320-992{
+                width: 100%;
+                margin-bottom: 30px;
+            }
+            img{
+                @include from-992-1300{
+                    width: 100%;
+                }
+                @include from-320-992{
+                    width: 100%;
+                    height: auto;
+                }
+            }
             .date{
                 font-size: 14px;
                 line-height: normal;
@@ -55,10 +127,16 @@
                 font-size: 32px;
                 line-height: normal;
                 margin-bottom: 10px;
+                @include from-320-575{
+                    font-size: 20px;
+                }
             }
             .main-para{
                 font-size: 20px;
                 line-height: normal;
+                @include from-320-575{
+                    font-size: 15px;
+                }
             }
         }
         .sub-articles{
@@ -66,10 +144,20 @@
             margin-left: 20px;
             display: flex;
             flex-direction:column;
+            @include from-320-992{
+                width: 100%;
+            }
+            @include from-320-575{
+                margin-left: 0px;
+            }
                 .each-article{
                     display: flex;
                     flex-wrap: nowrap;
                     margin-bottom: 20px;
+                    @include from-320-575{
+                        flex-wrap: wrap;
+                        width: 100%;
+                    }
                         .info-con{
                             display: flex;
                             flex-direction: column;
@@ -84,11 +172,19 @@
                                     font-size: 20px;
                                     line-height: normal;
                                     margin-bottom: 5px;
+                                    @include from-320-575{
+                                        width: 90%;
+                                        font-size: 15px;
+                                    }
                                 }
                                 .sub-para{
                                     font-size: 15px;
                                     line-height: normal;
                                     margin-bottom: 5px;
+                                    @include from-320-575{
+                                        width: 90%;
+                                        font-size: 12px;
+                                    }
                                 }
                                 .read-more-p{
                                     font-size: 10px;
@@ -96,6 +192,12 @@
                                     color: #000;
                                     img{
                                         margin-left: 5px;
+                                        
+                                    }
+                                    @include from-320-575{
+                                        width: 80%;
+                                        text-align: right;
+                                        font-size: 10px;
                                     }
                                 }
                         }
@@ -108,19 +210,51 @@
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
+    @include from-992-1300{
+        padding: 30px 50px;
+    }
+    @include from-320-992{
+        padding: 30px 20px;
+    }
         h1{
             font-size: 32px;
             line-height: normal;
             margin-bottom: 20px;
             text-align: center;
+            @include from-320-575{
+                font-size: 30px;
+            }
         }
         .card-wraper{
             display: flex;
             justify-content: space-between;
+            @include from-320-992{
+                flex-wrap: wrap;
+                justify-content: flex-start;
+            }
                 .cards{
                     display: flex;
                     flex-direction: column;
                     width: 22%;
+                    @include from-992-1300{
+                        min-height: 200px;
+                    }
+                    @include from-320-992{
+                        min-height: 300px;
+                        margin: 20px;
+                        width: 33%;
+                    }
+                    @include from-320-575{
+                        width: 100%;
+                    }
+                    img{
+                        @include from-992-1300{
+                            width: 100%;
+                        }
+                        @include from-320-992{
+                            width: 100%;
+                        }
+                    }
                     .date{
                         font-size: 14px;
                         line-height: normal;
@@ -132,12 +266,18 @@
                         line-height: normal;
                         margin-bottom: 5px;
                         text-align: left;
+                        @include from-320-575{
+                         font-size: 15px;   
+                        }
                     }
                     p{
                         font-size: 16px;
                         line-height: normal;
                         margin-bottom: 10px;
                         text-align: justify;
+                        @include from-320-575{
+                            font-size: 12px;   
+                           }
                     }
                     .read-more-para-blue{
                         text-decoration: none;
@@ -145,6 +285,7 @@
                         font-size: 14px;
                         img{
                             margin-left: 10px;
+                            width: auto;
                         }
                     }
                 }
@@ -173,11 +314,22 @@
     margin-top: 100px;
     padding: 70px;
     height: 200px;
+    @include from-320-575{
+        margin-top: 20px;
+        padding: 20px;
+        height: 350px;
+        background-position-y: -10px;
+        background-size: contain;
+        background-image: url('../../../public/blog-banner-mobile.png');
+    }
         h1{
             text-align: center;
             font-size: 32px;
             color: #FFF;
             margin-bottom: 20px;
+            @include from-320-575{
+                font-size: 30px;
+            }
         }
         .news-letter-cus{
             width: 70%;

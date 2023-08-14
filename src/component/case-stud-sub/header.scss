@@ -1,3 +1,28 @@
+@mixin from-992-1300{
+    @media screen and (min-width:992.67px) and (max-width:1300px) {
+        @content;
+    }
+}
+@mixin from-1300-1700{
+    @media screen and (min-width:1300px) and (max-width:1700px) {
+        @content;
+    }
+}
+@mixin from-575-992{
+    @media screen and (min-width:575.67px) and (max-width:992px) {
+        @content;
+    }
+}
+@mixin from-320-575{
+    @media screen and (min-width:320.67px) and (max-width:575px) {
+        @content;
+    }
+}
+@mixin from-320-992{
+    @media screen and (min-width:320.67px) and (max-width:992px) {
+        @content;
+    }
+}
 .case-sub-header{
     position: relative;
     display: flex;
@@ -5,21 +30,48 @@
     align-items: flex-end;
     height: 400px;
     padding: 70px 50px;
+    z-index: 2222;
+    @include from-320-575{
+        background-image: url('../../../public/mobile-sub-case.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    @include from-320-992{
+        padding: 20px;
+    }
         .content-wrap{
             width: 30%;
+            @include from-1300-1700{
+                width: 30%;
+            }
+            @include from-992-1300{
+                width: 25%;
+            }
+            @include from-320-992{
+                width: 50%;
+            }
                 h1{
                     font-size: 36px;
                     line-height: normal;
                     margin-bottom: 10px;
+                    @include from-320-992{
+                        font-size: 25px;
+                    }
                 }
                 h2{
                     font-size: 36px;
                     line-height: normal;
+                    @include from-320-992{
+                        font-size: 25px;
+                    }
                 }
                 p{
                     font-size: 16px;
                     line-height: normal;
                     margin-bottom: 30px;
+                    @include from-320-992{
+                        font-size: 12px;
+                    }
                 }
                 .visit-web{
                     border-radius: 0px 20px 20px 20px;
@@ -36,6 +88,15 @@
             top: 0px;
             left: 0px;
             z-index: -1;
+            @include from-992-1300{
+                left: -200px;
+            }
+            @include from-575-992{
+                left: -60%;
+            }
+            @include from-320-575{
+                display: none;
+            }
         }
 }
 .exe-sum-wrap{
@@ -43,23 +104,36 @@
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+    @include from-320-992{
+        margin-top: 100px;
+    }
         h1{
             font-size: 36px;
             line-height: normal;
             margin-bottom: 20px;
             text-align: center;
+            @include from-320-992{
+                font-size: 30px;
+            }
         }
         p{
             font-size: 20px;
             line-height: normal;
             width: 70%;
             text-align: center;
+            @include from-320-992{
+                font-size: 13px;
+            }
         }
 }
 .snake-step-con{
     padding:100px 100px 50px 100px;
     position: relative;
     height: 1800px;
+    @include from-320-992{
+        padding: 20px;
+        height: auto;
+    }
         .steps-snake{
             position: absolute;
             left: 0px;
@@ -67,18 +141,29 @@
             top: 60px;
             bottom: 0px;
             margin: 0px auto;
+            @include from-320-992{
+                display: none;
+            }
         }
 }
 .step1-wrap{
     display: flex;
     justify-content: space-between;
     padding: 20px 0px 50px 0px;
+    @include from-320-992{
+        flex-wrap: wrap-reverse;
+    }
         .step1-content{
             display: flex;
             flex-direction: column;
             align-items: flex-end;
             width: 40%;
             position: relative;
+            @include from-320-992{
+                width: 100%;
+                align-items: flex-start;
+                justify-content: flex-start;
+            }
             &::after{
                 content: '';
                 background-image: url('../../../public/case-step-1.png');
@@ -88,6 +173,14 @@
                 width: 320px;
                 height: 100px;
                 z-index: 1;
+                @include from-992-1300{
+                    top: -70px;
+                    right: -40%;
+                }
+                @include from-320-992{
+                    width: 0px;
+                    height: 0px;
+                }
             }
                 h1{
                     text-align: right;
@@ -98,6 +191,11 @@
                     padding: 10px;
                     position: relative;
                     z-index: 10;
+                    @include from-320-992{
+                        text-align: left;
+                        align-self: flex-start;
+                        font-size: 15px;
+                    }
                 }
                 p{
                     font-size: 20px;
@@ -105,24 +203,47 @@
                     margin-top: 10px;
                     align-self: flex-end;
                     text-align: right;
+                    @include from-320-992{
+                        text-align: left;
+                        align-self: flex-start;
+                        width: 90%;
+                        font-size: 15px;
+                    }
                 }
         }
         .step1-img{
             width: 40%;
             display: flex;
             justify-content: flex-start;
+            @include from-320-992{
+                width: 100%;
+            }
+            img{
+                @include from-320-992{
+                    width: 100%;
+                    height: auto;
+                }
+            }
         }
 }
 .step2-wrap{
     display: flex;
     justify-content: space-between;
     padding: 20px 0px 50px 0px;
+    @include from-320-992{
+        flex-wrap: wrap;
+    }
         .step2-content{
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 40%;
             position: relative;
+            @include from-320-992{
+                width: 100%;
+                align-items: flex-start;
+                justify-content: flex-start;
+            }
             &::after{
                 content: '';
                 background-image: url('../../../public/case-step-2.png');
@@ -133,6 +254,13 @@
                 width: 320px;
                 height: 100px;
                 z-index: 1;
+                @include from-992-1300{
+                    left: -50%;
+                }
+                @include from-320-992{
+                    width: 0px;
+                    height: 0px;
+                }
             }
                 h1{
                     text-align: left;
@@ -143,6 +271,11 @@
                     padding: 10px;
                     position: relative;
                     z-index: 10;
+                    @include from-320-992{
+                        text-align: right;
+                        align-self: flex-end;
+                        font-size: 15px;
+                    }
                 }
                 .goals-ul{
                     font-size: 20px;
@@ -151,24 +284,48 @@
                     align-self: flex-start;
                     text-align: left;
                     list-style: disc;
+                    @include from-320-992{
+                        text-align: right;
+                        align-self: flex-end;
+                        width: 90%;
+                        list-style: none;
+                        font-size: 15px;
+                    }
                 }
         }
         .step2-img{
             width: 40%;
             display: flex;
             justify-content: flex-end;
+            @include from-320-992{
+                width: 100%;
+            }
+            img{
+                @include from-320-992{
+                    width: 100%;
+                    height: auto;
+                }
+            }
         }
 }
 .step3-wrap{
     display: flex;
     justify-content: space-between;
     padding: 20px 0px 50px 0px;
+    @include from-320-992{
+        flex-wrap: wrap-reverse;
+    }
         .step3-content{
             display: flex;
             flex-direction: column;
             align-items: flex-end;
             width: 40%;
             position: relative;
+            @include from-320-992{
+                width: 100%;
+                align-items: flex-start;
+                justify-content: flex-start;
+            }
             &::after{
                 content: '';
                 background-image: url('../../../public/case-step-3.png');
@@ -178,6 +335,13 @@
                 width: 320px;
                 height: 100px;
                 z-index: 1;
+                @include from-992-1300{
+                    right: -37%;
+                }
+                @include from-320-992{
+                    width: 0px;
+                    height: 0px;
+                }
             }
                 h1{
                     text-align: right;
@@ -188,6 +352,11 @@
                     padding: 10px;
                     position: relative;
                     z-index: 10;
+                    @include from-320-992{
+                        text-align: left;
+                        align-self: flex-start;
+                        font-size: 15px;
+                    }
                 }
                 p{
                     font-size: 20px;
@@ -195,24 +364,47 @@
                     margin-top: 10px;
                     align-self: flex-end;
                     text-align: right;
+                    @include from-320-992{
+                        text-align: left;
+                        align-self: flex-start;
+                        width: 90%;
+                        font-size: 15px;
+                    }
                 }
         }
         .step3-img{
             width: 40%;
             display: flex;
             justify-content: flex-start;
+            @include from-320-992{
+                width: 100%;
+            }
+            img{
+                @include from-320-992{
+                    width: 100%;
+                    height: auto;
+                }
+            }
         }
 }
 .step4-wrap{
     display: flex;
     justify-content: space-between;
     padding: 20px 0px 50px 0px;
+    @include from-320-992{
+        flex-wrap: wrap;
+    }
         .step4-content{
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 40%;
             position: relative;
+            @include from-320-992{
+                width: 100%;
+                align-items: flex-start;
+                justify-content: flex-start;
+            }
             &::after{
                 content: '';
                 background-image: url('../../../public/case-step-4.png');
@@ -222,6 +414,13 @@
                 width: 320px;
                 height: 100px;
                 z-index: 1;
+                @include from-992-1300{
+                    left: -38%;
+                }
+                @include from-320-992{
+                    width: 0px;
+                    height: 0px;
+                }
             }
                 h1{
                     text-align: left;
@@ -232,6 +431,11 @@
                     padding: 10px;
                     position: relative;
                     z-index: 10;
+                    @include from-320-992{
+                        text-align: right;
+                        align-self: flex-end;
+                        font-size: 15px;
+                    }
                 }
                 .goals-ul{
                     font-size: 20px;
@@ -240,24 +444,48 @@
                     align-self: flex-start;
                     text-align: left;
                     list-style: disc;
+                    @include from-320-992{
+                        text-align: right;
+                        align-self: flex-end;
+                        width: 90%;
+                        list-style: none;
+                        font-size: 15px;
+                    }
                 }
         }
         .step4-img{
             width: 40%;
             display: flex;
             justify-content: flex-end;
+            @include from-320-992{
+                width: 100%;
+            }
+            img{
+                @include from-320-992{
+                    width: 100%;
+                    height: auto;
+                }
+            }
         }
 }
 .step5-wrap{
     display: flex;
     justify-content: space-between;
     padding: 20px 0px 50px 0px;
+    @include from-320-992{
+        flex-wrap: wrap-reverse;
+    }
         .step5-content{
             display: flex;
             flex-direction: column;
             align-items: flex-end;
             width: 40%;
             position: relative;
+            @include from-320-992{
+                width: 100%;
+                align-items: flex-start;
+                justify-content: flex-start;
+            }
             &::after{
                 content: '';
                 background-image: url('../../../public/case-step-5.png');
@@ -267,6 +495,13 @@
                 width: 320px;
                 height: 100px;
                 z-index: 1;
+                @include from-992-1300{
+                    right:-35%
+                }
+                @include from-320-992{
+                    width: 0px;
+                    height: 0px;
+                }
             }
                 h1{
                     text-align: right;
@@ -277,6 +512,11 @@
                     padding: 10px;
                     position: relative;
                     z-index: 10;
+                    @include from-320-992{
+                        text-align: left;
+                        align-self: flex-start;
+                        font-size: 15px;
+                    }
                 }
                 .goals-ul-right{
                     font-size: 20px;
@@ -285,12 +525,28 @@
                     align-self: flex-end;
                     text-align: right;
                     list-style: disc;
+                    @include from-320-992{
+                        text-align: left;
+                        align-self: flex-start;
+                        width: 90%;
+                        font-size: 15px;
+                        list-style: none;
+                    }
                 }
         }
         .step5-img{
             width: 40%;
             display: flex;
             justify-content: flex-start;
+            @include from-320-992{
+                width: 100%;
+            }
+            img{
+                @include from-320-992{
+                    width: 100%;
+                    height: auto;
+                }
+            }
         }
 }
 .last-step{
@@ -311,6 +567,10 @@
                 width: 192px;
                 height: 148px;
                 z-index: 1;
+                @include from-320-992{
+                    width: 0px;
+                    height: 0px;
+                }
             }
         h1{
             font-size: 24px;
@@ -321,6 +581,9 @@
                     position: relative;
                     z-index: 10;
                     align-self: center;
+                    @include from-320-992{
+                        font-size: 15px;
+                    }
         }
         ul{
             font-size: 20px;
@@ -331,6 +594,11 @@
                     list-style: disc;
                     align-self: center;
                     width: 65%;
+                    @include from-320-992{
+                        font-size: 15px;
+                        width: 90%;
+                        list-style: none;
+                    }
         }
 }
 .swiper {
@@ -397,6 +665,9 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 100px;
+    @include from-320-992{
+        padding: 20px;
+    }
         h1{
             text-align: center;
             color: #fff;

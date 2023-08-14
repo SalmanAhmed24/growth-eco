@@ -39,6 +39,12 @@ function Blog() {
           width={1400}
           height={228}
         />
+        <Image
+          src={"/mobile-blog-img.png"}
+          className="blog-img-m"
+          width={272}
+          height={174}
+        />
         <h1 className={futuraHv.className}>
           Explore the world through knowledge and inspiration.
         </h1>
@@ -64,7 +70,12 @@ function Blog() {
         </div>
         <div className="sub-articles">
           <div className="each-article">
-            <Image width={244} height={166} src={"/sub-blog-small.png"} />
+            <Image
+              className="art"
+              width={244}
+              height={166}
+              src={"/sub-blog-small.png"}
+            />
             <div className="info-con">
               <p className={`${futuraLTBT.className} date`}>12-JUNE-2023</p>
               <h1 className={futuraHv.className}>
@@ -81,7 +92,12 @@ function Blog() {
             </div>
           </div>
           <div className="each-article">
-            <Image width={244} height={166} src={"/sub-blog-small.png"} />
+            <Image
+              className="art"
+              width={244}
+              height={166}
+              src={"/sub-blog-small.png"}
+            />
             <div className="info-con">
               <p className={`${futuraLTBT.className} date`}>12-JUNE-2023</p>
               <h1 className={futuraHv.className}>
@@ -98,7 +114,12 @@ function Blog() {
             </div>
           </div>
           <div className="each-article">
-            <Image width={244} height={166} src={"/sub-blog-small.png"} />
+            <Image
+              className="art"
+              width={244}
+              height={166}
+              src={"/sub-blog-small.png"}
+            />
             <div className="info-con">
               <p className={`${futuraLTBT.className} date`}>12-JUNE-2023</p>
               <h1 className={futuraHv.className}>
