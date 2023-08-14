@@ -40,6 +40,7 @@ const settings = {
 export default function Home() {
   const [activeLink, setActiveLink] = useState("Branding");
   const handleLinks = (e) => setActiveLink(e.target.innerText);
+  console.log("loaded");
   return (
     <main>
       <header className="header-wrap">
