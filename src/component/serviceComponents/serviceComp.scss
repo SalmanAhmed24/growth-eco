@@ -1,0 +1,598 @@
+@mixin from-992-1300{
+    @media screen and (min-width:992.67px) and (max-width:1300px) {
+        @content;
+    }
+}
+@mixin from-992-1250{
+    @media screen and (min-width:992.67px) and (max-width:1250px) {
+        @content;
+    }
+}
+@mixin from-1300-1700{
+    @media screen and (min-width:1300px) and (max-width:1700px) {
+        @content;
+    }
+}
+@mixin from-575-992{
+    @media screen and (min-width:575.67px) and (max-width:992px) {
+        @content;
+    }
+}
+@mixin from-320-575{
+    @media screen and (min-width:320.67px) and (max-width:575px) {
+        @content;
+    }
+}
+@mixin from-320-992{
+    @media screen and (min-width:320.67px) and (max-width:992px) {
+        @content;
+    }
+}
+@mixin from-320-850{
+    @media screen and (min-width:320.67px) and (max-width:850px) {
+        @content;
+    }
+}
+@mixin from-320-400{
+    @media screen and (min-width:320.67px) and (max-width:400px) {
+        @content;
+    }
+}
+.header{
+    background-image: url('../../../public/amazon-ser-header-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+    position: relative;
+    @include from-320-575{
+        background-image: url('../../../public/mobile-amazon-header.png');
+        justify-content: center;
+        height: 600px;
+        background-position: bottom;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        background-image: url('../../../public/amazon-ser-rocket-left.png');
+        background-repeat: no-repeat;
+        width: 91px;
+        height: 144px;
+        @include from-320-575{
+            width: 0px;
+            height: 0px;
+        }
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: 250px;
+        right: -10px;
+        background-image: url('../../../public/amazon-ser-rocket-right.png');
+        background-repeat: no-repeat;
+        width: 89px;
+        height: 136px;
+        @include from-320-575{
+            width: 0px;
+            height: 0px;
+        }
+    }
+        h1{
+            font-size: 64px;
+            color: #fff;
+            padding-bottom:20px;
+            text-align: center;
+            line-height: normal;
+            text-transform: capitalize;
+            position: relative;
+            z-index: 2222;
+            @include from-320-575{
+                font-size: 40px;
+                margin-top: 200px;
+            }
+        }
+        p{
+            width: 40%;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 300;
+            line-height: normal;
+            color: #fff;
+            padding-bottom: 20px;
+            position: relative;
+            z-index: 2222;
+            @include from-575-992{
+                width: 80%;
+            }
+            @include from-320-575{
+                width: 80%;
+                font-size: 16px;
+                text-align: left;
+            }
+        }
+        a{
+            border-radius: 0px 20px 20px 20px;
+            background: #F9F9F9;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: 0.3s ease-in-out;
+            border: 1px solid #fff;
+            position: relative;
+            z-index: 2222;
+                &:hover{
+                    background: transparent;
+                    cursor: pointer;
+                    color: #fff;
+                }
+        }
+        .amazon-avatar{
+            position: absolute;
+            bottom: 250px;
+            left: 20px;
+            @include from-320-575{
+                display: none;
+            }
+            @include from-992-1250{
+                left: 0px;
+                width: 32%;
+                height: 52%;
+            }
+            @include from-575-992{
+                left: -100px;
+                width: 22%;
+                height: 32%;
+                bottom: 0px;
+                top: 0px;
+                margin: auto 0px;
+            }
+        }
+}
+.amazon-ser-con{
+    background-image: url('../../../public/triangle-lines.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 70px;
+    position: relative;
+    @include from-320-575{
+        padding: 20px;
+    }
+    &::after{
+        content: '';
+        background-image: url('../../../public/amazon-ser-line.png');
+        position: absolute;
+        left: 0px;
+        top: 50px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 919px;
+        z-index: -1;
+    }
+    h1{
+        text-align: center;
+        font-size: 36px;
+        line-height: normal;
+        span{
+            color: #4663AC;
+        }
+    }
+        .amazon-ser-card{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 50px;
+            @include from-320-992{
+                flex-wrap: wrap-reverse;
+                margin-top: 20px;
+            }
+                .image-wrap{
+                    width: 40%;
+                    @include from-575-992{
+                        width: 100% !important;
+                    }
+                    @include from-320-575{
+                        width: 100%;
+                    }
+                    @include from-992-1250{
+                        width: 50%;
+                    }
+                    img{
+                        @include from-992-1250{
+                            width: 100%;
+                            height: 70%;
+                        }
+                        @include from-320-575{
+                            width: 100%;
+                        }
+                    }
+                }
+                .info-con{
+                    width: 40%;
+                    display: flex;
+                    flex-direction: column;
+                    @include from-320-992{
+                        width: 100%;
+                    }
+                    p{
+                        font-size: 20px;
+                        line-height: normal;
+                        text-align: justify;
+                        @include from-320-575{
+                            text-align: center;
+                        }
+                    }
+                    .cards-inner-wrap{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                        @include from-320-850{
+                            justify-content: center;
+                            flex-wrap: wrap;
+                        }
+                            .inner{
+                                width: 30%;
+                                border-radius: 0px 20px 20px 20px;
+                                background: #EBEBEB;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center; 
+                                height: 100px;
+                                transition: 0.3s ease-in-out;
+                                @include from-320-850{
+                                    width: 40%;
+                                    margin: 10px;
+                                }
+                                &:hover{
+                                    background-color: #4663AC;
+                                    color: #fff;
+                                }
+                                    p{
+                                        text-align: center;
+                                        &:hover{
+                                            cursor: context-menu;
+                                        }
+                                    }   
+                            }
+                    }
+                    .amazon-inner-link{
+                        display: flex;
+                        justify-content: flex-start;
+                            a{
+                                border-radius: 0px 20px 20px 20px;
+                                background: #4663AC;
+                                color: #fff;
+                                padding: 10px 20px;
+                                text-decoration: none;
+                                border: 1px solid #4663AC;
+                                transition: 0.3s ease-in-out;
+                                text-transform: uppercase;
+                                    &:hover{
+                                        background: #fff;
+                                        color: #4663AC;
+                                        
+                                    }
+                            }
+                    }
+                }
+
+        }
+}
+.grow-sec{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    @include from-320-992{
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+        .grow-sec-con{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            @include from-320-992{
+                width: 100%;
+            }
+            h1{
+                text-align: left;
+                margin-bottom: 30px;
+                @include from-320-575{
+                    font-size: 30px;
+                    text-align: center;
+                }
+            }
+                .inner-img-con-wrap{
+                    display: flex;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+
+                    img{
+                        align-self: center;
+                    }
+                        .inner-grow-wrap{
+                            display: flex;
+                            flex-direction: column;
+                            margin-left: 20px;
+                            h1{
+                                font-size: 20px;
+                                line-height: normal;
+                                text-align: left;
+                                margin-bottom: 0px;
+                                @include from-320-575{
+                                    font-size: 15px;
+                                }
+                            }
+                            p{
+                                font-size: 16px;
+                                line-height: normal;
+                                @include from-320-575{
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                }
+        }
+        .grow-sec-img{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            @include from-320-992{
+                width: 100%;
+            }
+            img{
+                @include from-992-1250{
+                    width: 50%;
+                }
+                @include from-320-992{
+                    width: 50%;
+                }
+                @include from-320-575{
+                    width: 100%;
+                }
+            }
+        }
+}
+.grow-link-wrap{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    a{
+        border-radius: 0px 20px 20px 20px;
+background: #4663AC;
+text-decoration: none;
+color: #fff;
+border: 1px solid #4663AC;
+transition: 0.3s ease-in-out;
+padding: 10px 20px;
+    }
+}
+.ser-counter{
+    background-image: url('../../../public/amazon-ser-counter.png');
+    height: 788px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    @include from-320-850{
+        background-size: cover;
+        background-position: center;
+        height: 650px;
+    }
+    @include from-320-575{
+        background-image: url('../../../public/growth-mobile.png');
+    }
+        .counter-info-wrap{
+            padding: 100px;
+            display: flex;
+            justify-content: space-between;
+            @include from-320-992{
+                padding: 40px;
+                flex-wrap: wrap;
+            }
+            .singleItem{
+                width: 28%;
+                display: flex;
+                flex-direction: column;
+                @include from-320-992{
+                    width: 50% !important;
+                }
+                    h1{
+                        color: #fff;
+                        font-size: 48px;
+                        line-height: normal;
+                    }
+                    p{
+                        color: #fff;
+                        line-height: normal;
+
+                    }
+            }
+                .first{
+                    width: 40%;
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 20px;
+                    @include from-320-992{
+                        width: 100% !important;
+                    }
+                        h1{
+                            color: #fff;
+                            font-size: 36px;
+                            line-height: normal;
+                        }
+                }
+        }
+}
+.slider-ser-wrap{
+    position: absolute;
+    top:250px;
+    left: 0px;
+    right: 0px;
+    @include from-320-850{
+        top: 360px;
+    }
+}
+.service-scale-wrap{
+    background-image: url('../../../public/amazon-ser-step-grow.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include from-320-992{
+        background-size: cover;
+        background-position: center;
+    }
+    @include from-320-575{
+        margin-top: 200px;
+        background-image: url('../../../public/mobile-grow-2.png');
+        background-size: cover;
+        padding: 20px;
+    }
+        h1{
+            text-align: center;
+            color: #000;
+            font-size: 36px;
+            line-height: normal;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            @include from-320-575{
+                font-size: 30px;
+            }
+                span{
+                    color: #fff;
+                    margin-left: 5px;
+                }
+        }
+        p{
+            width: 55%;
+            color: #fff;
+            text-align: center;
+            font-size: 20px;
+            line-height: normal;
+            @include from-320-575{
+                width: 90%;
+            }
+        }
+}
+.grow-ser-card-con{
+    padding: 50px 70px;
+    display: flex;
+    flex-direction: column;
+    @include from-320-575{
+        padding: 20px;
+    }
+        .grow-ser-card-wrap{
+        display: flex;
+        justify-content: space-between;
+        @include from-320-992{
+            flex-wrap: wrap;
+        }
+            .card{
+                padding: 25px;
+                width: 15%;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                border-radius: 0px 30px 30px 30px;
+                @include from-320-992{
+                    width: 30%;
+                    margin: 20px 0px;
+                }
+                @include from-320-575{
+                    padding: 10px;
+                    width: 40%;
+                }
+                @include from-992-1250{
+                    width: 18%;
+                }
+                    .count-img{
+                        position: absolute;
+                        top: -40px;
+                        left: -40px;
+                        @include from-320-575{
+                            width: 45%;
+                            height: 50%;
+                            top:-30px;
+                            left: -30px;
+                        }
+                        @include from-320-400{
+                            width: 35%;
+                            height: 35%;
+                            top:-25px;
+                            left: -18px;
+                        }
+                    }
+            }
+            .blue{
+                background: #4663AC;
+                p{
+                    color: #fff;
+                    line-height: normal;
+                    margin-top: 10px;
+                font-size: 18px;
+                @include from-320-575{
+                    font-size: 12px;
+                }
+                }
+                h1{
+                    color: #fff;
+                }
+            }
+            .white{
+                background-color: #F0F0F0;
+                p{
+                    line-height: normal;
+                margin-top: 10px;
+                font-size: 18px;
+                @include from-320-575{
+                    font-size: 12px;
+                }
+            }
+            }
+            
+        }
+        .reverse{
+            @include from-320-575{
+                flex-direction: row-reverse;
+            }
+        }
+}
+.grow-btn-link{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+        .grow-btn-link{
+            border-radius: 0px 20px 20px 20px;
+background: #4663AC;
+text-decoration: none;
+padding: 10px 15px;
+color: #fff;
+transition: 0.3s ease-in-out;
+span{
+    display: block;
+    margin-left: 10px;
+}
+        }
+}

@@ -1,0 +1,138 @@
+@mixin from-992-1300{
+    @media screen and (min-width:992.67px) and (max-width:1300px) {
+        @content;
+    }
+}
+@mixin from-1300-1700{
+    @media screen and (min-width:1300px) and (max-width:1700px) {
+        @content;
+    }
+}
+@mixin from-575-992{
+    @media screen and (min-width:575.67px) and (max-width:992px) {
+        @content;
+    }
+}
+@mixin from-320-575{
+    @media screen and (min-width:320.67px) and (max-width:575px) {
+        @content;
+    }
+}
+@mixin from-320-992{
+    @media screen and (min-width:320.67px) and (max-width:992px) {
+        @content;
+    }
+}
+.who-we-about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @include from-320-575{
+        background-image: url('../../../public/about-rocket.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-bottom: 50px;
+    }
+    @include from-320-992(){
+        flex-wrap: wrap;
+    }
+        .content-wrap{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            align-items: center;
+            @include from-320-992{
+                margin-bottom: 50px;
+                width: 100%;
+            }
+            .inner-wrap{
+                width: 50%;
+                @include from-320-575{
+                    display: flex;
+                    flex-direction: column;
+                }
+                @include from-992-1300{
+                    width: 90%;
+                }
+                @include from-320-992{
+                    width: 100%;
+                }
+                h1{
+                    font-size: 40px;
+                    margin-bottom: 20px;
+                    @include from-320-575{
+                        font-size: 30px;
+                    }
+                }
+                p{
+                    font-size: 20px;
+                    width: 100%;
+                    line-height: normal;
+                    margin-bottom: 20px;
+                    @include from-320-575{
+                        width: 80%;
+                        align-self: flex-start;
+                    }
+
+                }
+                .read-more{
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                    border-radius: 0px 20px 20px 20px;
+                    background: #4663AC;
+                    text-decoration: none;
+                    color: #fff;
+                    border: 1px solid #4663AC;
+                    transition: 0.3s ease-in-out;
+                    text-transform: uppercase;
+                    padding: 10px 20px;
+                    &:hover{
+                        background: transparent;
+                        color: #4663AC;
+
+                        }
+                        @include from-320-575{
+                            align-self: center;
+                        }
+                }
+            }
+        }
+        .image-wrap{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            @include from-320-992{
+                width: 100%;
+            }
+            @include from-992-1300{
+                justify-content: flex-start;
+            }
+        }
+}
+.main-who-we{
+    padding: 50px;
+    @include from-320-575{
+        padding: 20px;
+    } 
+}
+.mobile-layout{
+    .content-wrap{
+        .inner-wrap{
+            h1{
+                @include from-320-575{
+                    text-align: right;
+                }
+            }
+            p{
+                    @include from-320-575{
+                        align-self: flex-end;
+                        text-align: right;
+                    }
+                
+            }
+        }
+    }
+    @include from-320-992{
+        flex-wrap: wrap-reverse;
+    }
+}

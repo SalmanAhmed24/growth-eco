@@ -1,0 +1,227 @@
+@mixin from-992-1300{
+    @media screen and (min-width:992.67px) and (max-width:1300px) {
+        @content;
+    }
+}
+@mixin from-992-1100{
+    @media screen and (min-width:992.67px) and (max-width:1100px) {
+        @content;
+    }
+}
+@mixin from-1300-1700{
+    @media screen and (min-width:1300px) and (max-width:1700px) {
+        @content;
+    }
+}
+@mixin from-575-992{
+    @media screen and (min-width:575.67px) and (max-width:992px) {
+        @content;
+    }
+}
+@mixin from-320-575{
+    @media screen and (min-width:320.67px) and (max-width:575px) {
+        @content;
+    }
+}
+@mixin from-320-992{
+    @media screen and (min-width:320.67px) and (max-width:992px) {
+        @content;
+    }
+}
+.ourJourney{
+    position: relative;
+    background-image: url('../../../public/journey-bg.png');
+    background-size: contain;
+    background-position-y: -200px;
+    background-repeat: no-repeat;
+    padding: 20px 0px;
+        .downward{
+            position: absolute;
+            top:-270px;
+            left: 0px;
+            right: 20px;
+            margin: 0px auto;
+            z-index: 0;
+            @include from-992-1100{
+                top:-170px;
+            }
+            @include from-320-575{
+                display: none;
+            }
+        }
+        .slim-line{
+            display: none;
+            @include from-320-575{
+                position: absolute;
+                display: block;
+            top:-150px;
+            left: 0px;
+            right: 100px;
+            margin: 0px auto;
+            z-index: 0;
+            }
+        }
+        .journey-wrap{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+            padding: 0px 70px;
+            @include from-575-992{
+                padding: 0px 40px;
+            }
+            @include from-320-575{
+                padding: 0px 20px;
+                justify-content: flex-start;
+                margin-bottom: 0px;
+            }
+            @include from-320-992{
+                overflow-x: clip;
+            }
+            @include from-320-575{
+                flex-wrap: wrap;
+            }
+                .j-info{
+                    width: 40%;
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    z-index: 22222;
+                    @include from-320-575{
+                        width: 100%;
+                    }
+                        h1{
+                            font-size: 40px;
+                            line-height: normal;
+                            margin-bottom: 10px;
+                            @include from-320-992{
+                                font-size: 30px;
+                            }
+                            @include from-320-575{
+                                width: 90%;
+                                align-self: flex-start;
+                            }
+                        }
+                        p{
+                            font-size: 24px;
+                            line-height: normal;
+                            @include from-320-992{
+                                font-size: 16px;
+                            }
+                            @include from-320-575{
+                                width: 95%;
+                                align-self: flex-start;
+                            }
+                        }
+                }
+                .j-image-wrap{
+                    width: 40%;
+                    position: relative;
+                    z-index: 22222;
+                    @include from-320-575{
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                    }
+                    img{
+                        @include from-575-992{
+                        width: 100%;    
+                        }
+                        @include from-320-575{
+                            width: 90%;
+                           height: 100%;
+                            }
+                    }
+                }
+        }
+}
+.alternate-mobile{
+    @include from-320-575{
+        flex-wrap: wrap-reverse !important;
+    }
+        .j-info{
+                h1{
+                    @include from-320-575{
+                        text-align: right;
+                        align-self: flex-end !important;
+                    }
+                }
+                p{
+                    @include from-320-575{
+                        text-align: right;
+                        align-self: flex-end !important;
+                    }
+                }
+        }
+        
+}
+.last-journey{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow-x: clip;
+        .info-d{
+            display: flex;
+            flex-direction: column;
+            width: 65%;
+            @include from-320-575{
+                width: 100%;
+                padding: 20px;
+            }
+                h1{
+                    font-size: 40px;
+                    line-height: normal;
+                    text-align: center;
+                    @include from-320-992{
+                        font-size: 30px;
+                    }
+                }
+                p{
+                    text-align: center;
+                    font-size: 24px;
+                    line-height: normal;
+                    @include from-320-992{
+                        font-size: 16px;
+                    }
+                }
+                .journey-mid-img{
+                    align-self: center;
+                    @include from-320-575{
+                        width: 90%;
+                        height: 100%;
+                    }
+                }
+        }
+        .dots-line-img{
+            position: absolute;
+            top:0px;
+            bottom:0px;
+            left: 0px;
+            right: 0px;
+            margin: auto auto;
+            z-index: -1;
+        }
+}
+.story-contact-btn{
+    text-align: center;
+        margin-top: 20px;
+        text-decoration: none;
+        padding: 5px 20px;
+        font-size: 20px;
+        border-radius: 0px 20px 20px 20px;
+        background: #415B9F;
+        color: #fff;
+        border: 1px solid #415B9F;
+        transition: 0.3s ease-in-out;
+        margin-bottom: 20px;
+            &:hover{
+                background: transparent;
+                color: #415B9F;
+                border: 1px solid #415B9F;
+            }
+    }
+
+.story-btn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}

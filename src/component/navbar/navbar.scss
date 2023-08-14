@@ -1,0 +1,152 @@
+@mixin from-1140-to-992{
+    @media screen and (min-width:992.67px) and (max-width:1140px) {
+        @content;
+    }
+}
+@mixin from-992-to-320{
+    @media screen and (min-width:320px) and (max-width:991.67px) {
+        @content;
+    }
+}
+.navbar-cus{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px 50px;
+    background-color: #4663AC;
+    overflow: hidden;
+    z-index: 222;
+    position: relative;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    @include from-992-to-320{
+        padding: 0px 5px 0px 0px;
+    }
+        .logo-wrap{
+            width: 30%;
+        }
+        .menu-bars-wrap{
+            display: none;
+            @include from-992-to-320{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+                width: 70%;
+            }
+        }
+        .links-wrap{
+            display: flex;
+            align-self: center;
+            width: 70%;
+            @include from-992-to-320{
+                display: none;
+            }
+                .cus-links{
+                    display: flex;
+                    padding: 0px;
+                    list-style: none;
+                    color: #fff;
+                        li{
+                            width: auto;
+                            font-weight: bold;
+                            font-size: 16px;
+                            padding: 0px 30px;
+                            position: relative;
+                            transition: 0.3s ease-in-out;
+                            @include from-1140-to-992{
+                                padding: 0px 22px;
+                            }
+                                &:hover{
+                                    cursor: pointer;
+                                        &::after{
+                                            content: '';
+                                            position: absolute;
+                                            top: 120%;
+                                            bottom: 0px;
+                                            right: 0px;
+                                            margin: 0 auto;
+                                            left: 0px;
+                                            background-image: url('../../../public/nav-hover.png');
+                                            width: 55px;
+                                            background-repeat: no-repeat;
+                                            background-position: center;
+                                            height: 40px;
+                                            animation-name: showBlob;
+                                            animation-duration: 0.3s;
+                                            animation-timing-function: ease-in-out;
+                                            animation-iteration-count: 1;
+                                        }
+                                }
+                        }
+                }
+        }
+}
+.activeLink{
+    font-weight: bold !important;
+    transition: 0.3s ease-in-out;
+    &::after{
+        content: '';
+        position: absolute;
+        top: 120%;
+        bottom: 0px;
+        right: 0px;
+        margin: 0 auto;
+        left: 0px;
+        background-image: url('../../../public/nav-hover.png');
+        width: 55px;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 40px;
+        @include from-992-to-320{
+            display: none;
+            width: 0px;
+            height: 0px;
+        }
+    }
+}
+@keyframes showBlob {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.moible-abs-menu{
+    position: absolute;
+    width: 100%;
+    height: 100vw;
+    background-color: #4663AC;
+    z-index: 22222;
+    animation-name:mobileMenu;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    
+    .mobile-nav-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 30px;
+            li{
+                font-size: 20px;
+                color: #fff;
+                margin-bottom: 20px;
+            }
+    }
+}
+@keyframes mobileMenu {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.close{
+    font-size: 32px;
+    color: #fff;
+    text-align: right;
+    padding: 30px;
+}

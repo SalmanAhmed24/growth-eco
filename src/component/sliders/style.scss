@@ -1,0 +1,116 @@
+@mixin from-992-1300{
+  @media screen and (min-width:992.67px) and (max-width:1300px) {
+      @content;
+  }
+}
+@mixin from-1300-1700{
+  @media screen and (min-width:1300px) and (max-width:1700px) {
+      @content;
+  }
+}
+@mixin from-575-992{
+  @media screen and (min-width:575.67px) and (max-width:992px) {
+      @content;
+  }
+}
+@mixin from-320-575{
+  @media screen and (min-width:320.67px) and (max-width:575px) {
+      @content;
+  }
+}
+@mixin from-320-992{
+  @media screen and (min-width:320.67px) and (max-width:992px) {
+      @content;
+  }
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .outer-wrap-slider{
+    background-image: url('../../../public/triangle-lines.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+      &::after{
+        content: '';
+        position: absolute;
+        top:225px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        height: 250px;
+        margin: 0px auto;
+        background-image: url('../../../public/our-team-slider-bg.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        @include from-320-992{
+          top:90px
+        }
+        @include from-320-575{
+          background-image: url('../../../public/mobile-team-carousel.png');
+          top: 70px;
+        }
+      }
+  }
+  .swiper-slide{
+    background-color: transparent !important;
+  }
+  .outer-wrap-slider{
+    .mySwiper{
+      .swiper-pagination{
+        height: 120px;
+    bottom: -20px;
+    position: relative;
+    &::after{
+      content: '';
+      width: 140px;
+      height: 124px;
+      position: absolute;
+      top:-30px;
+      left: 0px;
+      right: 10px;
+      bottom: 0px;
+      margin: 0px auto;
+      background-image: url('../../../public/slider-blob.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+      }
+    }
+  }
+  .teamSwipper{
+    .swiper-wrapper{
+      .swiper-slide-prev{
+        border-radius: 10%;
+        overflow: hidden;
+      }
+      .swiper-slide-next{
+        border-radius: 10%;
+        overflow: hidden;
+      }
+    }
+  }

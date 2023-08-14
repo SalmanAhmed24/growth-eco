@@ -1,0 +1,421 @@
+.case-sub-header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 400px;
+    padding: 70px 50px;
+        .content-wrap{
+            width: 30%;
+                h1{
+                    font-size: 36px;
+                    line-height: normal;
+                    margin-bottom: 10px;
+                }
+                h2{
+                    font-size: 36px;
+                    line-height: normal;
+                }
+                p{
+                    font-size: 16px;
+                    line-height: normal;
+                    margin-bottom: 30px;
+                }
+                .visit-web{
+                    border-radius: 0px 20px 20px 20px;
+                    background: #4663AC;
+                    color: #fff;
+                    padding: 10px 20px;
+                    transition: 0.3s ease-in-out;
+                    text-decoration: none;
+                    border: 1px solid #4663AC;
+                }
+        }
+        .header-img{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+        }
+}
+.exe-sum-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+        h1{
+            font-size: 36px;
+            line-height: normal;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        p{
+            font-size: 20px;
+            line-height: normal;
+            width: 70%;
+            text-align: center;
+        }
+}
+.snake-step-con{
+    padding:100px 100px 50px 100px;
+    position: relative;
+    height: 1800px;
+        .steps-snake{
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 60px;
+            bottom: 0px;
+            margin: 0px auto;
+        }
+}
+.step1-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px 50px 0px;
+        .step1-content{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 40%;
+            position: relative;
+            &::after{
+                content: '';
+                background-image: url('../../../public/case-step-1.png');
+                position: absolute;
+                top:-60px;
+                right: -170px;
+                width: 320px;
+                height: 100px;
+                z-index: 1;
+            }
+                h1{
+                    text-align: right;
+                    font-size: 24px;
+                    align-self: flex-end;
+                    background-color: #4663AC;
+                    color: #fff;
+                    padding: 10px;
+                    position: relative;
+                    z-index: 10;
+                }
+                p{
+                    font-size: 20px;
+                    line-height: normal;
+                    margin-top: 10px;
+                    align-self: flex-end;
+                    text-align: right;
+                }
+        }
+        .step1-img{
+            width: 40%;
+            display: flex;
+            justify-content: flex-start;
+        }
+}
+.step2-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px 50px 0px;
+        .step2-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 40%;
+            position: relative;
+            &::after{
+                content: '';
+                background-image: url('../../../public/case-step-2.png');
+                position: absolute;
+                top:-60px;
+                
+                left: -210px;
+                width: 320px;
+                height: 100px;
+                z-index: 1;
+            }
+                h1{
+                    text-align: left;
+                    font-size: 24px;
+                    align-self: flex-start;
+                    background-color: #4663AC;
+                    color: #fff;
+                    padding: 10px;
+                    position: relative;
+                    z-index: 10;
+                }
+                .goals-ul{
+                    font-size: 20px;
+                    line-height: normal;
+                    margin-top: 10px;
+                    align-self: flex-start;
+                    text-align: left;
+                    list-style: disc;
+                }
+        }
+        .step2-img{
+            width: 40%;
+            display: flex;
+            justify-content: flex-end;
+        }
+}
+.step3-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px 50px 0px;
+        .step3-content{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 40%;
+            position: relative;
+            &::after{
+                content: '';
+                background-image: url('../../../public/case-step-3.png');
+                position: absolute;
+                top:-60px;
+                right: -170px;
+                width: 320px;
+                height: 100px;
+                z-index: 1;
+            }
+                h1{
+                    text-align: right;
+                    font-size: 24px;
+                    align-self: flex-end;
+                    background-color: #4663AC;
+                    color: #fff;
+                    padding: 10px;
+                    position: relative;
+                    z-index: 10;
+                }
+                p{
+                    font-size: 20px;
+                    line-height: normal;
+                    margin-top: 10px;
+                    align-self: flex-end;
+                    text-align: right;
+                }
+        }
+        .step3-img{
+            width: 40%;
+            display: flex;
+            justify-content: flex-start;
+        }
+}
+.step4-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px 50px 0px;
+        .step4-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 40%;
+            position: relative;
+            &::after{
+                content: '';
+                background-image: url('../../../public/case-step-4.png');
+                position: absolute;
+                top:-60px; 
+                left: -165px;
+                width: 320px;
+                height: 100px;
+                z-index: 1;
+            }
+                h1{
+                    text-align: left;
+                    font-size: 24px;
+                    align-self: flex-start;
+                    background-color: #4663AC;
+                    color: #fff;
+                    padding: 10px;
+                    position: relative;
+                    z-index: 10;
+                }
+                .goals-ul{
+                    font-size: 20px;
+                    line-height: normal;
+                    margin-top: 10px;
+                    align-self: flex-start;
+                    text-align: left;
+                    list-style: disc;
+                }
+        }
+        .step4-img{
+            width: 40%;
+            display: flex;
+            justify-content: flex-end;
+        }
+}
+.step5-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px 50px 0px;
+        .step5-content{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 40%;
+            position: relative;
+            &::after{
+                content: '';
+                background-image: url('../../../public/case-step-5.png');
+                position: absolute;
+                top:-60px;
+                right: -150px;
+                width: 320px;
+                height: 100px;
+                z-index: 1;
+            }
+                h1{
+                    text-align: right;
+                    font-size: 24px;
+                    align-self: flex-end;
+                    background-color: #4663AC;
+                    color: #fff;
+                    padding: 10px;
+                    position: relative;
+                    z-index: 10;
+                }
+                .goals-ul-right{
+                    font-size: 20px;
+                    line-height: normal;
+                    margin-top: 10px;
+                    align-self: flex-end;
+                    text-align: right;
+                    list-style: disc;
+                }
+        }
+        .step5-img{
+            width: 40%;
+            display: flex;
+            justify-content: flex-start;
+        }
+}
+.last-step{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 50px;
+            &::after{
+                content: '';
+                background-image: url('../../../public/case-step-6.png');
+                position: absolute;
+                top:-130px; 
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                margin: 0px auto;
+                width: 192px;
+                height: 148px;
+                z-index: 1;
+            }
+        h1{
+            font-size: 24px;
+                    align-self: flex-end;
+                    background-color: #4663AC;
+                    color: #fff;
+                    padding: 10px;
+                    position: relative;
+                    z-index: 10;
+                    align-self: center;
+        }
+        ul{
+            font-size: 20px;
+                    line-height: normal;
+                    margin-top: 10px;
+                    align-self: flex-end;
+                    text-align: center;
+                    list-style: disc;
+                    align-self: center;
+                    width: 65%;
+        }
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .outer-wrap-slider-2{
+    
+    position: relative;
+  }
+  .swiper-slide{
+    background-color: transparent !important;
+  }
+  .outer-wrap-slider-2{
+    .mySwiper{
+      .swiper-pagination{
+        height: 120px;
+    bottom: -20px;
+    position: relative;
+      }
+    }
+  }
+  .teamSwipper{
+    .swiper-wrapper{
+      .swiper-slide-prev{
+        border-radius: 10%;
+        overflow: hidden;
+      }
+      .swiper-slide-next{
+        border-radius: 10%;
+        overflow: hidden;
+      }
+    }
+  }
+//   .CaseStudSwipper{
+//     .swiper-wrapper{
+//         width: 100%;
+//         .swiper-slide{
+//             width: 50% !important;
+//         }
+//     }
+//   }
+.business-con{
+    background: linear-gradient(180deg, #35539A 0%, #577CC8 100%);
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+        h1{
+            text-align: center;
+            color: #fff;
+            margin-bottom: 20px;
+            text-transform: capitalize;
+            font-size: 32px;
+        }
+        .business-contact{
+            border-radius: 20px 0px 20px 20px;
+            background: #FFF;
+            padding: 10px 20px;
+            color: #000;
+            border: 1px solid #fff;
+            text-decoration: none;
+            transition: 0.3s ease-in-out;
+            align-self: center;
+                &:hover{
+                    background: transparent;
+                    color: #fff;
+                }
+        }
+}

@@ -1,0 +1,208 @@
+.blog-con{
+    .blog-header{
+        background-image: url('../../../public/blog-header-bg.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding:30px 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+            h1{
+                font-size: 32px;
+                color: #fff;
+                margin-bottom: 20px;
+                line-height: normal;
+                text-align: center;
+                text-transform: capitalize;
+                width: 70%;
+            }
+            .blog-img{
+                align-self: center;
+                width: 90%;
+                height: 90%;
+            }
+            .exp-link{
+                align-self: center;
+                padding: 10px 20px;
+                border-radius: 0px 20px 20px 20px;
+                background: #FFF;
+                text-transform: uppercase;
+                text-decoration: none;
+                border: 1px solid #fff;
+                transition: 0.3s ease-in-out;
+                &:hover{
+                    background: transparent;
+                    color: #fff;
+                }
+            }
+    }
+}
+.main-blogs-wrap{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 70px 100px;
+        .main-article{
+            width: 50%;
+            padding-right: 20px;
+            .date{
+                font-size: 14px;
+                line-height: normal;
+                margin-bottom: 5px;
+                margin-top: 5px;
+            }
+            h1{
+                font-size: 32px;
+                line-height: normal;
+                margin-bottom: 10px;
+            }
+            .main-para{
+                font-size: 20px;
+                line-height: normal;
+            }
+        }
+        .sub-articles{
+            width: 50%;
+            margin-left: 20px;
+            display: flex;
+            flex-direction:column;
+                .each-article{
+                    display: flex;
+                    flex-wrap: nowrap;
+                    margin-bottom: 20px;
+                        .info-con{
+                            display: flex;
+                            flex-direction: column;
+                            margin-left: 10px;
+                                .date{
+                                    font-size: 14px;
+                                    line-height: normal;
+                                    margin-bottom: 5px;
+                                    margin-top: 5px;
+                                }
+                                h1{
+                                    font-size: 20px;
+                                    line-height: normal;
+                                    margin-bottom: 5px;
+                                }
+                                .sub-para{
+                                    font-size: 15px;
+                                    line-height: normal;
+                                    margin-bottom: 5px;
+                                }
+                                .read-more-p{
+                                    font-size: 10px;
+                                    text-decoration: none;
+                                    color: #000;
+                                    img{
+                                        margin-left: 5px;
+                                    }
+                                }
+                        }
+                }
+        }
+}
+.blog-sell-wrap{
+    padding: 70px 100px;
+    background-image: url('../../../public/triangle-lines.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+        h1{
+            font-size: 32px;
+            line-height: normal;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .card-wraper{
+            display: flex;
+            justify-content: space-between;
+                .cards{
+                    display: flex;
+                    flex-direction: column;
+                    width: 22%;
+                    .date{
+                        font-size: 14px;
+                        line-height: normal;
+                        margin-bottom: 5px;
+                        margin-top: 5px;
+                    }
+                    h1{
+                        font-size: 20px;
+                        line-height: normal;
+                        margin-bottom: 5px;
+                        text-align: left;
+                    }
+                    p{
+                        font-size: 16px;
+                        line-height: normal;
+                        margin-bottom: 10px;
+                        text-align: justify;
+                    }
+                    .read-more-para-blue{
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        img{
+                            margin-left: 10px;
+                        }
+                    }
+                }
+        }
+}
+.load-more-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+        .link-lean-more{
+            border-radius: 0px 20px 20px 20px;
+            background: #4663AC;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+}
+.news-letter{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../../../public/letter-box.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 100px;
+    padding: 70px;
+    height: 200px;
+        h1{
+            text-align: center;
+            font-size: 32px;
+            color: #FFF;
+            margin-bottom: 20px;
+        }
+        .news-letter-cus{
+            width: 70%;
+            align-self: center;
+            padding: 10px;
+            border: 1px solid #fff;
+            border-radius: 31px;
+            background: #FFF;
+        }
+        .submit-btn{
+            display: flex;
+            margin-top: 20px;
+            justify-content: center;
+                .news-sub{
+                    border-radius: 20px 0px 20px 20px;
+                    background: #FFF;
+                    font-size: 20px;
+                    padding: 10px 20px;
+                    text-decoration: none;
+                    border: 1px solid #fff;
+                    transition: 0.3s ease-in-out;
+                        &:hover{
+                            background: transparent;
+                            color: #FFF;
+                        }
+                }
+        }
+}

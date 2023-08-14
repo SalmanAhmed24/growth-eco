@@ -1,0 +1,161 @@
+@mixin from-992-to-1140{
+    @media screen and (min-width:992px) and (max-width:1140px) {
+        @content;
+    }
+}
+@mixin from-320-to-992{
+    @media screen and (min-width:320px) and (max-width:992px) {
+        @content;
+    }
+}
+@mixin from-320-to-575{
+    @media screen and (min-width:320px) and (max-width:575px) {
+        @content;
+    }
+}
+.faqs-main-wrapper{
+display: flex;
+flex-wrap: wrap;
+padding: 100px 50px;
+background-color: #fff;
+@include from-320-to-992{
+   padding:0px 30px 30px 30px;
+}
+.faqs-sec{
+    width: 50%;
+    @include from-320-to-992{
+        width: 100%;
+    }
+    h1{
+        font-size: 40px;
+        margin-bottom: 20px;
+        @include from-320-to-575{
+            font-size: 30px;
+        }
+    }
+    p{
+        line-height: normal;
+        font-size: 20px;
+        margin-bottom: 20px;
+        @include from-320-to-575{
+            font-size: 15px;
+        }
+    }
+    button{
+        background-color: transparent;
+        font-size: 18px;
+        line-height: normal;
+        font-weight: 400;
+        text-align: left;
+        border:0px solid #000;
+        margin-bottom: 20px;
+        padding: 0px;
+        position: relative;
+        width: 95%;
+        @include from-320-to-575{
+            font-size: 15px;
+            text-align: start;
+        }
+            &::after{
+                content: '+';
+                font-weight: bold;
+                font-size: 20px;
+                color: #4663AC;
+                position: absolute;
+                top:0px;
+                bottom:0px;
+                right: -50px;
+                @include from-320-to-992{
+                    right: -20px;
+                }
+            }
+            &::before{
+                position: absolute;
+                bottom: -10px;
+                left: 0px;
+                content:'';
+                width:100%;
+                height: 2px;
+                background-color: #4663AC;
+            }
+    }
+}
+.form-sec{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    @include from-320-to-992{
+        width: 100%;
+        justify-content: center;
+        margin-top: 30px;
+    }
+        .inner-wrap{
+            align-self: center;
+            width: 70%;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 0px 30px;
+            background: linear-gradient(180deg, #6989CF 0%, #36549B 100%);
+            @include from-992-to-1140{
+                width: 60%;
+            }
+            @include from-320-to-992{
+                width: 100%;
+                padding: 30px;
+            }
+        }
+        h1{
+            color: #fff;
+            font-size: 22px;
+            @include from-320-to-575{
+                font-size: 20px;
+            }
+        }
+        .form-wrap{
+            display: flex;
+            flex-direction: column;
+                .input-cus{
+                    background-color: transparent;
+                    border:0px;
+                    font-size: 16px;
+                    color: #fff;
+                    border-bottom: 1px solid #fff;
+                    padding: 15px 0px;
+                    &::placeholder {
+                        color: #fff;
+                        opacity: 1; /* Firefox */
+                      }
+                }
+                textarea{
+                    background-color: transparent;
+                    border:0px;
+                    font-size: 16px;
+                    color: #fff;
+                    border-bottom: 1px solid #fff;
+                    padding: 15px 0px;
+                    &::placeholder {
+                        color: #fff;
+                        opacity: 1; /* Firefox */
+                      }
+                }
+                .subBtn{
+                    align-self: flex-end;
+                    border-radius: 20px 0px 20px 20px;
+                    background: #FFF;
+                    font-size: 22px;
+                    border:1px solid #fff;
+                    margin-top: 20px;
+                    padding: 5px 20px;
+                    transition: 0.3s ease-in-out;
+                        &:hover{
+                            background: transparent;
+                            color: #FFF;
+                            cursor: pointer;
+                        }
+                }
+                
+        }
+}
+}

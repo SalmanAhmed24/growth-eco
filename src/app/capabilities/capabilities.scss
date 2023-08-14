@@ -1,0 +1,264 @@
+@mixin from-992-1300{
+    @media screen and (min-width:992.67px) and (max-width:1300px) {
+        @content;
+    }
+}
+@mixin from-1300-1700{
+    @media screen and (min-width:1300px) and (max-width:1700px) {
+        @content;
+    }
+}
+@mixin from-575-992{
+    @media screen and (min-width:575.67px) and (max-width:992px) {
+        @content;
+    }
+}
+@mixin from-320-575{
+    @media screen and (min-width:320.67px) and (max-width:575px) {
+        @content;
+    }
+}
+@mixin from-320-992{
+    @media screen and (min-width:320.67px) and (max-width:992px) {
+        @content;
+    }
+}
+.cap-header{
+    background-image: url('../../../public/capa-bg.png');
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -10px;
+    @include from-320-575{
+        background-image: url('../../../public/service-mobile-bg.png');
+        height: 440px;
+        background-position: bottom;
+    }
+    &::after{
+        content: '';
+        position:absolute;
+        background-image: url('../../../public/new-rocket-left.png');
+        left: 0px;
+        top:100px;
+        width: 377px;
+        height: 237px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        @include from-320-992{
+            background-image: none;
+            width: 0px;
+            height: 0px;
+        }
+            }
+    &::before{
+        content: '';
+        position:absolute;
+        background-image: url('../../../public/rocket-right.png');
+        right: 0px;
+        top:0px;
+        width: 121px;
+        height: 162px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        @include from-320-992{
+            background-image: none;
+            width: 0px;
+            height: 0px;
+        }
+    }
+        h1{
+            margin-top: 150px;
+            font-size: 64px;
+            line-height: normal;
+            text-align: center;
+            color: #fff;
+            text-transform: uppercase;
+            @include from-320-575{
+                font-size: 40px;
+                margin-top: 60px;
+            }
+        }
+        p{
+            text-align: center;
+            width: 40%;
+            color: #fff;
+            font-size: 20px;
+            line-height: normal;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            @include from-320-575{
+                width: 80%;
+            }
+        }
+        .cap-start-link{
+            border-radius: 0px 20px 20px 20px;
+            background: #F9F9F9;
+            padding: 5px 20px;
+            font-size: 16px;
+            text-decoration: none;
+            color: #000;
+            border: 1px solid #F9F9F9;
+            transition: 0.3s ease-in-out;
+            text-transform: uppercase;
+                &:hover{
+                    cursor: pointer;
+                    background: transparent;
+                    color: #fff;
+                }
+        }
+}
+.why-cap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    position: relative;
+        h1{
+            text-align: center;
+            font-size: 36px;
+            line-height: normal;
+            margin-bottom: 20px;
+            @include from-320-575{
+                font-size: 30px;
+            }
+        }
+        .why-cap-card-wrap{
+            display: flex;
+            justify-content: space-between;
+            padding: 70px 100px 50px 100px;
+            @include from-320-992{
+                flex-wrap: wrap;
+            }
+            @include from-320-575{
+                padding: 20px;
+            }
+                .card{
+                    width: 18%;
+                    border-radius: 0px 30px 30px 30px;
+                    background: linear-gradient(180deg, #FFF 0%, rgba(225, 241, 253, 0.84) 100%);
+                    box-shadow: 6px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 50px 20px;
+                    transition: 0.3s ease-in-out;
+                        &:hover{
+                            background: linear-gradient(180deg, #4663AC 0%, #36508F 100%);
+                            cursor: pointer;
+                             h1{
+                                color: #fff;
+                             }
+                             p{
+                                color: #fff;
+                             }
+                             .white{
+                                display: block;
+                                opacity: 1;
+                             }
+                             .blue{
+                                display: none;
+                                opacity: 0;
+                             }
+                        }
+                        @include from-320-992{
+                            width: 33%;
+                            margin-bottom: 20px;
+                            padding: 10px 15px;
+                        }
+                        @include from-320-575{
+                            width: 35%;
+                            align-self: flex-start;
+                        }
+                        
+                        h1{
+                            font-size: 20px;
+                            margin-bottom: 10px;
+                            text-align: center;
+                            color: #000;
+                            line-height: normal;
+                            transition: 0.3s ease-in-out;
+                            @include from-320-575{
+                                display: none;
+                            }
+                        }
+                        .thin-head{
+                            display: none;
+                            @include from-320-575{
+                                display: block;
+                                font-size: 20px;
+                            }
+                        }
+                        .thin-p{
+                            display: none;
+                            @include from-320-575{
+                                display: block;
+                                font-size: 12px;
+                            }
+                        }
+                        p{
+                            font-size: 14px;
+                            text-align: center;
+                            line-height: normal;
+                            transition: 0.3s ease-in-out;
+                            @include from-320-575{
+                                display: none;
+                            }
+                        }
+                        .blue{
+                            display: block;
+                            align-self: center;
+                            opacity: 1;
+                            transition: 0.3s ease-in-out;
+                        }
+                        .white{
+                            display: none;
+                            align-self: center;
+                            opacity: 0;
+                            transition: 0.3s ease-in-out;
+                        }
+                }
+                .card-margin{
+                    @include from-320-575{
+                        margin-top: 100px;
+                    }
+                }
+        }
+        .why-bg{
+            position: absolute;
+            top:-100px;
+            right: 0px;
+            left: 0px;
+            bottom: 0px;
+            margin: 0px auto;
+            z-index: -1;
+        }
+}
+.cus-cap-test{
+    margin-top: 40px;
+}
+.cap-main-con{
+    background-image: url('../../../public/why-bg.png');
+    background-size: contain;
+    background-position-y: 800px;
+}
+.swiper-3d{
+    @include from-320-575{
+        perspective: none;
+    }
+}
+.swiper-3d{
+    @include from-320-575{
+        transform-style:initial
+    }
+}
+.swiper-slide-active{
+    @include from-320-575{
+        transform-style:initial !important
+    }
+}

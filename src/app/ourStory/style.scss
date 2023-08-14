@@ -1,0 +1,85 @@
+@mixin from-992-1300{
+    @media screen and (min-width:992.67px) and (max-width:1300px) {
+        @content;
+    }
+}
+@mixin from-1300-1700{
+    @media screen and (min-width:1300px) and (max-width:1700px) {
+        @content;
+    }
+}
+@mixin from-575-992{
+    @media screen and (min-width:575.67px) and (max-width:992px) {
+        @content;
+    }
+}
+@mixin from-320-575{
+    @media screen and (min-width:320.67px) and (max-width:575px) {
+        @content;
+    }
+}
+@mixin from-320-992{
+    @media screen and (min-width:320.67px) and (max-width:992px) {
+        @content;
+    }
+}
+.story-header{
+    padding: 50px;
+    background-image: url('../../../public/story-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 22;
+    position: relative;
+    @include from-320-575{
+        padding: 20px;
+    }
+    @include from-320-575{
+        background-image: url('../../../public/mobile-growth-echo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y:-50px ;
+    margin-bottom: 50px;
+    }
+        h1{
+            color: #fff;
+            font-size: 40px;
+            text-transform: capitalize;
+            line-height: normal;
+            text-align: center;
+            margin-bottom: 10px;
+            @include from-320-575{
+                font-size: 30px;
+            }
+        }
+        p{
+            color: #fff;
+            font-size: 24px;
+            text-align: center;
+            width: 60%;
+            line-height: normal;
+            @include from-320-575{
+                width: 100%;
+            }
+        }
+        a{
+            border-radius: 0px 20px 20px 20px;
+background: #FFF;
+font-size: 20px;
+padding: 5px 20px;
+text-decoration: none;
+color: #000;
+margin-top: 20px;
+        }
+        img{
+            position: relative;
+            top:100px;
+            @include from-320-575{
+                top: 120px;
+            }
+        }
+}

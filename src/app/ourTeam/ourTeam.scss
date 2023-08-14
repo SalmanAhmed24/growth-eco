@@ -1,0 +1,361 @@
+@mixin from-992-1300{
+    @media screen and (min-width:992.67px) and (max-width:1300px) {
+        @content;
+    }
+}
+@mixin from-1300-1700{
+    @media screen and (min-width:1300px) and (max-width:1700px) {
+        @content;
+    }
+}
+@mixin from-575-992{
+    @media screen and (min-width:575.67px) and (max-width:992px) {
+        @content;
+    }
+}
+@mixin from-320-575{
+    @media screen and (min-width:320.67px) and (max-width:575px) {
+        @content;
+    }
+}
+@mixin from-320-992{
+    @media screen and (min-width:320.67px) and (max-width:992px) {
+        @content;
+    }
+}
+.our-team-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 500px;
+    background-image: url('../../../public/our-team.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include from-320-575{
+        background-image: url('../../../public/team-mobile-bg.png');
+        background-position: top;
+    }
+        p{
+            margin-bottom: 30px;
+            font-size: 24px;
+            width: 50%;
+            text-align: center;
+            @include from-320-575{
+                width: 100%;
+            }
+        }
+        .team-contact{
+            margin-top: 0px;
+        text-decoration: none;
+        padding: 5px 20px;
+        font-size: 20px;
+        border-radius: 0px 20px 20px 20px;
+        background: #415B9F;
+        color: #fff;
+        border: 1px solid #415B9F;
+        transition: 0.3s ease-in-out;
+        margin-bottom: 30px;
+            &:hover{
+                background: transparent;
+                color: #415B9F;
+                border: 1px solid #415B9F;
+            }
+        }
+}
+.our-team-skill{
+    height: 450px;
+    background-image: url('../../../public/our-team-q.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    @include from-320-992{
+        padding: 20px;
+    }
+    @include from-320-575{
+        padding: 20px;
+        background-image: url('../../../public/skilled-mobile.png');
+        background-position: bottom;
+    }
+        h1{
+            margin-top: 80px;
+            font-size: 40px;
+            line-height: normal;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 10px;
+            @include from-320-575{
+                margin-top: 10px;
+                font-size: 30px;
+            }
+        }
+        p{
+            font-size: 20px;
+            color: #fff;
+            text-align: center;
+            width: 50%;
+            line-height: 25px;
+            @include from-320-992{
+                width: 100%;
+                font-size: 18px;
+            }
+        }
+}
+.team-wrapper{
+    background-image: url('../../../public/triangle-lines.png');
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 50px;
+    @include from-320-575(){
+        background-image: none;
+    }
+        h1{
+            text-align: center;
+            font-size: 40px;
+            line-height: normal;
+            margin-bottom: 10px;
+            @include from-320-575{
+                font-size: 30px;
+            }
+        }
+        p{
+            text-align: center;
+            width: 50%;
+            font-size: 20px;
+            line-height: normal;
+            @include from-320-575{
+                width: 100%;
+                font-size: 16px;
+            }
+        }
+        .upper-team{
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            @include from-320-992{
+                width: 100%;
+            }
+            @include from-320-575{
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+                .team-card{
+                    display: flex;
+                    flex-direction: column;
+                    @include from-320-575{
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
+                    .circle-img{
+                        @include from-320-575{
+                            align-self: center;
+                            img{
+                                display: none;
+                            }
+                            .mobile-avatar-img{
+                                display: block !important;
+                            }
+                        }
+                        .mobile-avatar-img{
+                            display: none;
+                        }
+                    }
+                        .name{
+                            color: #36508F;
+                            font-size: 20px;
+                            line-height: normal;
+                            text-transform: uppercase;
+                            margin-bottom: 5px;
+                            align-self: center;
+                            margin-top: 10px;
+                            @include from-320-575{
+                                font-size: 10px;
+                            }
+                        }
+                        p{
+                            align-self: center;
+                            font-size: 15px;
+                            @include from-320-575{
+                                font-size: 8px;
+                            }
+                        }
+
+                }
+        }
+        .mid-team{
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            flex-wrap: wrap;
+            @include from-320-992{
+                width: 100%;
+            }
+                .team-card{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    @include from-320-575{
+                        width: 50%;
+                        margin-bottom: 20px;
+                    }
+                        .circle-img{
+                            @include from-320-575{
+                                img{
+                                    display: none;
+                                }
+                                .mobile-avatar-img{
+                                    display: block !important;
+                                }
+                            }
+                            .mobile-avatar-img{
+                                display: none;
+                            }
+                        }
+                        .name{
+                            color: #36508F;
+                            font-size: 20px;
+                            line-height: normal;
+                            text-transform: uppercase;
+                            margin-bottom: 5px;
+                            align-self: center;
+                            margin-top: 10px;
+                            @include from-320-575{
+                                font-size: 10px;
+                                align-self: center;
+                                
+                            }
+
+                        }
+                        p{
+                            align-self: center;
+                            font-size: 15px;
+                            @include from-320-575{
+                                font-size: 8px;
+                            }
+                        }
+
+                }
+        }
+}
+.see-more-wrap{
+    margin-top: 50px;
+    margin-bottom: 50px;
+        a{
+            color: #000;
+            font-size: 20px;
+            text-transform: capitalize;
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            display: flex;
+            @include from-320-575{
+                font-size: 16px;
+            }
+                span{
+                    display: inline-block;
+                    margin-left: 20px;
+                    padding-top: 2px;
+                }
+        }
+}
+.arrow-divider{
+    position: relative;
+        img{
+            position: absolute;
+            top:-700px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            z-index: -2;
+            margin: 0px auto;
+            @include from-320-992{
+                display: none;
+            }
+        }
+}
+.team-action-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    overflow-x: clip;
+    h1{
+        font-size: 40px;
+        line-height: normal;
+        text-transform: capitalize;
+        text-align: center;
+        @include from-320-575{
+         font-size: 30px; 
+         margin-bottom: 20px;  
+        }
+    }
+    p{
+        width: 50%;
+        text-align: center;
+        font-size: 24px;
+        line-height: normal;
+        @include from-320-575{
+            width: 90%;
+            font-size: 15px;
+        }
+    }
+    img{
+        align-self: center;
+        @include from-320-992{
+            width: 70%;
+            height: 100%;
+        }
+        @include from-320-575{
+            width: 100%;
+        }
+    }
+}
+.interest{
+    padding: 50px;
+    background: linear-gradient(180deg, #35539A 0%, #577CC8 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 150px;
+    margin-top: 150px;
+    h1{
+        color: #fff;
+        text-transform: capitalize;
+        font-size: 32px;
+        margin-bottom: 20px;
+        line-height: normal;
+        @include from-320-992{
+            text-align: center;
+        }
+        @include from-320-575{
+            font-size: 25px;
+        }
+    }
+    .contact-link{
+        border-radius: 20px 0px 20px 20px;
+        background: #FFF;
+        font-size: 24px;
+        text-decoration: none;
+        padding: 5px 20px;
+        color: #000;
+        transition: 0.3s ease-in-out;
+        border:1px solid #fff;
+        @include from-320-575{
+            font-size: 20px;
+        }
+         &:hover{
+            background: transparent;
+            color: #fff;
+         }
+    }
+}
