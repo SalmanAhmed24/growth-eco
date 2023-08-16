@@ -31,7 +31,8 @@ const futuraLTBT = localFont({
   weight: "400",
   style: "normal",
 });
-function Testimonials({ heading }) {
+function Testimonials({ heading, sliderArr }) {
+  console.log("thi is arr", sliderArr);
   return (
     <section className="testimonial-wrap">
       {heading ? (
@@ -83,118 +84,35 @@ function Testimonials({ heading }) {
         modules={[EffectCoverflow, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <div className="card-test">
-            <div className="top-sec">
-              <Image
-                className="avatar"
-                src={"/avatar.png"}
-                width={66}
-                height={66}
-              />
-              <div className="top-content-wrap">
-                <h1 className={futuraHv.className}>XYZ</h1>
-                <p className={futuraLTBT.className}>Marketing Head</p>
-              </div>
-            </div>
-            <Image src={"/stars.png"} width={110} height={22} />
-            <p className={futuraLTBT.className}>
-              Our marketing company specializes in helping sellers navigate and
-              thrive in highly competitive environments, leveraging targeted
-              strategies to boost visibility
-            </p>
-            <Image
-              className="test-down"
-              src={"/test-down.png"}
-              width={337}
-              height={190}
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="card-test">
-            <div className="top-sec">
-              <Image
-                className="avatar"
-                src={"/avatar.png"}
-                width={66}
-                height={66}
-              />
-              <div className="top-content-wrap">
-                <h1 className={futuraHv.className}>XYZ</h1>
-                <p className={futuraLTBT.className}>Marketing Head</p>
-              </div>
-            </div>
-            <Image src={"/stars.png"} width={110} height={22} />
-            <p className={futuraLTBT.className}>
-              Our marketing company specializes in helping sellers navigate and
-              thrive in highly competitive environments, leveraging targeted
-              strategies to boost visibility
-            </p>
-            <Image
-              className="test-down"
-              src={"/test-down.png"}
-              width={337}
-              height={190}
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="card-test">
-            <div className="top-sec">
-              <Image
-                className="avatar"
-                src={"/avatar.png"}
-                width={66}
-                height={66}
-              />
-              <div className="top-content-wrap">
-                <h1 className={futuraHv.className}>XYZ</h1>
-                <p className={futuraLTBT.className}>Marketing Head</p>
-              </div>
-            </div>
-            <Image src={"/stars.png"} width={110} height={22} />
-            <p className={futuraLTBT.className}>
-              Our marketing company specializes in helping sellers navigate and
-              thrive in highly competitive environments, leveraging targeted
-              strategies to boost visibility
-            </p>
-            <Image
-              className="test-down"
-              src={"/test-down.png"}
-              width={337}
-              height={190}
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="card-test">
-            <div className="top-sec">
-              <Image
-                className="avatar"
-                src={"/avatar.png"}
-                width={66}
-                height={66}
-              />
-              <div className="top-content-wrap">
-                <h1 className={futuraHv.className}>XYZ</h1>
-                <p className={futuraLTBT.className}>Marketing Head</p>
-              </div>
-            </div>
-            <Image src={"/stars.png"} width={110} height={22} />
-            <p className={futuraLTBT.className}>
-              Our marketing company specializes in helping sellers navigate and
-              thrive in highly competitive environments, leveraging targeted
-              strategies to boost visibility
-            </p>
-            <Image
-              className="test-down"
-              src={"/test-down.png"}
-              width={337}
-              height={190}
-            />
-          </div>
-        </SwiperSlide>
+        {sliderArr &&
+          sliderArr.map((i, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <div className="card-test">
+                  <div className="top-sec">
+                    <Image
+                      className="avatar"
+                      src={"/avatar.png"}
+                      width={66}
+                      height={66}
+                    />
+                    <div className="top-content-wrap">
+                      <h1 className={futuraHv.className}>{i.name}</h1>
+                      <p className={futuraLTBT.className}>{i.profession}</p>
+                    </div>
+                  </div>
+                  <Image src={"/stars.png"} width={110} height={22} />
+                  <p className={futuraLTBT.className}>{i.testimonial}</p>
+                  <Image
+                    className="test-down"
+                    src={"/test-down.png"}
+                    width={337}
+                    height={190}
+                  />
+                </div>
+              </SwiperSlide>
+            );
+          })}
       </Swiper>
     </section>
   );

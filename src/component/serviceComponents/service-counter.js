@@ -2,31 +2,30 @@ import Image from "next/image";
 import Link from "next/link";
 import "./serviceComp.scss";
 import SliderSubComp from "./sliderSubComp";
-function ServiceCounter({ futuraHv, futuraLTBT }) {
+function ServiceCounter({
+  futuraHv,
+  futuraLTBT,
+  headingMain,
+  paraMain,
+  headingSub1,
+  paraSub1,
+  headingSub2,
+  paraSub2,
+}) {
   return (
     <section className="ser-counter">
       <div className="counter-info-wrap">
         <div className="singleItem first">
-          <h1 className={futuraHv.className}>Case Studies</h1>
-          <p className={futuraLTBT.className}>
-            Our marketing company specializes in helping sellers navigate and
-            thrive in highly competitive environments, leveraging targeted
-            strategies.
-          </p>
+          <h1 className={futuraHv.className}>{headingMain}</h1>
+          <p className={futuraLTBT.className}>{paraMain}</p>
         </div>
         <div className="singleItem">
-          <h1 className={futuraHv.className}>200+</h1>
-          <p className={futuraLTBT.className}>
-            Successful FBA campaigns across Australia, New Zealand &
-            International.
-          </p>
+          <h1 className={futuraHv.className}>{headingSub1}</h1>
+          <p className={futuraLTBT.className}>{paraSub1}</p>
         </div>
         <div className="singleItem">
-          <h1 className={futuraHv.className}>7</h1>
-          <p className={futuraLTBT.className}>
-            Years in successful digital marketing, web design & strategic
-            business growth.
-          </p>
+          <h1 className={futuraHv.className}>{headingSub2}</h1>
+          <p className={futuraLTBT.className}>{paraSub2}</p>
         </div>
       </div>
       <div className="slider-ser-wrap">

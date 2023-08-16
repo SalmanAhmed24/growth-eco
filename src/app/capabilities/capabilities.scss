@@ -78,6 +78,7 @@
             text-align: center;
             color: #fff;
             text-transform: uppercase;
+            z-index: 222;
             @include from-320-575{
                 font-size: 40px;
                 margin-top: 60px;
@@ -124,6 +125,7 @@
             font-size: 36px;
             line-height: normal;
             margin-bottom: 20px;
+            text-transform: capitalize;
             @include from-320-575{
                 font-size: 30px;
             }

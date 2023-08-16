@@ -5,9 +5,11 @@ function Header({ futuraBK, futuraMDBT, futuraLtBT, futuraHv }) {
   return (
     <header className="header-about">
       <h1 className={futuraHv.className}>
-        Your <span>Marketing Superheroes:</span>
+        Amazon<span> Account Management and Consulting</span>
       </h1>
-      <h1 className={futuraHv.className}>Igniting Growth, Inspiring Impact!</h1>
+      <h1 className={futuraHv.className}>
+        Sustainable Growth and Profitability
+      </h1>
       <p className={futuraLtBT.className}>
         Our marketing company specializes in helping sellers navigate and thrive
         in highly competitive environments, leveraging targeted strategies to

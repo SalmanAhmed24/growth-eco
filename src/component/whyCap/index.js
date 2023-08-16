@@ -31,6 +31,7 @@ function WhyCap({
   span,
   content,
   arrow,
+  url,
 }) {
   return (
     <section
@@ -65,7 +66,7 @@ function WhyCap({
               </div>
             ))}
             <div className="explore-link">
-              <Link href={"/"} className={futuraHv.className}>
+              <Link href={url} className={futuraHv.className}>
                 Explore
               </Link>
             </div>

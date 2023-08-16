@@ -93,9 +93,13 @@
             text-transform: capitalize;
             position: relative;
             z-index: 2222;
+            font-size: 52px;
+            width: 40%;
             @include from-320-575{
                 font-size: 40px;
                 margin-top: 200px;
+                width: 95%;
+                text-align: left;
             }
         }
         p{
@@ -412,15 +416,25 @@ padding: 10px 20px;
                 @include from-320-992{
                     width: 50% !important;
                 }
+                @include from-320-575{
+                    padding: 5px;
+                    width: 46% !important;
+                }
+                
                     h1{
                         color: #fff;
                         font-size: 48px;
                         line-height: normal;
+                        @include from-320-575{
+                            font-size: 32px;
+                        }
                     }
                     p{
                         color: #fff;
                         line-height: normal;
-
+                        @include from-320-575{
+                            font-size: 14px;
+                        }
                     }
             }
                 .first{
@@ -449,15 +463,16 @@ padding: 10px 20px;
     }
 }
 .service-scale-wrap{
-    background-image: url('../../../public/amazon-ser-step-grow.png');
+    background-image: url('../../../public/grow.svg');
     background-repeat: no-repeat;
-    background-position:center;
-    background-size: contain;
+    background-position:bottom;
+    background-size: cover;
     padding: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 250px;
     @include from-320-992{
         background-size: cover;
         background-position: center;
@@ -476,7 +491,7 @@ padding: 10px 20px;
             margin-bottom: 10px;
             text-transform: uppercase;
             @include from-320-575{
-                font-size: 30px;
+                font-size: 24px;
             }
                 span{
                     color: #fff;
@@ -490,7 +505,8 @@ padding: 10px 20px;
             font-size: 20px;
             line-height: normal;
             @include from-320-575{
-                width: 90%;
+                width: 95%;
+                font-size: 16px;
             }
         }
 }
@@ -538,8 +554,8 @@ padding: 10px 20px;
                             left: -30px;
                         }
                         @include from-320-400{
-                            width: 35%;
-                            height: 35%;
+                            width: 25%;
+                            height: 25%;
                             top:-25px;
                             left: -18px;
                         }
@@ -547,6 +563,7 @@ padding: 10px 20px;
             }
             .blue{
                 background: #4663AC;
+                
                 p{
                     color: #fff;
                     line-height: normal;
@@ -558,10 +575,22 @@ padding: 10px 20px;
                 }
                 h1{
                     color: #fff;
+                    text-align: center;
+                    @include from-320-575{
+
+                        margin-top: 20px;
+                    }
                 }
             }
             .white{
                 background-color: #F0F0F0;
+                h1{
+                    text-align: center;
+                    @include from-320-575{
+
+                        margin-top: 20px;
+                    }
+                }
                 p{
                     line-height: normal;
                 margin-top: 10px;

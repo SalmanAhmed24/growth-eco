@@ -1,16 +1,19 @@
 import Image from "next/image";
 
-function ServiceGrowth({ futuraHv, futuraLTBT }) {
+function ServiceGrowth({
+  futuraHv,
+  futuraLTBT,
+  headingText,
+  paraText,
+  spanText,
+}) {
   return (
     <section className="service-scale-wrap">
       <h1 className={futuraHv.className}>
-        How De We<span>Grow</span>
+        {headingText}
+        <span>{spanText}</span>
       </h1>
-      <p className={futuraLTBT.className}>
-        Our marketing company specializes in helping sellers navigate and thrive
-        in highly competitive environments, leveraging targeted strategies to
-        boost visibility.
-      </p>
+      <p className={futuraLTBT.className}>{paraText}</p>
     </section>
   );
 }

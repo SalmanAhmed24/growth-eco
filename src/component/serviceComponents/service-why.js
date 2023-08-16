@@ -1,34 +1,35 @@
 import Image from "next/image";
 import Link from "next/link";
-function ServiceWhy({ futuraHv, futuraLTBT }) {
+function ServiceWhy({
+  futuraHv,
+  futuraLTBT,
+  headingMain,
+  spanMain,
+  mainPara,
+  whyCardsArr,
+  trustHeading,
+  trustCardsArr,
+}) {
   return (
     <section className="amazon-ser-con">
       <h1 className={futuraHv.className}>
-        Why do you need
-        <span className={futuraHv.className}>Amazon FBA?</span>
+        {headingMain}
+        <span className={futuraHv.className}>{spanMain}</span>
       </h1>
       <div className="amazon-ser-card">
         <div className="image-wrap">
           <Image src={"/amazon-cards-img.png"} width={563} height={429} />
         </div>
         <div className="info-con">
-          <p className={futuraLTBT.className}>
-            Our marketing company specializes in helping sellers navigate and
-            thrive in highly competitive environments, leveraging targeted
-            strategies to boost visibility. Our marketing company specializes in
-            helping sellers navigate and thrive in highly competitive
-            environments, leveraging targeted strategies to boost visibility.
-          </p>
+          <p className={futuraLTBT.className}>{mainPara}</p>
           <div className="cards-inner-wrap">
-            <div className="inner">
-              <p className={futuraHv.className}>Increase Visibility</p>
-            </div>
-            <div className="inner">
-              <p className={futuraHv.className}>Drive More Sales</p>
-            </div>
-            <div className="inner">
-              <p className={futuraHv.className}>Build Brand</p>
-            </div>
+            {whyCardsArr.map((i, ind) => {
+              return (
+                <div key={ind} className="inner">
+                  <p className={futuraHv.className}>{i.cardText}</p>
+                </div>
+              );
+            })}
           </div>
           <div className="amazon-inner-link">
             <Link href={"/"} className={futuraHv.className}>
@@ -39,54 +40,18 @@ function ServiceWhy({ futuraHv, futuraLTBT }) {
       </div>
       <div className="grow-sec">
         <div className="grow-sec-con">
-          <h1 className={futuraHv.className}>
-            We trusted by over 300+ businesses for a reason
-          </h1>
-          <div className="inner-img-con-wrap">
-            <Image src={"/round-rocket.png"} width={45} height={45} />
-            <div className="inner-grow-wrap">
-              <h1 className={futuraHv.className}>FBA RESULTS</h1>
-              <p className={futuraLTBT.className}>
-                Our marketing company specializes in helping sellers navigate.
-              </p>
-            </div>
-          </div>
-          <div className="inner-img-con-wrap">
-            <Image src={"/round-rocket.png"} width={45} height={45} />
-            <div className="inner-grow-wrap">
-              <h1 className={futuraHv.className}>CAMPAIGNS</h1>
-              <p className={futuraLTBT.className}>
-                Our marketing company specializes in helping sellers navigate.
-              </p>
-            </div>
-          </div>
-          <div className="inner-img-con-wrap">
-            <Image src={"/round-rocket.png"} width={45} height={45} />
-            <div className="inner-grow-wrap">
-              <h1 className={futuraHv.className}>EXPERT TEAM</h1>
-              <p className={futuraLTBT.className}>
-                Our marketing company specializes in helping sellers navigate.
-              </p>
-            </div>
-          </div>
-          <div className="inner-img-con-wrap">
-            <Image src={"/round-rocket.png"} width={45} height={45} />
-            <div className="inner-grow-wrap">
-              <h1 className={futuraHv.className}>PERFORMANCE GUARANTEE</h1>
-              <p className={futuraLTBT.className}>
-                Our marketing company specializes in helping sellers navigate.
-              </p>
-            </div>
-          </div>
-          <div className="inner-img-con-wrap">
-            <Image src={"/round-rocket.png"} width={45} height={45} />
-            <div className="inner-grow-wrap">
-              <h1 className={futuraHv.className}>Monitoring 24/7</h1>
-              <p className={futuraLTBT.className}>
-                Our marketing company specializes in helping sellers navigate.
-              </p>
-            </div>
-          </div>
+          <h1 className={futuraHv.className}>{trustHeading}</h1>
+          {trustCardsArr.map((i, ind) => {
+            return (
+              <div key={ind} className="inner-img-con-wrap">
+                <Image src={"/round-rocket.png"} width={45} height={45} />
+                <div className="inner-grow-wrap">
+                  <h1 className={futuraHv.className}>{i.trustInHead}</h1>
+                  <p className={futuraLTBT.className}>{i.trustInPara}</p>
+                </div>
+              </div>
+            );
+          })}
           <div className="grow-link-wrap">
             <Link href={"/"} className={futuraHv.className}>
               Ready To Grow{" "}

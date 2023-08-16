@@ -46,15 +46,14 @@ export default function Home() {
       <header className="header-wrap">
         <section className="header-content-wrap">
           <h1 className={futuraHv.className}>
-            Your product is your passion, selling it on <span>Amazon</span> is
-            ours.
+            Full potential to your Amazon business with our powerhouse solutions
           </h1>
           <h2 className={futuraHv.className}>
             Need It <span>Now</span>?
           </h2>
           <div className={`btnWrap`}>
             <button className={`${futuraHv.className} startBtn`}>
-              Start Now
+              Contact Us
             </button>
           </div>
         </section>
@@ -62,13 +61,12 @@ export default function Home() {
       <section className="triangle-bg">
         <div className="compt-wrap">
           <h1 className={futuraHv.className}>
-            Facing fierce competition on <span>Amazon</span>?
+            Ready to conquer Amazon&apos;s <span>fierce competition</span>?
           </h1>
           <p className={futuraLTBT.className}>
-            Our marketing company specializes in helping sellers navigate and
-            thrive in highly competitive environments, leveraging targeted
-            strategies to boost visibility, attract customers, and stay ahead of
-            the competition.
+            Supercharge your business to skyrocket profits and amplify
+            visibility without draining your budget on PPC. Contact us and
+            triumph in the Amazon marketplace today.
           </p>
           <div className="boost-btn-wrap">
             <button className={futuraHv.className}>
@@ -135,10 +133,10 @@ export default function Home() {
         <div className="services-wrap">
           <h1 className={futuraHv.className}>Services</h1>
           <p className={futuraLTBT.className}>
-            Our marketing company specializes in helping sellers navigate and
-            thrive in highly competitive environments, leveraging targeted
-            strategies to boost visibility, attract customers, and stay ahead of
-            the competition.
+            Every business is unique, and we get along with you as a team to
+            understand your business module and deliver a wide range of services
+            tailored to your business needs that keep you ahead of the
+            competition.
           </p>
           <Image
             className="serv-man"
@@ -160,9 +158,10 @@ export default function Home() {
             <Image src={"/card1.png"} width={250} height={100} />
             <h2 className={futuraHv.className}>Amazon product research</h2>
             <p className={futuraBK.className}>
-              The Amazon product business model is simple: source products,
-              manage storage, and ship to customers. But it&apos;s not always
-              easy—especially
+              GrowthEcho dives deep into market trends, competitor analysis, and
+              customer preferences to identify winning products that will
+              skyrocket your sales on Amazon." Let us handle your Amazon Product
+              Research with our expert team!
             </p>
             <button className={futuraHv.className}>Uncover Within</button>
           </div>
@@ -172,9 +171,10 @@ export default function Home() {
               Product Listing and optimization
             </h2>
             <p className={futuraBK.className}>
-              ever since Growth Echo launched its Business Acquisition &
-              Accelerators, the company has been churning out successful Amazon
-              businesses.
+              We&apos;ll craft compelling listings that captivate customers,
+              boost rankings, and drive more sales, giving your Amazon business
+              the edge it needs to thrive. Stand out from the crowd with our
+              expert Product Listing and Optimization service!
             </p>
             <button className={futuraHv.className}>Uncover Within</button>
           </div>
@@ -182,9 +182,10 @@ export default function Home() {
             <Image src={"/card-new-3.png"} width={250} height={100} />
             <h2 className={futuraHv.className}>Amazon Advertising</h2>
             <p className={futuraBK.className}>
-              our branding professionals craft custom advertising campaigns to
-              establish a distinct presence for your product, creating a
-              customer-friendly.
+              Let Us Supercharge Your Business on the World&apos;s Largest
+              Marketplace. We create ad strategies, inform ad spend decisions
+              with competitive spend data, and design ads that hook the random
+              scrolling audience and convert them into favorite customers.
             </p>
             <button className={futuraHv.className}>Uncover Within</button>
           </div>
@@ -192,9 +193,10 @@ export default function Home() {
             <Image src={"/card4.png"} width={250} height={100} />
             <h2 className={futuraHv.className}>Product Sourcing</h2>
             <p className={futuraBK.className}>
-              We are offering leverages cutting-edge strategies and innovative
-              techniques to help businesses connect with their target audience,
-              drive online visibility.
+              From finding the hottest products to negotiating the best deals,
+              our experienced team will ensure you have a steady supply of
+              high-demand items to boost your sales. Let&apos;s start sourcing
+              success together!
             </p>
             <button className={futuraHv.className}>Uncover Within</button>
           </div>
@@ -209,9 +211,9 @@ export default function Home() {
       <section className="sales-wrap">
         <h1 className={futuraHv.className}>Our Sales</h1>
         <p className={futuraLTBT.className}>
-          Growth Echo implemented a customer success program to ensure high
-          customer satisfaction and retention rates. Growth Echo implemented a
-          customer success program to ensure high.
+          Unlock the full potential of your Amazon business with our top-notch
+          services, maximizing sales and boosting your success on the
+          world&apos;s largest online marketplace.
         </p>
         <Image
           src={"/sales-main.svg"}
@@ -237,8 +239,10 @@ export default function Home() {
         <div>
           <h1 className={futuraHv.className}>Our Clients </h1>
           <p className={futuraLTBT.className}>
-            Growth Echo implemented a customer success program to ensure high
-            customer satisfaction and retention rates.
+            Our clients rave about our Amazon service provider company, praising
+            us for the game-changing strategies, exceptional results, and
+            unparalleled support that have transformed their businesses and left
+            them speechless!
           </p>
         </div>
         <div className="slider-wrap">
@@ -317,7 +321,29 @@ export default function Home() {
           </Slider>
         </div>
       </section>
-      <Testimonials heading={true} />
+      <Testimonials
+        sliderArr={[
+          {
+            name: "Ivan",
+            profession: "",
+            testimonial:
+              "GrowthEcho's Amazon Advertising was a game-changer! Our Amazon  sales rank soared with targeted ads and expert strategies.",
+          },
+          {
+            name: "Maria",
+            profession: "",
+            testimonial:
+              "Efficient and effective! GrowthEcho's services optimized our Amazon ads, yielding impressive results and increased visibility.",
+          },
+          {
+            name: "Hans",
+            profession: "",
+            testimonial:
+              "Highly recommend! GrowthEcho's team boosted our Amazon presence, amazon keyword ranking, converting clicks into loyal customers. Excellent service!",
+          },
+        ]}
+        heading={true}
+      />
       <section className="case-studies">
         <h1 className={futuraHv.className}>Case Studies</h1>
         <div className="case-links-wrap">
@@ -402,8 +428,9 @@ export default function Home() {
       </section>
       <section className="quote-sec">
         <h1 className={futuraHv.className}>
-          Unlock the potential of your Amazon store and transform it into a
-          revenue-generating powerhouse
+          Elevate your Amazon business to new heights with our premium services,
+          where success meets excellence, and your satisfaction is our greatest
+          achievement.
         </h1>
         <div className="quote-btn-wrap">
           <Image src={"/rocket2.png"} width={25} height={25} />
@@ -416,6 +443,24 @@ export default function Home() {
         futuraMDBT={futuraMDBT}
         futuraLtBT={futuraLTBT}
         futuraHv={futuraHv}
+        question1={"How will GrowthEcho manage my Amazon account?"}
+        question2={"How can GrowthEcho services benefit my Amazon business?"}
+        question3={
+          "What sets your GrowthEcho apart from other Amazon service providers?"
+        }
+        question4={"How can I get started with your Amazon services?"}
+        tab1={
+          "GrowthEcho will manage your Amazon account by implementing data-driven strategies, optimizing product listings, running targeted PPC campaigns, and conducting regular performance analysis to ensure the most visibility, sales growth, and success in the competitive marketplace."
+        }
+        tab2={
+          "Our specialized services are designed to drive success in the competitive Amazon marketplace. By leveraging our expertise, you can expect increased visibility, improved product rankings, higher conversion rates, and a stronger brand presence, leading to enhanced sales and profitability."
+        }
+        tab3={
+          "At GrowthEcho, we take pride in our data-driven approach, industry knowledge, and a team of seasoned Amazon experts. Our strategies are proven results, and we adapt to the dynamic Amazon ecosystem, ensuring you stay ahead of the curve and outperform your competition."
+        }
+        tab4={
+          "Getting started is simple! Reach out to us through our contact number given below. We'll schedule a FREE consultation call to understand your specific needs and goals. After assessing your requirements, we'll craft a tailored plan to supercharge your Amazon business and start the journey to success."
+        }
       />
     </main>
   );

@@ -8,12 +8,16 @@ function SliderAbout({ futuraBK, futuraMDBT, futuraLtBT, futuraHv }) {
     <section className="slider-about">
       <Slider
         dots={true}
-        slidesToShow={1}
-        slidesToScroll={1}
         speed={500}
         infinite={false}
+        slidesPerRow={3}
+        slidesToShow={1}
         arrows={false}
         responsive={[
+          {
+            breakpoint: 320,
+            settings: { slidesPerRow: 3, slidesToShow: 1 },
+          },
           {
             breakpoint: 575,
             settings: { slidesPerRow: 3, slidesToShow: 1 },

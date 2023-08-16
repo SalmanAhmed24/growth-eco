@@ -42,29 +42,28 @@ function OurTeam() {
     <section className="our-team">
       <header className="our-team-header">
         <p className={futuraLTBT.className}>
-          We envision a marketing website that provides an immersive and
-          captivating user experience.
+          We are Amazon service-providing company helping amazon seller like you
+          scale Amazon business to new heights!
         </p>
         <Link href={"/"} className={`${futuraMDBT.className} team-contact`}>
           Contact Us
         </Link>
       </header>
       <section className="our-team-skill">
-        <h1 className={futuraHv.className}>Skilled Innovators</h1>
+        <h1 className={futuraHv.className}>Unleashing our Dynamic Team!</h1>
         <p className={futuraLTBT.className}>
-          We envision a marketing website that provides an immersive and
-          captivating user experience. Our goal is to create a visually
-          appealing and user-friendly interface that engages visitors from the
-          moment they land on our site. Through intuitive navigation, compelling
-          visuals, and interactive elements, we aim to leave a lasting
-          impression on our audience.{" "}
+          We are a diverse group of passionate individuals committed to
+          achieving excellence in Amazon&apos;s business growth. Our team has a
+          common goal~ to collaborate and innovate to overcome challenges and
+          make a positive impact in the Amazon world. With a wide range of
+          skills and expertise, we bring a unique set of perspectives to every
+          project we undertake.
         </p>
       </section>
       <section className="team-wrapper">
         <h1 className={futuraHv.className}>Our Team</h1>
         <p className={futuraLTBT.className}>
-          We envision a marketing website that provides an immersive and
-          captivating user experience.
+          Embarking on an Epic Journey of Excellence and Innovation!
         </p>
         <div className="upper-team">
           <div className="team-card">
@@ -195,8 +194,7 @@ function OurTeam() {
       <section className="team-action-wrap">
         <h1 className={futuraHv.className}>Our Team In Action</h1>
         <p className={futuraLTBT.className}>
-          We envision a marketing website that provides an immersive and
-          captivating user experience.
+          Wonderful group of creative individuals
         </p>
         <Image src={"/team-action.png"} width={1413} height={799} />
       </section>

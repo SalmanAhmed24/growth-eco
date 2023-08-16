@@ -1,7 +1,20 @@
 "use client";
 import React, { useState } from "react";
 import "./index.scss";
-function FAQs({ futuraBK, futuraMDBT, futuraHv, futuraLtBT }) {
+function FAQs({
+  futuraBK,
+  futuraMDBT,
+  futuraHv,
+  futuraLtBT,
+  question1,
+  question2,
+  question3,
+  question4,
+  tab1,
+  tab2,
+  tab3,
+  tab4,
+}) {
   const [firstName, setFirstName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -32,43 +45,34 @@ function FAQs({ futuraBK, futuraMDBT, futuraHv, futuraLtBT }) {
           onClick={() => setAccordion("1")}
           className={futuraMDBT.className}
         >
-          How can I optimize my product listings on Amazon to increase sales?
+          {question1}
         </button>
 
-        {accordion == "1" ? (
-          <p className={futuraBK.className}>this is tab 1</p>
-        ) : null}
+        {accordion == "1" ? <p className={futuraBK.className}>{tab1}</p> : null}
 
         <button
           onClick={() => setAccordion("2")}
           className={futuraMDBT.className}
         >
-          What are some best practices for inventory management on Amazon?
+          {question2}
         </button>
-        {accordion == "2" ? (
-          <p className={futuraBK.className}>this is tab 2</p>
-        ) : null}
+        {accordion == "2" ? <p className={futuraBK.className}>{tab2}</p> : null}
 
         <button
           onClick={() => setAccordion("3")}
           className={futuraMDBT.className}
         >
-          How can I effectively manage customer reviews and feedback on my
-          Amazon products?
+          {question3}
         </button>
-        {accordion == "3" ? (
-          <p className={futuraBK.className}>this is tab 3</p>
-        ) : null}
+        {accordion == "3" ? <p className={futuraBK.className}>{tab3}</p> : null}
 
         <button
           onClick={() => setAccordion("4")}
           className={futuraMDBT.className}
         >
-          What are some best practices for inventory management on Amazon?
+          {question4}
         </button>
-        {accordion == "4" ? (
-          <p className={futuraBK.className}>this is tab 4</p>
-        ) : null}
+        {accordion == "4" ? <p className={futuraBK.className}>{tab4}</p> : null}
       </div>
       <div className="form-sec">
         <div className="inner-wrap">

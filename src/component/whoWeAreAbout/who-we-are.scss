@@ -46,7 +46,7 @@
                 width: 100%;
             }
             .inner-wrap{
-                width: 50%;
+                width: 75%;
                 @include from-320-575{
                     display: flex;
                     flex-direction: column;
