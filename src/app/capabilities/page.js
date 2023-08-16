@@ -143,11 +143,11 @@ function Capabilities() {
             </h1>
             <h1 className={futuraHv.className}>Proven Results</h1>
             <p className={futuraHv.className}>
-              Helped businesses establish a strong presence on Amazon's
+              Helped businesses establish a strong presence on Amazon&apos;s
               marketplace.
             </p>
             <p className={`${futuraLTBT.className} thin-p`}>
-              Helped businesses establish a strong presence on Amazon's
+              Helped businesses establish a strong presence on Amazon&apos;s
               marketplace.
             </p>
           </div>

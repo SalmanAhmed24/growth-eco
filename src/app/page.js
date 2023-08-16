@@ -194,7 +194,7 @@ export default function Home() {
             <p className={futuraBK.className}>
               GrowthEcho dives deep into market trends, competitor analysis, and
               customer preferences to identify winning products that will
-              skyrocket your sales on Amazon." Let us handle your Amazon Product
+              skyrocket your sales on Amazon. Let us handle your Amazon Product
               Research with our expert team!
             </p>
             <button className={futuraHv.className}>Uncover Within</button>
