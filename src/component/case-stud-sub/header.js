@@ -16,6 +16,7 @@ function HeaderCase({ futuraHv, futuraLTBT }) {
         </Link>
       </div>
       <Image
+        alt="growth eco"
         src={"/case-sub-header.png"}
         className="header-img"
         width={1528}

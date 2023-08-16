@@ -28,13 +28,23 @@ function WhoWeAre({
             </div>
           </div>
           <div className="image-wrap">
-            <Image src={imageUrl} width={width} height={height} />
+            <Image
+              alt="growth eco"
+              src={imageUrl}
+              width={width}
+              height={height}
+            />
           </div>
         </section>
       ) : (
         <section className="who-we-about mobile-layout">
           <div className="image-wrap">
-            <Image src={imageUrl} width={width} height={height} />
+            <Image
+              alt="growth eco"
+              src={imageUrl}
+              width={width}
+              height={height}
+            />
           </div>
           <div className="content-wrap">
             <div className="inner-wrap">

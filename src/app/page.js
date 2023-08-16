@@ -72,12 +72,18 @@ export default function Home() {
             <button className={futuraHv.className}>
               Boost Your Visibility{" "}
               <span>
-                <Image src={"/arrow-r.png"} width={22} height={22} />
+                <Image
+                  alt="growth eco"
+                  src={"/arrow-r.png"}
+                  width={22}
+                  height={22}
+                />
               </span>
             </button>
           </div>
         </div>
         <Image
+          alt="growth eco"
           className="bg-line-img"
           src={"/comp-bg-tic.png"}
           width={1470}
@@ -86,6 +92,7 @@ export default function Home() {
         />
         <div className="step-wrap">
           <Image
+            alt="growth eco"
             src={"/vector.png"}
             className="vector-wrap"
             width={830}
@@ -93,7 +100,12 @@ export default function Home() {
             layout="responsive"
           />
           <div className="single-step">
-            <Image src={"/step-1.png"} width={100} height={140} />
+            <Image
+              alt="growth eco"
+              src={"/step-1.png"}
+              width={100}
+              height={140}
+            />
             <h2 className={futuraHv.className}>Research and Analysis</h2>
             <ul className={futuraBK.className}>
               <li>Analyze demands Identifying</li>
@@ -108,10 +120,20 @@ export default function Home() {
               <li>Turn thoughts into reality</li>
               <li>Execute the plan</li>
             </ul>
-            <Image src={"/step-2.png"} width={100} height={140} />
+            <Image
+              alt="growth eco"
+              src={"/step-2.png"}
+              width={100}
+              height={140}
+            />
           </div>
           <div className="single-step3">
-            <Image src={"/step-3.png"} width={110} height={180} />
+            <Image
+              alt="growth eco"
+              src={"/step-3.png"}
+              width={110}
+              height={180}
+            />
             <h2 className={futuraHv.className}>Implementation</h2>
             <ul className={futuraBK.className}>
               <li>Designing materials</li>
@@ -127,7 +149,12 @@ export default function Home() {
               <li>Measuring results</li>
               <li>Key performance</li>
             </ul>
-            <Image src={"/step-4.png"} width={100} height={140} />
+            <Image
+              alt="growth eco"
+              src={"/step-4.png"}
+              width={100}
+              height={140}
+            />
           </div>
         </div>
         <div className="services-wrap">
@@ -139,6 +166,7 @@ export default function Home() {
             competition.
           </p>
           <Image
+            alt="growth eco"
             className="serv-man"
             width={270}
             height={450}
@@ -148,6 +176,7 @@ export default function Home() {
       </section>
       <section className="service-card-wrap">
         <Image
+          alt="growth eco"
           className="ticks"
           src={"/single-arr.png"}
           width={425}
@@ -155,7 +184,12 @@ export default function Home() {
         />
         <div className="card-wrap">
           <div className="card top">
-            <Image src={"/card1.png"} width={250} height={100} />
+            <Image
+              alt="growth eco"
+              src={"/card1.png"}
+              width={250}
+              height={100}
+            />
             <h2 className={futuraHv.className}>Amazon product research</h2>
             <p className={futuraBK.className}>
               GrowthEcho dives deep into market trends, competitor analysis, and
@@ -166,7 +200,12 @@ export default function Home() {
             <button className={futuraHv.className}>Uncover Within</button>
           </div>
           <div className="card top">
-            <Image src={"/card2.png"} width={250} height={100} />
+            <Image
+              alt="growth eco"
+              src={"/card2.png"}
+              width={250}
+              height={100}
+            />
             <h2 className={futuraHv.className}>
               Product Listing and optimization
             </h2>
@@ -179,7 +218,12 @@ export default function Home() {
             <button className={futuraHv.className}>Uncover Within</button>
           </div>
           <div className="card bottom">
-            <Image src={"/card-new-3.png"} width={250} height={100} />
+            <Image
+              alt="growth eco"
+              src={"/card-new-3.png"}
+              width={250}
+              height={100}
+            />
             <h2 className={futuraHv.className}>Amazon Advertising</h2>
             <p className={futuraBK.className}>
               Let Us Supercharge Your Business on the World&apos;s Largest
@@ -190,7 +234,12 @@ export default function Home() {
             <button className={futuraHv.className}>Uncover Within</button>
           </div>
           <div className="card bottom">
-            <Image src={"/card4.png"} width={250} height={100} />
+            <Image
+              alt="growth eco"
+              src={"/card4.png"}
+              width={250}
+              height={100}
+            />
             <h2 className={futuraHv.className}>Product Sourcing</h2>
             <p className={futuraBK.className}>
               From finding the hottest products to negotiating the best deals,
@@ -204,7 +253,12 @@ export default function Home() {
         <div className="uncover-wrap">
           <button className={futuraHv.className}>Uncover unique fields</button>
           <span>
-            <Image src={"/forward-arr.png"} width={134} height={15} />
+            <Image
+              alt="growth eco"
+              src={"/forward-arr.png"}
+              width={134}
+              height={15}
+            />
           </span>
         </div>
       </section>
@@ -216,6 +270,7 @@ export default function Home() {
           world&apos;s largest online marketplace.
         </p>
         <Image
+          alt="growth eco"
           src={"/sales-main.svg"}
           width={1010}
           height={418}
@@ -223,12 +278,14 @@ export default function Home() {
           className="sales-count"
         />
         <Image
+          alt="growth eco"
           src={"/sales-mobile.png"}
           width={297}
           height={780}
           className="sales-count-mobile"
         />
         <Image
+          alt="growth eco"
           src={"/arrow-3.png"}
           width={425}
           height={550}
@@ -264,6 +321,7 @@ export default function Home() {
           >
             <div className="image-wrapper">
               <Image
+                alt="growth eco"
                 className="slider-img"
                 src={"/pic1.png"}
                 width={200}
@@ -272,6 +330,7 @@ export default function Home() {
             </div>
             <div className="image-wrapper">
               <Image
+                alt="growth eco"
                 className="slider-img"
                 src={"/pic2.png"}
                 width={200}
@@ -280,6 +339,7 @@ export default function Home() {
             </div>
             <div className="image-wrapper">
               <Image
+                alt="growth eco"
                 className="slider-img"
                 src={"/pic3.png"}
                 width={200}
@@ -288,6 +348,7 @@ export default function Home() {
             </div>
             <div className="image-wrapper">
               <Image
+                alt="growth eco"
                 className="slider-img"
                 src={"/pic4.png"}
                 width={200}
@@ -296,6 +357,7 @@ export default function Home() {
             </div>
             <div className="image-wrapper">
               <Image
+                alt="growth eco"
                 className="slider-img"
                 src={"/pic2.png"}
                 width={200}
@@ -304,6 +366,7 @@ export default function Home() {
             </div>
             <div className="image-wrapper">
               <Image
+                alt="growth eco"
                 className="slider-img"
                 src={"/pic3.png"}
                 width={200}
@@ -312,6 +375,7 @@ export default function Home() {
             </div>
             <div className="image-wrapper">
               <Image
+                alt="growth eco"
                 className="slider-img"
                 src={"/pic4.png"}
                 width={200}
@@ -371,30 +435,90 @@ export default function Home() {
         </div>
         {activeLink == "Branding" ? (
           <div className="case-img-wrap">
-            <Image src={"/case-1.png"} width={303} height={387} />
-            <Image src={"/case-2.png"} width={303} height={387} />
-            <Image src={"/case-3.png"} width={303} height={387} />
+            <Image
+              alt="growth eco"
+              src={"/case-1.png"}
+              width={303}
+              height={387}
+            />
+            <Image
+              alt="growth eco"
+              src={"/case-2.png"}
+              width={303}
+              height={387}
+            />
+            <Image
+              alt="growth eco"
+              src={"/case-3.png"}
+              width={303}
+              height={387}
+            />
           </div>
         ) : null}
         {activeLink == "Campaigns" ? (
           <div className="case-img-wrap">
-            <Image src={"/case-3.png"} width={303} height={387} />
-            <Image src={"/case-2.png"} width={303} height={387} />
-            <Image src={"/case-1.png"} width={303} height={387} />
+            <Image
+              alt="growth eco"
+              src={"/case-3.png"}
+              width={303}
+              height={387}
+            />
+            <Image
+              alt="growth eco"
+              src={"/case-2.png"}
+              width={303}
+              height={387}
+            />
+            <Image
+              alt="growth eco"
+              src={"/case-1.png"}
+              width={303}
+              height={387}
+            />
           </div>
         ) : null}
         {activeLink == "Graphic" ? (
           <div className="case-img-wrap">
-            <Image src={"/case-2.png"} width={303} height={387} />
-            <Image src={"/case-3.png"} width={303} height={387} />
-            <Image src={"/case-1.png"} width={303} height={387} />
+            <Image
+              alt="growth eco"
+              src={"/case-2.png"}
+              width={303}
+              height={387}
+            />
+            <Image
+              alt="growth eco"
+              src={"/case-3.png"}
+              width={303}
+              height={387}
+            />
+            <Image
+              alt="growth eco"
+              src={"/case-1.png"}
+              width={303}
+              height={387}
+            />
           </div>
         ) : null}
         {activeLink == "Digital Marketing" ? (
           <div className="case-img-wrap">
-            <Image src={"/case-3.png"} width={303} height={387} />
-            <Image src={"/case-1.png"} width={303} height={387} />
-            <Image src={"/case-2.png"} width={303} height={387} />
+            <Image
+              alt="growth eco"
+              src={"/case-3.png"}
+              width={303}
+              height={387}
+            />
+            <Image
+              alt="growth eco"
+              src={"/case-1.png"}
+              width={303}
+              height={387}
+            />
+            <Image
+              alt="growth eco"
+              src={"/case-2.png"}
+              width={303}
+              height={387}
+            />
           </div>
         ) : null}
         {activeLink == "Branding" ? (
@@ -421,7 +545,12 @@ export default function Home() {
           <Link className={`${futuraBK.className} explore-all`} href={"#"}>
             Explore All
             <span>
-              <Image src={"/forward-arr.png"} width={74} height={10} />
+              <Image
+                alt="growth eco"
+                src={"/forward-arr.png"}
+                width={74}
+                height={10}
+              />
             </span>
           </Link>
         </div>
@@ -433,9 +562,9 @@ export default function Home() {
           achievement.
         </h1>
         <div className="quote-btn-wrap">
-          <Image src={"/rocket2.png"} width={25} height={25} />
+          <Image alt="growth eco" src={"/rocket2.png"} width={25} height={25} />
           <button className={futuraHv.className}>Start Now</button>
-          <Image src={"/rocket1.png"} width={25} height={25} />
+          <Image alt="growth eco" src={"/rocket1.png"} width={25} height={25} />
         </div>
       </section>
       <FAQs

@@ -69,12 +69,18 @@ function OurTeam() {
           <div className="team-card">
             <div className="circle-img">
               <Image
+                alt="growth eco"
                 src={"/mobile-avatar.png"}
                 width={123}
                 height={123}
                 className="mobile-avatar-img"
               />
-              <Image src={"/avatar-team.png"} width={258} height={258} />
+              <Image
+                alt="growth eco"
+                src={"/avatar-team.png"}
+                width={258}
+                height={258}
+              />
             </div>
             <h1 className={`${futuraHv.className} name`}>FARAZ YASIN</h1>
             <p className={futuraHv.className}>CEO/Founder</p>
@@ -82,12 +88,18 @@ function OurTeam() {
           <div className="team-card">
             <div className="circle-img">
               <Image
+                alt="growth eco"
                 src={"/mobile-avatar.png"}
                 width={123}
                 height={123}
                 className="mobile-avatar-img"
               />
-              <Image src={"/avatar-team.png"} width={258} height={258} />
+              <Image
+                alt="growth eco"
+                src={"/avatar-team.png"}
+                width={258}
+                height={258}
+              />
             </div>
             <h1 className={`${futuraHv.className} name`}>FARAZ YASIN</h1>
             <p className={futuraHv.className}>CEO/Founder</p>
@@ -97,12 +109,18 @@ function OurTeam() {
           <div className="team-card">
             <div className="circle-img">
               <Image
+                alt="growth eco"
                 src={"/mobile-avatar.png"}
                 width={123}
                 height={123}
                 className="mobile-avatar-img"
               />
-              <Image src={"/avatar-team.png"} width={258} height={258} />
+              <Image
+                alt="growth eco"
+                src={"/avatar-team.png"}
+                width={258}
+                height={258}
+              />
             </div>
             <h1 className={`${futuraHv.className} name`}>FARAZ YASIN</h1>
             <p className={futuraHv.className}>CEO/Founder</p>
@@ -110,13 +128,19 @@ function OurTeam() {
           <div className="team-card">
             <div className="circle-img">
               <Image
+                alt="growth eco"
                 src={"/mobile-avatar.png"}
                 width={123}
                 height={123}
                 className="mobile-avatar-img"
               />
 
-              <Image src={"/avatar-team.png"} width={258} height={258} />
+              <Image
+                alt="growth eco"
+                src={"/avatar-team.png"}
+                width={258}
+                height={258}
+              />
             </div>
             <h1 className={`${futuraHv.className} name`}>FARAZ YASIN</h1>
             <p className={futuraHv.className}>CEO/Founder</p>
@@ -124,13 +148,19 @@ function OurTeam() {
           <div className="team-card">
             <div className="circle-img">
               <Image
+                alt="growth eco"
                 src={"/mobile-avatar.png"}
                 width={123}
                 height={123}
                 className="mobile-avatar-img"
               />
 
-              <Image src={"/avatar-team.png"} width={258} height={258} />
+              <Image
+                alt="growth eco"
+                src={"/avatar-team.png"}
+                width={258}
+                height={258}
+              />
             </div>
             <h1 className={`${futuraHv.className} name`}>FARAZ YASIN</h1>
             <p className={futuraHv.className}>CEO/Founder</p>
@@ -138,13 +168,19 @@ function OurTeam() {
           <div className="team-card">
             <div className="circle-img">
               <Image
+                alt="growth eco"
                 src={"/mobile-avatar.png"}
                 width={123}
                 height={123}
                 className="mobile-avatar-img"
               />
 
-              <Image src={"/avatar-team.png"} width={258} height={258} />
+              <Image
+                alt="growth eco"
+                src={"/avatar-team.png"}
+                width={258}
+                height={258}
+              />
             </div>
             <h1 className={`${futuraHv.className} name`}>FARAZ YASIN</h1>
             <p className={futuraHv.className}>CEO/Founder</p>
@@ -152,13 +188,19 @@ function OurTeam() {
           <div className="team-card">
             <div className="circle-img">
               <Image
+                alt="growth eco"
                 src={"/mobile-avatar.png"}
                 width={123}
                 height={123}
                 className="mobile-avatar-img"
               />
 
-              <Image src={"/avatar-team.png"} width={258} height={258} />
+              <Image
+                alt="growth eco"
+                src={"/avatar-team.png"}
+                width={258}
+                height={258}
+              />
             </div>
             <h1 className={`${futuraHv.className} name`}>FARAZ YASIN</h1>
             <p className={futuraHv.className}>CEO/Founder</p>
@@ -166,13 +208,19 @@ function OurTeam() {
           <div className="team-card">
             <div className="circle-img">
               <Image
+                alt="growth eco"
                 src={"/mobile-avatar.png"}
                 width={123}
                 height={123}
                 className="mobile-avatar-img"
               />
 
-              <Image src={"/avatar-team.png"} width={258} height={258} />
+              <Image
+                alt="growth eco"
+                src={"/avatar-team.png"}
+                width={258}
+                height={258}
+              />
             </div>
             <h1 className={`${futuraHv.className} name`}>FARAZ YASIN</h1>
             <p className={futuraHv.className}>CEO/Founder</p>
@@ -182,21 +230,36 @@ function OurTeam() {
           <Link className={futuraMDBT.className} href={"/"}>
             See More
             <span>
-              <Image src={"/forward-arr.png"} width={70} height={12} />
+              <Image
+                alt="growth eco"
+                src={"/forward-arr.png"}
+                width={70}
+                height={12}
+              />
             </span>
           </Link>
         </div>
       </section>
       <TestSlider />
       <div className="arrow-divider">
-        <Image src={"/about-arrows.png"} width={746} height={794} />
+        <Image
+          alt="growth eco"
+          src={"/about-arrows.png"}
+          width={746}
+          height={794}
+        />
       </div>
       <section className="team-action-wrap">
         <h1 className={futuraHv.className}>Our Team In Action</h1>
         <p className={futuraLTBT.className}>
           Wonderful group of creative individuals
         </p>
-        <Image src={"/team-action.png"} width={1413} height={799} />
+        <Image
+          alt="growth eco"
+          src={"/team-action.png"}
+          width={1413}
+          height={799}
+        />
       </section>
       <section className="interest">
         <h1 className={futuraHv.className}>interested in joining our team?</h1>

@@ -57,16 +57,16 @@ export default function CaseStudSlider() {
         className="mySwiper teamSwipper"
       >
         <SwiperSlide>
-          <img src={"/case-studies-slider.png"} />
+          <img alt="growth eco" src={"/case-studies-slider.png"} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={"/case-studies-slider.png"} />
+          <img alt="growth eco" src={"/case-studies-slider.png"} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={"/case-studies-slider.png"} />
+          <img alt="growth eco" src={"/case-studies-slider.png"} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={"/case-studies-slider.png"} />
+          <img alt="growth eco" src={"/case-studies-slider.png"} />
         </SwiperSlide>
       </Swiper>
     </div>

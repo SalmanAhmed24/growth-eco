@@ -18,7 +18,12 @@ function ServiceWhy({
       </h1>
       <div className="amazon-ser-card">
         <div className="image-wrap">
-          <Image src={"/amazon-cards-img.png"} width={563} height={429} />
+          <Image
+            alt="growth eco"
+            src={"/amazon-cards-img.png"}
+            width={563}
+            height={429}
+          />
         </div>
         <div className="info-con">
           <p className={futuraLTBT.className}>{mainPara}</p>
@@ -44,7 +49,12 @@ function ServiceWhy({
           {trustCardsArr.map((i, ind) => {
             return (
               <div key={ind} className="inner-img-con-wrap">
-                <Image src={"/round-rocket.png"} width={45} height={45} />
+                <Image
+                  alt="growth eco"
+                  src={"/round-rocket.png"}
+                  width={45}
+                  height={45}
+                />
                 <div className="inner-grow-wrap">
                   <h1 className={futuraHv.className}>{i.trustInHead}</h1>
                   <p className={futuraLTBT.className}>{i.trustInPara}</p>
@@ -55,7 +65,12 @@ function ServiceWhy({
           <div className="grow-link-wrap">
             <Link href={"/"} className={futuraHv.className}>
               Ready To Grow{" "}
-              <Image src={"/arrow-grow.png"} width={32} height={8} />
+              <Image
+                alt="growth eco"
+                src={"/arrow-grow.png"}
+                width={32}
+                height={8}
+              />
             </Link>
           </div>
         </div>

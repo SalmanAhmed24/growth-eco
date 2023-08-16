@@ -104,6 +104,7 @@ function AboutUs() {
           src={"/about-rocket.png"}
           width={1470}
           height={700}
+          alt="growth eco"
         />
       </section>
       <Achieve

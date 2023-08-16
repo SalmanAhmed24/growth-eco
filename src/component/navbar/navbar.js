@@ -66,7 +66,7 @@ function Navbar() {
     <section className={futuraBold.className}>
       <nav className="navbar-cus">
         <div className="logo-wrap">
-          <Image src={"./logo.svg"} width={170} height={80} />
+          <Image alt="growth eco" src={"./logo.svg"} width={170} height={80} />
         </div>
         <div className="links-wrap">
           <ul onClick={handleLinks} className="cus-links">
@@ -93,6 +93,7 @@ function Navbar() {
             </p>
           ) : (
             <Image
+              alt="growth eco"
               src={"/Menu.png"}
               width={32}
               height={32}

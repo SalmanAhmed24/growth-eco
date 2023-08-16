@@ -29,14 +29,15 @@ function SliderAbout({ futuraBK, futuraMDBT, futuraLtBT, futuraHv }) {
         ]}
         className="about-slider"
       >
-        <Image src={"/about-1.png"} width={207} height={83} />
-        <Image src={"/about-2.png"} width={207} height={83} />
-        <Image src={"/about-3.png"} width={207} height={83} />
-        <Image src={"/about-4.png"} width={207} height={83} />
-        <Image src={"/about-1.png"} width={207} height={83} />
-        <Image src={"/about-2.png"} width={207} height={83} />
+        <Image alt="growth eco" src={"/about-1.png"} width={207} height={83} />
+        <Image alt="growth eco" src={"/about-2.png"} width={207} height={83} />
+        <Image alt="growth eco" src={"/about-3.png"} width={207} height={83} />
+        <Image alt="growth eco" src={"/about-4.png"} width={207} height={83} />
+        <Image alt="growth eco" src={"/about-1.png"} width={207} height={83} />
+        <Image alt="growth eco" src={"/about-2.png"} width={207} height={83} />
       </Slider>
       <Image
+        alt="growth eco"
         src={"/about-arrows.png"}
         width={546}
         height={600}

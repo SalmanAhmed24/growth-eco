@@ -10,6 +10,7 @@ function ServiceHeader({ futuraHv, futuraLTBT, heading1, para1 }) {
         Start Now
       </Link>
       <Image
+        alt="growth eco"
         className="amazon-avatar"
         src={"/amazon-ser-header-avatar.png"}
         width={419}

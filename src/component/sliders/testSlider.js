@@ -57,16 +57,16 @@ export default function TestSlider() {
         className="mySwiper teamSwipper"
       >
         <SwiperSlide>
-          <img src={"/team-slider.png"} />
+          <img alt="growth eco" src={"/team-slider.png"} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={"/team-slider.png"} />
+          <img alt="growth eco" src={"/team-slider.png"} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={"/team-slider.png"} />
+          <img alt="growth eco" src={"/team-slider.png"} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={"/team-slider.png"} />
+          <img alt="growth eco" src={"/team-slider.png"} />
         </SwiperSlide>
       </Swiper>
     </div>

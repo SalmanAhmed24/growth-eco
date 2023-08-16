@@ -46,12 +46,14 @@ function Capabilities() {
         <div className="why-cap-card-wrap">
           <div className="card">
             <Image
+              alt="growth eco"
               src={"/exp-blue.png"}
               width={67}
               height={67}
               className="blue"
             />
             <Image
+              alt="growth eco"
               src={"/exp-white.png"}
               width={67}
               height={67}
@@ -68,12 +70,14 @@ function Capabilities() {
           </div>
           <div className="card card-margin">
             <Image
+              alt="growth eco"
               src={"/data-blue.png"}
               width={67}
               height={67}
               className="blue"
             />
             <Image
+              alt="growth eco"
               src={"/data-white.png"}
               width={67}
               height={67}
@@ -93,12 +97,14 @@ function Capabilities() {
           </div>
           <div className="card">
             <Image
+              alt="growth eco"
               src={"/cus-blue.png"}
               width={67}
               height={67}
               className="blue"
             />
             <Image
+              alt="growth eco"
               src={"/cus-white.png"}
               width={67}
               height={67}
@@ -119,12 +125,14 @@ function Capabilities() {
           </div>
           <div className="card card-margin">
             <Image
+              alt="growth eco"
               src={"/pod-blue.png"}
               width={67}
               height={67}
               className="blue"
             />
             <Image
+              alt="growth eco"
               src={"/pod-white.png"}
               width={67}
               height={67}

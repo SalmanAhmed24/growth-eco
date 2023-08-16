@@ -91,6 +91,7 @@ function Testimonials({ heading, sliderArr }) {
                 <div className="card-test">
                   <div className="top-sec">
                     <Image
+                      alt="growth eco"
                       className="avatar"
                       src={"/avatar.png"}
                       width={66}
@@ -101,9 +102,15 @@ function Testimonials({ heading, sliderArr }) {
                       <p className={futuraLTBT.className}>{i.profession}</p>
                     </div>
                   </div>
-                  <Image src={"/stars.png"} width={110} height={22} />
+                  <Image
+                    alt="growth eco"
+                    src={"/stars.png"}
+                    width={110}
+                    height={22}
+                  />
                   <p className={futuraLTBT.className}>{i.testimonial}</p>
                   <Image
+                    alt="growth eco"
                     className="test-down"
                     src={"/test-down.png"}
                     width={337}

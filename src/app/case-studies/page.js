@@ -57,7 +57,12 @@ function CaseStudies() {
         <div className="grow-link-wrap">
           <Link href={"/"} className={futuraHv.className}>
             Ready To Grow
-            <Image src={"/arrow-grow.png"} width={32} height={8} />
+            <Image
+              alt="growth eco"
+              src={"/arrow-grow.png"}
+              width={32}
+              height={8}
+            />
           </Link>
         </div>
       </section>
@@ -89,30 +94,90 @@ function CaseStudies() {
         <section className="tabs-inner">
           {activeLink == "Branding" ? (
             <div className="case-img-wrap page-wrap">
-              <Image src={"/case-1.png"} width={303} height={387} />
-              <Image src={"/case-2.png"} width={303} height={387} />
-              <Image src={"/case-3.png"} width={303} height={387} />
+              <Image
+                alt="growth eco"
+                src={"/case-1.png"}
+                width={303}
+                height={387}
+              />
+              <Image
+                alt="growth eco"
+                src={"/case-2.png"}
+                width={303}
+                height={387}
+              />
+              <Image
+                alt="growth eco"
+                src={"/case-3.png"}
+                width={303}
+                height={387}
+              />
             </div>
           ) : null}
           {activeLink == "Campaigns" ? (
             <div className="case-img-wrap page-wrap">
-              <Image src={"/case-3.png"} width={303} height={387} />
-              <Image src={"/case-2.png"} width={303} height={387} />
-              <Image src={"/case-1.png"} width={303} height={387} />
+              <Image
+                alt="growth eco"
+                src={"/case-3.png"}
+                width={303}
+                height={387}
+              />
+              <Image
+                alt="growth eco"
+                src={"/case-2.png"}
+                width={303}
+                height={387}
+              />
+              <Image
+                alt="growth eco"
+                src={"/case-1.png"}
+                width={303}
+                height={387}
+              />
             </div>
           ) : null}
           {activeLink == "Graphic" ? (
             <div className="case-img-wrap page-wrap">
-              <Image src={"/case-2.png"} width={303} height={387} />
-              <Image src={"/case-3.png"} width={303} height={387} />
-              <Image src={"/case-1.png"} width={303} height={387} />
+              <Image
+                alt="growth eco"
+                src={"/case-2.png"}
+                width={303}
+                height={387}
+              />
+              <Image
+                alt="growth eco"
+                src={"/case-3.png"}
+                width={303}
+                height={387}
+              />
+              <Image
+                alt="growth eco"
+                src={"/case-1.png"}
+                width={303}
+                height={387}
+              />
             </div>
           ) : null}
           {activeLink == "Digital Marketing" ? (
             <div className="case-img-wrap page-wrap">
-              <Image src={"/case-3.png"} width={303} height={387} />
-              <Image src={"/case-1.png"} width={303} height={387} />
-              <Image src={"/case-2.png"} width={303} height={387} />
+              <Image
+                alt="growth eco"
+                src={"/case-3.png"}
+                width={303}
+                height={387}
+              />
+              <Image
+                alt="growth eco"
+                src={"/case-1.png"}
+                width={303}
+                height={387}
+              />
+              <Image
+                alt="growth eco"
+                src={"/case-2.png"}
+                width={303}
+                height={387}
+              />
             </div>
           ) : null}
         </section>

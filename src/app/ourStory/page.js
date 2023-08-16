@@ -37,7 +37,12 @@ function OurStory() {
         <Link href={"/"} className={`${futuraMDBT.className} story-link`}>
           Contact Us
         </Link>
-        <Image src={"/growth-circle.png"} width={110} height={190} />
+        <Image
+          alt="growth eco"
+          src={"/growth-circle.png"}
+          width={110}
+          height={190}
+        />
       </header>
       <OurJourney
         futuraBK={futuraBK}

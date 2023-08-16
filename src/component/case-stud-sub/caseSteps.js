@@ -5,6 +5,7 @@ function CaseSteps({ futuraHv, futuraLTBT }) {
     <section>
       <section className="snake-step-con">
         <Image
+          alt="growth eco"
           className="steps-snake"
           src={"/snake-arrow.png"}
           width={150}
@@ -21,6 +22,7 @@ function CaseSteps({ futuraHv, futuraLTBT }) {
           </div>
           <div className="step1-img">
             <Image
+              alt="growth eco"
               className="img-steps"
               src={"/case-step-inner-1.png"}
               width={296}
@@ -66,6 +68,7 @@ function CaseSteps({ futuraHv, futuraLTBT }) {
         <div className="step4-wrap">
           <div className="step4-img">
             <Image
+              alt="growth eco"
               className="img-steps"
               src={"/case-step-inner-4.png"}
               width={296}
@@ -109,6 +112,7 @@ function CaseSteps({ futuraHv, futuraLTBT }) {
           </div>
           <div className="step5-img">
             <Image
+              alt="growth eco"
               className="img-steps"
               src={"/case-step-inner-5.png"}
               width={296}

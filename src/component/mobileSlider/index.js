@@ -24,7 +24,7 @@ function MobileSlider({ images }) {
         {images.map((i) => {
           return (
             <SwiperSlide key={i}>
-              <Image src={i} width={303} height={387} />
+              <Image alt="growth eco" src={i} width={303} height={387} />
             </SwiperSlide>
           );
         })}

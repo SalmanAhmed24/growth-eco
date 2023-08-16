@@ -61,7 +61,12 @@ function WhyCap({
           <div className="cus-ser-list">
             {listItems.map((i, ind) => (
               <div key={`${i}${ind}`} className="list-item">
-                <Image src={"/ser-rocket.png"} width={24} height={24} />
+                <Image
+                  alt="growth eco"
+                  src={"/ser-rocket.png"}
+                  width={24}
+                  height={24}
+                />
                 <p className={futuraLTBT.className}>{i}</p>
               </div>
             ))}

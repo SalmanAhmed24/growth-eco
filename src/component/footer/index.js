@@ -25,6 +25,7 @@ function Footer() {
   return (
     <footer className="footer-wrap">
       <Image
+        alt="growth eco"
         className="logo-footer"
         src={"/f-logo.png"}
         width={134}

@@ -18,7 +18,12 @@ function Header({ futuraBK, futuraMDBT, futuraLtBT, futuraHv }) {
       <Link href="/" className={`${futuraHv.className} header-about-a`}>
         Start Now
       </Link>
-      <Image src={"/about-header.png"} width={570} height={200} />
+      <Image
+        alt="growth eco"
+        src={"/about-header.png"}
+        width={570}
+        height={200}
+      />
     </header>
   );
 }

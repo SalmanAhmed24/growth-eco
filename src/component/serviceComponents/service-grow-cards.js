@@ -9,6 +9,7 @@ function ServiceCards({ futuraHv, futuraLTBT, cardsArr }) {
           return (
             <div key={ind} className={`card ${i.color}`}>
               <Image
+                alt="growth eco"
                 className="count-img"
                 src={`/amazon-ser-grow-card${
                   ind == 0
@@ -34,7 +35,12 @@ function ServiceCards({ futuraHv, futuraLTBT, cardsArr }) {
         <Link className={`${futuraHv.className} grow-btn-link`} href={"/"}>
           Ready To Grow
           <span>
-            <Image src={"/arrow-grow.png"} width={33} height={8} />
+            <Image
+              alt="growth eco"
+              src={"/arrow-grow.png"}
+              width={33}
+              height={8}
+            />
           </span>
         </Link>
       </div>

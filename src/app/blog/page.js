@@ -34,12 +34,14 @@ function Blog() {
       <header className="blog-header">
         <h1 className={futuraHv.className}>Welcome To</h1>
         <Image
+          alt="growth eco"
           src={"/blog-main-img.png"}
           className="blog-img"
           width={1400}
           height={228}
         />
         <Image
+          alt="growth eco"
           src={"/mobile-blog-img.png"}
           className="blog-img-m"
           width={272}
@@ -54,7 +56,12 @@ function Blog() {
       </header>
       <section className="main-blogs-wrap">
         <div className="main-article">
-          <Image src={"/sub-blog-big.png"} width={590} height={370} />
+          <Image
+            alt="growth eco"
+            src={"/sub-blog-big.png"}
+            width={590}
+            height={370}
+          />
           <p className={`${futuraLTBT.className} date`}>12-JUNE-2023</p>
           <h1 className={futuraHv.className}>
             The Power of Amazon Advertising Solutions
@@ -71,6 +78,7 @@ function Blog() {
         <div className="sub-articles">
           <div className="each-article">
             <Image
+              alt="growth eco"
               className="art"
               width={244}
               height={166}
@@ -87,12 +95,18 @@ function Blog() {
               </p>
               <Link href={"/"} className={`${futuraHv.className} read-more-p`}>
                 READ MORE
-                <Image src={"/read-para-arr.png"} width={33} height={8} />
+                <Image
+                  alt="growth eco"
+                  src={"/read-para-arr.png"}
+                  width={33}
+                  height={8}
+                />
               </Link>
             </div>
           </div>
           <div className="each-article">
             <Image
+              alt="growth eco"
               className="art"
               width={244}
               height={166}
@@ -109,12 +123,18 @@ function Blog() {
               </p>
               <Link href={"/"} className={`${futuraHv.className} read-more-p`}>
                 READ MORE
-                <Image src={"/read-para-arr.png"} width={33} height={8} />
+                <Image
+                  alt="growth eco"
+                  src={"/read-para-arr.png"}
+                  width={33}
+                  height={8}
+                />
               </Link>
             </div>
           </div>
           <div className="each-article">
             <Image
+              alt="growth eco"
               className="art"
               width={244}
               height={166}
@@ -131,7 +151,12 @@ function Blog() {
               </p>
               <Link href={"/"} className={`${futuraHv.className} read-more-p`}>
                 READ MORE
-                <Image src={"/read-para-arr.png"} width={33} height={8} />
+                <Image
+                  alt="growth eco"
+                  src={"/read-para-arr.png"}
+                  width={33}
+                  height={8}
+                />
               </Link>
             </div>
           </div>
@@ -141,7 +166,12 @@ function Blog() {
         <h1 className={futuraHv.className}>Selling on Amazon</h1>
         <div className="card-wraper">
           <div className="cards">
-            <Image src={"/grey-img.png"} width={276} height={258} />
+            <Image
+              alt="growth eco"
+              src={"/grey-img.png"}
+              width={276}
+              height={258}
+            />
             <p className={`${futuraLTBT.className} date`}>12-JUNE-2023</p>
             <h1 className={futuraHv.className}>
               Advanced Advertising Tips for Amazon Sellers
@@ -156,11 +186,21 @@ function Blog() {
               className={`${futuraHv.className} read-more-para-blue`}
             >
               Read More
-              <Image src={"/read-para-blue.png"} width={33} height={8} />
+              <Image
+                alt="growth eco"
+                src={"/read-para-blue.png"}
+                width={33}
+                height={8}
+              />
             </Link>
           </div>
           <div className="cards">
-            <Image src={"/grey-img.png"} width={276} height={258} />
+            <Image
+              alt="growth eco"
+              src={"/grey-img.png"}
+              width={276}
+              height={258}
+            />
             <p className={`${futuraLTBT.className} date`}>12-JUNE-2023</p>
             <h1 className={futuraHv.className}>
               Advanced Advertising Tips for Amazon Sellers
@@ -175,11 +215,21 @@ function Blog() {
               className={`${futuraHv.className} read-more-para-blue`}
             >
               Read More
-              <Image src={"/read-para-blue.png"} width={33} height={8} />
+              <Image
+                alt="growth eco"
+                src={"/read-para-blue.png"}
+                width={33}
+                height={8}
+              />
             </Link>
           </div>
           <div className="cards">
-            <Image src={"/grey-img.png"} width={276} height={258} />
+            <Image
+              alt="growth eco"
+              src={"/grey-img.png"}
+              width={276}
+              height={258}
+            />
             <p className={`${futuraLTBT.className} date`}>12-JUNE-2023</p>
             <h1 className={futuraHv.className}>
               Advanced Advertising Tips for Amazon Sellers
@@ -194,11 +244,21 @@ function Blog() {
               className={`${futuraHv.className} read-more-para-blue`}
             >
               Read More
-              <Image src={"/read-para-blue.png"} width={33} height={8} />
+              <Image
+                alt="growth eco"
+                src={"/read-para-blue.png"}
+                width={33}
+                height={8}
+              />
             </Link>
           </div>
           <div className="cards">
-            <Image src={"/grey-img.png"} width={276} height={258} />
+            <Image
+              alt="growth eco"
+              src={"/grey-img.png"}
+              width={276}
+              height={258}
+            />
             <p className={`${futuraLTBT.className} date`}>12-JUNE-2023</p>
             <h1 className={futuraHv.className}>
               Advanced Advertising Tips for Amazon Sellers
@@ -213,7 +273,12 @@ function Blog() {
               className={`${futuraHv.className} read-more-para-blue`}
             >
               Read More
-              <Image src={"/read-para-blue.png"} width={33} height={8} />
+              <Image
+                alt="growth eco"
+                src={"/read-para-blue.png"}
+                width={33}
+                height={8}
+              />
             </Link>
           </div>
         </div>

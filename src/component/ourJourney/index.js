@@ -5,12 +5,14 @@ function OurJourney({ futuraBK, futuraMDBT, futuraLtBT, futuraHv }) {
   return (
     <section className="ourJourney">
       <Image
+        alt="growth eco"
         className="downward"
         src={"/downwards.png"}
         width={173}
         height={1915}
       />
       <Image
+        alt="growth eco"
         className="slim-line"
         src={"/slim-line.png"}
         width={141}
@@ -27,12 +29,12 @@ function OurJourney({ futuraBK, futuraMDBT, futuraLtBT, futuraHv }) {
           </p>
         </div>
         <div className="j-image-wrap">
-          <Image src={"/right.png"} width={386} height={288} />
+          <Image alt="growth eco" src={"/right.png"} width={386} height={288} />
         </div>
       </section>
       <section className="journey-wrap alternate-mobile">
         <div className="j-image-wrap">
-          <Image src={"/right.png"} width={386} height={288} />
+          <Image alt="growth eco" src={"/right.png"} width={386} height={288} />
         </div>
         <div className="j-info">
           <h1 className={futuraHv.className}>The journey began here!</h1>
@@ -55,12 +57,12 @@ function OurJourney({ futuraBK, futuraMDBT, futuraLtBT, futuraHv }) {
           </p>
         </div>
         <div className="j-image-wrap">
-          <Image src={"/right.png"} width={386} height={288} />
+          <Image alt="growth eco" src={"/right.png"} width={386} height={288} />
         </div>
       </section>
       <section className="journey-wrap alternate-mobile">
         <div className="j-image-wrap">
-          <Image src={"/right.png"} width={386} height={288} />
+          <Image alt="growth eco" src={"/right.png"} width={386} height={288} />
         </div>
         <div className="j-info">
           <h1 className={futuraHv.className}>The journey began here!</h1>
@@ -82,6 +84,7 @@ function OurJourney({ futuraBK, futuraMDBT, futuraLtBT, futuraHv }) {
             moment they land on our site.
           </p>
           <Image
+            alt="growth eco"
             className="journey-mid-img"
             src={"/journey-mid.png"}
             width={869}
