@@ -1,11 +1,14 @@
 "use client";
 import React, { useState } from "react";
+import { Poppins } from "next/font/google";
+const poppins = Poppins({
+  weight: ["300", "400", "600", "700", "900"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  display: "swap",
+});
 import "./index.scss";
 function FAQs({
-  futuraBK,
-  futuraMDBT,
-  futuraHv,
-  futuraLtBT,
   question1,
   question2,
   question3,
@@ -34,71 +37,59 @@ function FAQs({
   return (
     <section className="faqs-main-wrapper">
       <div className="faqs-sec">
-        <h1 className={futuraHv.className}>Frequently Asked Questions</h1>
-        <p className={futuraLtBT.className}>
+        <h1 className={poppins.className}>Frequently Asked Questions</h1>
+        <p className={poppins.className}>
           Growth Echo implemented a customer success program to ensure high
           customer satisfaction and retention rates. Growth Echo implemented a
           customer success program to ensure high customer satisfaction and
           retention rates.
         </p>
-        <button
-          onClick={() => setAccordion("1")}
-          className={futuraMDBT.className}
-        >
+        <button onClick={() => setAccordion("1")} className={poppins.className}>
           {question1}
         </button>
 
-        {accordion == "1" ? <p className={futuraBK.className}>{tab1}</p> : null}
+        {accordion == "1" ? <p className={poppins.className}>{tab1}</p> : null}
 
-        <button
-          onClick={() => setAccordion("2")}
-          className={futuraMDBT.className}
-        >
+        <button onClick={() => setAccordion("2")} className={poppins.className}>
           {question2}
         </button>
-        {accordion == "2" ? <p className={futuraBK.className}>{tab2}</p> : null}
+        {accordion == "2" ? <p className={poppins.className}>{tab2}</p> : null}
 
-        <button
-          onClick={() => setAccordion("3")}
-          className={futuraMDBT.className}
-        >
+        <button onClick={() => setAccordion("3")} className={poppins.className}>
           {question3}
         </button>
-        {accordion == "3" ? <p className={futuraBK.className}>{tab3}</p> : null}
+        {accordion == "3" ? <p className={poppins.className}>{tab3}</p> : null}
 
-        <button
-          onClick={() => setAccordion("4")}
-          className={futuraMDBT.className}
-        >
+        <button onClick={() => setAccordion("4")} className={poppins.className}>
           {question4}
         </button>
-        {accordion == "4" ? <p className={futuraBK.className}>{tab4}</p> : null}
+        {accordion == "4" ? <p className={poppins.className}>{tab4}</p> : null}
       </div>
       <div className="form-sec">
         <div className="inner-wrap">
-          <h1 className={futuraHv.className}>Ask a different question</h1>
+          <h1 className={poppins.className}>Ask a different question</h1>
           <form onSubmit={handleSubmit} className="form-wrap">
             <input
               type={"text"}
               onChange={handleName}
-              className={`${futuraLtBT.className} input-cus`}
+              className={`${poppins.className} input-cus`}
               placeholder="Name"
             />
             <input
               type={"email"}
               onChange={handleEmail}
-              className={`${futuraLtBT.className} input-cus`}
+              className={`${poppins.className} input-cus`}
               placeholder="Email"
             />
             <textarea
-              className={`${futuraLtBT.className} textarea-cus`}
+              className={`${poppins.className} textarea-cus`}
               rows={5}
               placeholder="Message"
               onChange={handleMessage}
             />
             <input
               type="submit"
-              className={`${futuraHv.className} subBtn`}
+              className={`${poppins.className} subBtn`}
               value="Submit"
             />
           </form>

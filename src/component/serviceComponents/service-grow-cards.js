@@ -1,7 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import "./serviceComp.scss";
-function ServiceCards({ futuraHv, futuraLTBT, cardsArr }) {
+import { Poppins } from "next/font/google";
+const poppins = Poppins({
+  weight: ["300", "400", "600", "700", "900"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  display: "swap",
+});
+function ServiceCards({ cardsArr }) {
   return (
     <section className="grow-ser-card-con">
       <div className="grow-ser-card-wrap">
@@ -25,14 +32,14 @@ function ServiceCards({ futuraHv, futuraLTBT, cardsArr }) {
                 width={86}
                 height={86}
               />
-              <h1 className={futuraHv.className}>{i.cardsH1}</h1>
-              <p className={futuraLTBT.className}>{i.cardPara}</p>
+              <h1 className={poppins.className}>{i.cardsH1}</h1>
+              <p className={poppins.className}>{i.cardPara}</p>
             </div>
           );
         })}
       </div>
       <div className="grow-btn-link">
-        <Link className={`${futuraHv.className} grow-btn-link`} href={"/"}>
+        <Link className={`${poppins.className} grow-btn-link`} href={"/"}>
           Ready To Grow
           <span>
             <Image

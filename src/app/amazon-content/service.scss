@@ -85,7 +85,7 @@
                 right: 20px;
             }
             @include from-320-400{
-                width: 40%;
+                width: 43%;
                 bottom: 17px;
             }
                 h1{
@@ -94,6 +94,9 @@
                     line-height: normal;
                     @include from-320-850{
                         font-size: 18px;
+                    }
+                    @include from-320-575{
+                        font-size: 13px;
                     }
                 }
                 p{

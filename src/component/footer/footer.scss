@@ -8,6 +8,11 @@
         @content;
     }
 }
+@mixin from-320-to-992{
+    @media screen and (min-width:320px) and (max-width:992px){
+        @content;
+    }
+}
 @mixin from-575-to-992{
     @media screen and (min-width:575px) and (max-width:992px){
         @content;
@@ -29,7 +34,7 @@
     }
     @include from-575-to-992{
         min-height: 550px;
-        background-position-y: -80px;
+        background-position-y: -50px;
     }
     @include from-320-to-575{
         padding: 20px 30px;
@@ -48,22 +53,25 @@
             text-align: center;
             color:#fff;
             line-height: normal;
-            @include from-320-to-575{
+            font-size: 16px;
+            font-weight: 300;
+            @include from-320-to-992{
                 width: 100%;
+                font-size: 14px;
             }
         }
 }
 .footer-links-wrap{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 50px;
+    margin-top: 20px;
         .links-wrap{
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             width: 21%;
-            @include from-320-to-575{
-                margin-bottom: 50px;
+            @include from-320-to-992{
+                margin-bottom: 20px;
             }
             @include from-320-to-575{
                 width: 100%;
@@ -73,15 +81,24 @@
                 width: 50%;
             }
                 h1{
-                    font-size: 22px;
+                    font-size: 18px;
+                    font-weight: 600;
                     color: #fff;
                     margin-bottom: 10px;
+                    @include from-320-to-992{
+                        font-size: 16px;
+                    }
                 }
                 .footer-ul{
                     list-style: none;
                     color: #fff;
                     li{
                         line-height: normal;
+                        font-size: 16px;
+                        font-weight: 300;
+                        @include from-320-to-992{
+                            font-size: 14px;
+                        }
                     }
                 }
         }
@@ -104,10 +121,13 @@
                 padding-left: 0px;
             }
                 h1{
-                    font-size: 22px;
+                    font-size: 18px;
                     color: #fff;
                     margin-bottom: 10px;
                     line-height: normal; 
+                    @include from-320-to-992{
+                        font-size: 16px;
+                    }
                 }
                 .footer-form-wrap{
                     display: flex;
@@ -127,6 +147,9 @@
                                 &::placeholder{
                                     color: #fff;
                                 }
+                                @include from-320-to-992{
+                                    font-size: 14px;
+                                }
                                 @include from-320-to-575{
                                     width: 100%;
                                     margin-bottom: 20px;
@@ -139,7 +162,7 @@
                             color: #000;
                             font-size: 22px;
                             font-weight: 400;
-                            padding: 0px 20px;
+                            padding: 0px 10px;
                             @include from-320-to-575{
                                 align-self: center;
                             }

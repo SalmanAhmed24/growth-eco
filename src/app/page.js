@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import localFont from "@next/font/local";
+import { Poppins } from "next/font/google";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -10,25 +11,31 @@ import Link from "next/link";
 import FAQs from "@/component/faq";
 import MobileSlider from "@/component/mobileSlider";
 import Testimonials from "@/component/testimonials";
-const futuraHv = localFont({
-  src: "./fonts/FutuHv.ttf",
-  weight: "400",
-  style: "normal",
-});
-const futuraBK = localFont({
-  src: "./fonts/FutuBk.ttf",
-  weight: "400",
-  style: "normal",
-});
-const futuraMDBT = localFont({
-  src: "./fonts/FutuMd.ttf",
-  weight: "400",
-  style: "normal",
-});
-const futuraLTBT = localFont({
-  src: "./fonts/FuturaLtBT.ttf",
-  weight: "400",
-  style: "normal",
+// const futuraHv = localFont({
+//   src: "./fonts/FutuHv.ttf",
+//   weight: "400",
+//   style: "normal",
+// });
+// const futuraBK = localFont({
+//   src: "./fonts/FutuBk.ttf",
+//   weight: "400",
+//   style: "normal",
+// });
+// const futuraMDBT = localFont({
+//   src: "./fonts/FutuMd.ttf",
+//   weight: "400",
+//   style: "normal",
+// });
+// const futuraLTBT = localFont({
+//   src: "./fonts/FuturaLtBT.ttf",
+//   weight: "400",
+//   style: "normal",
+// });
+const poppins = Poppins({
+  weight: ["300", "400", "600", "700", "900"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  display: "swap",
 });
 const settings = {
   dots: true,
@@ -44,15 +51,16 @@ export default function Home() {
   return (
     <main>
       <header className="header-wrap">
+        <img src="/home-new-bg.svg" className="headerImg" alt="home-bg" />
         <section className="header-content-wrap">
-          <h1 className={futuraHv.className}>
+          <h1 className={poppins.className}>
             Full potential to your Amazon business with our powerhouse solutions
           </h1>
-          <h2 className={futuraHv.className}>
+          {/* <h2 className={poppins.className}>
             Need It <span>Now</span>?
-          </h2>
+          </h2> */}
           <div className={`btnWrap`}>
-            <button className={`${futuraHv.className} startBtn`}>
+            <button className={`${poppins.className} startBtn`}>
               Contact Us
             </button>
           </div>
@@ -60,16 +68,16 @@ export default function Home() {
       </header>
       <section className="triangle-bg">
         <div className="compt-wrap">
-          <h1 className={futuraHv.className}>
+          <h1 className={poppins.className}>
             Ready to conquer Amazon&apos;s <span>fierce competition</span>?
           </h1>
-          <p className={futuraLTBT.className}>
+          <p className={poppins.className}>
             Supercharge your business to skyrocket profits and amplify
             visibility without draining your budget on PPC. Contact us and
             triumph in the Amazon marketplace today.
           </p>
           <div className="boost-btn-wrap">
-            <button className={futuraHv.className}>
+            <button className={poppins.className}>
               Boost Your Visibility{" "}
               <span>
                 <Image
@@ -85,7 +93,7 @@ export default function Home() {
         <Image
           alt="growth eco"
           className="bg-line-img"
-          src={"/comp-bg-tic.png"}
+          src={"/tick-svg.svg"}
           width={1470}
           height={1293}
           layout="responsive"
@@ -100,42 +108,27 @@ export default function Home() {
             layout="responsive"
           />
           <div className="single-step">
-            <Image
-              alt="growth eco"
-              src={"/step-1.png"}
-              width={100}
-              height={140}
-            />
-            <h2 className={futuraHv.className}>Research and Analysis</h2>
-            <ul className={futuraBK.className}>
+            <img alt="growth eco" src={"/scale-step1.svg"} />
+            <h2 className={poppins.className}>Research and Analysis</h2>
+            <ul className={poppins.className}>
               <li>Analyze demands Identifying</li>
               <li>Competitors</li>
               <li>Examined new trends</li>
             </ul>
           </div>
           <div className="single-step2">
-            <h2 className={futuraHv.className}>Strategy Development</h2>
-            <ul className={futuraBK.className}>
+            <h2 className={poppins.className}>Strategy Development</h2>
+            <ul className={poppins.className}>
               <li>Build a strategy</li>
               <li>Turn thoughts into reality</li>
               <li>Execute the plan</li>
             </ul>
-            <Image
-              alt="growth eco"
-              src={"/step-2.png"}
-              width={100}
-              height={140}
-            />
+            <img alt="growth eco" src={"/scale-step2.svg"} />
           </div>
           <div className="single-step3">
-            <Image
-              alt="growth eco"
-              src={"/step-3.png"}
-              width={110}
-              height={180}
-            />
-            <h2 className={futuraHv.className}>Implementation</h2>
-            <ul className={futuraBK.className}>
+            <img alt="growth eco" src={"/scale-step3.svg"} />
+            <h2 className={poppins.className}>Implementation</h2>
+            <ul className={poppins.className}>
               <li>Designing materials</li>
               <li>Advertising campaigns</li>
               <li>Optimizing Digital Presence</li>
@@ -143,23 +136,18 @@ export default function Home() {
             </ul>
           </div>
           <div className="single-step4">
-            <h2 className={futuraHv.className}>Monitoring</h2>
-            <ul className={futuraBK.className}>
+            <h2 className={poppins.className}>Monitoring</h2>
+            <ul className={poppins.className}>
               <li>Analyzing data</li>
               <li>Measuring results</li>
               <li>Key performance</li>
             </ul>
-            <Image
-              alt="growth eco"
-              src={"/step-4.png"}
-              width={100}
-              height={140}
-            />
+            <img alt="growth eco" src={"/scale-step5.svg"} />
           </div>
         </div>
         <div className="services-wrap">
-          <h1 className={futuraHv.className}>Services</h1>
-          <p className={futuraLTBT.className}>
+          <h1 className={poppins.className}>Services</h1>
+          <p className={poppins.className}>
             Every business is unique, and we get along with you as a team to
             understand your business module and deliver a wide range of services
             tailored to your business needs that keep you ahead of the
@@ -190,14 +178,14 @@ export default function Home() {
               width={250}
               height={100}
             />
-            <h2 className={futuraHv.className}>Amazon product research</h2>
-            <p className={futuraBK.className}>
+            <h2 className={poppins.className}>Amazon product research</h2>
+            <p className={poppins.className}>
               GrowthEcho dives deep into market trends, competitor analysis, and
               customer preferences to identify winning products that will
               skyrocket your sales on Amazon. Let us handle your Amazon Product
               Research with our expert team!
             </p>
-            <button className={futuraHv.className}>Uncover Within</button>
+            <button className={poppins.className}>Uncover Within</button>
           </div>
           <div className="card top">
             <Image
@@ -206,16 +194,16 @@ export default function Home() {
               width={250}
               height={100}
             />
-            <h2 className={futuraHv.className}>
+            <h2 className={poppins.className}>
               Product Listing and optimization
             </h2>
-            <p className={futuraBK.className}>
+            <p className={poppins.className}>
               We&apos;ll craft compelling listings that captivate customers,
               boost rankings, and drive more sales, giving your Amazon business
               the edge it needs to thrive. Stand out from the crowd with our
               expert Product Listing and Optimization service!
             </p>
-            <button className={futuraHv.className}>Uncover Within</button>
+            <button className={poppins.className}>Uncover Within</button>
           </div>
           <div className="card bottom">
             <Image
@@ -224,14 +212,14 @@ export default function Home() {
               width={250}
               height={100}
             />
-            <h2 className={futuraHv.className}>Amazon Advertising</h2>
-            <p className={futuraBK.className}>
+            <h2 className={poppins.className}>Amazon Advertising</h2>
+            <p className={poppins.className}>
               Let Us Supercharge Your Business on the World&apos;s Largest
               Marketplace. We create ad strategies, inform ad spend decisions
               with competitive spend data, and design ads that hook the random
               scrolling audience and convert them into favorite customers.
             </p>
-            <button className={futuraHv.className}>Uncover Within</button>
+            <button className={poppins.className}>Uncover Within</button>
           </div>
           <div className="card bottom">
             <Image
@@ -240,18 +228,18 @@ export default function Home() {
               width={250}
               height={100}
             />
-            <h2 className={futuraHv.className}>Product Sourcing</h2>
-            <p className={futuraBK.className}>
+            <h2 className={poppins.className}>Product Sourcing</h2>
+            <p className={poppins.className}>
               From finding the hottest products to negotiating the best deals,
               our experienced team will ensure you have a steady supply of
               high-demand items to boost your sales. Let&apos;s start sourcing
               success together!
             </p>
-            <button className={futuraHv.className}>Uncover Within</button>
+            <button className={poppins.className}>Uncover Within</button>
           </div>
         </div>
         <div className="uncover-wrap">
-          <button className={futuraHv.className}>Uncover unique fields</button>
+          <button className={poppins.className}>Uncover unique fields</button>
           <span>
             <Image
               alt="growth eco"
@@ -263,8 +251,8 @@ export default function Home() {
         </div>
       </section>
       <section className="sales-wrap">
-        <h1 className={futuraHv.className}>Our Sales</h1>
-        <p className={futuraLTBT.className}>
+        <h1 className={poppins.className}>Our Sales</h1>
+        <p className={poppins.className}>
           Unlock the full potential of your Amazon business with our top-notch
           services, maximizing sales and boosting your success on the
           world&apos;s largest online marketplace.
@@ -294,8 +282,8 @@ export default function Home() {
       </section>
       <section className="clients-wrap">
         <div>
-          <h1 className={futuraHv.className}>Our Clients </h1>
-          <p className={futuraLTBT.className}>
+          <h1 className={poppins.className}>Our Clients </h1>
+          <p className={poppins.className}>
             Our clients rave about our Amazon service provider company, praising
             us for the game-changing strategies, exceptional results, and
             unparalleled support that have transformed their businesses and left
@@ -386,6 +374,7 @@ export default function Home() {
         </div>
       </section>
       <Testimonials
+        poppins={poppins}
         sliderArr={[
           {
             name: "Ivan",
@@ -405,16 +394,19 @@ export default function Home() {
             testimonial:
               "Highly recommend! GrowthEcho's team boosted our Amazon presence, amazon keyword ranking, converting clicks into loyal customers. Excellent service!",
           },
+          {
+            name: "Hans",
+            profession: "",
+            testimonial:
+              "Highly recommend! GrowthEcho's team boosted our Amazon presence, amazon keyword ranking, converting clicks into loyal customers. Excellent service!",
+          },
         ]}
         heading={true}
       />
       <section className="case-studies">
-        <h1 className={futuraHv.className}>Case Studies</h1>
+        <h1 className={poppins.className}>Case Studies</h1>
         <div className="case-links-wrap">
-          <ul
-            onClick={handleLinks}
-            className={`${futuraBK.className} links-ul`}
-          >
+          <ul onClick={handleLinks} className={`${poppins.className} links-ul`}>
             <li className={activeLink == "Branding" ? "activeLinkCS" : ""}>
               Branding
             </li>
@@ -542,7 +534,7 @@ export default function Home() {
           />
         ) : null}
         <div className="case-st-all-btn">
-          <Link className={`${futuraBK.className} explore-all`} href={"#"}>
+          <Link className={`${poppins.className} explore-all`} href={"#"}>
             Explore All
             <span>
               <Image
@@ -556,22 +548,19 @@ export default function Home() {
         </div>
       </section>
       <section className="quote-sec">
-        <h1 className={futuraHv.className}>
+        <h1 className={poppins.className}>
           Elevate your Amazon business to new heights with our premium services,
           where success meets excellence, and your satisfaction is our greatest
           achievement.
         </h1>
         <div className="quote-btn-wrap">
           <Image alt="growth eco" src={"/rocket2.png"} width={25} height={25} />
-          <button className={futuraHv.className}>Start Now</button>
+          <button className={poppins.className}>Start Now</button>
           <Image alt="growth eco" src={"/rocket1.png"} width={25} height={25} />
         </div>
       </section>
       <FAQs
-        futuraBK={futuraBK}
-        futuraMDBT={futuraMDBT}
-        futuraLtBT={futuraLTBT}
-        futuraHv={futuraHv}
+        poppins={poppins}
         question1={"How will GrowthEcho manage my Amazon account?"}
         question2={"How can GrowthEcho services benefit my Amazon business?"}
         question3={

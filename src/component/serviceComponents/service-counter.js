@@ -2,9 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import "./serviceComp.scss";
 import SliderSubComp from "./sliderSubComp";
+import { Poppins } from "next/font/google";
+const poppins = Poppins({
+  weight: ["300", "400", "600", "700", "900"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  display: "swap",
+});
 function ServiceCounter({
-  futuraHv,
-  futuraLTBT,
   headingMain,
   paraMain,
   headingSub1,
@@ -16,16 +21,16 @@ function ServiceCounter({
     <section className="ser-counter">
       <div className="counter-info-wrap">
         <div className="singleItem first">
-          <h1 className={futuraHv.className}>{headingMain}</h1>
-          <p className={futuraLTBT.className}>{paraMain}</p>
+          <h1 className={poppins.className}>{headingMain}</h1>
+          <p className={poppins.className}>{paraMain}</p>
         </div>
         <div className="singleItem">
-          <h1 className={futuraHv.className}>{headingSub1}</h1>
-          <p className={futuraLTBT.className}>{paraSub1}</p>
+          <h1 className={poppins.className}>{headingSub1}</h1>
+          <p className={poppins.className}>{paraSub1}</p>
         </div>
         <div className="singleItem">
-          <h1 className={futuraHv.className}>{headingSub2}</h1>
-          <p className={futuraLTBT.className}>{paraSub2}</p>
+          <h1 className={poppins.className}>{headingSub2}</h1>
+          <p className={poppins.className}>{paraSub2}</p>
         </div>
       </div>
       <div className="slider-ser-wrap">

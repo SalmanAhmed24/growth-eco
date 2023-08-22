@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./slider.scss";
 import Image from "next/image";
-function SliderAbout({ futuraBK, futuraMDBT, futuraLtBT, futuraHv }) {
+function SliderAbout({ futuraBK, futuraMDBT, futuraLtBT, futuraHv, poppins }) {
   return (
     <section className="slider-about">
       <Slider

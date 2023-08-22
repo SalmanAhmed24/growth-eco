@@ -1,12 +1,19 @@
 import "./serviceComp.scss";
 import Image from "next/image";
 import Link from "next/link";
-function ServiceHeader({ futuraHv, futuraLTBT, heading1, para1 }) {
+import { Poppins } from "next/font/google";
+const poppins = Poppins({
+  weight: ["300", "400", "600", "700", "900"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  display: "swap",
+});
+function ServiceHeader({ heading1, para1 }) {
   return (
     <header className="header">
-      <h1 className={futuraHv.className}>{heading1}</h1>
-      <p className={futuraLTBT.className}>{para1}</p>
-      <Link href={"/"} className={futuraHv.className}>
+      <h1 className={poppins.className}>{heading1}</h1>
+      <p className={poppins.className}>{para1}</p>
+      <Link href={"/"} className={poppins.className}>
         Start Now
       </Link>
       <Image

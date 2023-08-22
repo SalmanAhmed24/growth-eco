@@ -1,8 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Poppins } from "next/font/google";
+const poppins = Poppins({
+  weight: ["300", "400", "600", "700", "900"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  display: "swap",
+});
 function ServiceWhy({
-  futuraHv,
-  futuraLTBT,
   headingMain,
   spanMain,
   mainPara,
@@ -12,9 +17,9 @@ function ServiceWhy({
 }) {
   return (
     <section className="amazon-ser-con">
-      <h1 className={futuraHv.className}>
+      <h1 className={poppins.className}>
         {headingMain}
-        <span className={futuraHv.className}>{spanMain}</span>
+        <span className={poppins.className}>{spanMain}</span>
       </h1>
       <div className="amazon-ser-card">
         <div className="image-wrap">
@@ -26,18 +31,18 @@ function ServiceWhy({
           />
         </div>
         <div className="info-con">
-          <p className={futuraLTBT.className}>{mainPara}</p>
+          <p className={poppins.className}>{mainPara}</p>
           <div className="cards-inner-wrap">
             {whyCardsArr.map((i, ind) => {
               return (
                 <div key={ind} className="inner">
-                  <p className={futuraHv.className}>{i.cardText}</p>
+                  <p className={poppins.className}>{i.cardText}</p>
                 </div>
               );
             })}
           </div>
           <div className="amazon-inner-link">
-            <Link href={"/"} className={futuraHv.className}>
+            <Link href={"/"} className={poppins.className}>
               Start Now
             </Link>
           </div>
@@ -45,7 +50,7 @@ function ServiceWhy({
       </div>
       <div className="grow-sec">
         <div className="grow-sec-con">
-          <h1 className={futuraHv.className}>{trustHeading}</h1>
+          <h1 className={poppins.className}>{trustHeading}</h1>
           {trustCardsArr.map((i, ind) => {
             return (
               <div key={ind} className="inner-img-con-wrap">
@@ -56,14 +61,14 @@ function ServiceWhy({
                   height={45}
                 />
                 <div className="inner-grow-wrap">
-                  <h1 className={futuraHv.className}>{i.trustInHead}</h1>
-                  <p className={futuraLTBT.className}>{i.trustInPara}</p>
+                  <h1 className={poppins.className}>{i.trustInHead}</h1>
+                  <p className={poppins.className}>{i.trustInPara}</p>
                 </div>
               </div>
             );
           })}
           <div className="grow-link-wrap">
-            <Link href={"/"} className={futuraHv.className}>
+            <Link href={"/"} className={poppins.className}>
               Ready To Grow{" "}
               <Image
                 alt="growth eco"

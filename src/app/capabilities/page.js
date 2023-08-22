@@ -5,44 +5,51 @@ import Image from "next/image";
 import WhyCap from "@/component/whyCap";
 import Testimonials from "@/component/testimonials";
 import FAQs from "@/component/faq";
-const futuraHv = localFont({
-  src: "../fonts/FutuHv.ttf",
-  weight: "400",
-  style: "normal",
-});
-const futuraBK = localFont({
-  src: "../fonts/FutuBk.ttf",
-  weight: "400",
-  style: "normal",
-});
-const futuraMDBT = localFont({
-  src: "../fonts/FutuMd.ttf",
-  weight: "400",
-  style: "normal",
-});
-const futuraLTBT = localFont({
-  src: "../fonts/FuturaLtBT.ttf",
-  weight: "400",
-  style: "normal",
+import { Poppins } from "next/font/google";
+// const futuraHv = localFont({
+//   src: "../fonts/FutuHv.ttf",
+//   weight: "400",
+//   style: "normal",
+// });
+// const futuraBK = localFont({
+//   src: "../fonts/FutuBk.ttf",
+//   weight: "400",
+//   style: "normal",
+// });
+// const futuraMDBT = localFont({
+//   src: "../fonts/FutuMd.ttf",
+//   weight: "400",
+//   style: "normal",
+// });
+// const futuraLTBT = localFont({
+//   src: "../fonts/FuturaLtBT.ttf",
+//   weight: "400",
+//   style: "normal",
+// });
+const poppins = Poppins({
+  weight: ["300", "400", "600", "700", "900"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  display: "swap",
 });
 function Capabilities() {
   return (
     <section className="cap-main-con">
       <header className="cap-header">
-        <h1 className={futuraHv.className}>
+        <h1 className={poppins.className}>
           Amazon Services to grow your business
         </h1>
-        <p className={futuraLTBT.className}>
+        <p className={poppins.className}>
           With a steadfast commitment to excellence and a customer-centric
           approach, we cater to the needs of our clients, who are wondering how
           to sell products on Amazon and enable them to achieve success!
         </p>
-        <Link href={"/"} className={`${futuraHv.className} cap-start-link`}>
+        <Link href={"/"} className={`${poppins.className} cap-start-link`}>
           Start Now
         </Link>
       </header>
       <section className="why-cap">
-        <h1 className={futuraHv.className}>Why Choose Growth Echo?</h1>
+        <h1 className={poppins.className}>Why Choose Growth Echo?</h1>
         <div className="why-cap-card-wrap">
           <div className="card">
             <Image
@@ -59,12 +66,12 @@ function Capabilities() {
               height={67}
               className="white"
             />
-            <h1 className={futuraHv.className}>Expertise</h1>
-            <h1 className={`${futuraLTBT.className} thin-head`}>Expertise</h1>
-            <p className={futuraHv.className}>
+            <h1 className={poppins.className}>Expertise</h1>
+            <h1 className={`${poppins.className} thin-head`}>Expertise</h1>
+            <p className={poppins.className}>
               Proven track record of maximizing profitability
             </p>
-            <p className={`${futuraLTBT.className} thin-p`}>
+            <p className={`${poppins.className} thin-p`}>
               Proven track record of maximizing profitability
             </p>
           </div>
@@ -83,15 +90,15 @@ function Capabilities() {
               height={67}
               className="white"
             />
-            <h1 className={`${futuraLTBT.className} thin-head`}>
+            <h1 className={`${poppins.className} thin-head`}>
               Tailored Solutions
             </h1>
 
-            <h1 className={futuraHv.className}>Tailored Solutions</h1>
-            <p className={futuraHv.className}>
+            <h1 className={poppins.className}>Tailored Solutions</h1>
+            <p className={poppins.className}>
               Personalized strategies that align with your brand
             </p>
-            <p className={`${futuraLTBT.className} thin-p`}>
+            <p className={`${poppins.className} thin-p`}>
               Personalized strategies that align with your brand{" "}
             </p>
           </div>
@@ -110,17 +117,17 @@ function Capabilities() {
               height={67}
               className="white"
             />
-            <h1 className={`${futuraLTBT.className} thin-head`}>
+            <h1 className={`${poppins.className} thin-head`}>
               Full-Service Offerings
             </h1>
-            <h1 className={futuraHv.className}>Full-Service Offerings</h1>
-            <p className={futuraHv.className}>
+            <h1 className={poppins.className}>Full-Service Offerings</h1>
+            <p className={poppins.className}>
               Handling your Amazon journey and allowing you to focus on other
               aspects.
             </p>
-            <p className={`${futuraLTBT.className} thin-p`}>
+            <p className={`${poppins.className} thin-p`}>
               Handling your Amazon journey and allowing you to focus on other
-              aspects.{" "}
+              aspects.
             </p>
           </div>
           <div className="card card-margin">
@@ -138,15 +145,13 @@ function Capabilities() {
               height={67}
               className="white"
             />
-            <h1 className={`${futuraLTBT.className} thin-head`}>
-              Proven Results
-            </h1>
-            <h1 className={futuraHv.className}>Proven Results</h1>
-            <p className={futuraHv.className}>
+            <h1 className={`${poppins.className} thin-head`}>Proven Results</h1>
+            <h1 className={poppins.className}>Proven Results</h1>
+            <p className={poppins.className}>
               Helped businesses establish a strong presence on Amazon&apos;s
               marketplace.
             </p>
-            <p className={`${futuraLTBT.className} thin-p`}>
+            <p className={`${poppins.className} thin-p`}>
               Helped businesses establish a strong presence on Amazon&apos;s
               marketplace.
             </p>
@@ -158,6 +163,7 @@ function Capabilities() {
         heading={"Done for you Amazon"}
         headingSec={"Services"}
         span={"account management"}
+        poppins={poppins}
         content={
           "Want to get rid of day-to-day Amazon operations? Our Amazon account management service company specializes in helping Amazon business owners by taking day-to-day operations off your shoulders so you can focus on other crucial business aspects. Done for you Amazon account manager service includes"
         }
@@ -173,6 +179,7 @@ function Capabilities() {
       />
       <div className="cus-cap-test">
         <Testimonials
+          poppins={poppins}
           sliderArr={[
             {
               name: "Jhon",
@@ -197,6 +204,7 @@ function Capabilities() {
         />
       </div>
       <WhyCap
+        poppins={poppins}
         mainImg={"/cap-ser-img2.png"}
         heading={"Amazon"}
         headingSec={""}
@@ -215,6 +223,7 @@ function Capabilities() {
         url={"/amazon-advertising"}
       />
       <Testimonials
+        poppins={poppins}
         sliderArr={[
           {
             name: "Ivan",
@@ -238,6 +247,7 @@ function Capabilities() {
         heading={false}
       />
       <WhyCap
+        poppins={poppins}
         mainImg={"/cap-ser-img3.png"}
         heading={"Amazon"}
         headingSec={"content design"}
@@ -255,6 +265,7 @@ function Capabilities() {
         url={"/amazon-content"}
       />
       <Testimonials
+        poppins={poppins}
         sliderArr={[
           {
             name: "Pierre",
@@ -278,6 +289,7 @@ function Capabilities() {
         heading={false}
       />
       <WhyCap
+        poppins={poppins}
         mainImg={"/cap-ser-img4.png"}
         heading={""}
         headingSec={"Product"}
@@ -295,6 +307,7 @@ function Capabilities() {
         url={"/product-sourcing"}
       />
       <Testimonials
+        poppins={poppins}
         sliderArr={[
           {
             name: "Giovanni",
@@ -318,6 +331,7 @@ function Capabilities() {
         heading={false}
       />
       <WhyCap
+        poppins={poppins}
         mainImg={"/cap-ser-img.png"}
         heading={"Amazon"}
         headingSec={"Research"}
@@ -335,6 +349,7 @@ function Capabilities() {
         url={"/product-research"}
       />
       <Testimonials
+        poppins={poppins}
         sliderArr={[
           {
             name: "Ingrid",
@@ -358,6 +373,7 @@ function Capabilities() {
         heading={false}
       />
       <WhyCap
+        poppins={poppins}
         mainImg={"/cap-ser-img2.png"}
         heading={"Amazon Product Listing"}
         headingSec={"Optimization"}
@@ -375,6 +391,7 @@ function Capabilities() {
         url={"/amazon-advertising"}
       />
       <Testimonials
+        poppins={poppins}
         sliderArr={[
           {
             name: "Ekaterina",
@@ -398,7 +415,8 @@ function Capabilities() {
         heading={false}
       />
       <WhyCap
-        mainImg={"/cap-ser-img2.png"}
+        poppins={poppins}
+        mainImg={"/cap-ser-img.png"}
         heading={"Brand"}
         headingSec={""}
         span={"Storefront"}
@@ -415,6 +433,7 @@ function Capabilities() {
         url={"/brand-storefront"}
       />
       <Testimonials
+        poppins={poppins}
         sliderArr={[
           {
             name: "Mary Johnson",
@@ -438,6 +457,7 @@ function Capabilities() {
         heading={false}
       />
       <WhyCap
+        poppins={poppins}
         mainImg={"/cap-ser-img4.png"}
         heading={"Listing"}
         headingSec={""}
@@ -455,6 +475,7 @@ function Capabilities() {
         url={"/listing-reinstatement"}
       />
       <Testimonials
+        poppins={poppins}
         sliderArr={[
           {
             name: "Emily Garcia",
@@ -478,7 +499,8 @@ function Capabilities() {
         heading={false}
       />
       <WhyCap
-        mainImg={"/cap-ser-img4.png"}
+        poppins={poppins}
+        mainImg={"/cap-ser-img.png"}
         heading={"Account"}
         headingSec={""}
         span={"Suspension"}
@@ -495,6 +517,7 @@ function Capabilities() {
         url={"/account-suspension"}
       />
       <Testimonials
+        poppins={poppins}
         sliderArr={[
           {
             name: "Michael Jones",
@@ -518,10 +541,7 @@ function Capabilities() {
         heading={false}
       />
       <FAQs
-        futuraBK={futuraBK}
-        futuraMDBT={futuraMDBT}
-        futuraLtBT={futuraLTBT}
-        futuraHv={futuraHv}
+        poppins={poppins}
         question1={"How will GrowthEcho manage my Amazon account?"}
         question2={"How can GrowthEcho services benefit my Amazon business?"}
         question3={

@@ -39,6 +39,7 @@
     overflow-x: clip;
     @include from-320-575{
         height: 400px;
+        padding: 20px;
     }
         &::before{
             content: '';
@@ -116,9 +117,19 @@
             }
         }
         h1{
-            font-size: 32px;
+            font-size: 30px;
             line-height: normal;
             letter-spacing: normal;
+            @include from-992-1300{
+                width: 70%;
+                text-align: center;
+                line-height: 35px;
+            }
+            @include from-1300-1700{
+                width: 80%;
+                text-align: center;
+                line-height: 35px;
+            }
             @include from-575-992{
                 text-align: center;
             }
@@ -135,6 +146,18 @@
             text-align: center;
             width: 35%;
             margin-bottom: 20px;
+            @include from-992-1300{
+                font-size: 16px;
+                width: 70%;
+                font-weight: 300;
+                line-height: 20px;
+            }
+            @include from-1300-1700{
+                font-size: 16px;
+                width: 60%;
+                font-weight: 300;
+                line-height: 20px;
+            }
             @include from-575-992{
                 text-align: center;
                 width: 70%;

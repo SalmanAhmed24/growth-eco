@@ -3,53 +3,63 @@ import SliderAbout from "@/component/aboutSlider";
 import Header from "@/component/aboutUsHeader";
 import FAQs from "@/component/faq";
 import WhoWeAre from "@/component/whoWeAreAbout";
+import { Poppins } from "next/font/google";
 import localFont from "@next/font/local";
 import "./aboutUs.scss";
 import Image from "next/image";
 import Achieve from "@/component/achieve";
-const futuraHv = localFont({
-  src: "../fonts/FuturaHeavyBT.ttf",
-  weight: "400",
-  style: "normal",
-});
-const futuraBK = localFont({
-  src: "../fonts/FutuBk.ttf",
-  weight: "400",
-  style: "normal",
-});
-const futuraMDBT = localFont({
-  src: "../fonts/FutuMd.ttf",
-  weight: "400",
-  style: "normal",
-});
-const futuraLTBT = localFont({
-  src: "../fonts/FuturaLtBT.ttf",
-  weight: "400",
-  style: "normal",
+// const futuraHv = localFont({
+//   src: "../fonts/FuturaHeavyBT.ttf",
+//   weight: "400",
+//   style: "normal",
+// });
+// const futuraBK = localFont({
+//   src: "../fonts/FutuBk.ttf",
+//   weight: "400",
+//   style: "normal",
+// });
+// const futuraMDBT = localFont({
+//   src: "../fonts/FutuMd.ttf",
+//   weight: "400",
+//   style: "normal",
+// });
+// const futuraLTBT = localFont({
+//   src: "../fonts/FuturaLtBT.ttf",
+//   weight: "400",
+//   style: "normal",
+// });
+const poppins = Poppins({
+  weight: ["300", "400", "600", "700", "900"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  display: "swap",
 });
 function AboutUs() {
   return (
     <section>
       <Header
-        futuraBK={futuraBK}
-        futuraMDBT={futuraMDBT}
-        futuraLtBT={futuraLTBT}
-        futuraHv={futuraHv}
+        poppins={poppins}
+        // futuraBK={futuraBK}
+        // futuraMDBT={futuraMDBT}
+        // futuraLtBT={futuraLTBT}
+        // futuraHv={futuraHv}
       />
       <SliderAbout
-        futuraBK={futuraBK}
-        futuraMDBT={futuraMDBT}
-        futuraLtBT={futuraLTBT}
-        futuraHv={futuraHv}
+        poppins={poppins}
+        // futuraBK={futuraBK}
+        // futuraMDBT={futuraMDBT}
+        // futuraLtBT={futuraLTBT}
+        // futuraHv={futuraHv}
       />
       <section className="who-we-comp">
         <WhoWeAre
           title={"Who we are?"}
           imageUrl={"/who-pic-1.png"}
-          futuraBK={futuraBK}
-          futuraMDBT={futuraMDBT}
-          futuraLtBT={futuraLTBT}
-          futuraHv={futuraHv}
+          poppins={poppins}
+          // futuraBK={futuraBK}
+          // futuraMDBT={futuraMDBT}
+          // futuraLtBT={futuraLTBT}
+          // futuraHv={futuraHv}
           content={
             "GrowthEcho is an Amazon service-providing company spread globally and grown into World’s top Amazon branded sellers. It was built by two childhood friends, Faraz Yasin, and Shahzaib Khalid, to bring more economic opportunities to the country. They’ve grown their own business to $6 million in one year and now helping other Amazon sellers with the same applied strategies."
           }
@@ -60,10 +70,11 @@ function AboutUs() {
         <WhoWeAre
           title={"Our Mission"}
           imageUrl={"/who-pic-2.png"}
-          futuraBK={futuraBK}
-          futuraMDBT={futuraMDBT}
-          futuraLtBT={futuraLTBT}
-          futuraHv={futuraHv}
+          poppins={poppins}
+          // futuraBK={futuraBK}
+          // futuraMDBT={futuraMDBT}
+          // futuraLtBT={futuraLTBT}
+          // futuraHv={futuraHv}
           content={
             "We are on a mission to help existing Amazon sellers grow their businesses and increase their profits by 10-50%. We take day-to-day operations off your shoulders that free your time and energy so that you can invest in other business challenges."
           }
@@ -74,10 +85,11 @@ function AboutUs() {
         <WhoWeAre
           title={"Our Vision"}
           imageUrl={"/who-pic-3.png"}
-          futuraBK={futuraBK}
-          futuraMDBT={futuraMDBT}
-          futuraLtBT={futuraLTBT}
-          futuraHv={futuraHv}
+          // futuraBK={futuraBK}
+          // futuraMDBT={futuraMDBT}
+          // futuraLtBT={futuraLTBT}
+          // futuraHv={futuraHv}
+          poppins={poppins}
           content={
             "Our vision is to offer unique strategies for brands to level up their Amazon game and increase profits by 10-50% with little or no effort along with maximizing your visibility & profits by 10-50% without non-converting listings & bleeding on Amazon PPC"
           }
@@ -88,10 +100,11 @@ function AboutUs() {
         <WhoWeAre
           title={"Our Services"}
           imageUrl={"/who-pic-4.png"}
-          futuraBK={futuraBK}
-          futuraMDBT={futuraMDBT}
-          futuraLtBT={futuraLTBT}
-          futuraHv={futuraHv}
+          // futuraBK={futuraBK}
+          // futuraMDBT={futuraMDBT}
+          // futuraLtBT={futuraLTBT}
+          // futuraHv={futuraHv}
+          poppins={poppins}
           content={
             "Every business is unique and we get along with you as a team and provide you with done-for your account management. which includes Amazon product research, Amazon product listing optimization, Amazon Advertising, Product Sourcing, Amazon inventory management, Brand storefront, Enhanced brand content A+, Listing reinstatement, Amazon account management services, and Account Suspension……."
           }
@@ -108,16 +121,18 @@ function AboutUs() {
         />
       </section>
       <Achieve
-        futuraBK={futuraBK}
-        futuraMDBT={futuraMDBT}
-        futuraLtBT={futuraLTBT}
-        futuraHv={futuraHv}
+        // futuraBK={futuraBK}
+        // futuraMDBT={futuraMDBT}
+        // futuraLtBT={futuraLTBT}
+        // futuraHv={futuraHv}
+        poppins={poppins}
       />
       <FAQs
-        futuraBK={futuraBK}
-        futuraMDBT={futuraMDBT}
-        futuraLtBT={futuraLTBT}
-        futuraHv={futuraHv}
+        // futuraBK={futuraBK}
+        // futuraMDBT={futuraMDBT}
+        // futuraLtBT={futuraLTBT}
+        // futuraHv={futuraHv}
+        poppins={poppins}
         question1={"What kind of service does Growth Echo provide?"}
         question2={"Which industry does Growth Echo cater to?"}
         question3={"Why does Growth Echo provide the best customer service?"}

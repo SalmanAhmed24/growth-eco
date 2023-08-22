@@ -37,14 +37,14 @@
     padding: 20px 0px;
         .downward{
             position: absolute;
-            top:-270px;
+            top:-343px;
             left: 0px;
             right: 20px;
             margin: 0px auto;
             z-index: 0;
-            @include from-992-1100{
-                top:-170px;
-            }
+            // @include from-992-1100{
+            //     top:-170px;
+            // }
             @include from-320-575{
                 display: none;
             }
@@ -90,11 +90,12 @@
                         width: 100%;
                     }
                         h1{
-                            font-size: 40px;
+                            font-size: 30px;
+                            font-weight: 600;
                             line-height: normal;
                             margin-bottom: 10px;
                             @include from-320-992{
-                                font-size: 30px;
+                                font-size: 24px;
                             }
                             @include from-320-575{
                                 width: 90%;
@@ -102,10 +103,11 @@
                             }
                         }
                         p{
-                            font-size: 24px;
+                            font-size: 16px;
+                            font-weight: 300;
                             line-height: normal;
                             @include from-320-992{
-                                font-size: 16px;
+                                font-size: 14px;
                             }
                             @include from-320-575{
                                 width: 95%;
@@ -168,19 +170,21 @@
                 padding: 20px;
             }
                 h1{
-                    font-size: 40px;
+                    font-size: 30px;
+                    font-weight: 600;
                     line-height: normal;
                     text-align: center;
                     @include from-320-992{
-                        font-size: 30px;
+                        font-size: 24px;
                     }
                 }
                 p{
                     text-align: center;
-                    font-size: 24px;
+                    font-size: 16px;
+                    font-weight: 300;
                     line-height: normal;
                     @include from-320-992{
-                        font-size: 16px;
+                        font-size: 14px;
                     }
                 }
                 .journey-mid-img{
@@ -205,8 +209,8 @@
     text-align: center;
         margin-top: 20px;
         text-decoration: none;
-        padding: 5px 20px;
-        font-size: 20px;
+        padding: 5px 10px;
+        font-size: 16px;
         border-radius: 0px 20px 20px 20px;
         background: #415B9F;
         color: #fff;

@@ -25,9 +25,9 @@
 }
 .cap-header{
     background-image: url('../../../public/capa-bg.png');
-    background-position: center;
+    background-position-y: -150px;
     background-size: cover;
-    height: 700px;
+    height: 500px;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -38,6 +38,7 @@
         background-image: url('../../../public/service-mobile-bg.png');
         height: 440px;
         background-position: bottom;
+        padding: 20px;
     }
     &::after{
         content: '';
@@ -72,28 +73,30 @@
         }
     }
         h1{
-            margin-top: 150px;
-            font-size: 64px;
+            margin-top: 100px;
+            font-size: 40px;
             line-height: normal;
             text-align: center;
             color: #fff;
             text-transform: uppercase;
-            z-index: 222;
+            z-index: 111;
             @include from-320-575{
-                font-size: 40px;
-                margin-top: 60px;
+                font-size: 30px;
+                margin-top: 20px;
             }
         }
         p{
             text-align: center;
-            width: 40%;
+            width: 60%;
             color: #fff;
-            font-size: 20px;
+            font-size: 16px;
+            font-weight: 300;
             line-height: normal;
             margin-top: 10px;
             margin-bottom: 20px;
             @include from-320-575{
-                width: 80%;
+                width: 100%;
+                font-size:14px;
             }
         }
         .cap-start-link{
@@ -117,17 +120,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     position: relative;
+    @include from-320-575{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
         h1{
             text-align: center;
-            font-size: 36px;
+            font-size: 30px;
+            font-weight: 600;
             line-height: normal;
-            margin-bottom: 20px;
             text-transform: capitalize;
             @include from-320-575{
-                font-size: 30px;
+                font-size: 24px;
             }
         }
         .why-cap-card-wrap{
@@ -148,7 +155,7 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    padding: 50px 20px;
+                    padding: 10px 20px;
                     transition: 0.3s ease-in-out;
                         &:hover{
                             background: linear-gradient(180deg, #4663AC 0%, #36508F 100%);
@@ -174,12 +181,13 @@
                             padding: 10px 15px;
                         }
                         @include from-320-575{
-                            width: 35%;
+                            width: 40%;
                             align-self: flex-start;
                         }
                         
                         h1{
-                            font-size: 20px;
+                            font-size: 18px;
+                            font-weight: 600;
                             margin-bottom: 10px;
                             text-align: center;
                             color: #000;
@@ -187,13 +195,14 @@
                             transition: 0.3s ease-in-out;
                             @include from-320-575{
                                 display: none;
+                                font-size: 16px;
                             }
                         }
                         .thin-head{
                             display: none;
                             @include from-320-575{
                                 display: block;
-                                font-size: 20px;
+                                font-size: 16px;
                             }
                         }
                         .thin-p{
@@ -207,6 +216,7 @@
                             font-size: 14px;
                             text-align: center;
                             line-height: normal;
+                            font-weight: 300;
                             transition: 0.3s ease-in-out;
                             @include from-320-575{
                                 display: none;

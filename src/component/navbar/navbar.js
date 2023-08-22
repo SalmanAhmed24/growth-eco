@@ -2,92 +2,228 @@
 import Image from "next/image";
 import "./navbar.scss";
 import React, { useState, useEffect } from "react";
-import localFont from "@next/font/local";
+import { Poppins } from "next/font/google";
 import { useRouter, usePathname } from "next/navigation";
-const futuraBold = localFont({
-  src: [
-    {
-      path: "../../app/fonts/Futura Bold.otf",
-      weight: "800",
-      style: "normal",
-    },
-    {
-      path: "../../app/fonts/FutuBk.ttf",
-      weight: "400",
-      style: "normal",
-    },
-  ],
+import Link from "next/link";
+const poppins = Poppins({
+  weight: ["300", "400", "600", "700", "900"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  display: "swap",
 });
+// const futuraBold = localFont({
+//   src: [
+//     {
+//       path: "../../app/fonts/Futura Bold.otf",
+//       weight: "800",
+//       style: "normal",
+//     },
+//     {
+//       path: "../../app/fonts/FutuBk.ttf",
+//       weight: "400",
+//       style: "normal",
+//     },
+//   ],
+// });
 function Navbar() {
-  const [activeLink, setActiveLink] = useState("Home");
+  const [activeLink, setActiveLink] = useState("/");
   const [mobileNav, setMobileNav] = useState(false);
   const router = useRouter();
   const path = usePathname();
   useEffect(() => {
-    console.log("path", path);
-  }, [path]);
-  const handleLinks = (e) => {
-    setActiveLink(e.target.innerText);
-    if (e.target.innerText == "Home") {
-      router.push("/");
-      if (mobileNav) {
-        setMobileNav(!mobileNav);
-      }
+    if (path == "/") {
+      setActiveLink("/");
     }
-    if (e.target.innerText == "About Us +") {
-      router.push("/aboutUs");
-      if (mobileNav) {
-        setMobileNav(!mobileNav);
-      }
+    if (path == "/aboutUs") {
+      setActiveLink("/aboutUs");
     }
-    if (e.target.innerText == "Capabilities +") {
-      router.push("/capabilities");
-      if (mobileNav) {
-        setMobileNav(!mobileNav);
-      }
+    if (path == "/ourStory") {
+      setActiveLink("/ourStory");
     }
-    if (e.target.innerText == "Case Studies") {
-      router.push("/case-studies");
-      if (mobileNav) {
-        setMobileNav(!mobileNav);
-      }
+    if (path == "/ourTeam") {
+      setActiveLink("/ourTeam");
     }
-    if (e.target.innerText == "Blog") {
-      router.push("/blog");
-      if (mobileNav) {
-        setMobileNav(!mobileNav);
-      }
+    if (path == "/capabilities") {
+      setActiveLink("/capabilities");
     }
-  };
+    if (path == "/case-studies") {
+      setActiveLink("/case-studies");
+    }
+    if (path == "/blog") {
+      setActiveLink("/blog");
+    }
+    if (path == "/product-sourcing") {
+      setActiveLink("/product-sourcing");
+    }
+    if (path == "/listing-reinstatement") {
+      setActiveLink("/listing-reinstatement");
+    }
+    if (path == "/done-amazon") {
+      setActiveLink("/done-amazon");
+    }
+    if (path == "/brand-storefront") {
+      setActiveLink("/brand-storefront");
+    }
+    if (path == "/amazon-advertising") {
+      setActiveLink("/amazon-advertising");
+    }
+    if (path == "/product-research") {
+      setActiveLink("/product-research");
+    }
+    if (path == "/amazon-content") {
+      setActiveLink("/amazon-content");
+    }
+    if (path == "/account-suspension") {
+      setActiveLink("/account-suspension");
+    }
+  }, [path, activeLink]);
   const handleMobileNav = () => {
     setMobileNav(!mobileNav);
   };
   return (
-    <section className={futuraBold.className}>
+    <section className={poppins.className}>
       <nav className="navbar-cus">
         <div className="logo-wrap">
-          <Image alt="growth eco" src={"./logo.svg"} width={170} height={80} />
+          <Image alt="growth eco" src={"./logo.svg"} width={160} height={70} />
         </div>
         <div className="links-wrap">
-          <ul onClick={handleLinks} className="cus-links">
-            <li className={path == "/" ? "activeLink" : ""}>Home</li>
-            <li className={path == "/aboutUs" ? "activeLink" : ""}>
-              About Us +
-            </li>
-            <li className={path == "/capabilities" ? "activeLink" : ""}>
-              Capabilities +
-            </li>
-            <li className={path == "/case-studies" ? "activeLink" : ""}>
-              Case Studies
-            </li>
-            <li className={path == "/blog" ? "activeLink" : ""}>Blog</li>
-          </ul>
+          <div className="cus-links">
+            <div className="nav-link-wraps">
+              <Link className={path == "/" ? "activeLink" : ""} href={"/"}>
+                Home
+              </Link>
+            </div>
+            <div className="nav-link-wraps dropdown-wrap">
+              <Link
+                className={
+                  path == "/aboutUs" ||
+                  path == "/ourStory" ||
+                  path == "/ourTeam"
+                    ? "activeLink"
+                    : ""
+                }
+                href={"/aboutUs"}
+              >
+                About Us +
+              </Link>
+              <div className="drop-div">
+                <div className="droplist">
+                  <Link
+                    className={path == "/ourStory" ? "activeInner" : ""}
+                    href={"/ourStory"}
+                  >
+                    Our Story
+                  </Link>
+                  <Link
+                    className={path == "/ourTeam" ? "activeInner" : ""}
+                    href={"/ourTeam"}
+                  >
+                    Our Team
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="nav-link-wraps dropdown-wrap">
+              <Link
+                className={
+                  path == "/capabilities" ||
+                  path == "/product-sourcing" ||
+                  path == "/listing-reinstatement" ||
+                  path == "/amazon-advertising" ||
+                  path == "/amazon-content" ||
+                  path == "/done-amazon" ||
+                  path == "/product-research" ||
+                  path == "/brand-storefront" ||
+                  path == "/account-suspension"
+                    ? "activeLink"
+                    : ""
+                }
+                href={"/capabilities"}
+              >
+                Capabilities +
+              </Link>
+              <div className="drop-div">
+                <div className="droplist">
+                  <Link
+                    className={path == "/product-sourcing" ? "activeInner" : ""}
+                    href={"/product-sourcing"}
+                  >
+                    Product Sourcing
+                  </Link>
+                  <Link
+                    className={
+                      path == "/listing-reinstatement" ? "activeInner" : ""
+                    }
+                    href={"/listing-reinstatement"}
+                  >
+                    Listing Reinstatement
+                  </Link>
+                  <Link
+                    className={
+                      path == "/amazon-advertising" ? "activeInner" : ""
+                    }
+                    href={"/amazon-advertising"}
+                  >
+                    Amazon Advertising
+                  </Link>
+                  <Link
+                    className={path == "/amazon-content" ? "activeInner" : ""}
+                    href={"/amazon-content"}
+                  >
+                    Amazon Content
+                  </Link>
+                  <Link
+                    className={path == "/done-amazon" ? "activeInner" : ""}
+                    href={"/done-amazon"}
+                  >
+                    Amazon Done
+                  </Link>
+                  <Link
+                    className={path == "/product-research" ? "activeInner" : ""}
+                    href={"/product-research"}
+                  >
+                    Product Research
+                  </Link>
+                  <Link
+                    className={path == "/brand-storefront" ? "activeInner" : ""}
+                    href={"/brand-storefront"}
+                  >
+                    Brand Storefront
+                  </Link>
+                  <Link
+                    className={
+                      path == "/account-suspension" ? "activeInner" : ""
+                    }
+                    href={"/account-suspension"}
+                  >
+                    Account Suspension
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="nav-link-wraps">
+              <Link
+                className={path == "/case-studies" ? "activeLink" : ""}
+                href={"/case-studies"}
+              >
+                Case Studies
+              </Link>
+            </div>
+            <div className="nav-link-wraps">
+              <Link
+                className={path == "/blog" ? "activeLink" : ""}
+                href={"/blog"}
+              >
+                Blog
+              </Link>
+            </div>
+          </div>
         </div>
         <div className="menu-bars-wrap">
           {mobileNav ? (
             <p
               onClick={handleMobileNav}
-              className={`${futuraBold.className} close`}
+              className={`${poppins.className} close`}
             >
               x
             </p>
@@ -106,14 +242,70 @@ function Navbar() {
         <div className="moible-abs-menu">
           <ul
             onClick={handleLinks}
-            className={`${futuraBold.className} mobile-nav-list`}
+            className={`${poppins.className} mobile-nav-list`}
           >
             <li className={path == "/" ? "activeLink" : ""}>Home</li>
-            <li className={path == "/aboutUs" ? "activeLink" : ""}>
+            <li
+              onClick={handleAboutUs}
+              className={
+                activeLink == "/aboutUs" ? "activeLink dropAbout" : "dropAbout"
+              }
+            >
               About Us +
+              <div className="mob-div">
+                <ul className="droplist">
+                  <li onClick={(e) => handleInnerLinks(e, "/ourStory")}>
+                    Our Story
+                  </li>
+                  <li onClick={(e) => handleInnerLinks(e, "/ourTeam")}>
+                    Our Team
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li className={path == "/capabilities" ? "activeLink" : ""}>
+            <li
+              onClick={handleCapabilities}
+              className={
+                activeLink == "/capabilities" ? "activeLink dropCap" : "dropCap"
+              }
+            >
               Capabilities +
+              <div className="mob-div">
+                <ul className="droplist">
+                  <li onClick={(e) => handleInnerLinks(e, "/product-sourcing")}>
+                    Product Sourcing
+                  </li>
+                  <li
+                    onClick={(e) =>
+                      handleInnerLinks(e, "/listing-reinstatement")
+                    }
+                  >
+                    Listing Reinstatement
+                  </li>
+                  <li onClick={(e) => handleInnerLinks(e, "/done-amazon")}>
+                    Done For You Amazon
+                  </li>
+                  <li onClick={(e) => handleInnerLinks(e, "/brand-storefront")}>
+                    Brand Storefront
+                  </li>
+                  <li onClick={(e) => handleInnerLinks(e, "/product-research")}>
+                    Product Research
+                  </li>
+                  <li
+                    onClick={(e) => handleInnerLinks(e, "/amazon-advertising")}
+                  >
+                    Amazon Advertising
+                  </li>
+                  <li onClick={(e) => handleInnerLinks(e, "/amazon-content")}>
+                    Amazon Content
+                  </li>
+                  <li
+                    onClick={(e) => handleInnerLinks(e, "/account-suspension")}
+                  >
+                    Account Suspension
+                  </li>
+                </ul>
+              </div>
             </li>
             <li className={path == "/case-studies" ? "activeLink" : ""}>
               Case Studies

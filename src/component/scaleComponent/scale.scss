@@ -42,6 +42,9 @@
     img{
         position: relative;
         z-index: 111;
+        @include from-320-575{
+            width: 95%;
+        }
     }
     position: relative;
                 .circle1{
@@ -68,10 +71,10 @@
                         left: 15%;bottom: 35%;
                     }
                     @include from-320-575{
-                        width: 60px;
-                        height: 60px;
-                        font-size: 12px;
-                        left: 8%;
+                        width: 70px;
+                        height: 70px;
+                        font-size: 10px;
+                        left: 6%;
     bottom: 30%;
                     }
                 }
@@ -102,11 +105,11 @@
     left: 36.3%;
                     }
                     @include from-320-575{
-                        width: 60px;
-                        height: 60px;
-                        font-size: 12px;
-                        bottom: 55%;
-    left: 34.3%;
+                        width: 70px;
+                        height: 70px;
+                        font-size: 10px;
+                        bottom: 54%;
+    left: 28.3%;
                     }
                 }
                 .circle3{
@@ -136,10 +139,10 @@
     right: 30%;
                     }
                     @include from-320-575{
-                        width: 60px;
-                        height: 60px;
-                        font-size: 12px;
-                        top: 3%;
+                        width: 70px;
+                        height: 70px;
+                        font-size: 10px;
+                        top: -8%;
     right: 26%;
                     }
                 }
@@ -170,11 +173,11 @@
     top: -8%;
                     }
                     @include from-320-575{
-                        width: 60px;
-                        height: 60px;
-                        font-size: 12px;
-                        right: -2.5%;
-    top: -14%;
+                        width: 70px;
+                        height: 70px;
+                        font-size: 10px;
+                        right: 2.5%;
+    top: -25%;
                     }
                 }
         }

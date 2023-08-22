@@ -29,7 +29,7 @@
     }
 }
 @mixin from-320-850{
-    @media screen and (min-width:320.67px) and (max-width:850px) {
+    @media screen and (min-width:320.67px) and (max-width:852px) {
         @content;
     }
 }
@@ -38,20 +38,37 @@
         @content;
     }
 }
+@mixin from-400-530{
+    @media screen and (min-width:400.67px) and (max-width:530px) {
+        @content;
+    }
+}
 .header{
     background-image: url('../../../public/amazon-ser-header-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 650px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 150px;
+    padding: 100px 70px 0px 70px;
     position: relative;
+    background-position-y: -150px;
+    overflow-x: clip;
+    @include from-992-1250{
+        height: 500px;
+        padding-top: 50px;
+    }
+    @include from-575-992{
+        padding-top: 50px;
+        height: 450px;
+        background-position-y:0px;
+        
+    }
     @include from-320-575{
-        background-image: url('../../../public/mobile-amazon-header.png');
-        justify-content: center;
-        height: 600px;
+        background-image: url('../../../public/mobile-header-bg-amazon.png');
+        justify-content: flex-start;
+        height: 500px;
         background-position: bottom;
         align-items: flex-start;
         padding: 10px;
@@ -85,35 +102,39 @@
         }
     }
         h1{
-            font-size: 64px;
+            font-size: 40px;
             color: #fff;
-            padding-bottom:20px;
-            text-align: center;
+            text-align: left;
             line-height: normal;
             text-transform: capitalize;
             position: relative;
-            z-index: 2222;
-            font-size: 52px;
-            width: 40%;
+            z-index: 10;
+            width: 65%;
+            align-self: flex-start;
+            @include from-320-992{
+                width: 65%;
+                font-size: 30px;
+            }
             @include from-320-575{
-                font-size: 40px;
-                margin-top: 200px;
+                font-size: 30px;
+                margin-top: 20px;
                 width: 95%;
                 text-align: left;
             }
         }
         p{
-            width: 40%;
-            text-align: center;
-            font-size: 20px;
+            width: 65%;
+            text-align: left;
+            align-self: flex-start;
+            font-size: 16px;
             font-weight: 300;
             line-height: normal;
             color: #fff;
             padding-bottom: 20px;
             position: relative;
-            z-index: 2222;
+            z-index: 10;
             @include from-575-992{
-                width: 80%;
+                width: 70%;
             }
             @include from-320-575{
                 width: 80%;
@@ -131,7 +152,8 @@
             transition: 0.3s ease-in-out;
             border: 1px solid #fff;
             position: relative;
-            z-index: 2222;
+            z-index: 10;
+            align-self: flex-start;
                 &:hover{
                     background: transparent;
                     cursor: pointer;
@@ -140,22 +162,24 @@
         }
         .amazon-avatar{
             position: absolute;
-            bottom: 250px;
-            left: 20px;
+            bottom: 11vw;
+            right: 8vw;
+            width: 24%;
+            height: auto;
             @include from-320-575{
                 display: none;
             }
             @include from-992-1250{
-                left: 0px;
-                width: 32%;
-                height: 52%;
+                width: 25%;
+            bottom: 22vw;
+            right: 8vw;
+                height: auto;
             }
             @include from-575-992{
-                left: -100px;
-                width: 22%;
-                height: 32%;
-                bottom: 0px;
-                top: 0px;
+                right: 90px;
+                width: 24%;
+                height: auto;
+                top: 40px;
                 margin: auto 0px;
             }
         }
@@ -165,7 +189,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 50px 70px;
+    padding: 0px 70px;
     position: relative;
     @include from-320-575{
         padding: 20px;
@@ -184,7 +208,8 @@
     }
     h1{
         text-align: center;
-        font-size: 36px;
+        font-size: 30px;
+        font-weight: 600;
         line-height: normal;
         span{
             color: #4663AC;
@@ -212,6 +237,8 @@
                         width: 50%;
                     }
                     img{
+                        width: 100%;
+                        height: auto;
                         @include from-992-1250{
                             width: 100%;
                             height: 70%;
@@ -225,11 +252,13 @@
                     width: 40%;
                     display: flex;
                     flex-direction: column;
+                    justify-content: center;
                     @include from-320-992{
                         width: 100%;
                     }
                     p{
-                        font-size: 20px;
+                        font-size: 16px;
+                        font-weight: 300;
                         line-height: normal;
                         text-align: justify;
                         @include from-320-575{
@@ -260,6 +289,7 @@
                                 @include from-320-850{
                                     width: 40%;
                                     margin: 10px;
+                                    padding: 5px;
                                 }
                                 &:hover{
                                     background-color: #4663AC;
@@ -276,6 +306,9 @@
                     .amazon-inner-link{
                         display: flex;
                         justify-content: flex-start;
+                        @include from-320-575{
+                            justify-content: center;
+                        }
                             a{
                                 border-radius: 0px 20px 20px 20px;
                                 background: #4663AC;
@@ -299,10 +332,10 @@
 .grow-sec{
     display: flex;
     justify-content: space-between;
-    margin-top: 100px;
+    margin-top: 50px;
     @include from-320-992{
         flex-wrap: wrap;
-        margin-top: 50px;
+        margin-top: 20px;
     }
         .grow-sec-con{
             width: 40%;
@@ -312,10 +345,12 @@
                 width: 100%;
             }
             h1{
+                font-size: 30px;
+                font-weight: 600;
                 text-align: left;
                 margin-bottom: 30px;
                 @include from-320-575{
-                    font-size: 30px;
+                    font-size: 24px;
                     text-align: center;
                 }
             }
@@ -325,14 +360,15 @@
                     margin-bottom: 10px;
 
                     img{
-                        align-self: center;
+                        align-self: flex-start;
                     }
                         .inner-grow-wrap{
                             display: flex;
                             flex-direction: column;
                             margin-left: 20px;
                             h1{
-                                font-size: 20px;
+                                font-size: 18px;
+                                font-weight: 600;
                                 line-height: normal;
                                 text-align: left;
                                 margin-bottom: 0px;
@@ -342,6 +378,7 @@
                             }
                             p{
                                 font-size: 16px;
+                                font-weight: 300;
                                 line-height: normal;
                                 @include from-320-575{
                                     font-size: 12px;
@@ -383,7 +420,7 @@ text-decoration: none;
 color: #fff;
 border: 1px solid #4663AC;
 transition: 0.3s ease-in-out;
-padding: 10px 20px;
+padding: 5px 10px;
     }
 }
 .ser-counter{
@@ -402,7 +439,7 @@ padding: 10px 20px;
         background-image: url('../../../public/growth-mobile.png');
     }
         .counter-info-wrap{
-            padding: 100px;
+            padding: 50px 70px;
             display: flex;
             justify-content: space-between;
             @include from-320-992{
@@ -423,15 +460,17 @@ padding: 10px 20px;
                 
                     h1{
                         color: #fff;
-                        font-size: 48px;
+                        font-size: 40px;
+                        font-weight: 600;
                         line-height: normal;
                         @include from-320-575{
-                            font-size: 32px;
+                            font-size: 30px;
                         }
                     }
                     p{
                         color: #fff;
                         line-height: normal;
+                        font-weight: 300;
                         @include from-320-575{
                             font-size: 14px;
                         }
@@ -447,7 +486,8 @@ padding: 10px 20px;
                     }
                         h1{
                             color: #fff;
-                            font-size: 36px;
+                            font-size: 30px;
+                            font-weight: 600;
                             line-height: normal;
                         }
                 }
@@ -461,32 +501,48 @@ padding: 10px 20px;
     @include from-320-850{
         top: 360px;
     }
+    @include from-320-575{
+        position: relative;
+        top:0px;
+    }
 }
 .service-scale-wrap{
     background-image: url('../../../public/grow.svg');
     background-repeat: no-repeat;
     background-position:bottom;
     background-size: cover;
-    padding: 100px;
+    padding: 50px 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 250px;
+    height: 200px;
     @include from-320-992{
         background-size: cover;
         background-position: center;
     }
-    @include from-320-575{
+    @include from-320-850{
         margin-top: 200px;
+    }
+    @include from-320-400{
+        margin-top: 355px;
+        padding: 20px;
+        height: 400px;
+    }
+    @include from-400-530{
+        margin-top: 255px;
         background-image: url('../../../public/mobile-grow-2.png');
         background-size: cover;
         padding: 20px;
+        height: 350px;
+        background-color: #4663AC;
     }
+    
         h1{
             text-align: center;
             color: #000;
-            font-size: 36px;
+            font-size: 30px;
+            font-weight: 600;
             line-height: normal;
             margin-bottom: 10px;
             text-transform: uppercase;
@@ -502,9 +558,10 @@ padding: 10px 20px;
             width: 55%;
             color: #fff;
             text-align: center;
-            font-size: 20px;
+            font-size: 16px;
+            font-weight: 300;
             line-height: normal;
-            @include from-320-575{
+            @include from-320-850{
                 width: 95%;
                 font-size: 16px;
             }
@@ -524,7 +581,7 @@ padding: 10px 20px;
             flex-wrap: wrap;
         }
             .card{
-                padding: 25px;
+                padding: 40px 20px 20px 10px;
                 width: 15%;
                 position: relative;
                 display: flex;
@@ -536,7 +593,7 @@ padding: 10px 20px;
                     width: 30%;
                     margin: 20px 0px;
                 }
-                @include from-320-575{
+                @include from-320-850{
                     padding: 10px;
                     width: 40%;
                 }
@@ -549,13 +606,13 @@ padding: 10px 20px;
                         left: -40px;
                         @include from-320-575{
                             width: 45%;
-                            height: 50%;
+                            height: auto;
                             top:-30px;
                             left: -30px;
                         }
-                        @include from-320-400{
+                        @include from-320-575{
                             width: 25%;
-                            height: 25%;
+                            height: auto;
                             top:-25px;
                             left: -18px;
                         }
@@ -568,16 +625,21 @@ padding: 10px 20px;
                     color: #fff;
                     line-height: normal;
                     margin-top: 10px;
-                font-size: 18px;
+                font-size: 14px;
+                font-weight: 300;
+                text-align: center;
                 @include from-320-575{
-                    font-size: 12px;
+                    font-size: 9px;
                 }
                 }
                 h1{
                     color: #fff;
                     text-align: center;
+                    font-weight: 600;
+                    position: relative;
+                    z-index: 22;
                     @include from-320-575{
-
+                        font-size: 11px;
                         margin-top: 20px;
                     }
                 }
@@ -586,17 +648,21 @@ padding: 10px 20px;
                 background-color: #F0F0F0;
                 h1{
                     text-align: center;
+                    position: relative;
+                    z-index: 22;
                     @include from-320-575{
-
+                        font-size: 11px;
                         margin-top: 20px;
                     }
                 }
                 p{
                     line-height: normal;
                 margin-top: 10px;
-                font-size: 18px;
+                font-size: 14px;
+                font-weight: 300;
+                text-align: center;
                 @include from-320-575{
-                    font-size: 12px;
+                    font-size: 9px;
                 }
             }
             }
@@ -616,7 +682,7 @@ padding: 10px 20px;
             border-radius: 0px 20px 20px 20px;
 background: #4663AC;
 text-decoration: none;
-padding: 10px 15px;
+padding: 5px 10px;
 color: #fff;
 transition: 0.3s ease-in-out;
 span{

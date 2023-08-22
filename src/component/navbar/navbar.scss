@@ -14,7 +14,7 @@
     margin: 0px;
     padding: 0px 50px;
     background-color: #4663AC;
-    overflow: hidden;
+    overflow-x: clip;
     z-index: 222;
     position: relative;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
@@ -46,38 +46,46 @@
                     padding: 0px;
                     list-style: none;
                     color: #fff;
-                        li{
-                            width: auto;
-                            font-weight: bold;
-                            font-size: 16px;
-                            padding: 0px 30px;
-                            position: relative;
-                            transition: 0.3s ease-in-out;
-                            @include from-1140-to-992{
-                                padding: 0px 22px;
+                    .nav-link-wraps{
+                        min-width: 150px;
+                        width: 20%;
+                        height: 50px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                            a{
+                                color: #fff;
+                                text-decoration: none;
+                                position: relative;
+                                text-align: center;
                             }
-                                &:hover{
-                                    cursor: pointer;
-                                        &::after{
-                                            content: '';
-                                            position: absolute;
-                                            top: 120%;
-                                            bottom: 0px;
-                                            right: 0px;
-                                            margin: 0 auto;
-                                            left: 0px;
-                                            background-image: url('../../../public/nav-hover.png');
-                                            width: 55px;
-                                            background-repeat: no-repeat;
-                                            background-position: center;
-                                            height: 40px;
-                                            animation-name: showBlob;
-                                            animation-duration: 0.3s;
-                                            animation-timing-function: ease-in-out;
-                                            animation-iteration-count: 1;
-                                        }
-                                }
+                    }
+                    .dropdown-wrap{
+                        position: relative;
+                        &:hover{
+                            .drop-div{
+                                display: flex;
+                            }
                         }
+                            .drop-div{
+                                position: absolute;
+                                top:44px;
+                                background: #4663AC;
+                                padding: 10px;
+                                border-bottom-left-radius: 10px;
+                                border-bottom-right-radius: 10px;
+                                z-index: 2222;
+                                width: 180px;
+                                display: none;
+                                    .droplist{
+                                        display: flex;
+                                        flex-direction: column;
+                                        a{
+                                            margin: 10px 0px;
+                                        }
+                                    }
+                            }
+                    }
                 }
         }
 }
@@ -87,16 +95,16 @@
     &::after{
         content: '';
         position: absolute;
-        top: 120%;
+        top: 98%;
         bottom: 0px;
         right: 0px;
         margin: 0 auto;
         left: 0px;
         background-image: url('../../../public/nav-hover.png');
-        width: 55px;
+        width: 70px;
         background-repeat: no-repeat;
-        background-position: center;
-        height: 40px;
+        background-position-y:0px;
+        height: 30px;
         @include from-992-to-320{
             display: none;
             width: 0px;
@@ -115,7 +123,7 @@
 .moible-abs-menu{
     position: absolute;
     width: 100%;
-    height: 100vw;
+    height: auto;
     background-color: #4663AC;
     z-index: 22222;
     animation-name:mobileMenu;
@@ -127,13 +135,22 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        align-items: center;
         padding: 30px;
             li{
                 font-size: 20px;
                 color: #fff;
                 margin-bottom: 20px;
             }
+    }
+}
+.mob-div{
+    .droplist{
+        li{
+            margin:0px;
+            padding-top:10px;
+            margin-left:10px;
+            border-bottom: 1px solid #cfcfcf;
+        }
     }
 }
 @keyframes mobileMenu {
@@ -150,3 +167,90 @@
     text-align: right;
     padding: 30px;
 }
+.dropAbout{
+   position: relative;
+   &:hover{
+    .drop-div{
+        display: flex;
+        flex-direction: column;
+        opacity: 1;
+        z-index: 4444;
+    }
+   }
+    .drop-div{
+        position: absolute;
+        height: auto;
+        padding: 10px 20px;
+        width: 100%;
+        top:44px;
+        background-color: #4663AC;
+        display: none;
+        opacity: 0;
+            .droplist{
+                padding: 0px;
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                
+                    li{
+                        padding-top: 5px;
+                padding-bottom: 5px;
+                        color: transparentize($color: #fff, $amount: 0.3);
+                        transition: 0.3s ease-in-out;
+                        &:hover{
+                            color: transparentize($color: #fff, $amount: 0);
+                            &::after{
+                                content: '';
+                                width: 0px;
+                                height: 0px;
+                            }
+                        }
+                    }
+            }
+    } 
+}
+.dropCap{
+    position: relative;
+    &:hover{
+     .drop-div{
+         display: flex;
+         flex-direction: column;
+         opacity: 1;
+         z-index: 4444;
+     }
+    }
+     .drop-div{
+         position: absolute;
+         height: auto;
+         padding:20px 10px;
+         width: 250px;
+         top:44px;
+         background-color: #4663AC;
+         display: none;
+         opacity: 0;
+             .droplist{
+                 padding: 0px;
+                 list-style: none;
+                 display: flex;
+                 flex-direction: column;
+                     li{
+                        padding-top: 5px;
+                padding-bottom: 5px;
+                         color: transparentize($color: #fff, $amount: 0.3);
+                         transition: 0.3s ease-in-out;
+                         margin-bottom: 10px;
+                         &:hover{
+                             color: transparentize($color: #fff, $amount: 0);
+                             &::after{
+                                 content: '';
+                                 width: 0px;
+                                 height: 0px;
+                             }
+                         }
+                     }
+             }
+     } 
+ }
+ .activeInner{
+    font-weight: bold;
+ }

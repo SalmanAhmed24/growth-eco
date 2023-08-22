@@ -7,6 +7,7 @@ function WhoWeAre({
   imageUrl,
   futuraBK,
   futuraMDBT,
+  poppins,
   futuraLtBT,
   futuraHv,
   layout,
@@ -20,9 +21,9 @@ function WhoWeAre({
         <section className="who-we-about">
           <div className="content-wrap">
             <div className="inner-wrap">
-              <h1 className={futuraHv.className}>{title}</h1>
-              <p className={futuraLtBT.className}>{content}</p>
-              <Link href={"/"} className={`${futuraHv.className} read-more`}>
+              <h1 className={poppins.className}>{title}</h1>
+              <p className={poppins.className}>{content}</p>
+              <Link href={"/"} className={`${poppins.className} read-more`}>
                 Read More
               </Link>
             </div>
@@ -48,9 +49,9 @@ function WhoWeAre({
           </div>
           <div className="content-wrap">
             <div className="inner-wrap">
-              <h1 className={futuraHv.className}>{title}</h1>
-              <p className={futuraLtBT.className}>{content}</p>
-              <Link href={"/"} className={`${futuraHv.className} read-more`}>
+              <h1 className={poppins.className}>{title}</h1>
+              <p className={poppins.className}>{content}</p>
+              <Link href={"/"} className={`${poppins.className} read-more`}>
                 Read More
               </Link>
             </div>

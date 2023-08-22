@@ -1,28 +1,35 @@
 "use client";
 import localFont from "next/font/local";
+import { Poppins } from "next/font/google";
 import Link from "next/link";
 import "./style.scss";
 import Image from "next/image";
 import React, { useState } from "react";
-const futuraHv = localFont({
-  src: "../fonts/FuturaHeavyBT.ttf",
-  weight: "400",
-  style: "normal",
-});
-const futuraBK = localFont({
-  src: "../fonts/FutuBk.ttf",
-  weight: "400",
-  style: "normal",
-});
-const futuraMDBT = localFont({
-  src: "../fonts/FutuMd.ttf",
-  weight: "400",
-  style: "normal",
-});
-const futuraLTBT = localFont({
-  src: "../fonts/FuturaLtBT.ttf",
-  weight: "400",
-  style: "normal",
+// const futuraHv = localFont({
+//   src: "../fonts/FuturaHeavyBT.ttf",
+//   weight: "400",
+//   style: "normal",
+// });
+// const futuraBK = localFont({
+//   src: "../fonts/FutuBk.ttf",
+//   weight: "400",
+//   style: "normal",
+// });
+// const futuraMDBT = localFont({
+//   src: "../fonts/FutuMd.ttf",
+//   weight: "400",
+//   style: "normal",
+// });
+// const futuraLTBT = localFont({
+//   src: "../fonts/FuturaLtBT.ttf",
+//   weight: "400",
+//   style: "normal",
+// });
+const poppins = Poppins({
+  weight: ["300", "400", "600", "700", "900"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  display: "swap",
 });
 function Blog() {
   const [email, setEmail] = useState("");
@@ -32,7 +39,7 @@ function Blog() {
   return (
     <section className="blog-con">
       <header className="blog-header">
-        <h1 className={futuraHv.className}>Welcome To</h1>
+        <h1 className={poppins.className}>Welcome To</h1>
         <Image
           alt="growth eco"
           src={"/blog-main-img.png"}
@@ -47,10 +54,10 @@ function Blog() {
           width={272}
           height={174}
         />
-        <h1 className={futuraHv.className}>
+        <h1 className={poppins.className}>
           Explore the world through knowledge and inspiration.
         </h1>
-        <Link href={"/"} className={`${futuraHv.className} exp-link`}>
+        <Link href={"/"} className={`${poppins.className} exp-link`}>
           Explore More
         </Link>
       </header>
@@ -62,11 +69,11 @@ function Blog() {
             width={590}
             height={370}
           />
-          <p className={`${futuraLTBT.className} date`}>12-JUNE-2023</p>
-          <h1 className={futuraHv.className}>
+          <p className={`${poppins.className} date`}>12-JUNE-2023</p>
+          <h1 className={poppins.className}>
             The Power of Amazon Advertising Solutions
           </h1>
-          <p className={`${futuraLTBT.className} main-para`}>
+          <p className={`${poppins.className} main-para`}>
             We were contacted by a multinational consumer personal healthcare
             brand to help manage their Amazon Vendor Central account. Our client
             had only achieved 8% growth in year-over-year sales, which was
@@ -85,15 +92,15 @@ function Blog() {
               src={"/sub-blog-small.png"}
             />
             <div className="info-con">
-              <p className={`${futuraLTBT.className} date`}>12-JUNE-2023</p>
-              <h1 className={futuraHv.className}>
+              <p className={`${poppins.className} date`}>12-JUNE-2023</p>
+              <h1 className={poppins.className}>
                 Basics of Amazon Bidding! What Influences CPC in 2023?
               </h1>
-              <p className={`${futuraLTBT.className} sub-para`}>
+              <p className={`${poppins.className} sub-para`}>
                 We were contacted by a multinational consumer personal
                 healthcare brand to help manage their Amazon Vendor Central.
               </p>
-              <Link href={"/"} className={`${futuraHv.className} read-more-p`}>
+              <Link href={"/"} className={`${poppins.className} read-more-p`}>
                 READ MORE
                 <Image
                   alt="growth eco"
@@ -113,15 +120,15 @@ function Blog() {
               src={"/sub-blog-small.png"}
             />
             <div className="info-con">
-              <p className={`${futuraLTBT.className} date`}>12-JUNE-2023</p>
-              <h1 className={futuraHv.className}>
+              <p className={`${poppins.className} date`}>12-JUNE-2023</p>
+              <h1 className={poppins.className}>
                 Basics of Amazon Bidding! What Influences CPC in 2023?
               </h1>
-              <p className={`${futuraLTBT.className} sub-para`}>
+              <p className={`${poppins.className} sub-para`}>
                 We were contacted by a multinational consumer personal
                 healthcare brand to help manage their Amazon Vendor Central.
               </p>
-              <Link href={"/"} className={`${futuraHv.className} read-more-p`}>
+              <Link href={"/"} className={`${poppins.className} read-more-p`}>
                 READ MORE
                 <Image
                   alt="growth eco"
@@ -141,15 +148,15 @@ function Blog() {
               src={"/sub-blog-small.png"}
             />
             <div className="info-con">
-              <p className={`${futuraLTBT.className} date`}>12-JUNE-2023</p>
-              <h1 className={futuraHv.className}>
+              <p className={`${poppins.className} date`}>12-JUNE-2023</p>
+              <h1 className={poppins.className}>
                 Basics of Amazon Bidding! What Influences CPC in 2023?
               </h1>
-              <p className={`${futuraLTBT.className} sub-para`}>
+              <p className={`${poppins.className} sub-para`}>
                 We were contacted by a multinational consumer personal
                 healthcare brand to help manage their Amazon Vendor Central.
               </p>
-              <Link href={"/"} className={`${futuraHv.className} read-more-p`}>
+              <Link href={"/"} className={`${poppins.className} read-more-p`}>
                 READ MORE
                 <Image
                   alt="growth eco"
@@ -163,7 +170,7 @@ function Blog() {
         </div>
       </section>
       <section className="blog-sell-wrap">
-        <h1 className={futuraHv.className}>Selling on Amazon</h1>
+        <h1 className={poppins.className}>Selling on Amazon</h1>
         <div className="card-wraper">
           <div className="cards">
             <Image
@@ -172,18 +179,18 @@ function Blog() {
               width={276}
               height={258}
             />
-            <p className={`${futuraLTBT.className} date`}>12-JUNE-2023</p>
-            <h1 className={futuraHv.className}>
+            <p className={`${poppins.className} date`}>12-JUNE-2023</p>
+            <h1 className={poppins.className}>
               Advanced Advertising Tips for Amazon Sellers
             </h1>
-            <p className={`${futuraLTBT.className} info`}>
+            <p className={`${poppins.className} info`}>
               We were contacted by a multinational consumer personal healthcare
               brand to help manage their Amazon Vendor Central account. Our
               client had only achieve.
             </p>
             <Link
               href={"/"}
-              className={`${futuraHv.className} read-more-para-blue`}
+              className={`${poppins.className} read-more-para-blue`}
             >
               Read More
               <Image
@@ -201,18 +208,18 @@ function Blog() {
               width={276}
               height={258}
             />
-            <p className={`${futuraLTBT.className} date`}>12-JUNE-2023</p>
-            <h1 className={futuraHv.className}>
+            <p className={`${poppins.className} date`}>12-JUNE-2023</p>
+            <h1 className={poppins.className}>
               Advanced Advertising Tips for Amazon Sellers
             </h1>
-            <p className={`${futuraLTBT.className} info`}>
+            <p className={`${poppins.className} info`}>
               We were contacted by a multinational consumer personal healthcare
               brand to help manage their Amazon Vendor Central account. Our
               client had only achieve.
             </p>
             <Link
               href={"/"}
-              className={`${futuraHv.className} read-more-para-blue`}
+              className={`${poppins.className} read-more-para-blue`}
             >
               Read More
               <Image
@@ -230,18 +237,18 @@ function Blog() {
               width={276}
               height={258}
             />
-            <p className={`${futuraLTBT.className} date`}>12-JUNE-2023</p>
-            <h1 className={futuraHv.className}>
+            <p className={`${poppins.className} date`}>12-JUNE-2023</p>
+            <h1 className={poppins.className}>
               Advanced Advertising Tips for Amazon Sellers
             </h1>
-            <p className={`${futuraLTBT.className} info`}>
+            <p className={`${poppins.className} info`}>
               We were contacted by a multinational consumer personal healthcare
               brand to help manage their Amazon Vendor Central account. Our
               client had only achieve.
             </p>
             <Link
               href={"/"}
-              className={`${futuraHv.className} read-more-para-blue`}
+              className={`${poppins.className} read-more-para-blue`}
             >
               Read More
               <Image
@@ -259,18 +266,18 @@ function Blog() {
               width={276}
               height={258}
             />
-            <p className={`${futuraLTBT.className} date`}>12-JUNE-2023</p>
-            <h1 className={futuraHv.className}>
+            <p className={`${poppins.className} date`}>12-JUNE-2023</p>
+            <h1 className={poppins.className}>
               Advanced Advertising Tips for Amazon Sellers
             </h1>
-            <p className={`${futuraLTBT.className} info`}>
+            <p className={`${poppins.className} info`}>
               We were contacted by a multinational consumer personal healthcare
               brand to help manage their Amazon Vendor Central account. Our
               client had only achieve.
             </p>
             <Link
               href={"/"}
-              className={`${futuraHv.className} read-more-para-blue`}
+              className={`${poppins.className} read-more-para-blue`}
             >
               Read More
               <Image
@@ -283,25 +290,25 @@ function Blog() {
           </div>
         </div>
         <div className="load-more-wrapper">
-          <Link href={"/"} className={`${futuraHv.className} link-lean-more`}>
+          <Link href={"/"} className={`${poppins.className} link-lean-more`}>
             Load More
           </Link>
         </div>
       </section>
       <section className="news-letter">
-        <h1 className={futuraHv.className}>
+        <h1 className={poppins.className}>
           Receive Our Content Straight to Your Inbox
         </h1>
         <input
           type="email"
           placeholder="Email"
-          className={`${futuraHv.className} news-letter-cus`}
+          className={`${poppins.className} news-letter-cus`}
           onChange={(e) => setEmail(e.target.value)}
         />
         <div className="submit-btn">
           <Link
             href={"/"}
-            className={`${futuraHv.className} news-sub`}
+            className={`${poppins.className} news-sub`}
             onClick={handleSubmit}
           >
             Get Our Newsletter

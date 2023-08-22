@@ -114,21 +114,27 @@
                 padding: 10px;
             }
                 h1{
-                    font-size: 32px;
+                    font-size: 30px;
+                    font-weight: 600;
                     line-height: normal;
                     margin-bottom: 5px;
                     text-transform: capitalize;
                     span{
                         border-bottom: 2px solid #000;
+                        @include from-320-575{
+                            border-bottom: none;
+                        }
                     }
                     @include from-320-575{
-                        font-size: 30px;
+                        font-size: 24px;
+                        margin-bottom: 0px;
                     }
                 }
                 p{
                     margin-top:10px;
-                    font-size: 20px;
-                    width: 70%;
+                    font-size: 16px;
+                    font-weight: 300;
+                    width: 100%;
                     line-height: normal;
                     @include from-320-992{
                         width: 100%;
@@ -184,7 +190,45 @@
             padding-left: 0px;
         }
     }
+    .cap-img-wrap{
+        display: flex;
+        justify-content: flex-end;
+            img{
+                width:85%;
+            }
+    }
 }
 .right{
     flex-direction: row !important;
+    .cap-img-wrap{
+        display: flex;
+        justify-content: flex-start;
+            img{
+                width:85%;
+            }
+    }
+}
+.swiper-button-prev{
+    @include from-320-575{
+        left: 5px;
+        width: 30px !important;
+        height: 30px !important;
+    }
+    &::after{
+        @include from-320-575{
+            font-size: 14px !important;
+        }
+    }
+}
+.swiper-button-next{
+    @include from-320-575{
+        right: 20px;
+        width: 30px !important;
+        height: 30px !important;
+    }
+    &::after{
+        @include from-320-575{
+            font-size: 14px !important;
+        }
+    }
 }

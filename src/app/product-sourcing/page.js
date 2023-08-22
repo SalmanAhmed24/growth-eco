@@ -1,4 +1,5 @@
 import localFont from "next/font/local";
+import { Poppins } from "next/font/google";
 import Link from "next/link";
 import "./service.scss";
 import Image from "next/image";
@@ -9,35 +10,39 @@ import ServiceGrowth from "@/component/serviceComponents/service-growth";
 import ServiceCards from "@/component/serviceComponents/service-grow-cards";
 import FAQs from "@/component/faq";
 import ScaleComp from "@/component/scaleComponent/scale";
-const futuraHv = localFont({
-  src: "../fonts/FuturaHeavyBT.ttf",
-  weight: "400",
-  style: "normal",
+// const futuraHv = localFont({
+//   src: "../fonts/FuturaHeavyBT.ttf",
+//   weight: "400",
+//   style: "normal",
+// });
+// const futuraBK = localFont({
+//   src: "../fonts/FutuBk.ttf",
+//   weight: "400",
+//   style: "normal",
+// });
+// const futuraMDBT = localFont({
+//   src: "../fonts/FutuMd.ttf",
+//   weight: "400",
+//   style: "normal",
+// });
+// const futuraLTBT = localFont({
+//   src: "../fonts/FuturaLtBT.ttf",
+//   weight: "400",
+//   style: "normal",
+// });
+const poppins = Poppins({
+  weight: ["300", "400", "600", "700", "900"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  display: "swap",
 });
-const futuraBK = localFont({
-  src: "../fonts/FutuBk.ttf",
-  weight: "400",
-  style: "normal",
-});
-const futuraMDBT = localFont({
-  src: "../fonts/FutuMd.ttf",
-  weight: "400",
-  style: "normal",
-});
-const futuraLTBT = localFont({
-  src: "../fonts/FuturaLtBT.ttf",
-  weight: "400",
-  style: "normal",
-});
-
 function Service() {
   return (
-    <section className="amazon-sec-wrap">
+    <section className={poppins.className}>
       <ServiceHeader
         heading1={"Product Sourcing"}
         para1={"Empowering your brand through product sourcing"}
-        futuraHv={futuraHv}
-        futuraLTBT={futuraLTBT}
+        poppins={poppins}
       />
       <ServiceWhy
         headingMain={"Why do you need "}
@@ -72,8 +77,7 @@ function Service() {
               "We keep our clients informed about the progress of their products, building a strong foundation of trust.",
           },
         ]}
-        futuraHv={futuraHv}
-        futuraLTBT={futuraLTBT}
+        poppins={poppins}
       />
       <ServiceCounter
         headingMain={"Case Study"}
@@ -88,8 +92,7 @@ function Service() {
         paraSub2={
           "Started in 2017, now helping business owners scale their Amazon business with a proven strategy"
         }
-        futuraHv={futuraHv}
-        futuraLTBT={futuraLTBT}
+        poppins={poppins}
       />
       <ServiceGrowth
         headingText={"How We Help You Grow Your "}
@@ -97,13 +100,10 @@ function Service() {
         paraText={
           "We find you the best suppliers to ensure access to high-quality products at competitive prices. Save your time and resources by taking the most important task on us and enable you to focus on other scaling your Amazon business "
         }
-        futuraHv={futuraHv}
-        futuraLTBT={futuraLTBT}
+        poppins={poppins}
       />
       <ScaleComp
-        futuraMD={futuraMDBT}
-        futuraHv={futuraHv}
-        futuraLTBT={futuraLTBT}
+        poppins={poppins}
         step1={"market analysis"}
         step2={"supplier research"}
         step3={"inventory management"}
@@ -139,14 +139,10 @@ function Service() {
               "Monitor customer feedback and reviews to improve Amazon product quality and address any issues, enhancing your brand reputation and driving repeat sales.",
           },
         ]}
-        futuraHv={futuraHv}
-        futuraLTBT={futuraLTBT}
+        poppins={poppins}
       />
       <FAQs
-        futuraBK={futuraBK}
-        futuraHv={futuraHv}
-        futuraLtBT={futuraLTBT}
-        futuraMDBT={futuraMDBT}
+        poppins={poppins}
         question1={"What is Amazon product sourcing?"}
         question2={
           "What types of Amazon products can I source through your service?"

@@ -10,39 +10,38 @@ import "swiper/css/navigation";
 import "swiper/css/effect-coverflow";
 import localFont from "@next/font/local";
 import "../../app/capabilities/capabilities.scss";
-const futuraHv = localFont({
-  src: "../../app/fonts/FutuHv.ttf",
-  weight: "400",
-  style: "normal",
-});
+// const futuraHv = localFont({
+//   src: "../../app/fonts/FutuHv.ttf",
+//   weight: "400",
+//   style: "normal",
+// });
 import Image from "next/image";
-const futuraBK = localFont({
-  src: "../../app/fonts/FutuBk.ttf",
-  weight: "400",
-  style: "normal",
-});
-const futuraMDBT = localFont({
-  src: "../../app/fonts/FutuMd.ttf",
-  weight: "400",
-  style: "normal",
-});
-const futuraLTBT = localFont({
-  src: "../../app/fonts/FuturaLtBT.ttf",
-  weight: "400",
-  style: "normal",
-});
-function Testimonials({ heading, sliderArr }) {
-  console.log("thi is arr", sliderArr);
+// const futuraBK = localFont({
+//   src: "../../app/fonts/FutuBk.ttf",
+//   weight: "400",
+//   style: "normal",
+// });
+// const futuraMDBT = localFont({
+//   src: "../../app/fonts/FutuMd.ttf",
+//   weight: "400",
+//   style: "normal",
+// });
+// const futuraLTBT = localFont({
+//   src: "../../app/fonts/FuturaLtBT.ttf",
+//   weight: "400",
+//   style: "normal",
+// });
+function Testimonials({ heading, sliderArr, poppins }) {
   return (
     <section className="testimonial-wrap">
       {heading ? (
-        <h1 className={futuraHv.className}>What Clients says about us</h1>
+        <h1 className={poppins.className}>What Clients says about us</h1>
       ) : null}
       <Swiper
         spaceBetween={150}
-        loop={false}
+        loop={true}
         effect={"coverflow"}
-        centeredSlides={true}
+        centeredSlides={false}
         slidesPerView={3}
         coverflowEffect={{
           rotate: 5,
@@ -55,30 +54,35 @@ function Testimonials({ heading, sliderArr }) {
             centeredSlides: true,
             grabCursor: true,
             zoom: false,
+            loop: true,
           },
           575: {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 50,
             centeredSlides: true,
             zoom: false,
+            loop: true,
           },
           768: {
             slidesPerView: 3,
             spaceBetween: 150,
-            centeredSlides: true,
+            centeredSlides: false,
             zoom: false,
+            loop: true,
           },
           1024: {
             slidesPerView: 3,
             spaceBetween: 150,
-            centeredSlides: true,
+            centeredSlides: false,
             zoom: false,
+            loop: true,
           },
           1500: {
             slidesPerView: 3,
             spaceBetween: 150,
-            centeredSlides: true,
+            centeredSlides: false,
             zoom: false,
+            loop: true,
           },
         }}
         modules={[EffectCoverflow, Navigation]}
@@ -98,8 +102,8 @@ function Testimonials({ heading, sliderArr }) {
                       height={66}
                     />
                     <div className="top-content-wrap">
-                      <h1 className={futuraHv.className}>{i.name}</h1>
-                      <p className={futuraLTBT.className}>{i.profession}</p>
+                      <h1 className={poppins.className}>{i.name}</h1>
+                      <p className={poppins.className}>{i.profession}</p>
                     </div>
                   </div>
                   <Image
@@ -108,7 +112,7 @@ function Testimonials({ heading, sliderArr }) {
                     width={110}
                     height={22}
                   />
-                  <p className={futuraLTBT.className}>{i.testimonial}</p>
+                  <p className={poppins.className}>{i.testimonial}</p>
                   <Image
                     alt="growth eco"
                     className="test-down"

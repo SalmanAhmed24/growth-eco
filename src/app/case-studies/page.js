@@ -1,28 +1,35 @@
 "use client";
 import localFont from "next/font/local";
+import { Poppins } from "next/font/google";
 import Link from "next/link";
 import "./style.scss";
 import Image from "next/image";
 import React, { useState } from "react";
-const futuraHv = localFont({
-  src: "../fonts/FuturaHeavyBT.ttf",
-  weight: "400",
-  style: "normal",
-});
-const futuraBK = localFont({
-  src: "../fonts/FutuBk.ttf",
-  weight: "400",
-  style: "normal",
-});
-const futuraMDBT = localFont({
-  src: "../fonts/FutuMd.ttf",
-  weight: "400",
-  style: "normal",
-});
-const futuraLTBT = localFont({
-  src: "../fonts/FuturaLtBT.ttf",
-  weight: "400",
-  style: "normal",
+// const futuraHv = localFont({
+//   src: "../fonts/FuturaHeavyBT.ttf",
+//   weight: "400",
+//   style: "normal",
+// });
+// const futuraBK = localFont({
+//   src: "../fonts/FutuBk.ttf",
+//   weight: "400",
+//   style: "normal",
+// });
+// const futuraMDBT = localFont({
+//   src: "../fonts/FutuMd.ttf",
+//   weight: "400",
+//   style: "normal",
+// });
+// const futuraLTBT = localFont({
+//   src: "../fonts/FuturaLtBT.ttf",
+//   weight: "400",
+//   style: "normal",
+// });
+const poppins = Poppins({
+  weight: ["300", "400", "600", "700", "900"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  display: "swap",
 });
 function CaseStudies() {
   const [activeLink, setActiveLink] = useState("Branding");
@@ -33,29 +40,29 @@ function CaseStudies() {
     <section className="case-studies-con">
       <header className="case-studies-header">
         <div className="header-content-wrap">
-          <h1 className={futuraHv.className}>Case Studies</h1>
-          <p className={futuraLTBT.className}>
+          <h1 className={poppins.className}>Case Studies</h1>
+          <p className={poppins.className}>
             Our marketing company specializes in helping sellers navigate and
             thrive in highly competitive environments, leveraging targeted
             strategies to boost visibility.
           </p>
-          <Link href={"/"} className={`${futuraHv.className} headerLink`}>
+          <Link href={"/"} className={`${poppins.className} headerLink`}>
             Start Now
           </Link>
         </div>
       </header>
       <section className="succes-wrap">
-        <h1 className={futuraHv.className}>Building Bridges to Success,</h1>
-        <h1 className={`${futuraHv.className} blue-heading`}>
+        <h1 className={poppins.className}>Building Bridges to Success,</h1>
+        <h1 className={`${poppins.className} blue-heading`}>
           One Client at a Time
         </h1>
-        <p className={futuraLTBT.className}>
+        <p className={poppins.className}>
           We envision a marketing website that provides an immersive and
           captivating user experience. Our goal is to create a visually
           appealing.
         </p>
         <div className="grow-link-wrap">
-          <Link href={"/"} className={futuraHv.className}>
+          <Link href={"/"} className={poppins.className}>
             Ready To Grow
             <Image
               alt="growth eco"
@@ -67,12 +74,9 @@ function CaseStudies() {
         </div>
       </section>
       <section className="case-studies no-bg">
-        <h1 className={futuraHv.className}>Case Studies</h1>
+        <h1 className={poppins.className}>Case Studies</h1>
         <div className="case-links-wrap">
-          <ul
-            onClick={handleLinks}
-            className={`${futuraBK.className} links-ul`}
-          >
+          <ul onClick={handleLinks} className={`${poppins.className} links-ul`}>
             <li className={activeLink == "Branding" ? "activeLinkCS" : ""}>
               Branding
             </li>

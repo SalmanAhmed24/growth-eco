@@ -30,7 +30,7 @@
         background-size: cover;
         background-color: #385db9;
         background-repeat: no-repeat;
-        padding:30px 70px;
+        padding:50px 70px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -42,7 +42,7 @@
             background-color: #4663ad;
         }
             h1{
-                font-size: 32px;
+                font-size: 30px;
                 color: #fff;
                 margin-bottom: 20px;
                 line-height: normal;
@@ -50,7 +50,7 @@
                 text-transform: capitalize;
                 width: 70%;
                 @include from-320-992{
-                    font-size: 30px;
+                    font-size: 24px;
                 }
                 @include from-320-575{
                     width: 90%;
@@ -76,13 +76,14 @@
             }
             .exp-link{
                 align-self: center;
-                padding: 10px 20px;
+                padding: 5px 10px;
                 border-radius: 0px 20px 20px 20px;
                 background: #FFF;
                 text-transform: uppercase;
                 text-decoration: none;
                 border: 1px solid #fff;
                 transition: 0.3s ease-in-out;
+                font-size: 16px;
                 &:hover{
                     background: transparent;
                     color: #fff;
@@ -93,12 +94,12 @@
 .main-blogs-wrap{
     display: flex;
     flex-wrap: nowrap;
-    padding: 70px 100px;
+    padding: 50px 70px;
     @include from-992-1300{
-        padding: 30px 50px;
+        padding: 50px 70px;
     }
     @include from-320-992{
-        padding: 30px 20px;
+        padding: 20px 20px;
         flex-wrap: wrap;
     }
         .main-article{
@@ -119,12 +120,14 @@
             }
             .date{
                 font-size: 14px;
+                font-weight: 300;
                 line-height: normal;
                 margin-bottom: 5px;
                 margin-top: 5px;
             }
             h1{
-                font-size: 32px;
+                font-size: 30px;
+                font-weight: 600;
                 line-height: normal;
                 margin-bottom: 10px;
                 @include from-320-575{
@@ -132,10 +135,11 @@
                 }
             }
             .main-para{
-                font-size: 20px;
+                font-size: 16px;
+                font-weight: 300;
                 line-height: normal;
                 @include from-320-575{
-                    font-size: 15px;
+                    font-size: 14px;
                 }
             }
         }
@@ -164,13 +168,15 @@
                             margin-left: 10px;
                                 .date{
                                     font-size: 14px;
+                                    font-weight: 300;
                                     line-height: normal;
                                     margin-bottom: 5px;
                                     margin-top: 5px;
                                 }
                                 h1{
-                                    font-size: 20px;
+                                    font-size: 18px;
                                     line-height: normal;
+                                    font-weight: 600;
                                     margin-bottom: 5px;
                                     @include from-320-575{
                                         width: 90%;
@@ -178,7 +184,8 @@
                                     }
                                 }
                                 .sub-para{
-                                    font-size: 15px;
+                                    font-size: 14px;
+                                    font-weight: 300;
                                     line-height: normal;
                                     margin-bottom: 5px;
                                     @include from-320-575{
@@ -217,8 +224,9 @@
         padding: 30px 20px;
     }
         h1{
-            font-size: 32px;
+            font-size: 30px;
             line-height: normal;
+            font-weight: 600;
             margin-bottom: 20px;
             text-align: center;
             @include from-320-575{
@@ -257,12 +265,14 @@
                     }
                     .date{
                         font-size: 14px;
+                        font-weight: 300;
                         line-height: normal;
                         margin-bottom: 5px;
                         margin-top: 5px;
                     }
                     h1{
-                        font-size: 20px;
+                        font-size: 18px;
+                        font-weight: 600;
                         line-height: normal;
                         margin-bottom: 5px;
                         text-align: left;
@@ -272,6 +282,7 @@
                     }
                     p{
                         font-size: 16px;
+                        font-weight: 300;
                         line-height: normal;
                         margin-bottom: 10px;
                         text-align: justify;
@@ -283,6 +294,7 @@
                         text-decoration: none;
                         text-transform: uppercase;
                         font-size: 14px;
+                        font-weight: 300;
                         img{
                             margin-left: 10px;
                             width: auto;
@@ -311,24 +323,27 @@
     background-image: url('../../../public/letter-box.png');
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 100px;
-    padding: 70px;
+    padding:50px 70px;
     height: 200px;
     @include from-320-575{
-        margin-top: 20px;
+        margin-top: 0px;
         padding: 20px;
-        height: 350px;
+        height: 250px;
         background-position-y: -10px;
         background-size: contain;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         background-image: url('../../../public/blog-banner-mobile.png');
     }
         h1{
             text-align: center;
-            font-size: 32px;
+            font-size: 30px;
+            font-weight: 600;
             color: #FFF;
             margin-bottom: 20px;
             @include from-320-575{
-                font-size: 30px;
+                font-size: 24px;
             }
         }
         .news-letter-cus{
@@ -346,8 +361,8 @@
                 .news-sub{
                     border-radius: 20px 0px 20px 20px;
                     background: #FFF;
-                    font-size: 20px;
-                    padding: 10px 20px;
+                    font-size: 16px;
+                    padding: 5px 10px;
                     text-decoration: none;
                     border: 1px solid #fff;
                     transition: 0.3s ease-in-out;
