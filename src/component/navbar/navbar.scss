@@ -129,12 +129,12 @@
     animation-duration: 0.5s;
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
-    padding: 20px;
     right: 0px;
-    height: auto;
+    width: 100vw;
     .innerLinks{
         display: flex;
         flex-direction: column;
+        padding: 40px;
             .nav-link-wraps{
                 padding: 5px 0px;
                     a{
