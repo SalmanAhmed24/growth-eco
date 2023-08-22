@@ -36,8 +36,6 @@ function Service() {
       <ServiceHeader
         heading1={"Amazon Seller Account Suspension & How to Avoid"}
         para1={"Get your account back with our innovative solution!"}
-        futuraHv={futuraHv}
-        futuraLTBT={futuraLTBT}
       />
       <ServiceWhy
         headingMain={"Why do you need an "}

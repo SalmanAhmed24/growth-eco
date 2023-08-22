@@ -36,10 +36,12 @@
     @include from-320-575{
         background-image: url('../../../public/team-mobile-bg.png');
         background-position: top;
+        height: 440px;
     }
         p{
             margin-bottom: 30px;
-            font-size: 24px;
+            font-size: 16px;
+            font-weight: 300;
             width: 50%;
             text-align: center;
             @include from-320-575{
@@ -49,8 +51,8 @@
         .team-contact{
             margin-top: 0px;
         text-decoration: none;
-        padding: 5px 20px;
-        font-size: 20px;
+        padding: 5px 10px;
+        font-size: 16px;
         border-radius: 0px 20px 20px 20px;
         background: #415B9F;
         color: #fff;
@@ -80,29 +82,32 @@
     @include from-320-575{
         padding: 20px;
         background-image: url('../../../public/skilled-mobile.png');
-        background-position: bottom;
+        background-position-y: -188px;
+        height: 330px;
     }
         h1{
             margin-top: 80px;
-            font-size: 40px;
+            font-size: 30px;
+            font-weight: 600;
             line-height: normal;
             text-align: center;
             color: #fff;
             margin-bottom: 10px;
             @include from-320-575{
                 margin-top: 10px;
-                font-size: 30px;
+                font-size: 24px;
             }
         }
         p{
-            font-size: 20px;
+            font-size: 16px;
+            font-weight: 300;
             color: #fff;
             text-align: center;
             width: 50%;
             line-height: 25px;
             @include from-320-992{
                 width: 100%;
-                font-size: 18px;
+                font-size: 14px;
             }
         }
 }
@@ -120,21 +125,23 @@
     }
         h1{
             text-align: center;
-            font-size: 40px;
+            font-size: 30px;
+            font-weight: 600;
             line-height: normal;
             margin-bottom: 10px;
             @include from-320-575{
-                font-size: 30px;
+                font-size: 24px;
             }
         }
         p{
             text-align: center;
             width: 50%;
-            font-size: 20px;
+            font-size: 16px;
+            font-weight: 300;
             line-height: normal;
             @include from-320-575{
                 width: 100%;
-                font-size: 16px;
+                font-size: 14px;
             }
         }
         .upper-team{
@@ -172,7 +179,8 @@
                     }
                         .name{
                             color: #36508F;
-                            font-size: 20px;
+                            font-size: 18px;
+                            font-weight: 600;
                             line-height: normal;
                             text-transform: uppercase;
                             margin-bottom: 5px;
@@ -185,6 +193,7 @@
                         p{
                             align-self: center;
                             font-size: 15px;
+                            font-weight: 300;
                             @include from-320-575{
                                 font-size: 8px;
                             }
@@ -224,7 +233,8 @@
                         }
                         .name{
                             color: #36508F;
-                            font-size: 20px;
+                            font-size: 18px;
+                            font-weight: 300;
                             line-height: normal;
                             text-transform: uppercase;
                             margin-bottom: 5px;
@@ -240,6 +250,7 @@
                         p{
                             align-self: center;
                             font-size: 15px;
+                            font-weight: 300;
                             @include from-320-575{
                                 font-size: 8px;
                             }
@@ -290,19 +301,21 @@
     margin-top: 20px;
     overflow-x: clip;
     h1{
-        font-size: 40px;
+        font-size: 30px;
         line-height: normal;
         text-transform: capitalize;
         text-align: center;
+        font-weight: 600;
         @include from-320-575{
-         font-size: 30px; 
+         font-size: 24px; 
          margin-bottom: 20px;  
         }
     }
     p{
         width: 50%;
         text-align: center;
-        font-size: 24px;
+        font-size: 16px;
+        font-weight: 300;
         line-height: normal;
         @include from-320-575{
             width: 90%;
@@ -328,25 +341,30 @@
     align-items: center;
     margin-bottom: 150px;
     margin-top: 150px;
+    @include from-320-575{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
     h1{
         color: #fff;
         text-transform: capitalize;
-        font-size: 32px;
+        font-size: 30px;
+        font-weight: 600;
         margin-bottom: 20px;
         line-height: normal;
         @include from-320-992{
             text-align: center;
         }
         @include from-320-575{
-            font-size: 25px;
+            font-size: 24px;
         }
     }
     .contact-link{
         border-radius: 20px 0px 20px 20px;
         background: #FFF;
-        font-size: 24px;
+        font-size: 18px;
         text-decoration: none;
-        padding: 5px 20px;
+        padding: 5px 10px;
         color: #000;
         transition: 0.3s ease-in-out;
         border:1px solid #fff;

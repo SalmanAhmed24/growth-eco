@@ -12,26 +12,33 @@ import "swiper/css/navigation";
 import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
 import "./ourTeam.scss";
 import TestSlider from "@/component/sliders/testSlider";
-const futuraHv = localFont({
-  src: "../fonts/FuturaHeavyBT.ttf",
-  weight: "400",
-  style: "normal",
+import { Poppins } from "next/font/google";
+const poppins = Poppins({
+  weight: ["300", "400", "600", "700", "900"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  display: "swap",
 });
-const futuraBK = localFont({
-  src: "../fonts/FutuBk.ttf",
-  weight: "400",
-  style: "normal",
-});
-const futuraMDBT = localFont({
-  src: "../fonts/FutuMd.ttf",
-  weight: "400",
-  style: "normal",
-});
-const futuraLTBT = localFont({
-  src: "../fonts/FuturaLtBT.ttf",
-  weight: "400",
-  style: "normal",
-});
+// const poppins = localFont({
+//   src: "../fonts/FuturaHeavyBT.ttf",
+//   weight: "400",
+//   style: "normal",
+// });
+// const futuraBK = localFont({
+//   src: "../fonts/FutuBk.ttf",
+//   weight: "400",
+//   style: "normal",
+// });
+// const poppins = localFont({
+//   src: "../fonts/FutuMd.ttf",
+//   weight: "400",
+//   style: "normal",
+// });
+// const poppins = localFont({
+//   src: "../fonts/poppins.ttf",
+//   weight: "400",
+//   style: "normal",
+// });
 function OurTeam() {
   const sliderSettings = {
     observeParents: true,
@@ -41,17 +48,17 @@ function OurTeam() {
   return (
     <section className="our-team">
       <header className="our-team-header">
-        <p className={futuraLTBT.className}>
+        <p className={poppins.className}>
           We are Amazon service-providing company helping amazon seller like you
           scale Amazon business to new heights!
         </p>
-        <Link href={"/"} className={`${futuraMDBT.className} team-contact`}>
+        <Link href={"/"} className={`${poppins.className} team-contact`}>
           Contact Us
         </Link>
       </header>
       <section className="our-team-skill">
-        <h1 className={futuraHv.className}>Unleashing our Dynamic Team!</h1>
-        <p className={futuraLTBT.className}>
+        <h1 className={poppins.className}>Unleashing our Dynamic Team!</h1>
+        <p className={poppins.className}>
           We are a diverse group of passionate individuals committed to
           achieving excellence in Amazon&apos;s business growth. Our team has a
           common goal~ to collaborate and innovate to overcome challenges and
@@ -61,8 +68,8 @@ function OurTeam() {
         </p>
       </section>
       <section className="team-wrapper">
-        <h1 className={futuraHv.className}>Our Team</h1>
-        <p className={futuraLTBT.className}>
+        <h1 className={poppins.className}>Our Team</h1>
+        <p className={poppins.className}>
           Embarking on an Epic Journey of Excellence and Innovation!
         </p>
         <div className="upper-team">
@@ -82,8 +89,8 @@ function OurTeam() {
                 height={258}
               />
             </div>
-            <h1 className={`${futuraHv.className} name`}>FARAZ YASIN</h1>
-            <p className={futuraHv.className}>CEO/Founder</p>
+            <h1 className={`${poppins.className} name`}>FARAZ YASIN</h1>
+            <p className={poppins.className}>CEO/Founder</p>
           </div>
           <div className="team-card">
             <div className="circle-img">
@@ -101,8 +108,8 @@ function OurTeam() {
                 height={258}
               />
             </div>
-            <h1 className={`${futuraHv.className} name`}>FARAZ YASIN</h1>
-            <p className={futuraHv.className}>CEO/Founder</p>
+            <h1 className={`${poppins.className} name`}>FARAZ YASIN</h1>
+            <p className={poppins.className}>CEO/Founder</p>
           </div>
         </div>
         <div className="mid-team">
@@ -122,8 +129,8 @@ function OurTeam() {
                 height={258}
               />
             </div>
-            <h1 className={`${futuraHv.className} name`}>FARAZ YASIN</h1>
-            <p className={futuraHv.className}>CEO/Founder</p>
+            <h1 className={`${poppins.className} name`}>FARAZ YASIN</h1>
+            <p className={poppins.className}>CEO/Founder</p>
           </div>
           <div className="team-card">
             <div className="circle-img">
@@ -142,8 +149,8 @@ function OurTeam() {
                 height={258}
               />
             </div>
-            <h1 className={`${futuraHv.className} name`}>FARAZ YASIN</h1>
-            <p className={futuraHv.className}>CEO/Founder</p>
+            <h1 className={`${poppins.className} name`}>FARAZ YASIN</h1>
+            <p className={poppins.className}>CEO/Founder</p>
           </div>
           <div className="team-card">
             <div className="circle-img">
@@ -162,8 +169,8 @@ function OurTeam() {
                 height={258}
               />
             </div>
-            <h1 className={`${futuraHv.className} name`}>FARAZ YASIN</h1>
-            <p className={futuraHv.className}>CEO/Founder</p>
+            <h1 className={`${poppins.className} name`}>FARAZ YASIN</h1>
+            <p className={poppins.className}>CEO/Founder</p>
           </div>
           <div className="team-card">
             <div className="circle-img">
@@ -182,8 +189,8 @@ function OurTeam() {
                 height={258}
               />
             </div>
-            <h1 className={`${futuraHv.className} name`}>FARAZ YASIN</h1>
-            <p className={futuraHv.className}>CEO/Founder</p>
+            <h1 className={`${poppins.className} name`}>FARAZ YASIN</h1>
+            <p className={poppins.className}>CEO/Founder</p>
           </div>
           <div className="team-card">
             <div className="circle-img">
@@ -202,8 +209,8 @@ function OurTeam() {
                 height={258}
               />
             </div>
-            <h1 className={`${futuraHv.className} name`}>FARAZ YASIN</h1>
-            <p className={futuraHv.className}>CEO/Founder</p>
+            <h1 className={`${poppins.className} name`}>FARAZ YASIN</h1>
+            <p className={poppins.className}>CEO/Founder</p>
           </div>
           <div className="team-card">
             <div className="circle-img">
@@ -222,12 +229,12 @@ function OurTeam() {
                 height={258}
               />
             </div>
-            <h1 className={`${futuraHv.className} name`}>FARAZ YASIN</h1>
-            <p className={futuraHv.className}>CEO/Founder</p>
+            <h1 className={`${poppins.className} name`}>FARAZ YASIN</h1>
+            <p className={poppins.className}>CEO/Founder</p>
           </div>
         </div>
         <div className="see-more-wrap">
-          <Link className={futuraMDBT.className} href={"/"}>
+          <Link className={poppins.className} href={"/"}>
             See More
             <span>
               <Image
@@ -250,8 +257,8 @@ function OurTeam() {
         />
       </div>
       <section className="team-action-wrap">
-        <h1 className={futuraHv.className}>Our Team In Action</h1>
-        <p className={futuraLTBT.className}>
+        <h1 className={poppins.className}>Our Team In Action</h1>
+        <p className={poppins.className}>
           Wonderful group of creative individuals
         </p>
         <Image
@@ -262,8 +269,8 @@ function OurTeam() {
         />
       </section>
       <section className="interest">
-        <h1 className={futuraHv.className}>interested in joining our team?</h1>
-        <Link href={"/"} className={`${futuraHv.className} contact-link`}>
+        <h1 className={poppins.className}>interested in joining our team?</h1>
+        <Link href={"/"} className={`${poppins.className} contact-link`}>
           Contact Now
         </Link>
       </section>

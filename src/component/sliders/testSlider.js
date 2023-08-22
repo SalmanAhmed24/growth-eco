@@ -20,37 +20,37 @@ export default function TestSlider() {
           // el: 'swiper-pagination',
         }}
         effect={"coverflow"}
-        slidesPerView={2}
-        centeredSlides={true}
+        slidesPerView={3}
+        centeredSlides={false}
         coverflowEffect={{
           rotate: 50,
         }}
         breakpoints={{
           320: {
             slidesPerView: 1,
-            spaceBetween: 0,
+            spaceBetween: 10,
             centeredSlides: true,
-            grabCursor: true,
+            grabCursor: false,
           },
           575: {
             slidesPerView: 1,
-            spaceBetween: 50,
-            centeredSlides: true,
+            spaceBetween: 0,
+            centeredSlides: false,
           },
           768: {
-            slidesPerView: 2,
-            spaceBetween: 150,
-            centeredSlides: true,
+            slidesPerView: 1,
+            spaceBetween: 0,
+            centeredSlides: false,
           },
           1024: {
-            slidesPerView: 2,
-            spaceBetween: 150,
-            centeredSlides: true,
+            slidesPerView: 3,
+            spaceBetween: 0,
+            centeredSlides: false,
           },
           1500: {
-            slidesPerView: 2,
-            spaceBetween: 150,
-            centeredSlides: true,
+            slidesPerView: 3,
+            spaceBetween: 0,
+            centeredSlides: false,
           },
         }}
         modules={[Pagination, EffectCoverflow]}

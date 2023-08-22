@@ -82,8 +82,10 @@ table {
     position: relative;
     height: 550px;
     @include from-320-to-575{
-        background-image: url('../../public/header-mobile.png');
+        background-image: url('../../public/new-home-bg.svg');
         background-size: cover;
+        width: 100%;
+        height: auto;
         background-repeat: no-repeat;
         background-position-y:-80px;
     }
