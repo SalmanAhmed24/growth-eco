@@ -240,78 +240,148 @@ function Navbar() {
       </nav>
       {mobileNav ? (
         <div className="moible-abs-menu">
-          <ul
-            onClick={handleLinks}
-            className={`${poppins.className} mobile-nav-list`}
-          >
-            <li className={path == "/" ? "activeLink" : ""}>Home</li>
-            <li
-              onClick={handleAboutUs}
-              className={
-                activeLink == "/aboutUs" ? "activeLink dropAbout" : "dropAbout"
-              }
-            >
-              About Us +
-              <div className="mob-div">
-                <ul className="droplist">
-                  <li onClick={(e) => handleInnerLinks(e, "/ourStory")}>
-                    Our Story
-                  </li>
-                  <li onClick={(e) => handleInnerLinks(e, "/ourTeam")}>
-                    Our Team
-                  </li>
-                </ul>
+          <div className="innerLinks">
+            <div className="nav-link-wraps">
+              <Link
+                onClick={() => setMobileNav(false)}
+                className={path == "/" ? "activeLink" : ""}
+                href={"/"}
+              >
+                Home
+              </Link>
+            </div>
+            <div className="nav-link-wraps dropdown-wrap">
+              <Link
+                onClick={() => setMobileNav(false)}
+                className={
+                  path == "/aboutUs" ||
+                  path == "/ourStory" ||
+                  path == "/ourTeam"
+                    ? "activeLink"
+                    : ""
+                }
+                href={"/aboutUs"}
+              >
+                About Us +
+              </Link>
+              <div className="drop-div">
+                <Link
+                  onClick={() => setMobileNav(false)}
+                  className={path == "/ourStory" ? "activeInner" : ""}
+                  href={"/ourStory"}
+                >
+                  Our Story
+                </Link>
+                <Link
+                  onClick={() => setMobileNav(false)}
+                  className={path == "/ourTeam" ? "activeInner" : ""}
+                  href={"/ourTeam"}
+                >
+                  Our Team
+                </Link>
               </div>
-            </li>
-            <li
-              onClick={handleCapabilities}
-              className={
-                activeLink == "/capabilities" ? "activeLink dropCap" : "dropCap"
-              }
-            >
-              Capabilities +
-              <div className="mob-div">
-                <ul className="droplist">
-                  <li onClick={(e) => handleInnerLinks(e, "/product-sourcing")}>
-                    Product Sourcing
-                  </li>
-                  <li
-                    onClick={(e) =>
-                      handleInnerLinks(e, "/listing-reinstatement")
-                    }
-                  >
-                    Listing Reinstatement
-                  </li>
-                  <li onClick={(e) => handleInnerLinks(e, "/done-amazon")}>
-                    Done For You Amazon
-                  </li>
-                  <li onClick={(e) => handleInnerLinks(e, "/brand-storefront")}>
-                    Brand Storefront
-                  </li>
-                  <li onClick={(e) => handleInnerLinks(e, "/product-research")}>
-                    Product Research
-                  </li>
-                  <li
-                    onClick={(e) => handleInnerLinks(e, "/amazon-advertising")}
-                  >
-                    Amazon Advertising
-                  </li>
-                  <li onClick={(e) => handleInnerLinks(e, "/amazon-content")}>
-                    Amazon Content
-                  </li>
-                  <li
-                    onClick={(e) => handleInnerLinks(e, "/account-suspension")}
-                  >
-                    Account Suspension
-                  </li>
-                </ul>
+            </div>
+
+            <div className="nav-link-wraps dropdown-wrap">
+              <Link
+                onClick={() => setMobileNav(false)}
+                className={
+                  path == "/capabilities" ||
+                  path == "/product-sourcing" ||
+                  path == "/listing-reinstatement" ||
+                  path == "/amazon-advertising" ||
+                  path == "/amazon-content" ||
+                  path == "/done-amazon" ||
+                  path == "/product-research" ||
+                  path == "/brand-storefront" ||
+                  path == "/account-suspension"
+                    ? "activeLink"
+                    : ""
+                }
+                href={"/capabilities"}
+              >
+                Capabilities +
+              </Link>
+              <div className="drop-div">
+                <Link
+                  onClick={() => setMobileNav(false)}
+                  className={path == "/product-sourcing" ? "activeInner" : ""}
+                  href={"/product-sourcing"}
+                >
+                  Product Sourcing
+                </Link>
+                <Link
+                  onClick={() => setMobileNav(false)}
+                  className={
+                    path == "/listing-reinstatement" ? "activeInner" : ""
+                  }
+                  href={"/listing-reinstatement"}
+                >
+                  Listing Reinstatement
+                </Link>
+                <Link
+                  onClick={() => setMobileNav(false)}
+                  className={path == "/amazon-advertising" ? "activeInner" : ""}
+                  href={"/amazon-advertising"}
+                >
+                  Amazon Advertising
+                </Link>
+                <Link
+                  onClick={() => setMobileNav(false)}
+                  className={path == "/amazon-content" ? "activeInner" : ""}
+                  href={"/amazon-content"}
+                >
+                  Amazon Content
+                </Link>
+                <Link
+                  onClick={() => setMobileNav(false)}
+                  className={path == "/done-amazon" ? "activeInner" : ""}
+                  href={"/done-amazon"}
+                >
+                  Amazon Done
+                </Link>
+                <Link
+                  onClick={() => setMobileNav(false)}
+                  className={path == "/product-research" ? "activeInner" : ""}
+                  href={"/product-research"}
+                >
+                  Product Research
+                </Link>
+                <Link
+                  onClick={() => setMobileNav(false)}
+                  className={path == "/brand-storefront" ? "activeInner" : ""}
+                  href={"/brand-storefront"}
+                >
+                  Brand Storefront
+                </Link>
+                <Link
+                  onClick={() => setMobileNav(false)}
+                  className={path == "/account-suspension" ? "activeInner" : ""}
+                  href={"/account-suspension"}
+                >
+                  Account Suspension
+                </Link>
               </div>
-            </li>
-            <li className={path == "/case-studies" ? "activeLink" : ""}>
-              Case Studies
-            </li>
-            <li className={path == "/blog" ? "activeLink" : ""}>Blog</li>
-          </ul>
+            </div>
+            <div className="nav-link-wraps">
+              <Link
+                onClick={() => setMobileNav(false)}
+                className={path == "/case-studies" ? "activeLink" : ""}
+                href={"/case-studies"}
+              >
+                Case Studies
+              </Link>
+            </div>
+            <div className="nav-link-wraps">
+              <Link
+                onClick={() => setMobileNav(false)}
+                className={path == "/blog" ? "activeLink" : ""}
+                href={"/blog"}
+              >
+                Blog
+              </Link>
+            </div>
+          </div>
         </div>
       ) : null}
     </section>

@@ -70,6 +70,16 @@ table {
         @content;
     }
 }
+@mixin from-575-to-820{
+    @media screen and (min-width:575px) and (max-width:820px) {
+        @content;
+    }
+}
+@mixin from-820-to-992{
+    @media screen and (min-width:820px) and (max-width:992px) {
+        @content;
+    }
+}
 @mixin from-992-to-1500{
     @media screen and (min-width:992px) and (max-width:1500px) {
         @content;
@@ -85,9 +95,15 @@ table {
         background-image: url('../../public/new-home-bg.svg');
         background-size: cover;
         width: 100%;
-        height: auto;
         background-repeat: no-repeat;
-        background-position-y:-80px;
+        background-position-y:-200px;
+        height: 380px;
+    }
+    @include from-575-to-820{
+        height: 330px;
+    }
+    @include from-820-to-992{
+        height: 330px;
     }
         .header-content-wrap{
             position: absolute;
@@ -119,9 +135,13 @@ table {
                     font-size: 38px;
                 }
                 @include from-320-to-992{
-                    width: 80%;
+                    width: 70%;
                     font-size: 30px;
                     line-height: 40px;
+                }
+                @include from-320-to-575{
+                    font-size: 24px;
+                    width: 100%;
                 }
                     span{
                         color:#4663AC
@@ -172,7 +192,7 @@ table {
     overflow-x: clip;
         flex-direction: column;
         @include from-320-to-575{
-            padding: 0px 20px 20px 20px;
+            padding: 20px 20px 20px 20px;
         }
     .compt-wrap{
         width: 100%;
@@ -360,7 +380,7 @@ margin-top: 20px;
                     color: #4663AC;
                     margin-bottom: 10px;
                     font-weight: 600;
-                    align-self: flex-start;
+                    align-self: center;
                     @include from-320-to-992{
                         font-size: 18px;
                         font-weight: 600;
@@ -1090,11 +1110,19 @@ width: 275px !important;
     width: 50px !important;
     border-radius: 50% !important;
     top:200px !important;
+    @include from-320-to-992{
+        width: 30px !important;
+        height: 30px !important;
+        
+    }
     &::after{
         content: 'next' !important;
     color: #fff !important;
     font-size: 22px !important;
     font-weight: bold !important;
+    @include from-320-to-992{
+        font-size: 14px !important;
+    }
     }
  }
  .swiper-button-prev{
@@ -1103,11 +1131,24 @@ width: 275px !important;
     width: 50px !important;
     border-radius: 50% !important;
     top:200px !important;
-
+    @include from-320-to-992{
+        width: 30px !important;
+        height: 30px !important;
+        left: 0px !important;
+    }
     &::after{
         content: 'prev' !important;
     color: #fff !important;
     font-size: 22px !important;
     font-weight: bold !important;
+    @include from-320-to-992{
+        font-size: 14px !important;
     }
+    }
+ }
+ .swiper-3d .swiper-wrapper{
+     transform-style: flat !important;
+ }
+ .mySwipper{
+
  }

@@ -122,7 +122,6 @@
 }
 .moible-abs-menu{
     position: absolute;
-    width: 100%;
     height: auto;
     background-color: #4663AC;
     z-index: 22222;
@@ -130,16 +129,40 @@
     animation-duration: 0.5s;
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
-    
-    .mobile-nav-list{
+    padding: 20px;
+    right: 0px;
+    height: auto;
+    .innerLinks{
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        padding: 30px;
-            li{
-                font-size: 20px;
-                color: #fff;
-                margin-bottom: 20px;
+            .nav-link-wraps{
+                padding: 5px 0px;
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: 16px;
+                    }
+            }
+            .dropdown-wrap{
+                display: flex;
+                flex-direction: column;
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: 16px;
+                        
+                    }
+                    .drop-div{
+                        display: flex;
+                        flex-direction: column;
+                        padding-left: 20px;
+                            a{
+                                text-decoration: none;
+                        color: #fff;
+                        font-size: 16px;
+                                padding: 5px 0px;  
+                            }
+                    }
             }
     }
 }
