@@ -272,7 +272,7 @@ margin-top: 20px;
     display: flex;
     padding: 70px 0px;
     position: relative;
-    @include from-320-to-992{
+    @include from-320-to-575{
         display: none;
         flex-direction: column;
         align-items: center;
@@ -292,7 +292,7 @@ margin-top: 20px;
             z-index: -1;
             margin:auto;
             overflow: hidden;
-                @include from-320-to-992{
+                @include from-320-to-575{
                     display: none;
                 }
         }
@@ -305,16 +305,16 @@ margin-top: 20px;
     position: relative;
     top: 10.8vw;
     left: -2vw;
-    // @include from-575-to-992{
-    //     top: 14.8vw;
-    // left: 1vw;
-    // }
+    @include from-575-to-992{
+        
+    left: -9vw;
+    }
                 h2{
                     color: #4663AC;
                     margin-bottom: 10px;
                     font-weight: 600;
                     @include from-320-to-992{
-                        font-size: 18px;
+                        font-size: 12px;
                         font-weight: 600;
                     }
                 }
@@ -324,7 +324,7 @@ margin-top: 20px;
                     font-size: 14px;
                     font-weight: 300;
                     @include from-320-to-992{
-                        font-size: 12px;
+                        font-size: 10px;
                     }
                 }
         }
@@ -338,16 +338,15 @@ margin-top: 20px;
     position: relative;
     top: 9vw;
     left: -3vw;
-    // @include from-575-to-992{
-    //     top: -6vw;
-    // left: 2px;
-    // }
+    @include from-575-to-992{
+        top: 2vw;
+    }
                 h2{
                     color: #4663AC;
                     margin-bottom: 10px;
                     font-weight: 600;
                     @include from-320-to-992{
-                        font-size: 18px;
+                        font-size: 12px;
                         font-weight: 600;
                     }
                 }
@@ -358,7 +357,7 @@ margin-top: 20px;
                     font-size: 14px;
                     font-weight: 300;
                     @include from-320-to-992{
-                        font-size: 12px;
+                        font-size: 10px;
                     }
                 }
         }
@@ -372,17 +371,17 @@ margin-top: 20px;
     position: relative;
     top: -7vw;
     left: 3vw;
-    // @include from-575-to-992{
-    //     top: calc(100vw - 95vw);
-    // left: calc(100% - 100%);
-    // }
+    @include from-575-to-992{
+        top: 4vw;
+    
+    }
                 h2{
                     color: #4663AC;
                     margin-bottom: 10px;
                     font-weight: 600;
                     align-self: center;
                     @include from-320-to-992{
-                        font-size: 18px;
+                        font-size: 12px;
                         font-weight: 600;
                     }
                 }
@@ -392,7 +391,7 @@ margin-top: 20px;
                     font-weight: 300;
                     font-size: 14px;
                     @include from-320-to-992{
-                        font-size: 12px;
+                        font-size: 10px;
                     }
                 }
         }
@@ -406,16 +405,16 @@ margin-top: 20px;
             position: relative;
             top: -8vw;
             left: 3vw;
-    //         @include from-575-to-992{
-    //             top: -9vw;
-    // left: calc(100vw - 104vw);
-    //         }
+            @include from-575-to-992{
+                
+    left: 10vw;
+            }
                 h2{
                     color: #4663AC;
                     margin-bottom: 10px;
                     font-weight: 600;
                     @include from-320-to-992{
-                        font-size: 18px;
+                        font-size: 12px;
                         font-weight: 600;
                     }
                 }
@@ -426,7 +425,7 @@ margin-top: 20px;
                     font-weight: 300;
                     font-size: 14px;
                     @include from-320-to-992{
-                        font-size: 12px;
+                        font-size: 10px;
                     }
                 }
         }
@@ -451,6 +450,9 @@ margin-top: 20px;
         left: calc(100% - 109%);
         top: -100px;
         background-repeat: no-repeat;
+        @include from-575-to-992{
+            left:-15%
+        }
     }
         h1{
             font-size: 30px;
@@ -1149,6 +1151,84 @@ width: 275px !important;
  .swiper-3d .swiper-wrapper{
      transform-style: flat !important;
  }
- .mySwipper{
-
+ .step-wrap-mobile{
+display: none;
+    @include from-320-to-575{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        margin-top: 50px;
+        
+    }
+    .single-step-mob{
+        position: absolute;
+        top:-50px;
+        left: 2%;
+        width: 150px;
+            h2{
+                font-size: 11px;
+            }
+            ul{
+                font-size: 9px;
+            }
+    }
+    .single-step-mob2{
+        position: absolute;
+        top:28%;
+        left: 0%;
+        width: 300px;
+        display: flex;
+        .st-2-div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2{
+                font-size: 11px;    
+            }
+            ul{
+                font-size: 9px;
+            }
+        }
+    }
+    .single-step-mob3{
+        position: absolute;
+        bottom:26%;
+        left: calc(100% - 90%);
+        width: 300px;
+        display: flex;
+        .st-2-div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2{
+                font-size: 11px;    
+            }
+            ul{
+                font-size: 9px;
+            }
+        }
+    }
+    .single-step-mob4{
+        position: absolute;
+        bottom:-5%;
+        left: calc(100% - 85%);
+        width: 300px;
+        display: flex;
+        .st-2-div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2{
+                font-size: 11px;    
+            }
+            ul{
+                font-size: 9px;
+            }
+        }
+    }
+ }
+ .back-to-top{
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
  }

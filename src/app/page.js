@@ -11,6 +11,9 @@ import Link from "next/link";
 import FAQs from "@/component/faq";
 import MobileSlider from "@/component/mobileSlider";
 import Testimonials from "@/component/testimonials";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import BackToTop from "@/component/backToTop";
 // const futuraHv = localFont({
 //   src: "./fonts/FutuHv.ttf",
 //   weight: "400",
@@ -45,14 +48,24 @@ const settings = {
   slidesToScroll: 4,
 };
 export default function Home() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const [activeLink, setActiveLink] = useState("Branding");
   const handleLinks = (e) => setActiveLink(e.target.innerText);
-  console.log("loaded");
   return (
-    <main>
+    <main id="home">
+      <BackToTop route={"#home"} />
       <header className="header-wrap">
         <img src="/home-new-bg.svg" className="headerImg" alt="home-bg" />
-        <section className="header-content-wrap">
+        <section
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          className="header-content-wrap"
+        >
           <h1 className={poppins.className}>
             Full potential to your Amazon business with our powerhouse solutions
           </h1>
@@ -100,6 +113,11 @@ export default function Home() {
         />
         <div className="step-wrap">
           <Image
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
             alt="growth eco"
             src={"/vector.png"}
             className="vector-wrap"
@@ -107,7 +125,14 @@ export default function Home() {
             height={275}
             layout="responsive"
           />
-          <div className="single-step">
+          <div
+            className="single-step"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-delay="100"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <img alt="growth eco" src={"/scale-step1.svg"} />
             <h2 className={poppins.className}>Research and Analysis</h2>
             <ul className={poppins.className}>
@@ -116,7 +141,14 @@ export default function Home() {
               <li>Examined new trends</li>
             </ul>
           </div>
-          <div className="single-step2">
+          <div
+            className="single-step2"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="150"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <h2 className={poppins.className}>Strategy Development</h2>
             <ul className={poppins.className}>
               <li>Build a strategy</li>
@@ -125,7 +157,14 @@ export default function Home() {
             </ul>
             <img alt="growth eco" src={"/scale-step2.svg"} />
           </div>
-          <div className="single-step3">
+          <div
+            className="single-step3"
+            data-aos="fade-down"
+            data-aos-offset="200"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <img alt="growth eco" src={"/scale-step3.svg"} />
             <h2 className={poppins.className}>Implementation</h2>
             <ul className={poppins.className}>
@@ -135,7 +174,14 @@ export default function Home() {
               <li>Social Media Strategies</li>
             </ul>
           </div>
-          <div className="single-step4">
+          <div
+            className="single-step4"
+            data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-delay="250"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <h2 className={poppins.className}>Monitoring</h2>
             <ul className={poppins.className}>
               <li>Analyzing data</li>
@@ -143,6 +189,98 @@ export default function Home() {
               <li>Key performance</li>
             </ul>
             <img alt="growth eco" src={"/scale-step5.svg"} />
+          </div>
+        </div>
+        <div className="step-wrap-mobile">
+          <Image
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="100"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            src={"/mobile-home-vector.png"}
+            width={310}
+            height={850}
+            className="home-vector-mob"
+          />
+          <div
+            className="single-step-mob"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-delay="150"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
+            <img alt="growth eco" src={"/mob-scale-step1.png"} />
+            <h2 className={poppins.className}>Research and Analysis</h2>
+            <ul className={poppins.className}>
+              <li>Analyze demands Identifying</li>
+              <li>Competitors</li>
+              <li>Examined new trends</li>
+            </ul>
+          </div>
+          <div className="single-step-mob2">
+            <img
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-delay="150"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              alt="growth eco"
+              src={"/mob-scale-step2.png"}
+            />
+            <div
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-delay="150"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              className="st-2-div"
+            >
+              <h2 className={poppins.className}>Strategy Development</h2>
+              <ul className={poppins.className}>
+                <li>Build a strategy</li>
+                <li>Turn thoughts into reality</li>
+                <li>Execute the plan</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            className="single-step-mob3"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-delay="100"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
+            <div className="st-2-div">
+              <h2 className={poppins.className}>Implementation</h2>
+              <ul className={poppins.className}>
+                <li>Designing materials</li>
+                <li>Advertising campaigns</li>
+                <li>Optimizing Digital Presence</li>
+                <li>Social Media Strategies</li>
+              </ul>
+            </div>
+            <img alt="growth eco" src={"/mob-scale-step3.png"} />
+          </div>
+          <div
+            className="single-step-mob4"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="150"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
+            <div className="st-2-div">
+              <h2 className={poppins.className}>Monitoring</h2>
+              <ul className={poppins.className}>
+                <li>Analyzing data</li>
+                <li>Measuring results</li>
+                <li>Key performance</li>
+              </ul>
+            </div>
+            <img alt="growth eco" src={"/mob-scale-step4.png"} />
           </div>
         </div>
         <div className="services-wrap">
@@ -258,6 +396,11 @@ export default function Home() {
           world&apos;s largest online marketplace.
         </p>
         <Image
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
           alt="growth eco"
           src={"/sales-main.svg"}
           width={1010}
