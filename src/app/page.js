@@ -62,7 +62,7 @@ export default function Home() {
         <img src="/home-new-bg.svg" className="headerImg" alt="home-bg" />
         <section
           data-aos="fade-right"
-          data-aos-offset="200"
+          data-aos-offset="00"
           data-aos-delay="50"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
