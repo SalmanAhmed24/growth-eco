@@ -5,6 +5,7 @@ import Link from "next/link";
 import "./style.scss";
 import Image from "next/image";
 import React, { useState } from "react";
+import BackToTop from "@/component/backToTop";
 // const futuraHv = localFont({
 //   src: "../fonts/FuturaHeavyBT.ttf",
 //   weight: "400",
@@ -38,6 +39,7 @@ function Blog() {
   };
   return (
     <section className="blog-con">
+      <BackToTop route={"#home"} />
       <header className="blog-header">
         <h1 className={poppins.className}>Welcome To</h1>
         <Image

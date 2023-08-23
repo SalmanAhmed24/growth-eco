@@ -14,6 +14,7 @@ import Testimonials from "@/component/testimonials";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import BackToTop from "@/component/backToTop";
+import { useRouter } from "next/navigation";
 // const futuraHv = localFont({
 //   src: "./fonts/FutuHv.ttf",
 //   weight: "400",
@@ -51,10 +52,11 @@ export default function Home() {
   useEffect(() => {
     AOS.init();
   }, []);
+  const router = useRouter();
   const [activeLink, setActiveLink] = useState("Branding");
   const handleLinks = (e) => setActiveLink(e.target.innerText);
   return (
-    <main id="home">
+    <main>
       <BackToTop route={"#home"} />
       <header className="header-wrap">
         <img src="/home-new-bg.svg" className="headerImg" alt="home-bg" />
@@ -73,7 +75,10 @@ export default function Home() {
             Need It <span>Now</span>?
           </h2> */}
           <div className={`btnWrap`}>
-            <button className={`${poppins.className} startBtn`}>
+            <button
+              onClick={() => router.push("/home#contact")}
+              className={`${poppins.className} startBtn`}
+            >
               Contact Us
             </button>
           </div>
@@ -90,7 +95,10 @@ export default function Home() {
             triumph in the Amazon marketplace today.
           </p>
           <div className="boost-btn-wrap">
-            <button className={poppins.className}>
+            <button
+              onClick={() => router.push("/home#contact")}
+              className={poppins.className}
+            >
               Boost Your Visibility{" "}
               <span>
                 <Image

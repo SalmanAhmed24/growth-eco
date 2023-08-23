@@ -8,6 +8,7 @@ import HeaderCase from "@/component/case-stud-sub/header";
 import EXESUM from "@/component/case-stud-sub/exe-sum";
 import CaseSteps from "@/component/case-stud-sub/caseSteps";
 import CaseStudSlider from "@/component/case-stud-sub/case-slider";
+import BackToTop from "@/component/backToTop";
 const futuraHv = localFont({
   src: "../fonts/FuturaHeavyBT.ttf",
   weight: "400",
@@ -31,6 +32,7 @@ const futuraLTBT = localFont({
 function SubCase() {
   return (
     <section className="case-sub-main">
+      <BackToTop route={"#home"} />
       <HeaderCase futuraHv={futuraHv} futuraLTBT={futuraLTBT} />
       <EXESUM futuraHv={futuraHv} futuraLTBT={futuraLTBT} />
       <CaseSteps futuraHv={futuraHv} futuraLTBT={futuraLTBT} />

@@ -8,6 +8,7 @@ import localFont from "@next/font/local";
 import "./aboutUs.scss";
 import Image from "next/image";
 import Achieve from "@/component/achieve";
+import BackToTop from "@/component/backToTop";
 // const futuraHv = localFont({
 //   src: "../fonts/FuturaHeavyBT.ttf",
 //   weight: "400",
@@ -37,6 +38,7 @@ const poppins = Poppins({
 function AboutUs() {
   return (
     <section>
+      <BackToTop route={"#home"} />
       <Header
         poppins={poppins}
         // futuraBK={futuraBK}

@@ -10,6 +10,7 @@ import ServiceGrowth from "@/component/serviceComponents/service-growth";
 import ServiceCards from "@/component/serviceComponents/service-grow-cards";
 import FAQs from "@/component/faq";
 import ScaleComp from "@/component/scaleComponent/scale";
+import BackToTop from "@/component/backToTop";
 // const futuraHv = localFont({
 //   src: "../fonts/FuturaHeavyBT.ttf",
 //   weight: "400",
@@ -39,6 +40,7 @@ const poppins = Poppins({
 function Service() {
   return (
     <section className={poppins.className}>
+      <BackToTop route={"#home"} />
       <ServiceHeader
         heading1={"Product Sourcing"}
         para1={"Empowering your brand through product sourcing"}

@@ -4,6 +4,7 @@ import localFont from "@next/font/local";
 import Image from "next/image";
 import OurJourney from "@/component/ourJourney";
 import { Poppins } from "next/font/google";
+import BackToTop from "@/component/backToTop";
 
 // const poppins = localFont({
 //   src: "../fonts/FuturaHeavyBT.ttf",
@@ -34,8 +35,9 @@ const poppins = Poppins({
 function OurStory() {
   return (
     <section className="our-story">
+      <BackToTop route={"#home"} />
       <header className="story-header">
-        <h1 className={poppins.className}>The Growth Echo</h1>
+        <h1 className={poppins.className}>Our Story</h1>
         <p className={poppins.className}>
           We envision a marketing website that provides an immersive and
           captivating user experience

@@ -6,6 +6,7 @@ import WhyCap from "@/component/whyCap";
 import Testimonials from "@/component/testimonials";
 import FAQs from "@/component/faq";
 import { Poppins } from "next/font/google";
+import BackToTop from "@/component/backToTop";
 // const futuraHv = localFont({
 //   src: "../fonts/FutuHv.ttf",
 //   weight: "400",
@@ -35,6 +36,7 @@ const poppins = Poppins({
 function Capabilities() {
   return (
     <section className="cap-main-con">
+      <BackToTop route={"#home"} />
       <header className="cap-header">
         <h1 className={poppins.className}>
           Amazon Services to grow your business

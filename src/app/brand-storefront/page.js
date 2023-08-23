@@ -9,6 +9,7 @@ import ServiceGrowth from "@/component/serviceComponents/service-growth";
 import ServiceCards from "@/component/serviceComponents/service-grow-cards";
 import FAQs from "@/component/faq";
 import ScaleComp from "@/component/scaleComponent/scale";
+import BackToTop from "@/component/backToTop";
 const futuraHv = localFont({
   src: "../fonts/FuturaHeavyBT.ttf",
   weight: "400",
@@ -33,6 +34,7 @@ const futuraLTBT = localFont({
 function Service() {
   return (
     <section className="amazon-sec-wrap">
+      <BackToTop route={"#home"} />
       <ServiceHeader
         heading1={"Amazon Storefront for your brand"}
         para1={"Grow your brand on Amazon with full potential!"}

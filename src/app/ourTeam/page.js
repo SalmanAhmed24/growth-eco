@@ -13,6 +13,7 @@ import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
 import "./ourTeam.scss";
 import TestSlider from "@/component/sliders/testSlider";
 import { Poppins } from "next/font/google";
+import BackToTop from "@/component/backToTop";
 const poppins = Poppins({
   weight: ["300", "400", "600", "700", "900"],
   style: ["normal", "italic"],
@@ -47,6 +48,7 @@ function OurTeam() {
   };
   return (
     <section className="our-team">
+      <BackToTop route={"#home"} />
       <header className="our-team-header">
         <p className={poppins.className}>
           We are Amazon service-providing company helping amazon seller like you

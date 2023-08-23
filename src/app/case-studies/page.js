@@ -5,6 +5,7 @@ import Link from "next/link";
 import "./style.scss";
 import Image from "next/image";
 import React, { useState } from "react";
+import BackToTop from "@/component/backToTop";
 // const futuraHv = localFont({
 //   src: "../fonts/FuturaHeavyBT.ttf",
 //   weight: "400",
@@ -38,6 +39,7 @@ function CaseStudies() {
   };
   return (
     <section className="case-studies-con">
+      <BackToTop route={"#home"} />
       <header className="case-studies-header">
         <div className="header-content-wrap">
           <h1 className={poppins.className}>Case Studies</h1>

@@ -81,7 +81,7 @@ function Navbar() {
     setMobileNav(!mobileNav);
   };
   return (
-    <section className={poppins.className}>
+    <section className={poppins.className} id="home">
       <nav className="navbar-cus">
         <div className="logo-wrap">
           <Image alt="growth eco" src={"./logo.svg"} width={160} height={70} />
