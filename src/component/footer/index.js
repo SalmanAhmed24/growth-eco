@@ -2,6 +2,7 @@ import Image from "next/image";
 import "./footer.scss";
 import localFont from "@next/font/local";
 import { Poppins } from "next/font/google";
+import Link from "next/link";
 const poppins = Poppins({
   weight: ["300", "400", "600", "700", "900"],
   style: ["normal", "italic"],
@@ -45,30 +46,52 @@ function Footer() {
       <div className="footer-links-wrap">
         <div className="links-wrap">
           <h1 className={poppins.className}>Company</h1>
-          <ul className="footer-ul">
-            <li className={poppins.className}>About Us</li>
-            <li className={poppins.className}>Our Team</li>
-            <li className={poppins.className}>Contact Us</li>
-            <li className={poppins.className}>Blog</li>
-          </ul>
+          <div className="footer-ul">
+            <Link href={"/"} className={poppins.className}>
+              Home
+            </Link>
+            <Link href={"/aboutUs"} className={poppins.className}>
+              About Us
+            </Link>
+            <Link href={"/ourStory"} className={poppins.className}>
+              Our Story
+            </Link>
+            <Link href={"/ourTeam"} className={poppins.className}>
+              Our Team
+            </Link>
+            <Link href={"/capabilities"} className={poppins.className}>
+              Capabilities
+            </Link>
+            <Link href={"/case-studies"} className={poppins.className}>
+              Case Studies
+            </Link>
+            <Link href={"/blog"} className={poppins.className}>
+              Blog
+            </Link>
+          </div>
         </div>
         <div className="links-wrap">
           <h1 className={poppins.className}>Services</h1>
-          <ul className="footer-ul">
-            <li className={poppins.className}>Amazon FBA</li>
-            <li className={poppins.className}>Branding</li>
-            <li className={poppins.className}>Digital Marketing</li>
-          </ul>
+          <div className={`${poppins.className} footer-ul`}>
+            <Link href={"/product-sourcing"}>Product Sourcing</Link>
+            <Link href={"/listing-reinstatement"}>Listing Reinstatement</Link>
+            <Link href={"/amazon-advertising"}>Amazon Advertising</Link>
+            <Link href={"/amazon-content"}>Amazon Content</Link>
+            <Link href={"/done-amazon"}>Amazon Done</Link>
+            <Link href={"/product-research"}>Product Research</Link>
+            <Link href={"/brand-storefront"}>Brand Storefront</Link>
+            <Link href={"/account-suspension"}>Account Suspension</Link>
+          </div>
         </div>
         <div className="links-wrap">
           <h1 className={poppins.className}>Contact</h1>
-          <ul className="footer-ul">
-            <li className={poppins.className}>
+          <div className="address-wrap">
+            <p className={poppins.className}>
               #859, Block R1 Phase 2, Johar Town, Lahore, Punjab.
-            </li>
-            <li className={poppins.className}>info@growthecho.com</li>
-            <li className={poppins.className}>(+1) 760 350 578</li>
-          </ul>
+            </p>
+            <p className={poppins.className}>info@growthecho.com</p>
+            <p className={poppins.className}>(+1) 760 350 578</p>
+          </div>
         </div>
         <div className="subscribe-wrap">
           <h1 className={poppins.className}>Sign-up to our newsletter</h1>
