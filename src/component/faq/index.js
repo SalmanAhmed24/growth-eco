@@ -44,23 +44,51 @@ function FAQs({
           customer success program to ensure high customer satisfaction and
           retention rates.
         </p>
-        <button onClick={() => setAccordion("1")} className={poppins.className}>
+        <button
+          onClick={() => setAccordion("1")}
+          className={
+            accordion == "1"
+              ? `${poppins.className} plusAnim`
+              : poppins.className
+          }
+        >
           {question1}
         </button>
 
         {accordion == "1" ? <p className={poppins.className}>{tab1}</p> : null}
 
-        <button onClick={() => setAccordion("2")} className={poppins.className}>
+        <button
+          onClick={() => setAccordion("2")}
+          className={
+            accordion == "2"
+              ? `${poppins.className} plusAnim`
+              : poppins.className
+          }
+        >
           {question2}
         </button>
         {accordion == "2" ? <p className={poppins.className}>{tab2}</p> : null}
 
-        <button onClick={() => setAccordion("3")} className={poppins.className}>
+        <button
+          onClick={() => setAccordion("3")}
+          className={
+            accordion == "3"
+              ? `${poppins.className} plusAnim`
+              : poppins.className
+          }
+        >
           {question3}
         </button>
         {accordion == "3" ? <p className={poppins.className}>{tab3}</p> : null}
 
-        <button onClick={() => setAccordion("4")} className={poppins.className}>
+        <button
+          onClick={() => setAccordion("4")}
+          className={
+            accordion == "4"
+              ? `${poppins.className} plusAnim`
+              : poppins.className
+          }
+        >
           {question4}
         </button>
         {accordion == "4" ? <p className={poppins.className}>{tab4}</p> : null}

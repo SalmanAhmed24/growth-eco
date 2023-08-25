@@ -448,8 +448,10 @@ export default function Home() {
             slidesToShow={1}
             slidesToScroll={1}
             speed={500}
-            infinite={false}
+            infinite={true}
             arrows={false}
+            autoplay={true}
+            autoplaySpeed={1500}
             responsive={[
               {
                 breakpoint: 575,
@@ -556,7 +558,7 @@ export default function Home() {
       />
       <section className="case-studies">
         <h1 className={poppins.className}>Case Studies</h1>
-        <div className="case-links-wrap">
+        {/* <div className="case-links-wrap">
           <ul onClick={handleLinks} className={`${poppins.className} links-ul`}>
             <li className={activeLink == "Branding" ? "activeLinkCS" : ""}>
               Branding
@@ -575,30 +577,30 @@ export default function Home() {
               Digital Marketing
             </li>
           </ul>
+        </div> */}
+
+        <div className="case-img-wrap">
+          <Image
+            alt="growth eco"
+            src={"/case-1.png"}
+            width={303}
+            height={387}
+          />
+          <Image
+            alt="growth eco"
+            src={"/case-2.png"}
+            width={303}
+            height={387}
+          />
+          <Image
+            alt="growth eco"
+            src={"/case-3.png"}
+            width={303}
+            height={387}
+          />
         </div>
-        {activeLink == "Branding" ? (
-          <div className="case-img-wrap">
-            <Image
-              alt="growth eco"
-              src={"/case-1.png"}
-              width={303}
-              height={387}
-            />
-            <Image
-              alt="growth eco"
-              src={"/case-2.png"}
-              width={303}
-              height={387}
-            />
-            <Image
-              alt="growth eco"
-              src={"/case-3.png"}
-              width={303}
-              height={387}
-            />
-          </div>
-        ) : null}
-        {activeLink == "Campaigns" ? (
+
+        {/* {activeLink == "Campaigns" ? (
           <div className="case-img-wrap">
             <Image
               alt="growth eco"
@@ -663,13 +665,10 @@ export default function Home() {
               height={387}
             />
           </div>
-        ) : null}
-        {activeLink == "Branding" ? (
-          <MobileSlider
-            images={["/case-1.png", "/case-2.png", "/case-3.png"]}
-          />
-        ) : null}
-        {activeLink == "Campaigns" ? (
+        ) : null} */}
+
+        <MobileSlider images={["/case-1.png", "/case-2.png", "/case-3.png"]} />
+        {/* {activeLink == "Campaigns" ? (
           <MobileSlider
             images={["/case-2.png", "/case-3.png", "/case-1.png"]}
           />
@@ -683,7 +682,7 @@ export default function Home() {
           <MobileSlider
             images={["/case-1.png", "/case-3.png", "/case-2.png"]}
           />
-        ) : null}
+        ) : null} */}
         <div className="case-st-all-btn">
           <Link className={`${poppins.className} explore-all`} href={"#"}>
             Explore All

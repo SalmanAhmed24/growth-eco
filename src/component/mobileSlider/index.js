@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
-import { EffectCoverflow, Navigation } from "swiper/modules";
+import { EffectCoverflow, Autoplay } from "swiper/modules";
 import Image from "next/image";
 function MobileSlider({ images }) {
   return (
@@ -11,14 +11,19 @@ function MobileSlider({ images }) {
       <Swiper
         spaceBetween={20}
         effect={"coverflow"}
-        loop={false}
+        loop={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+          stopOnLastSlide: false,
+        }}
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={2}
         coverflowEffect={{
           rotate: 5,
         }}
-        modules={[EffectCoverflow]}
+        modules={[Autoplay, EffectCoverflow]}
         className="mySwiper"
       >
         {images.map((i) => {

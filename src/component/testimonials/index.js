@@ -4,7 +4,12 @@ import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import { EffectCoverflow, Navigation } from "swiper/modules";
+import {
+  EffectCoverflow,
+  Navigation,
+  Autoplay,
+  Pagination,
+} from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-coverflow";
@@ -38,13 +43,21 @@ function Testimonials({ heading, sliderArr, poppins }) {
         <h1 className={poppins.className}>What Clients says about us</h1>
       ) : null}
       <Swiper
-        spaceBetween={150}
-        loop={true}
+        spaceBetween={50}
         effect={"coverflow"}
-        centeredSlides={false}
+        centeredSlides={true}
         slidesPerView={3}
-        coverflowEffect={{
-          rotate: 5,
+        // coverflowEffect={{
+        //   rotate: 5,
+        // }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+          stopOnLastSlide: false,
+        }}
+        loop={true}
+        pagination={{
+          clickable: true,
         }}
         navigation={true}
         breakpoints={{
@@ -53,39 +66,27 @@ function Testimonials({ heading, sliderArr, poppins }) {
             spaceBetween: 0,
             centeredSlides: true,
             grabCursor: true,
-            zoom: false,
-            loop: true,
           },
           575: {
             slidesPerView: 2,
             spaceBetween: 50,
-            centeredSlides: true,
-            zoom: false,
-            loop: true,
           },
           768: {
             slidesPerView: 3,
-            spaceBetween: 150,
-            centeredSlides: false,
-            zoom: false,
-            loop: true,
+            spaceBetween: 50,
           },
           1024: {
             slidesPerView: 3,
-            spaceBetween: 150,
-            centeredSlides: false,
-            zoom: false,
+            spaceBetween: 50,
             loop: true,
           },
           1500: {
-            slidesPerView: 3,
-            spaceBetween: 150,
-            centeredSlides: false,
-            zoom: false,
+            slidesPerView: 4,
+            spaceBetween: 50,
             loop: true,
           },
         }}
-        modules={[EffectCoverflow, Navigation]}
+        modules={[Autoplay, Navigation, Pagination]}
         className="mySwiper"
       >
         {sliderArr &&

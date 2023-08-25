@@ -312,6 +312,13 @@ margin-top: 20px;
         
     left: -9vw;
     }
+    img{
+        width: 114px;
+        height: 162px;
+        @include from-575-to-992{
+            width: auto;
+        }
+    }
                 h2{
                     color: #4663AC;
                     margin-bottom: 10px;
@@ -343,6 +350,13 @@ margin-top: 20px;
     left: -3vw;
     @include from-575-to-992{
         top: 2vw;
+    }
+    img{
+        width: 114px;
+        height: 160px;
+        @include from-575-to-992{
+            width: auto;
+        }
     }
                 h2{
                     color: #4663AC;
@@ -378,6 +392,13 @@ margin-top: 20px;
         top: 4vw;
     
     }
+    img{
+        width: 114px;
+        height: 187px;
+        @include from-575-to-992{
+            width: auto;
+        }
+    }
                 h2{
                     color: #4663AC;
                     margin-bottom: 10px;
@@ -411,6 +432,13 @@ margin-top: 20px;
             @include from-575-to-992{
                 
     left: 10vw;
+            }
+            img{
+                width: 114px;
+        height: 159px;
+                @include from-575-to-992{
+                    width: auto;
+                }
             }
                 h2{
                     color: #4663AC;
@@ -815,7 +843,7 @@ margin-top: 20px;
             }
         }
         .swiper{
-            height: 390px;
+            height: 430px;
             @include from-320-to-575{
                 height: 400px;
                 padding-top: 0px;
