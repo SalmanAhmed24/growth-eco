@@ -49,7 +49,7 @@
                     .nav-link-wraps{
                         min-width: 150px;
                         width: 20%;
-                        height: 50px;
+                        height: 70px;
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
@@ -69,19 +69,34 @@
                         }
                             .drop-div{
                                 position: absolute;
-                                top:44px;
-                                background: #4663AC;
-                                padding: 10px;
+                                top:70px;
+                                background: #e1f1fd;
+                                padding: 10px 0px;
                                 border-bottom-left-radius: 10px;
                                 border-bottom-right-radius: 10px;
                                 z-index: 2222;
-                                width: 180px;
+                                width: 200px;
                                 display: none;
                                     .droplist{
                                         display: flex;
+                                        width: 100%;
+                                        overflow: hidden;
                                         flex-direction: column;
                                         a{
-                                            margin: 10px 0px;
+                                            padding: 10px;
+                                            background: #e1f1fd;
+                                            color: #4663AC;
+                                            width: 100%;
+                                            text-align: left;
+                                            transition: 0.3s ease-in-out;
+                                                &:hover{
+                                                    background-color: #4663AC;
+                                                    color: #fff;
+                                                }
+                                        }
+                                        .activeInner{
+                                            background-color: #4663AC;
+                                            color: #fff;
                                         }
                                     }
                             }
@@ -120,62 +135,6 @@
         opacity: 1;
     }
 }
-.moible-abs-menu{
-    position: absolute;
-    height: auto;
-    background-color: #4663AC;
-    z-index: 22222;
-    animation-name:mobileMenu;
-    animation-duration: 0.5s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in-out;
-    right: 0px;
-    width: 100vw;
-    .innerLinks{
-        display: flex;
-        flex-direction: column;
-        padding: 40px;
-            .nav-link-wraps{
-                padding: 10px 0px;
-                    a{
-                        text-decoration: none;
-                        color: #fff;
-                        font-size: 18px;
-                    }
-            }
-            .dropdown-wrap{
-                display: flex;
-                flex-direction: column;
-                    a{
-                        text-decoration: none;
-                        color: #fff;
-                        font-size: 18px;
-                        
-                    }
-                    .drop-div{
-                        display: flex;
-                        flex-direction: column;
-                        padding-left: 20px;
-                            a{
-                                text-decoration: none;
-                        color: #fff;
-                        font-size: 16px;
-                                padding: 10px 0px;  
-                            }
-                    }
-            }
-    }
-}
-.mob-div{
-    .droplist{
-        li{
-            margin:0px;
-            padding-top:10px;
-            margin-left:10px;
-            border-bottom: 1px solid #cfcfcf;
-        }
-    }
-}
 @keyframes mobileMenu {
     0%{
         opacity: 0;
@@ -190,93 +149,7 @@
     text-align: right;
     padding: 30px;
 }
-.dropAbout{
-   position: relative;
-   &:hover{
-    .drop-div{
-        display: flex;
-        flex-direction: column;
-        opacity: 1;
-        z-index: 4444;
-    }
-   }
-    .drop-div{
-        position: absolute;
-        height: auto;
-        padding: 10px 20px;
-        width: 100%;
-        top:44px;
-        background-color: #4663AC;
-        display: none;
-        opacity: 0;
-            .droplist{
-                padding: 0px;
-                list-style: none;
-                display: flex;
-                flex-direction: column;
-                
-                    li{
-                        padding-top: 5px;
-                padding-bottom: 5px;
-                        color: transparentize($color: #fff, $amount: 0.3);
-                        transition: 0.3s ease-in-out;
-                        &:hover{
-                            color: transparentize($color: #fff, $amount: 0);
-                            &::after{
-                                content: '';
-                                width: 0px;
-                                height: 0px;
-                            }
-                        }
-                    }
-            }
-    } 
-}
-.dropCap{
-    position: relative;
-    &:hover{
-     .drop-div{
-         display: flex;
-         flex-direction: column;
-         opacity: 1;
-         z-index: 4444;
-     }
-    }
-     .drop-div{
-         position: absolute;
-         height: auto;
-         padding:20px 10px;
-         width: 250px;
-         top:44px;
-         background-color: #4663AC;
-         display: none;
-         opacity: 0;
-             .droplist{
-                 padding: 0px;
-                 list-style: none;
-                 display: flex;
-                 flex-direction: column;
-                     li{
-                        padding-top: 5px;
-                padding-bottom: 5px;
-                         color: transparentize($color: #fff, $amount: 0.3);
-                         transition: 0.3s ease-in-out;
-                         margin-bottom: 10px;
-                         &:hover{
-                             color: transparentize($color: #fff, $amount: 0);
-                             &::after{
-                                 content: '';
-                                 width: 0px;
-                                 height: 0px;
-                             }
-                         }
-                     }
-             }
-     } 
- }
- .activeInner{
-    font-weight: bold;
- }
+ 
  .mobileDrawer{
     .MuiPaper-root{
         background-color: #4663AC;
