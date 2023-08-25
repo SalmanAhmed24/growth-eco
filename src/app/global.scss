@@ -88,6 +88,16 @@ table {
         @content;
     }
 }
+@mixin from-400-to-500{
+    @media screen and (min-width:400px) and (max-width:500px) {
+        @content;
+    }
+}
+@mixin from-500-to-575{
+    @media screen and (min-width:500px) and (max-width:575px) {
+        @content;
+    }
+}
 .header-wrap{
     width: 100%;
     display: flex;
@@ -1008,7 +1018,7 @@ width: 275px !important;
     @include from-992-to-1140{
         padding: 40px 10px;
     }
-    @include from-320-to-992{
+    @include from-320-to-575{
         display: none;
     }
   }
@@ -1188,72 +1198,110 @@ display: none;
         display: flex;
         position: relative;
         flex-direction: column;
+        align-items: center;
         margin-top: 50px;
         
     }
     .single-step-mob{
         position: absolute;
         top:-50px;
-        left: 2%;
-        width: 150px;
+        display: flex;
+        flex-direction:  column;
+        align-items: center;
+        left: calc(100% - 88vw);
+        width: 170px;
+        @include from-400-to-500{
+            align-items: flex-end;
+        left: calc(100% - 84vw);
+        }
+        @include from-500-to-575{
+            width: 215px;
+            align-items: flex-end;
+        }
             h2{
-                font-size: 11px;
+                position: relative;
+                font-size: 14px;
+                left: -15px;
+                top:-12px
             }
             ul{
-                font-size: 9px;
+                font-size:11px;
+                position: relative;
+                left: -15px;
+                top:-12px
             }
     }
     .single-step-mob2{
         position: absolute;
         top:28%;
-        left: 0%;
-        width: 300px;
+        left: calc(100% - 96vw);
+        width: 350px;
         display: flex;
+        @include from-400-to-500{
+            width:355px;
+        left: calc(100% - 95vw);
+        justify-content: flex-end;
+        }
+        @include from-500-to-575{
+            left: calc(100% - 88vw);
+        justify-content: flex-end;
+        }
         .st-2-div{
             display: flex;
             flex-direction: column;
             justify-content: center;
             h2{
-                font-size: 11px;    
+                font-size: 14px;    
             }
             ul{
-                font-size: 9px;
+                font-size: 11px;
             }
         }
     }
     .single-step-mob3{
         position: absolute;
         bottom:26%;
-        left: calc(100% - 90%);
-        width: 300px;
+        left: calc(100% - 84vw);
+        width: 350px;
         display: flex;
+        @include from-400-to-500{
+            justify-content: flex-end;
+        left: calc(100% - 81vw);
+        }
+        @include from-500-to-575{
+            justify-content: flex-end;
+        left: calc(100% - 75vw);
+        }
         .st-2-div{
             display: flex;
             flex-direction: column;
             justify-content: center;
             h2{
-                font-size: 11px;    
+                font-size: 14px;    
             }
             ul{
-                font-size: 9px;
+                font-size: 11px;
             }
         }
     }
     .single-step-mob4{
         position: absolute;
         bottom:-5%;
-        left: calc(100% - 85%);
+        left: calc(100% - 75vw);
         width: 300px;
         display: flex;
+        @include from-500-to-575{
+            justify-content: center;
+        }
         .st-2-div{
             display: flex;
             flex-direction: column;
             justify-content: center;
             h2{
-                font-size: 11px;    
+                font-size: 14px;    
             }
             ul{
-                font-size: 9px;
+                font-size: 11px;
             }
         }
     }
