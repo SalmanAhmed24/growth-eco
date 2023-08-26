@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import "./style.scss";
 
 // import required modules
-import { Pagination, EffectCoverflow } from "swiper/modules";
+import { Pagination, EffectCoverflow, Autoplay } from "swiper/modules";
 import Image from "next/image";
 
 export default function TestSlider() {
@@ -25,6 +25,12 @@ export default function TestSlider() {
         coverflowEffect={{
           rotate: 50,
         }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+          stopOnLastSlide: false,
+        }}
+        loop={true}
         breakpoints={{
           320: {
             slidesPerView: 1,
@@ -35,25 +41,25 @@ export default function TestSlider() {
           575: {
             slidesPerView: 1,
             spaceBetween: 0,
-            centeredSlides: false,
+            centeredSlides: true,
           },
           768: {
             slidesPerView: 1,
             spaceBetween: 0,
-            centeredSlides: false,
+            centeredSlides: true,
           },
           1024: {
             slidesPerView: 3,
             spaceBetween: 0,
-            centeredSlides: false,
+            centeredSlides: true,
           },
           1500: {
             slidesPerView: 3,
             spaceBetween: 0,
-            centeredSlides: false,
+            centeredSlides: true,
           },
         }}
-        modules={[Pagination, EffectCoverflow]}
+        modules={[Autoplay, Pagination, EffectCoverflow]}
         className="mySwiper teamSwipper"
       >
         <SwiperSlide>
