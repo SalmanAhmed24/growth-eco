@@ -66,6 +66,7 @@ function Testimonials({ heading, sliderArr, poppins }) {
             spaceBetween: 0,
             centeredSlides: true,
             grabCursor: true,
+            navigation: false,
           },
           575: {
             slidesPerView: 2,

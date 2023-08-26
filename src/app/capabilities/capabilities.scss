@@ -34,6 +34,9 @@
     align-items: center;
     position: relative;
     top: -10px;
+    @include from-575-992{
+        background-position-y:0px;
+    }
     @include from-320-575{
         background-image: url('../../../public/service-mobile-bg.png');
         height: 440px;

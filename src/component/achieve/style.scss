@@ -48,6 +48,9 @@
         }
     }
     @include from-320-575{
+        background-image: url('../../../public/about-rockect-bg.png');
+        background-position-y: -35px;
+        background-size: cover;
         &::before{
             content: '';
             background-image: url('../../../public/mobile-office.png');
@@ -113,7 +116,7 @@
             display: none;
             @include from-320-575{
                 display: block;
-                width: 100%;
+                width: 100% !important;
                 height: auto;
             }
         }

@@ -92,14 +92,22 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     position: relative;
+    @include from-575-992{
+        flex-wrap: wrap;
+        padding: 0px 0px;
+    }
     @include from-320-575{
-        flex-wrap: wrap-reverse;
-        padding: 0px 20px;
+        flex-wrap: wrap;
+        padding: 0px 0px;
     }
         .cap-img-wrap{
             width: 45%;
                 img{
                     width: 100%;
+                }
+                @include from-575-992{
+                    width: 100%;
+                    
                 }
                 @include from-320-575{
                     width: 100%;
@@ -109,9 +117,13 @@
             width: 45%;
             display: flex;
             flex-direction: column;
+            @include from-575-992{
+                width: 100%;
+                padding: 10px 30px;
+            }
             @include from-320-575{
                 width: 100%;
-                padding: 10px;
+                padding:10px 20px;
             }
                 h1{
                     font-size: 30px;
@@ -186,8 +198,8 @@
     .cap-content-wrap{
         padding-left: 100px;
         @include from-320-575{
-            padding-right: 0px;
-            padding-left: 0px;
+            padding-right: 20px;
+            padding-left: 20px;
         }
     }
     .cap-img-wrap{
@@ -195,6 +207,10 @@
         justify-content: flex-end;
             img{
                 width:85%;
+                @include from-320-575{
+                    width: 95%;
+                    
+                }
             }
     }
 }
@@ -205,6 +221,9 @@
         justify-content: flex-start;
             img{
                 width:85%;
+                @include from-320-575{
+                    width: 100%;
+                }
             }
     }
 }

@@ -14,6 +14,7 @@ function WhoWeAre({
   width,
   height,
   link,
+  linkFlag,
 }) {
   return (
     <main className="main-who-we">
@@ -23,9 +24,11 @@ function WhoWeAre({
             <div className="inner-wrap">
               <h1 className={poppins.className}>{title}</h1>
               <p className={poppins.className}>{content}</p>
-              <Link href={"/"} className={`${poppins.className} read-more`}>
-                Read More
-              </Link>
+              {linkFlag ? (
+                <Link href={link} className={`${poppins.className} read-more`}>
+                  Read More
+                </Link>
+              ) : null}
             </div>
           </div>
           <div className="image-wrap">
@@ -51,9 +54,11 @@ function WhoWeAre({
             <div className="inner-wrap">
               <h1 className={poppins.className}>{title}</h1>
               <p className={poppins.className}>{content}</p>
-              <Link href={"/"} className={`${poppins.className} read-more`}>
-                Read More
-              </Link>
+              {linkFlag ? (
+                <Link href={link} className={`${poppins.className} read-more`}>
+                  Read More
+                </Link>
+              ) : null}
             </div>
           </div>
         </section>

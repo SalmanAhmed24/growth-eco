@@ -161,7 +161,7 @@ function Capabilities() {
         </div>
       </section>
       <WhyCap
-        mainImg={"/cap-ser-img.png"}
+        mainImg={"/amazon-manage.png"}
         heading={"Done for you Amazon"}
         headingSec={"Services"}
         span={"account management"}
@@ -201,13 +201,31 @@ function Capabilities() {
               testimonial:
                 "Highly recommend! Increased sales, optimized listings – our Amazon store thrived under their management.",
             },
+            {
+              name: "Jhon",
+              profession: "",
+              testimonial:
+                "Game changer! Their Amazon account management took the stress away. Sales soared!",
+            },
+            {
+              name: "Micheal",
+              profession: "",
+              testimonial:
+                "Efficient and effective! Their service boosted our Amazon business, worth every penny.",
+            },
+            {
+              name: "Carlos",
+              profession: "",
+              testimonial:
+                "Highly recommend! Increased sales, optimized listings – our Amazon store thrived under their management.",
+            },
           ]}
           heading={false}
         />
       </div>
       <WhyCap
         poppins={poppins}
-        mainImg={"/cap-ser-img2.png"}
+        mainImg={"/advertising.png"}
         heading={"Amazon"}
         headingSec={""}
         span={"Advertising "}
@@ -245,12 +263,30 @@ function Capabilities() {
             testimonial:
               "Highly recommend! GrowthEcho's team boosted our Amazon presence, amazon keyword ranking, converting clicks into loyal customers. Excellent service!",
           },
+          {
+            name: "Ivan",
+            profession: "",
+            testimonial:
+              "GrowthEcho's Amazon Advertising was a game-changer! Our Amazon  sales rank soared with targeted ads and expert strategies.",
+          },
+          {
+            name: "Maria",
+            profession: "",
+            testimonial:
+              "Efficient and effective! GrowthEcho's services optimized our Amazon ads, yielding impressive results and increased visibility.",
+          },
+          {
+            name: "Hans",
+            profession: "",
+            testimonial:
+              "Highly recommend! GrowthEcho's team boosted our Amazon presence, amazon keyword ranking, converting clicks into loyal customers. Excellent service!",
+          },
         ]}
         heading={false}
       />
       <WhyCap
         poppins={poppins}
-        mainImg={"/cap-ser-img3.png"}
+        mainImg={"/content.png"}
         heading={"Amazon"}
         headingSec={"content design"}
         span={"A+"}
@@ -287,12 +323,30 @@ function Capabilities() {
             testimonial:
               "Highly satisfied! GrowthEcho's A+ services made our  Amazon products stand out, leaving a lasting impression on shoppers. Exceptional results!",
           },
+          {
+            name: "Pierre",
+            profession: "",
+            testimonial:
+              "Outstanding Content A+ services by GrowthEcho! Our listings became captivating and drove higher conversions. Top-notch quality!",
+          },
+          {
+            name: "Erik",
+            profession: "",
+            testimonial:
+              "Impressed with GrowthEcho's A+ content! Their creative approach elevated our Amazon listings, attracting more customers than ever.",
+          },
+          {
+            name: "Emily",
+            profession: "",
+            testimonial:
+              "Highly satisfied! GrowthEcho's A+ services made our  Amazon products stand out, leaving a lasting impression on shoppers. Exceptional results!",
+          },
         ]}
         heading={false}
       />
       <WhyCap
         poppins={poppins}
-        mainImg={"/cap-ser-img4.png"}
+        mainImg={"/sourcing.png"}
         heading={""}
         headingSec={"Product"}
         span={"Sourcing"}
@@ -311,6 +365,24 @@ function Capabilities() {
       <Testimonials
         poppins={poppins}
         sliderArr={[
+          {
+            name: "Giovanni",
+            profession: "",
+            testimonial:
+              "GrowthEcho's Product Sourcing services were a game-changer! They found us profitable products we couldn't discover ourselves.",
+          },
+          {
+            name: "Nikos",
+            profession: "",
+            testimonial:
+              "Exceptional service! GrowthEcho's Product Sourcing boosted our inventory with high-quality products, increasing sales and profit margins.",
+          },
+          {
+            name: "Sofia",
+            profession: "",
+            testimonial:
+              "Impressive sourcing expertise! GrowthEcho's team delivered top-notch products, expanding our offerings and delighting customers.",
+          },
           {
             name: "Giovanni",
             profession: "",
@@ -371,6 +443,24 @@ function Capabilities() {
             testimonial:
               "Impressive insights! GrowthEcho's research helped us discover untapped opportunities, optimizing our Amazon product offerings effectively.",
           },
+          {
+            name: "Ingrid",
+            profession: "",
+            testimonial:
+              "GrowthEcho's product research services were spot-on! They identified profitable products, setting us up for Amazon's success.",
+          },
+          {
+            name: "Jakub",
+            profession: "",
+            testimonial:
+              "Thrilled with the results! GrowthEcho's product research revealed winning products that boosted our sales and ROI.",
+          },
+          {
+            name: "Emma",
+            profession: "",
+            testimonial:
+              "Impressive insights! GrowthEcho's research helped us discover untapped opportunities, optimizing our Amazon product offerings effectively.",
+          },
         ]}
         heading={false}
       />
@@ -395,6 +485,24 @@ function Capabilities() {
       <Testimonials
         poppins={poppins}
         sliderArr={[
+          {
+            name: "Ekaterina",
+            profession: "",
+            testimonial:
+              "GrowthEcho's product listing services were exceptional! Engaging copy and stunning visuals transformed our listings and drove sales.",
+          },
+          {
+            name: "James",
+            profession: "",
+            testimonial:
+              "Highly recommend! GrowthEcho's optimization elevated our listings, attracting more customers and boosting our Amazon presence.",
+          },
+          {
+            name: "Marie",
+            profession: "",
+            testimonial:
+              "Efficient and effective! GrowthEcho's expertise optimized our listings, resulting in increased conversions and improved visibility on Amazon.",
+          },
           {
             name: "Ekaterina",
             profession: "",
@@ -455,6 +563,24 @@ function Capabilities() {
             testimonial:
               "Highly satisfied! GrowthEcho's Brand Storefront services elevated our brand identity, attracting more shoppers and boosting sales.",
           },
+          {
+            name: "Mary Johnson",
+            profession: "",
+            testimonial:
+              "GrowthEcho's Brand Storefront was a game-changer! A captivating storefront that showcased our brand and products beautifully.",
+          },
+          {
+            name: "James Williams",
+            profession: "",
+            testimonial:
+              "Impressive design! GrowthEcho's Brand Storefront enhanced our Amazon shopping experience, leaving a lasting impression on customers.",
+          },
+          {
+            name: "Jennifer Brown",
+            profession: "",
+            testimonial:
+              "Highly satisfied! GrowthEcho's Brand Storefront services elevated our brand identity, attracting more shoppers and boosting sales.",
+          },
         ]}
         heading={false}
       />
@@ -497,6 +623,24 @@ function Capabilities() {
             testimonial:
               "Reliable and efficient! GrowthEcho's reinstatement services saved our Amazon business from uncertainty, restoring our selling privileges successfully.",
           },
+          {
+            name: "Emily Garcia",
+            profession: "",
+            testimonial:
+              "Incredible service! GrowthEcho's reinstatement services got our Amazon account back on track in no time. Highly recommended!",
+          },
+          {
+            name: "William Davis",
+            profession: "",
+            testimonial:
+              "Life-savers! GrowthEcho's team expertly handled our suspension issues, resulting in a swift account reinstatement. Thank you!",
+          },
+          {
+            name: "Sarah Martinez",
+            profession: "",
+            testimonial:
+              "Reliable and efficient! GrowthEcho's reinstatement services saved our Amazon business from uncertainty, restoring our selling privileges successfully.",
+          },
         ]}
         heading={false}
       />
@@ -521,6 +665,24 @@ function Capabilities() {
       <Testimonials
         poppins={poppins}
         sliderArr={[
+          {
+            name: "Michael Jones",
+            profession: "",
+            testimonial:
+              "Impressive results! GrowthEcho's account suspension services swiftly resolved our issues, guiding us through the reinstatement process seamlessly.",
+          },
+          {
+            name: "Jessica Davis",
+            profession: "",
+            testimonial:
+              "Expert assistance! GrowthEcho's team navigated the complexities of account suspension and got us back on Amazon successfully.",
+          },
+          {
+            name: "John hans",
+            profession: "",
+            testimonial:
+              "Highly recommend! GrowthEcho's account suspension services brought clarity and expertise, leading to a quick reinstatement. Excellent support!",
+          },
           {
             name: "Michael Jones",
             profession: "",

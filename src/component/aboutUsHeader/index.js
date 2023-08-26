@@ -18,12 +18,6 @@ function Header({ poppins }) {
       <Link href="/" className={`${poppins.className} header-about-a`}>
         Start Now
       </Link>
-      <Image
-        alt="growth eco"
-        src={"/about-header.png"}
-        width={570}
-        height={200}
-      />
     </header>
   );
 }

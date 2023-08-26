@@ -37,87 +37,91 @@
     height: 500px;
     position: relative;
     overflow-x: clip;
+    background-image: url('../../../public/about-header-new.png');
+    background-position-y:-100px;
+    background-size: cover;
+    background-repeat: no-repeat;
     @include from-320-575{
         height: 400px;
         padding: 20px;
     }
-        &::before{
-            content: '';
-            background-image: url('../../../public/about-right.png');
-            position: absolute;
-            left: 70px;
-            bottom: 0px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            width: 290px;
-            height: 480px;
-            @include from-1300-1700{
-                left: 50px;
-            }
-            @include from-992-1100{
-                left: 15px;
-                width: 200px;
-                height: 390px;
-            }
-            @include from-1100-1300{
-                left: 45px;
-                width: 250px;
-                height: 340px;
-            }
-            @include from-575-992{
-                top: 20px;
-                width: 150px;
-                height: 340px;
-                left: -100px;
-            }
-            @include from-320-575{
-                width: 100px;
-                height: 290px;
-                left: -65px;
-                top: 20px;
-            }
-        }
-        &::after{
-            content: '';
-            background-image: url('../../../public/about-left.png');
-            position: absolute;
-            right: 70px;
-            top: 50px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            width: 290px;
-            height: 480px;
-            @include from-1300-1700{
-                right: 1%;
-                top:30px;
-                width: 270px;
-                height: 460px;
-            }
-            @include from-992-1100{
-                right: -6%;
-                width: 200px;
-                height: 390px;
-            }
-            @include from-1100-1300{
-                right: 1%;
-                width: 200px;
-                height: 390px;
-            }
-            @include from-575-992{
-                top: 20px;
-                width: 150px;
-                height: 340px;
-                right: -100px;
-            }
-            @include from-320-575{
-                width: 100px;
-                height: 290px;
-                right: -65px;
-                top: 20px;
-            }
-        }
+        // &::before{
+        //     content: '';
+        //     background-image: url('../../../public/about-right.png');
+        //     position: absolute;
+        //     left: 70px;
+        //     bottom: 0px;
+        //     background-size: contain;
+        //     background-repeat: no-repeat;
+        //     width: 290px;
+        //     height: 480px;
+        //     @include from-1300-1700{
+        //         left: 50px;
+        //     }
+        //     @include from-992-1100{
+        //         left: 15px;
+        //         width: 200px;
+        //         height: 390px;
+        //     }
+        //     @include from-1100-1300{
+        //         left: 45px;
+        //         width: 250px;
+        //         height: 340px;
+        //     }
+        //     @include from-575-992{
+        //         top: 20px;
+        //         width: 150px;
+        //         height: 340px;
+        //         left: -100px;
+        //     }
+        //     @include from-320-575{
+        //         width: 100px;
+        //         height: 290px;
+        //         left: -65px;
+        //         top: 20px;
+        //     }
+        // }
+        // &::after{
+        //     content: '';
+        //     background-image: url('../../../public/about-left.png');
+        //     position: absolute;
+        //     right: 70px;
+        //     top: 50px;
+        //     background-size: contain;
+        //     background-repeat: no-repeat;
+        //     width: 290px;
+        //     height: 480px;
+        //     @include from-1300-1700{
+        //         right: 1%;
+        //         top:30px;
+        //         width: 270px;
+        //         height: 460px;
+        //     }
+        //     @include from-992-1100{
+        //         right: -6%;
+        //         width: 200px;
+        //         height: 390px;
+        //     }
+        //     @include from-1100-1300{
+        //         right: 1%;
+        //         width: 200px;
+        //         height: 390px;
+        //     }
+        //     @include from-575-992{
+        //         top: 20px;
+        //         width: 150px;
+        //         height: 340px;
+        //         right: -100px;
+        //     }
+        //     @include from-320-575{
+        //         width: 100px;
+        //         height: 290px;
+        //         right: -65px;
+        //         top: 20px;
+        //     }
+        // }
         h1{
-            font-size: 30px;
+            font-size: 35px;
             line-height: normal;
             letter-spacing: normal;
             @include from-992-1300{
@@ -126,9 +130,9 @@
                 line-height: 35px;
             }
             @include from-1300-1700{
-                width: 80%;
+                width: 85%;
                 text-align: center;
-                line-height: 35px;
+                line-height: 40px;
             }
             @include from-575-992{
                 text-align: center;
@@ -138,7 +142,7 @@
                 font-size: 24px;
             }
             span{
-                color: #4663AC;
+                color: #fff;
             }
         }
         p{

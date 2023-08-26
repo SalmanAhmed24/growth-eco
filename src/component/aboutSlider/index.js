@@ -8,8 +8,9 @@ function SliderAbout({ futuraBK, futuraMDBT, futuraLtBT, futuraHv, poppins }) {
     <section className="slider-about">
       <Slider
         dots={true}
-        speed={500}
-        infinite={false}
+        autoplay={true}
+        autoplaySpeed={2500}
+        infinite={true}
         slidesPerRow={3}
         slidesToShow={1}
         arrows={false}

@@ -55,7 +55,7 @@ function AboutUs() {
       />
       <section className="who-we-comp">
         <WhoWeAre
-          title={"Who we are?"}
+          title={"What is Growth Echo?"}
           imageUrl={"/who-pic-1.png"}
           poppins={poppins}
           // futuraBK={futuraBK}
@@ -68,6 +68,8 @@ function AboutUs() {
           layout={"l"}
           width={370}
           height={380}
+          linkFlag={false}
+          link={null}
         />
         <WhoWeAre
           title={"Our Mission"}
@@ -78,11 +80,13 @@ function AboutUs() {
           // futuraLtBT={futuraLTBT}
           // futuraHv={futuraHv}
           content={
-            "We are on a mission to help existing Amazon sellers grow their businesses and increase their profits by 10-50%. We take day-to-day operations off your shoulders that free your time and energy so that you can invest in other business challenges."
+            "We are a team, not an agency. We are on a mission to help existing Amazon sellers like you grow their businesses and increase their profits by 10-50%. We take day-to-day operations off your shoulders that free your time and energy so that you can invest in other business challenges. We ensure to work hand in hand with you, adjusting strategies and implementing tactics that align with your business goals. We pride ourselves on staying up-to-date with the latest trends, algorithms, and best practices, ensuring that your business remains competitive and adaptable."
           }
           layout={"r"}
           width={370}
           height={380}
+          linkFlag={false}
+          link={null}
         />
         <WhoWeAre
           title={"Our Vision"}
@@ -93,11 +97,13 @@ function AboutUs() {
           // futuraHv={futuraHv}
           poppins={poppins}
           content={
-            "Our vision is to offer unique strategies for brands to level up their Amazon game and increase profits by 10-50% with little or no effort along with maximizing your visibility & profits by 10-50% without non-converting listings & bleeding on Amazon PPC"
+            "Imagine a world where your Amazon business runs like a well-oiled machine, effortlessly generating higher profits while you focus on what truly matters – expanding your brand's horizons. Our vision is to turn this dream into reality, offering you not just strategies, but a transformative Amazon journey. And that to level up your Amazon game and increase profits by 10-50% with little or no effort along with maximizing your visibility & profits by 10-50% without non-converting listings & bleeding on Amazon PPC."
           }
           layout={"l"}
           width={370}
           height={380}
+          linkFlag={false}
+          link={null}
         />
         <WhoWeAre
           title={"Our Services"}
@@ -108,11 +114,13 @@ function AboutUs() {
           // futuraHv={futuraHv}
           poppins={poppins}
           content={
-            "Every business is unique and we get along with you as a team and provide you with done-for your account management. which includes Amazon product research, Amazon product listing optimization, Amazon Advertising, Product Sourcing, Amazon inventory management, Brand storefront, Enhanced brand content A+, Listing reinstatement, Amazon account management services, and Account Suspension……."
+            "Every business is unique and we get along with you as a team and provide you with done-for your account management. which includes Amazon product research, Amazon product listing optimization, Amazon Advertising, Product Sourcing, Amazon inventory management, Brand storefront, Enhanced brand content A+, Listing reinstatement, Amazon account management services, and Account Suspension."
           }
           layout={"r"}
           width={370}
           height={380}
+          linkFlag={true}
+          link={"/capabilities"}
         />
         <Image
           className="about-rocket"

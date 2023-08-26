@@ -77,7 +77,7 @@ function CaseStudies() {
       </section>
       <section className="case-studies no-bg">
         <h1 className={poppins.className}>Case Studies</h1>
-        <div className="case-links-wrap">
+        {/* <div className="case-links-wrap">
           <ul onClick={handleLinks} className={`${poppins.className} links-ul`}>
             <li className={activeLink == "Branding" ? "activeLinkCS" : ""}>
               Branding
@@ -96,31 +96,30 @@ function CaseStudies() {
               Digital Marketing
             </li>
           </ul>
-        </div>
+        </div> */}
         <section className="tabs-inner">
-          {activeLink == "Branding" ? (
-            <div className="case-img-wrap page-wrap">
-              <Image
-                alt="growth eco"
-                src={"/case-1.png"}
-                width={303}
-                height={387}
-              />
-              <Image
-                alt="growth eco"
-                src={"/case-2.png"}
-                width={303}
-                height={387}
-              />
-              <Image
-                alt="growth eco"
-                src={"/case-3.png"}
-                width={303}
-                height={387}
-              />
-            </div>
-          ) : null}
-          {activeLink == "Campaigns" ? (
+          <div className="case-img-wrap page-wrap">
+            <Image
+              alt="growth eco"
+              src={"/case-1.png"}
+              width={303}
+              height={387}
+            />
+            <Image
+              alt="growth eco"
+              src={"/case-2.png"}
+              width={303}
+              height={387}
+            />
+            <Image
+              alt="growth eco"
+              src={"/case-3.png"}
+              width={303}
+              height={387}
+            />
+          </div>
+
+          {/* {activeLink == "Campaigns" ? (
             <div className="case-img-wrap page-wrap">
               <Image
                 alt="growth eco"
@@ -185,7 +184,7 @@ function CaseStudies() {
                 height={387}
               />
             </div>
-          ) : null}
+          ) : null} */}
         </section>
       </section>
     </section>
