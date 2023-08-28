@@ -444,7 +444,7 @@ export default function Home() {
         <div className="slider-wrap">
           <Slider
             dots={true}
-            slidesPerRow={4}
+            slidesPerRow={3}
             slidesToShow={1}
             slidesToScroll={1}
             speed={500}
@@ -464,63 +464,54 @@ export default function Home() {
               <Image
                 alt="growth eco"
                 className="slider-img"
-                src={"/pic1.png"}
+                src={"/client-1.png"}
                 width={200}
-                height={80}
+                height={100}
               />
             </div>
             <div className="image-wrapper">
               <Image
                 alt="growth eco"
                 className="slider-img"
-                src={"/pic2.png"}
+                src={"/client-2.png"}
                 width={200}
-                height={80}
+                height={100}
               />
             </div>
             <div className="image-wrapper">
               <Image
                 alt="growth eco"
                 className="slider-img"
-                src={"/pic3.png"}
+                src={"/client-3.png"}
                 width={200}
-                height={80}
+                height={100}
               />
             </div>
             <div className="image-wrapper">
               <Image
                 alt="growth eco"
                 className="slider-img"
-                src={"/pic4.png"}
+                src={"/client-1.png"}
                 width={200}
-                height={80}
+                height={100}
               />
             </div>
             <div className="image-wrapper">
               <Image
                 alt="growth eco"
                 className="slider-img"
-                src={"/pic2.png"}
+                src={"/client-2.png"}
                 width={200}
-                height={80}
+                height={100}
               />
             </div>
             <div className="image-wrapper">
               <Image
                 alt="growth eco"
                 className="slider-img"
-                src={"/pic3.png"}
+                src={"/client-3.png"}
                 width={200}
-                height={80}
-              />
-            </div>
-            <div className="image-wrapper">
-              <Image
-                alt="growth eco"
-                className="slider-img"
-                src={"/pic4.png"}
-                width={200}
-                height={80}
+                height={100}
               />
             </div>
           </Slider>
@@ -556,7 +547,7 @@ export default function Home() {
           {
             name: "Michael Rodriguez",
             profession: "",
-            imgUrl: "/test-ava-1.png",
+            imgUrl: "/test-ava-1.jpg",
             stars: "/stars.png",
             testimonial:
               "From inventory to SEO, Growth Echo handled it all. My FBA business is thriving, all thanks to their exceptional growth and management services.",
