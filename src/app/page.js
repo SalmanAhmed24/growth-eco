@@ -530,36 +530,36 @@ export default function Home() {
         poppins={poppins}
         sliderArr={[
           {
-            name: "Ivan",
+            name: "Sarah James",
             profession: "",
-            imgUrl: "/test-ava-1.jpg",
+            imgUrl: "/test-ava-4.jpg",
             stars: "/star-5.png",
             testimonial:
-              "GrowthEcho's Amazon Advertising was a game-changer! Our Amazon  sales rank soared with targeted ads and expert strategies.",
+              "Thanks to Growth Echo, my Amazon business reached new heights. Their management services streamlined everything, from listings to ads!",
           },
           {
-            name: "Maria",
+            name: "Jason Patel",
             profession: "",
             stars: "/star-5.png",
             imgUrl: "/test-ava-2.jpg",
             testimonial:
-              "Efficient and effective! GrowthEcho's services optimized our Amazon ads, yielding impressive results and increased visibility.",
+              "Growth Echo's strategies are gold. My sales tripled within months. Their growth insights are a game-changer for Amazon sellers!",
           },
           {
-            name: "Hans",
+            name: "Sam Chen",
             profession: "",
             stars: "/stars.png",
             imgUrl: "/test-ava-3.jpg",
             testimonial:
-              "Highly recommend! GrowthEcho's team boosted our Amazon presence, amazon keyword ranking, converting clicks into loyal customers. Excellent service!",
+              "Couldn't have managed my Amazon store without Growth Echo. Their expertise is evident – my brand's visibility and profits soared!",
           },
           {
-            name: "Hans",
+            name: "Michael Rodriguez",
             profession: "",
-            imgUrl: "/test-ava-3.jpg",
+            imgUrl: "/test-ava-1.png",
             stars: "/stars.png",
             testimonial:
-              "Highly recommend! GrowthEcho's team boosted our Amazon presence, amazon keyword ranking, converting clicks into loyal customers. Excellent service!",
+              "From inventory to SEO, Growth Echo handled it all. My FBA business is thriving, all thanks to their exceptional growth and management services.",
           },
         ]}
         heading={true}

@@ -186,36 +186,48 @@ function Capabilities() {
             {
               name: "Jhon",
               profession: "",
+              imgUrl: "/avatar.png",
+              stars: "/star-5.png",
               testimonial:
                 "Game changer! Their Amazon account management took the stress away. Sales soared!",
             },
             {
               name: "Micheal",
               profession: "",
+              imgUrl: "/avatar.png",
+              stars: "/star-5.png",
               testimonial:
                 "Efficient and effective! Their service boosted our Amazon business, worth every penny.",
             },
             {
               name: "Carlos",
               profession: "",
+              imgUrl: "/avatar.png",
+              stars: "/stars.png",
               testimonial:
                 "Highly recommend! Increased sales, optimized listings – our Amazon store thrived under their management.",
             },
             {
               name: "Jhon",
               profession: "",
+              imgUrl: "/avatar.png",
+              stars: "/star-5.png",
               testimonial:
                 "Game changer! Their Amazon account management took the stress away. Sales soared!",
             },
             {
               name: "Micheal",
               profession: "",
+              imgUrl: "/avatar.png",
+              stars: "/star-5.png",
               testimonial:
                 "Efficient and effective! Their service boosted our Amazon business, worth every penny.",
             },
             {
               name: "Carlos",
               profession: "",
+              imgUrl: "/avatar.png",
+              stars: "/stars.png",
               testimonial:
                 "Highly recommend! Increased sales, optimized listings – our Amazon store thrived under their management.",
             },
@@ -248,36 +260,48 @@ function Capabilities() {
           {
             name: "Ivan",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/star-5.png",
             testimonial:
               "GrowthEcho's Amazon Advertising was a game-changer! Our Amazon  sales rank soared with targeted ads and expert strategies.",
           },
           {
             name: "Maria",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/star-5.png",
             testimonial:
               "Efficient and effective! GrowthEcho's services optimized our Amazon ads, yielding impressive results and increased visibility.",
           },
           {
             name: "Hans",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/stars.png",
             testimonial:
               "Highly recommend! GrowthEcho's team boosted our Amazon presence, amazon keyword ranking, converting clicks into loyal customers. Excellent service!",
           },
           {
             name: "Ivan",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/star-5.png",
             testimonial:
               "GrowthEcho's Amazon Advertising was a game-changer! Our Amazon  sales rank soared with targeted ads and expert strategies.",
           },
           {
             name: "Maria",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/star-5.png",
             testimonial:
               "Efficient and effective! GrowthEcho's services optimized our Amazon ads, yielding impressive results and increased visibility.",
           },
           {
             name: "Hans",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/stars.png",
             testimonial:
               "Highly recommend! GrowthEcho's team boosted our Amazon presence, amazon keyword ranking, converting clicks into loyal customers. Excellent service!",
           },
@@ -308,36 +332,48 @@ function Capabilities() {
           {
             name: "Pierre",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/star-5.png",
             testimonial:
               "Outstanding Content A+ services by GrowthEcho! Our listings became captivating and drove higher conversions. Top-notch quality!",
           },
           {
             name: "Erik",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/star-5.png",
             testimonial:
               "Impressed with GrowthEcho's A+ content! Their creative approach elevated our Amazon listings, attracting more customers than ever.",
           },
           {
             name: "Emily",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/star-5.png",
             testimonial:
               "Highly satisfied! GrowthEcho's A+ services made our  Amazon products stand out, leaving a lasting impression on shoppers. Exceptional results!",
           },
           {
             name: "Pierre",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/star-5.png",
             testimonial:
               "Outstanding Content A+ services by GrowthEcho! Our listings became captivating and drove higher conversions. Top-notch quality!",
           },
           {
             name: "Erik",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/star-5.png",
             testimonial:
               "Impressed with GrowthEcho's A+ content! Their creative approach elevated our Amazon listings, attracting more customers than ever.",
           },
           {
             name: "Emily",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/star-5.png",
             testimonial:
               "Highly satisfied! GrowthEcho's A+ services made our  Amazon products stand out, leaving a lasting impression on shoppers. Exceptional results!",
           },
@@ -368,36 +404,48 @@ function Capabilities() {
           {
             name: "Giovanni",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/star-5.png",
             testimonial:
               "GrowthEcho's Product Sourcing services were a game-changer! They found us profitable products we couldn't discover ourselves.",
           },
           {
             name: "Nikos",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/star-5.png",
             testimonial:
               "Exceptional service! GrowthEcho's Product Sourcing boosted our inventory with high-quality products, increasing sales and profit margins.",
           },
           {
-            name: "Sofia",
+            name: "Patrick",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/stars.png",
             testimonial:
               "Impressive sourcing expertise! GrowthEcho's team delivered top-notch products, expanding our offerings and delighting customers.",
           },
           {
             name: "Giovanni",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/star-5.png",
             testimonial:
               "GrowthEcho's Product Sourcing services were a game-changer! They found us profitable products we couldn't discover ourselves.",
           },
           {
             name: "Nikos",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/star-5.png",
             testimonial:
               "Exceptional service! GrowthEcho's Product Sourcing boosted our inventory with high-quality products, increasing sales and profit margins.",
           },
           {
-            name: "Sofia",
+            name: "Patrick",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/stars.png",
             testimonial:
               "Impressive sourcing expertise! GrowthEcho's team delivered top-notch products, expanding our offerings and delighting customers.",
           },
@@ -428,36 +476,48 @@ function Capabilities() {
           {
             name: "Ingrid",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/star-5.png",
             testimonial:
               "GrowthEcho's product research services were spot-on! They identified profitable products, setting us up for Amazon's success.",
           },
           {
             name: "Jakub",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/stars.png",
             testimonial:
               "Thrilled with the results! GrowthEcho's product research revealed winning products that boosted our sales and ROI.",
           },
           {
-            name: "Emma",
+            name: "Emerson",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/star-5.png",
             testimonial:
               "Impressive insights! GrowthEcho's research helped us discover untapped opportunities, optimizing our Amazon product offerings effectively.",
           },
           {
             name: "Ingrid",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/star-5.png",
             testimonial:
               "GrowthEcho's product research services were spot-on! They identified profitable products, setting us up for Amazon's success.",
           },
           {
             name: "Jakub",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/stars.png",
             testimonial:
               "Thrilled with the results! GrowthEcho's product research revealed winning products that boosted our sales and ROI.",
           },
           {
-            name: "Emma",
+            name: "Emerson",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/star-5.png",
             testimonial:
               "Impressive insights! GrowthEcho's research helped us discover untapped opportunities, optimizing our Amazon product offerings effectively.",
           },
@@ -488,36 +548,48 @@ function Capabilities() {
           {
             name: "Ekaterina",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/star-5.png",
             testimonial:
               "GrowthEcho's product listing services were exceptional! Engaging copy and stunning visuals transformed our listings and drove sales.",
           },
           {
             name: "James",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/stars.png",
             testimonial:
               "Highly recommend! GrowthEcho's optimization elevated our listings, attracting more customers and boosting our Amazon presence.",
           },
           {
-            name: "Marie",
+            name: "Marcus",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/star-5.png",
             testimonial:
               "Efficient and effective! GrowthEcho's expertise optimized our listings, resulting in increased conversions and improved visibility on Amazon.",
           },
           {
             name: "Ekaterina",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/star-5.png",
             testimonial:
               "GrowthEcho's product listing services were exceptional! Engaging copy and stunning visuals transformed our listings and drove sales.",
           },
           {
             name: "James",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/stars.png",
             testimonial:
               "Highly recommend! GrowthEcho's optimization elevated our listings, attracting more customers and boosting our Amazon presence.",
           },
           {
-            name: "Marie",
+            name: "Marcus",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/star-5.png",
             testimonial:
               "Efficient and effective! GrowthEcho's expertise optimized our listings, resulting in increased conversions and improved visibility on Amazon.",
           },
@@ -546,38 +618,50 @@ function Capabilities() {
         poppins={poppins}
         sliderArr={[
           {
-            name: "Mary Johnson",
+            name: "Johnson",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/star-5.png",
             testimonial:
               "GrowthEcho's Brand Storefront was a game-changer! A captivating storefront that showcased our brand and products beautifully.",
           },
           {
             name: "James Williams",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/stars.png",
             testimonial:
               "Impressive design! GrowthEcho's Brand Storefront enhanced our Amazon shopping experience, leaving a lasting impression on customers.",
           },
           {
-            name: "Jennifer Brown",
+            name: "Micheal Brown",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/star-5.png",
             testimonial:
               "Highly satisfied! GrowthEcho's Brand Storefront services elevated our brand identity, attracting more shoppers and boosting sales.",
           },
           {
-            name: "Mary Johnson",
+            name: "Johnson",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/star-5.png",
             testimonial:
               "GrowthEcho's Brand Storefront was a game-changer! A captivating storefront that showcased our brand and products beautifully.",
           },
           {
             name: "James Williams",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/stars.png",
             testimonial:
               "Impressive design! GrowthEcho's Brand Storefront enhanced our Amazon shopping experience, leaving a lasting impression on customers.",
           },
           {
-            name: "Jennifer Brown",
+            name: "Micheal Brown",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/star-5.png",
             testimonial:
               "Highly satisfied! GrowthEcho's Brand Storefront services elevated our brand identity, attracting more shoppers and boosting sales.",
           },
@@ -608,36 +692,48 @@ function Capabilities() {
           {
             name: "Emily Garcia",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/star-5.png",
             testimonial:
               "Incredible service! GrowthEcho's reinstatement services got our Amazon account back on track in no time. Highly recommended!",
           },
           {
             name: "William Davis",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/stars.png",
             testimonial:
               "Life-savers! GrowthEcho's team expertly handled our suspension issues, resulting in a swift account reinstatement. Thank you!",
           },
           {
             name: "Sarah Martinez",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/star-5.png",
             testimonial:
               "Reliable and efficient! GrowthEcho's reinstatement services saved our Amazon business from uncertainty, restoring our selling privileges successfully.",
           },
           {
             name: "Emily Garcia",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/star-5.png",
             testimonial:
               "Incredible service! GrowthEcho's reinstatement services got our Amazon account back on track in no time. Highly recommended!",
           },
           {
             name: "William Davis",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/stars.png",
             testimonial:
               "Life-savers! GrowthEcho's team expertly handled our suspension issues, resulting in a swift account reinstatement. Thank you!",
           },
           {
             name: "Sarah Martinez",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/star-5.png",
             testimonial:
               "Reliable and efficient! GrowthEcho's reinstatement services saved our Amazon business from uncertainty, restoring our selling privileges successfully.",
           },
@@ -668,36 +764,48 @@ function Capabilities() {
           {
             name: "Michael Jones",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/star-5.png",
             testimonial:
               "Impressive results! GrowthEcho's account suspension services swiftly resolved our issues, guiding us through the reinstatement process seamlessly.",
           },
           {
             name: "Jessica Davis",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/stars.png",
             testimonial:
               "Expert assistance! GrowthEcho's team navigated the complexities of account suspension and got us back on Amazon successfully.",
           },
           {
             name: "John hans",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/star-5.png",
             testimonial:
               "Highly recommend! GrowthEcho's account suspension services brought clarity and expertise, leading to a quick reinstatement. Excellent support!",
           },
           {
             name: "Michael Jones",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/star-5.png",
             testimonial:
               "Impressive results! GrowthEcho's account suspension services swiftly resolved our issues, guiding us through the reinstatement process seamlessly.",
           },
           {
             name: "Jessica Davis",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/stars.png",
             testimonial:
               "Expert assistance! GrowthEcho's team navigated the complexities of account suspension and got us back on Amazon successfully.",
           },
           {
             name: "John hans",
             profession: "",
+            imgUrl: "/avatar.png",
+            stars: "/star-5.png",
             testimonial:
               "Highly recommend! GrowthEcho's account suspension services brought clarity and expertise, leading to a quick reinstatement. Excellent support!",
           },
