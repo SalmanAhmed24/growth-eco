@@ -82,8 +82,8 @@ function Testimonials({ heading, sliderArr, poppins }) {
             loop: true,
           },
           1500: {
-            slidesPerView: 4,
-            spaceBetween: 50,
+            slidesPerView: 3,
+            spaceBetween: 0,
             loop: true,
           },
         }}
@@ -99,7 +99,8 @@ function Testimonials({ heading, sliderArr, poppins }) {
                     <Image
                       alt="growth eco"
                       className="avatar"
-                      src={"/avatar.png"}
+                      src={i.imgUrl}
+                      style={{ borderRadius: "50%" }}
                       width={66}
                       height={66}
                     />
@@ -110,7 +111,7 @@ function Testimonials({ heading, sliderArr, poppins }) {
                   </div>
                   <Image
                     alt="growth eco"
-                    src={"/stars.png"}
+                    src={i.stars}
                     width={110}
                     height={22}
                   />

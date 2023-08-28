@@ -33,6 +33,11 @@
         @content;
     }
 }
+@mixin above-1600{
+    @media screen and (min-width:1600px) {
+        @content;
+    }
+}
 .footer-wrap{
     min-height: 460px;
     height: 100%;
@@ -46,6 +51,11 @@
     justify-content: center;
     @include from-992-1200{
         background-position-y:-100px
+    }
+    @include above-1600{
+        background-position-y: -165px;
+        background-repeat:no-repeat;
+        min-height: 530px;
     }
     @include from-1200-1370{
         background-position-y:-122px
@@ -77,6 +87,9 @@
             line-height: normal;
             font-size: 16px;
             font-weight: 300;
+            @include above-1600{
+                font-size: 1.1vw;
+            }
             @include from-320-to-992{
                 width: 100%;
                 font-size: 14px;
@@ -112,6 +125,9 @@
                     @include from-320-to-992{
                         font-size: 16px;
                     }
+                    @include above-1600{
+                        font-size: 1.3vw;
+                    }
                 }
                 .footer-ul{
                     display: flex;
@@ -123,6 +139,9 @@
                         text-decoration: none;
                         color: #fff;
                         font-weight: 300;
+                        @include above-1600{
+                            font-size: 1.1vw;
+                        }
                         @include from-320-to-992{
                             font-size: 14px;
                         }
@@ -135,6 +154,9 @@
                         
                         color: #fff;
                         line-height: 27px;
+                        @include above-1600{
+                            font-size: 1.1vw;
+                        }
                     }
                 }
         }
@@ -165,6 +187,9 @@
                         font-size: 16px;
                         margin-bottom: 0px;
                     }
+                    @include above-1600{
+                        font-size: 1.3vw;
+                    }
                 }
                 .footer-form-wrap{
                     display: flex;
@@ -183,6 +208,9 @@
                             background-color: transparent;
                             font-size: 16px;
                             line-height: normal;
+                            @include above-1600{
+                                font-size: 1.1vw;
+                            }
                                 &::placeholder{
                                     color: #fff;
                                 }
@@ -208,6 +236,9 @@
                             font-size: 16px;
                             font-weight: 400;
                             padding: 5px 10px;
+                            @include above-1600{
+                                font-size: 1.2vw;
+                            }
                             @include from-575-to-992{
                                 width: 40%;
                             }

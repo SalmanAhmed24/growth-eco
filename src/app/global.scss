@@ -98,12 +98,18 @@ table {
         @content;
     }
 }
+@mixin above-1600{
+    @media screen and (min-width:1600px) {
+        @content;
+    }
+}
 .header-wrap{
     width: 100%;
     display: flex;
     flex-direction: column;
     position: relative;
     height: 550px;
+
     @include from-320-to-575{
         background-image: url('../../public/new-home-bg.svg');
         background-size: cover;
@@ -143,6 +149,10 @@ table {
                 text-transform: capitalize;
                 margin-bottom: 20px;
                 line-height: 50px;
+                @include above-1600{
+                    font-size: 3vw;
+                    line-height: normal;
+                }
                 @include from-992-to-1140{
                     width: 65%;
                     font-size: 38px;
@@ -184,6 +194,9 @@ table {
                     padding: 5px 10px;
                     border:1px solid #4663AC;
                     transition: 0.3s ease-in-out;
+                    @include above-1600{
+                        font-size: 1.4vw;
+                    }
                     &:hover{
                         background-color: #fff;
                         color: #4663AC;
@@ -204,6 +217,9 @@ table {
     display: flex;
     overflow-x: clip;
         flex-direction: column;
+        @include above-1600{
+            padding:10vw 8vw;
+        }
         @include from-320-to-575{
             padding: 20px 20px 20px 20px;
         }
@@ -219,6 +235,9 @@ table {
             text-align: center;
             margin-bottom: 10px;
             font-weight: 600;
+            @include above-1600{
+                font-size: 2.5vw;
+            }
             @include from-320-to-992{
                 font-size: 24px;
             }
@@ -231,6 +250,10 @@ table {
             font-size: 16px;
             line-height: 25px;
             font-weight: 300;
+            @include above-1600{
+                font-size: 1.3vw;
+                line-height: normal;
+            }
             @include from-320-to-992{
                 font-size: 15px;
             }
@@ -266,6 +289,9 @@ margin-top: 20px;
                     padding: 5px 10px;
                     border:1px solid #4663AC;
                     transition: 0.3s ease-in-out;
+                    @include above-1600{
+                        font-size: 1.5vw;
+                    }
                     @include from-320-to-575{
                         font-size: 14px;
                     }
@@ -278,6 +304,9 @@ margin-top: 20px;
                         display: flex;
                         flex-direction: column;
                         align-items: center;
+                        @include above-1600{
+                            align-self: center;
+                        }
                     }
     }
 }
@@ -285,6 +314,9 @@ margin-top: 20px;
     display: flex;
     padding: 70px 0px;
     position: relative;
+    @include above-1600{
+        padding: 10vw 0vw;
+    }
     @include from-320-to-575{
         display: none;
         flex-direction: column;
@@ -318,9 +350,11 @@ margin-top: 20px;
     position: relative;
     top: 10.8vw;
     left: -2vw;
-    @include from-575-to-992{
-        
+    @include from-575-to-992{ 
     left: -9vw;
+    }
+    @include above-1600{
+        top: 8.8vw;
     }
     img{
         width: 114px;
@@ -337,6 +371,9 @@ margin-top: 20px;
                         font-size: 12px;
                         font-weight: 600;
                     }
+                    @include above-1600{
+                        font-size: 1.3vw;
+                    }
                 }
                 ul{
                     list-style: initial;
@@ -345,6 +382,9 @@ margin-top: 20px;
                     font-weight: 300;
                     @include from-320-to-992{
                         font-size: 10px;
+                    }
+                    @include above-1600{
+                        font-size: 1.1vw;
                     }
                 }
         }
@@ -361,6 +401,9 @@ margin-top: 20px;
     @include from-575-to-992{
         top: 2vw;
     }
+    @include above-1600{
+        top:9vw
+    }
     img{
         width: 114px;
         height: 160px;
@@ -376,6 +419,11 @@ margin-top: 20px;
                         font-size: 12px;
                         font-weight: 600;
                     }
+                    @include above-1600{
+                        font-size: 1.3vw;
+                        top: -2vw;
+                        position: relative;
+                    }
                 }
                 ul{
                     list-style: initial;
@@ -385,6 +433,11 @@ margin-top: 20px;
                     font-weight: 300;
                     @include from-320-to-992{
                         font-size: 10px;
+                    }
+                    @include above-1600{
+                        font-size: 1.1vw;
+                        top: -2vw;
+                        position: relative;
                     }
                 }
         }
@@ -402,6 +455,9 @@ margin-top: 20px;
         top: 4vw;
     
     }
+    @include above-1600{
+        top:-7.3vw
+    }
     img{
         width: 114px;
         height: 187px;
@@ -418,6 +474,9 @@ margin-top: 20px;
                         font-size: 12px;
                         font-weight: 600;
                     }
+                    @include above-1600{
+                        font-size: 1.3vw;
+                    }
                 }
                 ul{
                     list-style: initial;
@@ -426,6 +485,9 @@ margin-top: 20px;
                     font-size: 14px;
                     @include from-320-to-992{
                         font-size: 10px;
+                    }
+                    @include above-1600{
+                        font-size: 1.1vw;
                     }
                 }
         }
@@ -443,6 +505,9 @@ margin-top: 20px;
                 
     left: 10vw;
             }
+            @include above-1600{
+                top: -9vw;
+            }
             img{
                 width: 114px;
         height: 159px;
@@ -458,6 +523,9 @@ margin-top: 20px;
                         font-size: 12px;
                         font-weight: 600;
                     }
+                    @include above-1600{
+                        font-size: 1.3vw;
+                    }
                 }
                 ul{
                     list-style: initial;
@@ -467,6 +535,9 @@ margin-top: 20px;
                     font-size: 14px;
                     @include from-320-to-992{
                         font-size: 10px;
+                    }
+                    @include above-1600{
+                        font-size: 1.1vw;
                     }
                 }
         }
@@ -494,6 +565,9 @@ margin-top: 20px;
         @include from-575-to-992{
             left:-15%
         }
+        @include above-1600{
+            left: -8.5vw;
+        }
     }
         h1{
             font-size: 30px;
@@ -504,6 +578,9 @@ margin-top: 20px;
             @include from-320-to-575{
                 font-size: 24px;
             }
+            @include above-1600{
+                font-size: 2.5vw;
+            }
         }
         p{
             font-size: 16px;
@@ -513,6 +590,9 @@ margin-top: 20px;
             line-height: 25px;
             @include from-320-to-575{
                 font-size: 14px;
+            }
+            @include above-1600{
+                font-size: 1.1vw;
             }
         }
         .serv-man{
@@ -572,6 +652,9 @@ margin-top: 20px;
                         @include from-320-to-575{
                             font-size: 16px;
                         }
+                        @include above-1600{
+                            font-size: 1.5vw;
+                        }
                     }
                     p{
                         color: #fff;
@@ -582,6 +665,9 @@ margin-top: 20px;
                         @include from-320-to-575{
                             font-size: 14px;
                             line-height: 20px;
+                        }
+                        @include above-1600{
+                            font-size: 1.1vw;
                         }
                     }
                     button{
@@ -594,6 +680,9 @@ margin-top: 20px;
                         text-transform: uppercase;
                         @include from-320-to-575{
                             font-size: 14px;
+                        }
+                        @include above-1600{
+                            font-size: 1.3vw;
                         }
                     }
             }
@@ -638,6 +727,9 @@ margin-top: 20px;
             text-transform: uppercase;
             color: #fff;
             transition: 0.3s ease-in-out;
+            @include above-1600{
+                font-size: 1.3vw;
+            }
             &:hover{
                 background: #fff;
                 color: #4663AC;
@@ -722,6 +814,9 @@ margin-top: 20px;
             @include from-320-to-575{
                 font-size: 24px;
             }
+            @include above-1600{
+                font-size: 2.5vw;
+            }
         }
         p{
             text-align: center;
@@ -733,6 +828,9 @@ margin-top: 20px;
             @include from-320-to-575{
                 width: 85%;
                 font-size: 14px;
+            }
+            @include above-1600{
+                font-size: 1.1vw;
             }
         }
         .arrow-3{
@@ -786,6 +884,9 @@ margin-top: 20px;
             @include from-320-to-575{
                 font-size: 24px;
             }
+            @include above-1600{
+                font-size: 2.5vw;
+            }
         }
         p{
             text-align: center;
@@ -795,6 +896,9 @@ margin-top: 20px;
             line-height: 25px;
             @include from-320-to-575{
                 font-size: 14px;
+            }
+            @include above-1600{
+                font-size: 1.1vw;
             }
         }
         .slider-wrap{
@@ -854,6 +958,9 @@ margin-top: 20px;
                 font-size: 24px;
                 padding: 0px 30px;
             }
+            @include above-1600{
+                font-size: 2.5vw;
+            }
         }
         .swiper{
             height: 430px;
@@ -888,11 +995,18 @@ width: 275px !important;
                     line-height: 20px;
                     margin-bottom: 0px;
                     font-weight: 600;
+                    @include above-1600{
+                        font-size: 1.5vw;
+                    }
                 }
+
                 p{
                     width: 100%;
                     font-size: 15px;
                     font-weight: 300;
+                    @include above-1600{
+                        font-size: 1.1vw;
+                    }
                 }
             }
     }
@@ -902,6 +1016,9 @@ width: 275px !important;
         line-height: 25px;
         margin-top: 10px;
         font-weight: 300;
+        @include above-1600{
+            font-size: 1.1vw;
+        }
     }
     .test-down{
         position: absolute;
@@ -967,6 +1084,9 @@ width: 275px !important;
             margin-top: 20px;
             font-size: 40px;
             font-weight: 600;
+            @include above-1600{
+                font-size: 2.5vw;
+            }
             @include from-320-to-575{
                 padding: 0px 30px;
             }
@@ -1043,6 +1163,9 @@ width: 275px !important;
             font-size: 20px;
             text-transform: uppercase;
             color: #000;
+            @include above-1600{
+                font-size: 1.5vw;
+            }
                 span{
                     padding-left: 10px;
                     position: relative;
@@ -1081,6 +1204,9 @@ width: 275px !important;
             text-transform: capitalize;
             line-height: normal;
             font-weight: 500;
+            @include above-1600{
+                font-size: 2.5vw;
+            }
             @include from-320-to-575{
                 width: 100%;
                 font-size: 25px;
@@ -1097,6 +1223,9 @@ width: 275px !important;
                     font-size: 18px;
                     padding: 5px 20px;
                     transition: 0.3s ease-in-out;
+                    @include above-1600{
+                        font-size: 1.3vw;
+                    }
                     &:hover{
                         cursor: pointer;
                         background-color: transparent;
@@ -1123,11 +1252,17 @@ width: 275px !important;
                 font-size: 14px;
                 margin-bottom: 20px;
             }
+            @include above-1600{
+                font-size: 1.1vw;
+            }
         }
         a{
             color: #000;
             @include from-320-to-575{
                 font-size: 14px;
+            }
+            @include above-1600{
+                font-size: 1.1vw;
             }
         }
   }
@@ -1237,13 +1372,19 @@ display: none;
                 position: relative;
                 font-size: 14px;
                 left: -15px;
-                top:-12px
+                top:-12px;
+                @include above-1600{
+                    font-size: 1.5vw;
+                }
             }
             ul{
                 font-size:11px;
                 position: relative;
                 left: -15px;
-                top:-12px
+                top:-12px;
+                @include above-1600{
+                    font-size: 1.1vw;
+                }
             }
     }
     .single-step-mob2{

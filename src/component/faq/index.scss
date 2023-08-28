@@ -13,6 +13,11 @@
         @content;
     }
 }
+@mixin above-1600{
+    @media screen and (min-width:1600px) {
+        @content;
+    }
+}
 .faqs-main-wrapper{
 display: flex;
 flex-wrap: wrap;
@@ -33,14 +38,24 @@ background-color: #fff;
         @include from-320-to-575{
             font-size: 24px;
         }
+        @include above-1600{
+            font-size: 2.5vw;
+        }
     }
     p{
         line-height: normal;
         font-size: 16px;
         margin-bottom: 20px;
         font-weight: 300;
+        animation-name: faqOpenAnim;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
         @include from-320-to-575{
             font-size: 15px;
+        }
+        @include above-1600{
+            font-size: 1.1vw;
         }
     }
     button{
@@ -54,6 +69,9 @@ background-color: #fff;
         padding: 0px;
         position: relative;
         width: 95%;
+        @include above-1600{
+            font-size: 1.1vw;
+        }
         @include from-320-to-575{
             font-size: 15px;
             text-align: start;
@@ -124,6 +142,9 @@ background-color: #fff;
             @include from-320-to-575{
                 font-size: 20px;
             }
+            @include above-1600{
+                font-size: 1.5vw;
+            }
         }
         .form-wrap{
             display: flex;
@@ -136,6 +157,9 @@ background-color: #fff;
                     color: #fff;
                     border-bottom: 1px solid #fff;
                     padding: 15px 0px;
+                    @include above-1600{
+                        font-size: 1.1vw;
+                    }
                     &::placeholder {
                         color: #fff;
                         opacity: 1; /* Firefox */
@@ -149,6 +173,9 @@ background-color: #fff;
                     color: #fff;
                     border-bottom: 1px solid #fff;
                     padding: 15px 0px;
+                    @include above-1600{
+                        font-size: 1.1vw;
+                    }
                     &::placeholder {
                         color: #fff;
                         opacity: 1; /* Firefox */
@@ -163,6 +190,9 @@ background-color: #fff;
                     margin-top: 20px;
                     padding: 5px 10px;
                     transition: 0.3s ease-in-out;
+                    @include above-1600{
+                        font-size: 1.3vw;
+                    }
                         &:hover{
                             background: transparent;
                             color: #FFF;
@@ -178,5 +208,19 @@ background-color: #fff;
         transform: rotate(0deg);
     }100%{
         transform: rotate(360deg);
+    }
+}
+@keyframes faqOpenAnim {
+    0%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
+    }
+}
+@keyframes faqCloseAnim {
+    0%{
+        opacity: 1;
+    }100%{
+        opacity: 0;
     }
 }

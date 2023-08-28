@@ -532,24 +532,32 @@ export default function Home() {
           {
             name: "Ivan",
             profession: "",
+            imgUrl: "/test-ava-1.jpg",
+            stars: "/star-5.png",
             testimonial:
               "GrowthEcho's Amazon Advertising was a game-changer! Our Amazon  sales rank soared with targeted ads and expert strategies.",
           },
           {
             name: "Maria",
             profession: "",
+            stars: "/star-5.png",
+            imgUrl: "/test-ava-2.jpg",
             testimonial:
               "Efficient and effective! GrowthEcho's services optimized our Amazon ads, yielding impressive results and increased visibility.",
           },
           {
             name: "Hans",
             profession: "",
+            stars: "/stars.png",
+            imgUrl: "/test-ava-3.jpg",
             testimonial:
               "Highly recommend! GrowthEcho's team boosted our Amazon presence, amazon keyword ranking, converting clicks into loyal customers. Excellent service!",
           },
           {
             name: "Hans",
             profession: "",
+            imgUrl: "/test-ava-3.jpg",
+            stars: "/stars.png",
             testimonial:
               "Highly recommend! GrowthEcho's team boosted our Amazon presence, amazon keyword ranking, converting clicks into loyal customers. Excellent service!",
           },
