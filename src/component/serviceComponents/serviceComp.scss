@@ -43,6 +43,11 @@
         @content;
     }
 }
+@mixin above-1600{
+    @media screen and (min-width:1600px){
+        @content;
+    }
+}
 .header{
     background-image: url('../../../public/amazon-ser-header-bg.png');
     background-size: cover;

@@ -38,6 +38,11 @@
         @content;
     }
 }
+@mixin above-1600{
+    @media screen and (min-width:1600px){
+        @content;
+    }
+}
 .amazon-sec-wrap{
     overflow-x: clip;
 }

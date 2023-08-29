@@ -28,6 +28,11 @@
         @content;
     }
 }
+@mixin above-1600{
+    @media screen and (min-width:1600px){
+        @content;
+    }
+}
 .header-about{
     display: flex;
     flex-direction: column;
@@ -44,6 +49,9 @@
     @include from-320-575{
         height: 400px;
         padding: 20px;
+    }
+    @include above-1600{
+        background-position-y: -270px;
     }
         // &::before{
         //     content: '';
@@ -122,8 +130,12 @@
         // }
         h1{
             font-size: 35px;
+            color: #fff;
             line-height: normal;
             letter-spacing: normal;
+            @include above-1600{
+                font-size: 2.5vw;
+            }
             @include from-992-1300{
                 width: 70%;
                 text-align: center;
@@ -150,6 +162,8 @@
             text-align: center;
             width: 35%;
             margin-bottom: 20px;
+            color: #fff;
+            
             @include from-992-1300{
                 font-size: 16px;
                 width: 70%;
@@ -161,6 +175,9 @@
                 width: 60%;
                 font-weight: 300;
                 line-height: 20px;
+            }
+            @include above-1600{
+                font-size: 1.2vw;
             }
             @include from-575-992{
                 text-align: center;
@@ -179,6 +196,9 @@
             transition: 0.3s ease-in-out;
             padding: 10px 20px;
             border: 1px solid #4663AC;
+            @include above-1600{
+                font-size: 1.3vw;
+            }
                 &:hover{
                     background: #fff;
                     color: #4663AC;

@@ -18,6 +18,11 @@
         @content;
     }
 }
+@mixin above-1600{
+    @media screen and (min-width:1600px){
+        @content;
+    }
+}
 .ach-wrap{
     background-image: url("../../../public/achieve-bg.png");
     background-repeat: no-repeat;
@@ -30,6 +35,9 @@
     align-items: center;
     position: relative;
     overflow-x: clip;
+    @include above-1600{
+        background-position-y: 50px;
+    }
     &::after{
         content: '';
         background-image: url('../../../public/office-work.png');
@@ -78,6 +86,9 @@
             line-height: normal;
             margin-top: 60px;
             margin-bottom: 20px;
+            @include above-1600{
+                font-size: 2.5vw;
+            }
             @include from-320-575{
                 font-size: 22px;
                 text-align: center;
@@ -91,6 +102,9 @@
             margin-bottom: 40px;
             color: #fff;
             line-height: normal;
+            @include above-1600{
+                font-size: 1.2vw;
+            }
             @include from-320-575{
                 width: 90%;
             }

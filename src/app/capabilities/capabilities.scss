@@ -23,6 +23,11 @@
         @content;
     }
 }
+@mixin above-1600{
+    @media screen and (min-width:1600px){
+        @content;
+    }
+}
 .cap-header{
     background-image: url('../../../public/capa-bg.png');
     background-position-y: -150px;
@@ -36,6 +41,11 @@
     top: -10px;
     @include from-575-992{
         background-position-y:0px;
+        
+    }
+    @include above-1600{
+        background-position-y: -270px;
+        height: 550px;
     }
     @include from-320-575{
         background-image: url('../../../public/service-mobile-bg.png');
@@ -87,6 +97,9 @@
                 font-size: 30px;
                 margin-top: 20px;
             }
+            @include above-1600{
+                font-size: 2.5vw;
+            }
         }
         p{
             text-align: center;
@@ -97,6 +110,9 @@
             line-height: normal;
             margin-top: 10px;
             margin-bottom: 20px;
+            @include above-1600{
+                font-size: 1.1vw;
+            }
             @include from-320-575{
                 width: 100%;
                 font-size:14px;
@@ -112,6 +128,9 @@
             border: 1px solid #F9F9F9;
             transition: 0.3s ease-in-out;
             text-transform: uppercase;
+            @include above-1600{
+                font-size: 1.3vw;
+            }
                 &:hover{
                     cursor: pointer;
                     background: transparent;
@@ -138,6 +157,9 @@
             text-transform: capitalize;
             @include from-320-575{
                 font-size: 24px;
+            }
+            @include above-1600{
+                font-size: 2.5vw;
             }
         }
         .why-cap-card-wrap{
@@ -200,6 +222,9 @@
                                 display: none;
                                 font-size: 16px;
                             }
+                            @include above-1600{
+                                font-size: 1.2vw;
+                            }
                         }
                         .thin-head{
                             display: none;
@@ -223,6 +248,9 @@
                             transition: 0.3s ease-in-out;
                             @include from-320-575{
                                 display: none;
+                            }
+                            @include above-1600{
+                                font-size: 1vw;
                             }
                         }
                         .blue{
