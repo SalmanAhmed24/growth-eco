@@ -43,8 +43,8 @@
         @content;
     }
 }
-@mixin above-1600{
-    @media screen and (min-width:1600px){
+@mixin above-1400{
+    @media screen and (min-width:1400px){
         @content;
     }
 }
@@ -77,6 +77,9 @@
         background-position: bottom;
         align-items: flex-start;
         padding: 10px;
+    }
+    @include above-1400{
+        height: 600px;
     }
     &::before{
         content: '';
@@ -126,6 +129,9 @@
                 width: 95%;
                 text-align: left;
             }
+            @include above-1400{
+                font-size: 3vw;
+            }
         }
         p{
             width: 65%;
@@ -138,6 +144,9 @@
             padding-bottom: 20px;
             position: relative;
             z-index: 10;
+            @include above-1400{
+                font-size: 1.1vw;
+            }
             @include from-575-992{
                 width: 70%;
             }
@@ -159,6 +168,9 @@
             position: relative;
             z-index: 10;
             align-self: flex-start;
+            @include above-1400{
+                font-size: 1.3vw;
+            }
                 &:hover{
                     background: transparent;
                     cursor: pointer;
@@ -186,6 +198,9 @@
                 height: auto;
                 top: 40px;
                 margin: auto 0px;
+            }
+            @include above-1400{
+                top:20px
             }
         }
 }
@@ -216,6 +231,9 @@
         font-size: 30px;
         font-weight: 600;
         line-height: normal;
+        @include above-1400{
+            font-size: 2.5vw;
+        }
         @include from-320-575{
             font-size: 24px;
         }
@@ -269,6 +287,9 @@
                         font-weight: 300;
                         line-height: normal;
                         text-align: justify;
+                        @include above-1400{
+                            font-size: 1.2vw;
+                        }
                         @include from-320-575{
                             text-align: center;
                         }
@@ -305,6 +326,9 @@
                                 }
                                     p{
                                         text-align: center;
+                                        @include above-1400{
+                                            font-size: 1.1vw;
+                                        }
                                         &:hover{
                                             cursor: context-menu;
                                         }
@@ -326,6 +350,9 @@
                                 border: 1px solid #4663AC;
                                 transition: 0.3s ease-in-out;
                                 text-transform: uppercase;
+                                @include above-1400{
+                                    font-size: 1.3vw;
+                                }
                                     &:hover{
                                         background: #fff;
                                         color: #4663AC;
@@ -383,6 +410,9 @@
                                 @include from-320-575{
                                     font-size: 15px;
                                 }
+                                @include above-1400{
+                                    font-size: 1.5vw;
+                                }
                             }
                             p{
                                 font-size: 16px;
@@ -390,6 +420,9 @@
                                 line-height: normal;
                                 @include from-320-575{
                                     font-size: 12px;
+                                }
+                                @include above-1400{
+                                    font-size: 1.1vw;
                                 }
                             }
                         }
@@ -429,6 +462,9 @@ color: #fff;
 border: 1px solid #4663AC;
 transition: 0.3s ease-in-out;
 padding: 5px 10px;
+@include above-1400{
+    font-size: 1.3vw;
+}
     }
 }
 .ser-counter{
@@ -474,6 +510,9 @@ padding: 5px 10px;
                         @include from-320-575{
                             font-size: 30px;
                         }
+                        @include above-1400{
+                            font-size: 2.5vw;
+                        }
                     }
                     p{
                         color: #fff;
@@ -481,6 +520,9 @@ padding: 5px 10px;
                         font-weight: 300;
                         @include from-320-575{
                             font-size: 14px;
+                        }
+                        @include above-1400{
+                            font-size: 1.1vw;
                         }
                     }
             }
@@ -497,6 +539,9 @@ padding: 5px 10px;
                             font-size: 30px;
                             font-weight: 600;
                             line-height: normal;
+                            @include above-1400{
+                                font-size: 2.5vw;
+                            }
                         }
                 }
         }
@@ -557,6 +602,9 @@ padding: 5px 10px;
             @include from-320-575{
                 font-size: 24px;
             }
+            @include above-1400{
+                font-size: 2.5vw;
+            }
                 span{
                     color: #fff;
                     margin-left: 5px;
@@ -572,6 +620,9 @@ padding: 5px 10px;
             @include from-320-850{
                 width: 95%;
                 font-size: 16px;
+            }
+            @include above-1400{
+                font-size: 1.1vw;
             }
         }
 }
@@ -597,6 +648,9 @@ padding: 5px 10px;
                 justify-content: flex-start;
                 align-items: center;
                 border-radius: 0px 30px 30px 30px;
+                @include above-1400{
+                    width: 20%;
+                }
                 @include from-320-992{
                     width: 30%;
                     margin: 20px 0px;
@@ -639,6 +693,9 @@ padding: 5px 10px;
                 @include from-320-575{
                     font-size: 9px;
                 }
+                @include above-1400{
+                    font-size: 0.9vw;
+                }
                 }
                 h1{
                     color: #fff;
@@ -649,6 +706,9 @@ padding: 5px 10px;
                     @include from-320-575{
                         font-size: 11px;
                         margin-top: 20px;
+                    }
+                    @include above-1400{
+                        font-size: 1.1vw;
                     }
                 }
             }
@@ -662,6 +722,9 @@ padding: 5px 10px;
                         font-size: 11px;
                         margin-top: 20px;
                     }
+                    @include above-1400{
+                        font-size: 1.1vw;
+                    }
                 }
                 p{
                     line-height: normal;
@@ -671,6 +734,9 @@ padding: 5px 10px;
                 text-align: center;
                 @include from-320-575{
                     font-size: 9px;
+                }
+                @include above-1400{
+                    font-size: 0.9vw;
                 }
             }
             }
@@ -693,6 +759,9 @@ text-decoration: none;
 padding: 5px 10px;
 color: #fff;
 transition: 0.3s ease-in-out;
+@include above-1400{
+    font-size: 1.3vw;
+}
 span{
     display: block;
     margin-left: 10px;
