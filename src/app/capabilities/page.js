@@ -68,8 +68,8 @@ function Capabilities() {
               height={67}
               className="white"
             />
-            <h1 className={poppins.className}>Expertise</h1>
-            <h1 className={`${poppins.className} thin-head`}>Expertise</h1>
+            <h1 className={poppins.className}>Our Expertise</h1>
+            <h1 className={`${poppins.className} thin-head`}>Our Expertise</h1>
             <p className={poppins.className}>
               Proven track record of maximizing profitability
             </p>
