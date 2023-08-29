@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import "./capabilities.scss";
 import localFont from "@next/font/local";
@@ -7,6 +8,7 @@ import Testimonials from "@/component/testimonials";
 import FAQs from "@/component/faq";
 import { Poppins } from "next/font/google";
 import BackToTop from "@/component/backToTop";
+import { useState } from "react";
 // const futuraHv = localFont({
 //   src: "../fonts/FutuHv.ttf",
 //   weight: "400",
@@ -34,6 +36,7 @@ const poppins = Poppins({
   display: "swap",
 });
 function Capabilities() {
+  const [showMore, setShowMore] = useState(false);
   return (
     <section className="cap-main-con">
       <BackToTop route={"#home"} />
@@ -452,366 +455,379 @@ function Capabilities() {
         ]}
         heading={false}
       />
-      <WhyCap
-        poppins={poppins}
-        mainImg={"/cap-ser-img.png"}
-        heading={"Amazon"}
-        headingSec={"Research"}
-        span={"Product"}
-        content={
-          "At GrowthEcho, we redefine the way you do business on Amazon with our game-changing Amazon product research services. We dive deep into data-driven analysis to pinpoint trends, amazon product ranking, consumer preferences, and competitive gaps. Amazon product research services include:"
-        }
-        listItems={[
-          "Data-Driven Market Analysis",
-          "Competitive Landscape Evaluation",
-          "Niche and Trend Identification",
-        ]}
-        layout={"right"}
-        arrow={4}
-        url={"/product-research"}
-      />
-      <Testimonials
-        poppins={poppins}
-        sliderArr={[
-          {
-            name: "Ingrid",
-            profession: "",
-            imgUrl: "/avatar.png",
-            stars: "/star-5.png",
-            testimonial:
-              "GrowthEcho's product research services were spot-on! They identified profitable products, setting us up for Amazon's success.",
-          },
-          {
-            name: "Jakub",
-            profession: "",
-            imgUrl: "/avatar.png",
-            stars: "/stars.png",
-            testimonial:
-              "Thrilled with the results! GrowthEcho's product research revealed winning products that boosted our sales and ROI.",
-          },
-          {
-            name: "Emerson",
-            profession: "",
-            imgUrl: "/avatar.png",
-            stars: "/star-5.png",
-            testimonial:
-              "Impressive insights! GrowthEcho's research helped us discover untapped opportunities, optimizing our Amazon product offerings effectively.",
-          },
-          {
-            name: "Ingrid",
-            profession: "",
-            imgUrl: "/avatar.png",
-            stars: "/star-5.png",
-            testimonial:
-              "GrowthEcho's product research services were spot-on! They identified profitable products, setting us up for Amazon's success.",
-          },
-          {
-            name: "Jakub",
-            profession: "",
-            imgUrl: "/avatar.png",
-            stars: "/stars.png",
-            testimonial:
-              "Thrilled with the results! GrowthEcho's product research revealed winning products that boosted our sales and ROI.",
-          },
-          {
-            name: "Emerson",
-            profession: "",
-            imgUrl: "/avatar.png",
-            stars: "/star-5.png",
-            testimonial:
-              "Impressive insights! GrowthEcho's research helped us discover untapped opportunities, optimizing our Amazon product offerings effectively.",
-          },
-        ]}
-        heading={false}
-      />
-      <WhyCap
-        poppins={poppins}
-        mainImg={"/cap-ser-img2.png"}
-        heading={"Amazon Product Listing"}
-        headingSec={"Optimization"}
-        span={"&"}
-        content={
-          "We understand the art of storytelling and use persuasive copywriting techniques to showcase your products. We optimize every aspect of your listings from keywords and titles to bullet points and backend search terms. Amazon Product Listing and Optimization service include:"
-        }
-        listItems={[
-          "Compelling Copywriting",
-          "Stunning Visuals",
-          "Increased Conversions",
-        ]}
-        layout={"left"}
-        arrow={4}
-        url={"/amazon-advertising"}
-      />
-      <Testimonials
-        poppins={poppins}
-        sliderArr={[
-          {
-            name: "Ekaterina",
-            profession: "",
-            imgUrl: "/avatar.png",
-            stars: "/star-5.png",
-            testimonial:
-              "GrowthEcho's product listing services were exceptional! Engaging copy and stunning visuals transformed our listings and drove sales.",
-          },
-          {
-            name: "James",
-            profession: "",
-            imgUrl: "/avatar.png",
-            stars: "/stars.png",
-            testimonial:
-              "Highly recommend! GrowthEcho's optimization elevated our listings, attracting more customers and boosting our Amazon presence.",
-          },
-          {
-            name: "Marcus",
-            profession: "",
-            imgUrl: "/avatar.png",
-            stars: "/star-5.png",
-            testimonial:
-              "Efficient and effective! GrowthEcho's expertise optimized our listings, resulting in increased conversions and improved visibility on Amazon.",
-          },
-          {
-            name: "Ekaterina",
-            profession: "",
-            imgUrl: "/avatar.png",
-            stars: "/star-5.png",
-            testimonial:
-              "GrowthEcho's product listing services were exceptional! Engaging copy and stunning visuals transformed our listings and drove sales.",
-          },
-          {
-            name: "James",
-            profession: "",
-            imgUrl: "/avatar.png",
-            stars: "/stars.png",
-            testimonial:
-              "Highly recommend! GrowthEcho's optimization elevated our listings, attracting more customers and boosting our Amazon presence.",
-          },
-          {
-            name: "Marcus",
-            profession: "",
-            imgUrl: "/avatar.png",
-            stars: "/star-5.png",
-            testimonial:
-              "Efficient and effective! GrowthEcho's expertise optimized our listings, resulting in increased conversions and improved visibility on Amazon.",
-          },
-        ]}
-        heading={false}
-      />
-      <WhyCap
-        poppins={poppins}
-        mainImg={"/cap-ser-img.png"}
-        heading={"Brand"}
-        headingSec={""}
-        span={"Storefront"}
-        content={
-          "Elevate Your Brand Experience with Amazon Brand Storefront Services. Our captivating designs and seamless navigation create an immersive shopping journey, building trust and driving conversions. Amazon Brand Storefront service includes:"
-        }
-        listItems={[
-          "Immersive Designs",
-          "Trust-Building Experience",
-          "Enhanced Navigation",
-        ]}
-        layout={"right"}
-        arrow={4}
-        url={"/brand-storefront"}
-      />
-      <Testimonials
-        poppins={poppins}
-        sliderArr={[
-          {
-            name: "Johnson",
-            profession: "",
-            imgUrl: "/avatar.png",
-            stars: "/star-5.png",
-            testimonial:
-              "GrowthEcho's Brand Storefront was a game-changer! A captivating storefront that showcased our brand and products beautifully.",
-          },
-          {
-            name: "James Williams",
-            profession: "",
-            imgUrl: "/avatar.png",
-            stars: "/stars.png",
-            testimonial:
-              "Impressive design! GrowthEcho's Brand Storefront enhanced our Amazon shopping experience, leaving a lasting impression on customers.",
-          },
-          {
-            name: "Micheal Brown",
-            profession: "",
-            imgUrl: "/avatar.png",
-            stars: "/star-5.png",
-            testimonial:
-              "Highly satisfied! GrowthEcho's Brand Storefront services elevated our brand identity, attracting more shoppers and boosting sales.",
-          },
-          {
-            name: "Johnson",
-            profession: "",
-            imgUrl: "/avatar.png",
-            stars: "/star-5.png",
-            testimonial:
-              "GrowthEcho's Brand Storefront was a game-changer! A captivating storefront that showcased our brand and products beautifully.",
-          },
-          {
-            name: "James Williams",
-            profession: "",
-            imgUrl: "/avatar.png",
-            stars: "/stars.png",
-            testimonial:
-              "Impressive design! GrowthEcho's Brand Storefront enhanced our Amazon shopping experience, leaving a lasting impression on customers.",
-          },
-          {
-            name: "Micheal Brown",
-            profession: "",
-            imgUrl: "/avatar.png",
-            stars: "/star-5.png",
-            testimonial:
-              "Highly satisfied! GrowthEcho's Brand Storefront services elevated our brand identity, attracting more shoppers and boosting sales.",
-          },
-        ]}
-        heading={false}
-      />
-      <WhyCap
-        poppins={poppins}
-        mainImg={"/cap-ser-img4.png"}
-        heading={"Listing"}
-        headingSec={""}
-        span={"Reinstatement"}
-        content={
-          "Regains Your Amazon Presence with Listing Reinstatement Services. Our expert team resolves suspension issues, ensuring compliance and reinstating your listings. Amazon Listing Reinstatement service includes:"
-        }
-        listItems={[
-          "Suspension Resolution",
-          "Expert Guidance",
-          "Compliance Assurance",
-        ]}
-        layout={"left"}
-        arrow={4}
-        url={"/listing-reinstatement"}
-      />
-      <Testimonials
-        poppins={poppins}
-        sliderArr={[
-          {
-            name: "Emily Garcia",
-            profession: "",
-            imgUrl: "/avatar.png",
-            stars: "/star-5.png",
-            testimonial:
-              "Incredible service! GrowthEcho's reinstatement services got our Amazon account back on track in no time. Highly recommended!",
-          },
-          {
-            name: "William Davis",
-            profession: "",
-            imgUrl: "/avatar.png",
-            stars: "/stars.png",
-            testimonial:
-              "Life-savers! GrowthEcho's team expertly handled our suspension issues, resulting in a swift account reinstatement. Thank you!",
-          },
-          {
-            name: "Sarah Martinez",
-            profession: "",
-            imgUrl: "/avatar.png",
-            stars: "/star-5.png",
-            testimonial:
-              "Reliable and efficient! GrowthEcho's reinstatement services saved our Amazon business from uncertainty, restoring our selling privileges successfully.",
-          },
-          {
-            name: "Emily Garcia",
-            profession: "",
-            imgUrl: "/avatar.png",
-            stars: "/star-5.png",
-            testimonial:
-              "Incredible service! GrowthEcho's reinstatement services got our Amazon account back on track in no time. Highly recommended!",
-          },
-          {
-            name: "William Davis",
-            profession: "",
-            imgUrl: "/avatar.png",
-            stars: "/stars.png",
-            testimonial:
-              "Life-savers! GrowthEcho's team expertly handled our suspension issues, resulting in a swift account reinstatement. Thank you!",
-          },
-          {
-            name: "Sarah Martinez",
-            profession: "",
-            imgUrl: "/avatar.png",
-            stars: "/star-5.png",
-            testimonial:
-              "Reliable and efficient! GrowthEcho's reinstatement services saved our Amazon business from uncertainty, restoring our selling privileges successfully.",
-          },
-        ]}
-        heading={false}
-      />
-      <WhyCap
-        poppins={poppins}
-        mainImg={"/cap-ser-img.png"}
-        heading={"Account"}
-        headingSec={""}
-        span={"Suspension"}
-        content={
-          "Our skilled team analyzes issues, formulates effective plans, and appeals for reinstatement. We provide transparent communication and updates, keeping you informed about the progress every step of the way. Amazon Account Suspension service includes:"
-        }
-        listItems={[
-          "Swift Resolution",
-          "Personalized Plans",
-          "Transparent Communication",
-        ]}
-        layout={"right"}
-        arrow={4}
-        url={"/account-suspension"}
-      />
-      <Testimonials
-        poppins={poppins}
-        sliderArr={[
-          {
-            name: "Michael Jones",
-            profession: "",
-            imgUrl: "/avatar.png",
-            stars: "/star-5.png",
-            testimonial:
-              "Impressive results! GrowthEcho's account suspension services swiftly resolved our issues, guiding us through the reinstatement process seamlessly.",
-          },
-          {
-            name: "Jessica Davis",
-            profession: "",
-            imgUrl: "/avatar.png",
-            stars: "/stars.png",
-            testimonial:
-              "Expert assistance! GrowthEcho's team navigated the complexities of account suspension and got us back on Amazon successfully.",
-          },
-          {
-            name: "John hans",
-            profession: "",
-            imgUrl: "/avatar.png",
-            stars: "/star-5.png",
-            testimonial:
-              "Highly recommend! GrowthEcho's account suspension services brought clarity and expertise, leading to a quick reinstatement. Excellent support!",
-          },
-          {
-            name: "Michael Jones",
-            profession: "",
-            imgUrl: "/avatar.png",
-            stars: "/star-5.png",
-            testimonial:
-              "Impressive results! GrowthEcho's account suspension services swiftly resolved our issues, guiding us through the reinstatement process seamlessly.",
-          },
-          {
-            name: "Jessica Davis",
-            profession: "",
-            imgUrl: "/avatar.png",
-            stars: "/stars.png",
-            testimonial:
-              "Expert assistance! GrowthEcho's team navigated the complexities of account suspension and got us back on Amazon successfully.",
-          },
-          {
-            name: "John hans",
-            profession: "",
-            imgUrl: "/avatar.png",
-            stars: "/star-5.png",
-            testimonial:
-              "Highly recommend! GrowthEcho's account suspension services brought clarity and expertise, leading to a quick reinstatement. Excellent support!",
-          },
-        ]}
-        heading={false}
-      />
+
+      {showMore ? (
+        <div className="other-ser">
+          <WhyCap
+            poppins={poppins}
+            mainImg={"/cap-ser-img.png"}
+            heading={"Amazon"}
+            headingSec={"Research"}
+            span={"Product"}
+            content={
+              "At GrowthEcho, we redefine the way you do business on Amazon with our game-changing Amazon product research services. We dive deep into data-driven analysis to pinpoint trends, amazon product ranking, consumer preferences, and competitive gaps. Amazon product research services include:"
+            }
+            listItems={[
+              "Data-Driven Market Analysis",
+              "Competitive Landscape Evaluation",
+              "Niche and Trend Identification",
+            ]}
+            layout={"right"}
+            arrow={4}
+            url={"/product-research"}
+          />
+          <Testimonials
+            poppins={poppins}
+            sliderArr={[
+              {
+                name: "Ingrid",
+                profession: "",
+                imgUrl: "/avatar.png",
+                stars: "/star-5.png",
+                testimonial:
+                  "GrowthEcho's product research services were spot-on! They identified profitable products, setting us up for Amazon's success.",
+              },
+              {
+                name: "Jakub",
+                profession: "",
+                imgUrl: "/avatar.png",
+                stars: "/stars.png",
+                testimonial:
+                  "Thrilled with the results! GrowthEcho's product research revealed winning products that boosted our sales and ROI.",
+              },
+              {
+                name: "Emerson",
+                profession: "",
+                imgUrl: "/avatar.png",
+                stars: "/star-5.png",
+                testimonial:
+                  "Impressive insights! GrowthEcho's research helped us discover untapped opportunities, optimizing our Amazon product offerings effectively.",
+              },
+              {
+                name: "Ingrid",
+                profession: "",
+                imgUrl: "/avatar.png",
+                stars: "/star-5.png",
+                testimonial:
+                  "GrowthEcho's product research services were spot-on! They identified profitable products, setting us up for Amazon's success.",
+              },
+              {
+                name: "Jakub",
+                profession: "",
+                imgUrl: "/avatar.png",
+                stars: "/stars.png",
+                testimonial:
+                  "Thrilled with the results! GrowthEcho's product research revealed winning products that boosted our sales and ROI.",
+              },
+              {
+                name: "Emerson",
+                profession: "",
+                imgUrl: "/avatar.png",
+                stars: "/star-5.png",
+                testimonial:
+                  "Impressive insights! GrowthEcho's research helped us discover untapped opportunities, optimizing our Amazon product offerings effectively.",
+              },
+            ]}
+            heading={false}
+          />
+          <WhyCap
+            poppins={poppins}
+            mainImg={"/cap-ser-img2.png"}
+            heading={"Amazon Product Listing"}
+            headingSec={"Optimization"}
+            span={"&"}
+            content={
+              "We understand the art of storytelling and use persuasive copywriting techniques to showcase your products. We optimize every aspect of your listings from keywords and titles to bullet points and backend search terms. Amazon Product Listing and Optimization service include:"
+            }
+            listItems={[
+              "Compelling Copywriting",
+              "Stunning Visuals",
+              "Increased Conversions",
+            ]}
+            layout={"left"}
+            arrow={4}
+            url={"/amazon-advertising"}
+          />
+          <Testimonials
+            poppins={poppins}
+            sliderArr={[
+              {
+                name: "Ekaterina",
+                profession: "",
+                imgUrl: "/avatar.png",
+                stars: "/star-5.png",
+                testimonial:
+                  "GrowthEcho's product listing services were exceptional! Engaging copy and stunning visuals transformed our listings and drove sales.",
+              },
+              {
+                name: "James",
+                profession: "",
+                imgUrl: "/avatar.png",
+                stars: "/stars.png",
+                testimonial:
+                  "Highly recommend! GrowthEcho's optimization elevated our listings, attracting more customers and boosting our Amazon presence.",
+              },
+              {
+                name: "Marcus",
+                profession: "",
+                imgUrl: "/avatar.png",
+                stars: "/star-5.png",
+                testimonial:
+                  "Efficient and effective! GrowthEcho's expertise optimized our listings, resulting in increased conversions and improved visibility on Amazon.",
+              },
+              {
+                name: "Ekaterina",
+                profession: "",
+                imgUrl: "/avatar.png",
+                stars: "/star-5.png",
+                testimonial:
+                  "GrowthEcho's product listing services were exceptional! Engaging copy and stunning visuals transformed our listings and drove sales.",
+              },
+              {
+                name: "James",
+                profession: "",
+                imgUrl: "/avatar.png",
+                stars: "/stars.png",
+                testimonial:
+                  "Highly recommend! GrowthEcho's optimization elevated our listings, attracting more customers and boosting our Amazon presence.",
+              },
+              {
+                name: "Marcus",
+                profession: "",
+                imgUrl: "/avatar.png",
+                stars: "/star-5.png",
+                testimonial:
+                  "Efficient and effective! GrowthEcho's expertise optimized our listings, resulting in increased conversions and improved visibility on Amazon.",
+              },
+            ]}
+            heading={false}
+          />
+          <WhyCap
+            poppins={poppins}
+            mainImg={"/cap-ser-img.png"}
+            heading={"Brand"}
+            headingSec={""}
+            span={"Storefront"}
+            content={
+              "Elevate Your Brand Experience with Amazon Brand Storefront Services. Our captivating designs and seamless navigation create an immersive shopping journey, building trust and driving conversions. Amazon Brand Storefront service includes:"
+            }
+            listItems={[
+              "Immersive Designs",
+              "Trust-Building Experience",
+              "Enhanced Navigation",
+            ]}
+            layout={"right"}
+            arrow={4}
+            url={"/brand-storefront"}
+          />
+          <Testimonials
+            poppins={poppins}
+            sliderArr={[
+              {
+                name: "Johnson",
+                profession: "",
+                imgUrl: "/avatar.png",
+                stars: "/star-5.png",
+                testimonial:
+                  "GrowthEcho's Brand Storefront was a game-changer! A captivating storefront that showcased our brand and products beautifully.",
+              },
+              {
+                name: "James Williams",
+                profession: "",
+                imgUrl: "/avatar.png",
+                stars: "/stars.png",
+                testimonial:
+                  "Impressive design! GrowthEcho's Brand Storefront enhanced our Amazon shopping experience, leaving a lasting impression on customers.",
+              },
+              {
+                name: "Micheal Brown",
+                profession: "",
+                imgUrl: "/avatar.png",
+                stars: "/star-5.png",
+                testimonial:
+                  "Highly satisfied! GrowthEcho's Brand Storefront services elevated our brand identity, attracting more shoppers and boosting sales.",
+              },
+              {
+                name: "Johnson",
+                profession: "",
+                imgUrl: "/avatar.png",
+                stars: "/star-5.png",
+                testimonial:
+                  "GrowthEcho's Brand Storefront was a game-changer! A captivating storefront that showcased our brand and products beautifully.",
+              },
+              {
+                name: "James Williams",
+                profession: "",
+                imgUrl: "/avatar.png",
+                stars: "/stars.png",
+                testimonial:
+                  "Impressive design! GrowthEcho's Brand Storefront enhanced our Amazon shopping experience, leaving a lasting impression on customers.",
+              },
+              {
+                name: "Micheal Brown",
+                profession: "",
+                imgUrl: "/avatar.png",
+                stars: "/star-5.png",
+                testimonial:
+                  "Highly satisfied! GrowthEcho's Brand Storefront services elevated our brand identity, attracting more shoppers and boosting sales.",
+              },
+            ]}
+            heading={false}
+          />
+          <WhyCap
+            poppins={poppins}
+            mainImg={"/cap-ser-img4.png"}
+            heading={"Listing"}
+            headingSec={""}
+            span={"Reinstatement"}
+            content={
+              "Regains Your Amazon Presence with Listing Reinstatement Services. Our expert team resolves suspension issues, ensuring compliance and reinstating your listings. Amazon Listing Reinstatement service includes:"
+            }
+            listItems={[
+              "Suspension Resolution",
+              "Expert Guidance",
+              "Compliance Assurance",
+            ]}
+            layout={"left"}
+            arrow={4}
+            url={"/listing-reinstatement"}
+          />
+          <Testimonials
+            poppins={poppins}
+            sliderArr={[
+              {
+                name: "Emily Garcia",
+                profession: "",
+                imgUrl: "/avatar.png",
+                stars: "/star-5.png",
+                testimonial:
+                  "Incredible service! GrowthEcho's reinstatement services got our Amazon account back on track in no time. Highly recommended!",
+              },
+              {
+                name: "William Davis",
+                profession: "",
+                imgUrl: "/avatar.png",
+                stars: "/stars.png",
+                testimonial:
+                  "Life-savers! GrowthEcho's team expertly handled our suspension issues, resulting in a swift account reinstatement. Thank you!",
+              },
+              {
+                name: "Sarah Martinez",
+                profession: "",
+                imgUrl: "/avatar.png",
+                stars: "/star-5.png",
+                testimonial:
+                  "Reliable and efficient! GrowthEcho's reinstatement services saved our Amazon business from uncertainty, restoring our selling privileges successfully.",
+              },
+              {
+                name: "Emily Garcia",
+                profession: "",
+                imgUrl: "/avatar.png",
+                stars: "/star-5.png",
+                testimonial:
+                  "Incredible service! GrowthEcho's reinstatement services got our Amazon account back on track in no time. Highly recommended!",
+              },
+              {
+                name: "William Davis",
+                profession: "",
+                imgUrl: "/avatar.png",
+                stars: "/stars.png",
+                testimonial:
+                  "Life-savers! GrowthEcho's team expertly handled our suspension issues, resulting in a swift account reinstatement. Thank you!",
+              },
+              {
+                name: "Sarah Martinez",
+                profession: "",
+                imgUrl: "/avatar.png",
+                stars: "/star-5.png",
+                testimonial:
+                  "Reliable and efficient! GrowthEcho's reinstatement services saved our Amazon business from uncertainty, restoring our selling privileges successfully.",
+              },
+            ]}
+            heading={false}
+          />
+          <WhyCap
+            poppins={poppins}
+            mainImg={"/cap-ser-img.png"}
+            heading={"Account"}
+            headingSec={""}
+            span={"Suspension"}
+            content={
+              "Our skilled team analyzes issues, formulates effective plans, and appeals for reinstatement. We provide transparent communication and updates, keeping you informed about the progress every step of the way. Amazon Account Suspension service includes:"
+            }
+            listItems={[
+              "Swift Resolution",
+              "Personalized Plans",
+              "Transparent Communication",
+            ]}
+            layout={"right"}
+            arrow={4}
+            url={"/account-suspension"}
+          />
+          <Testimonials
+            poppins={poppins}
+            sliderArr={[
+              {
+                name: "Michael Jones",
+                profession: "",
+                imgUrl: "/avatar.png",
+                stars: "/star-5.png",
+                testimonial:
+                  "Impressive results! GrowthEcho's account suspension services swiftly resolved our issues, guiding us through the reinstatement process seamlessly.",
+              },
+              {
+                name: "Jessica Davis",
+                profession: "",
+                imgUrl: "/avatar.png",
+                stars: "/stars.png",
+                testimonial:
+                  "Expert assistance! GrowthEcho's team navigated the complexities of account suspension and got us back on Amazon successfully.",
+              },
+              {
+                name: "John hans",
+                profession: "",
+                imgUrl: "/avatar.png",
+                stars: "/star-5.png",
+                testimonial:
+                  "Highly recommend! GrowthEcho's account suspension services brought clarity and expertise, leading to a quick reinstatement. Excellent support!",
+              },
+              {
+                name: "Michael Jones",
+                profession: "",
+                imgUrl: "/avatar.png",
+                stars: "/star-5.png",
+                testimonial:
+                  "Impressive results! GrowthEcho's account suspension services swiftly resolved our issues, guiding us through the reinstatement process seamlessly.",
+              },
+              {
+                name: "Jessica Davis",
+                profession: "",
+                imgUrl: "/avatar.png",
+                stars: "/stars.png",
+                testimonial:
+                  "Expert assistance! GrowthEcho's team navigated the complexities of account suspension and got us back on Amazon successfully.",
+              },
+              {
+                name: "John hans",
+                profession: "",
+                imgUrl: "/avatar.png",
+                stars: "/star-5.png",
+                testimonial:
+                  "Highly recommend! GrowthEcho's account suspension services brought clarity and expertise, leading to a quick reinstatement. Excellent support!",
+              },
+            ]}
+            heading={false}
+          />
+        </div>
+      ) : null}
+      <div className="show-more">
+        <button
+          onClick={() => setShowMore(!showMore)}
+          className="show-more-btn"
+        >
+          {showMore ? "Show Less Services" : "Show More Services"}
+        </button>
+      </div>
       <FAQs
         poppins={poppins}
         question1={"How will GrowthEcho manage my Amazon account?"}
