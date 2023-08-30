@@ -189,7 +189,7 @@ function Capabilities() {
             {
               name: "Jhon",
               profession: "",
-              imgUrl: "/avatar.png",
+              imgUrl: "/acc-m-test-2.png",
               stars: "/star-5.png",
               testimonial:
                 "Game changer! Their Amazon account management took the stress away. Sales soared!",
@@ -197,7 +197,7 @@ function Capabilities() {
             {
               name: "Micheal",
               profession: "",
-              imgUrl: "/avatar.png",
+              imgUrl: "/acc-m-test-1.png",
               stars: "/star-5.png",
               testimonial:
                 "Efficient and effective! Their service boosted our Amazon business, worth every penny.",
@@ -205,7 +205,7 @@ function Capabilities() {
             {
               name: "Carlos",
               profession: "",
-              imgUrl: "/avatar.png",
+              imgUrl: "/acc-m-test-3.png",
               stars: "/stars.png",
               testimonial:
                 "Highly recommend! Increased sales, optimized listings – our Amazon store thrived under their management.",
@@ -213,7 +213,7 @@ function Capabilities() {
             {
               name: "Jhon",
               profession: "",
-              imgUrl: "/avatar.png",
+              imgUrl: "/acc-m-test-2.png",
               stars: "/star-5.png",
               testimonial:
                 "Game changer! Their Amazon account management took the stress away. Sales soared!",
@@ -221,7 +221,7 @@ function Capabilities() {
             {
               name: "Micheal",
               profession: "",
-              imgUrl: "/avatar.png",
+              imgUrl: "/acc-m-test-1.png",
               stars: "/star-5.png",
               testimonial:
                 "Efficient and effective! Their service boosted our Amazon business, worth every penny.",
@@ -229,7 +229,7 @@ function Capabilities() {
             {
               name: "Carlos",
               profession: "",
-              imgUrl: "/avatar.png",
+              imgUrl: "/acc-m-test-3.png",
               stars: "/stars.png",
               testimonial:
                 "Highly recommend! Increased sales, optimized listings – our Amazon store thrived under their management.",
@@ -263,7 +263,7 @@ function Capabilities() {
           {
             name: "Ivan",
             profession: "",
-            imgUrl: "/avatar.png",
+            imgUrl: "/adv-m-test-2.png",
             stars: "/star-5.png",
             testimonial:
               "GrowthEcho's Amazon Advertising was a game-changer! Our Amazon  sales rank soared with targeted ads and expert strategies.",
@@ -271,7 +271,7 @@ function Capabilities() {
           {
             name: "Maria",
             profession: "",
-            imgUrl: "/avatar.png",
+            imgUrl: "/adv-m-test-1.png",
             stars: "/star-5.png",
             testimonial:
               "Efficient and effective! GrowthEcho's services optimized our Amazon ads, yielding impressive results and increased visibility.",
@@ -279,7 +279,7 @@ function Capabilities() {
           {
             name: "Hans",
             profession: "",
-            imgUrl: "/avatar.png",
+            imgUrl: "/adv-m-test-3.png",
             stars: "/stars.png",
             testimonial:
               "Highly recommend! GrowthEcho's team boosted our Amazon presence, amazon keyword ranking, converting clicks into loyal customers. Excellent service!",
@@ -287,7 +287,7 @@ function Capabilities() {
           {
             name: "Ivan",
             profession: "",
-            imgUrl: "/avatar.png",
+            imgUrl: "/adv-m-test-2.png",
             stars: "/star-5.png",
             testimonial:
               "GrowthEcho's Amazon Advertising was a game-changer! Our Amazon  sales rank soared with targeted ads and expert strategies.",
@@ -295,7 +295,7 @@ function Capabilities() {
           {
             name: "Maria",
             profession: "",
-            imgUrl: "/avatar.png",
+            imgUrl: "/adv-m-test-1.png",
             stars: "/star-5.png",
             testimonial:
               "Efficient and effective! GrowthEcho's services optimized our Amazon ads, yielding impressive results and increased visibility.",
@@ -303,7 +303,7 @@ function Capabilities() {
           {
             name: "Hans",
             profession: "",
-            imgUrl: "/avatar.png",
+            imgUrl: "/adv-m-test-3.png",
             stars: "/stars.png",
             testimonial:
               "Highly recommend! GrowthEcho's team boosted our Amazon presence, amazon keyword ranking, converting clicks into loyal customers. Excellent service!",
@@ -460,7 +460,7 @@ function Capabilities() {
         <div className="other-ser">
           <WhyCap
             poppins={poppins}
-            mainImg={"/cap-ser-img.png"}
+            mainImg={"/product-research.png"}
             heading={"Amazon"}
             headingSec={"Research"}
             span={"Product"}
@@ -532,7 +532,7 @@ function Capabilities() {
           />
           <WhyCap
             poppins={poppins}
-            mainImg={"/cap-ser-img2.png"}
+            mainImg={"/product-listing.png"}
             heading={"Amazon Product Listing"}
             headingSec={"Optimization"}
             span={"&"}
@@ -604,7 +604,7 @@ function Capabilities() {
           />
           <WhyCap
             poppins={poppins}
-            mainImg={"/cap-ser-img.png"}
+            mainImg={"/brand-store.png"}
             heading={"Brand"}
             headingSec={""}
             span={"Storefront"}
@@ -676,7 +676,7 @@ function Capabilities() {
           />
           <WhyCap
             poppins={poppins}
-            mainImg={"/cap-ser-img4.png"}
+            mainImg={"/rinstatement.png"}
             heading={"Listing"}
             headingSec={""}
             span={"Reinstatement"}
@@ -748,7 +748,7 @@ function Capabilities() {
           />
           <WhyCap
             poppins={poppins}
-            mainImg={"/cap-ser-img.png"}
+            mainImg={"/account-suspend.png"}
             heading={"Account"}
             headingSec={""}
             span={"Suspension"}
