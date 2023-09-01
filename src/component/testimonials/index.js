@@ -113,6 +113,7 @@ function Testimonials({ heading, sliderArr, poppins }) {
                     alt="growth eco"
                     src={i.stars}
                     width={110}
+                    className="stars"
                     height={22}
                   />
                   <p className={poppins.className}>{i.testimonial}</p>

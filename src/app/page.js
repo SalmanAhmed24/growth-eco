@@ -523,7 +523,7 @@ export default function Home() {
           {
             name: "Sarah James",
             profession: "",
-            imgUrl: "/test-ava-4.jpg",
+            imgUrl: "/test-ava-4.png",
             stars: "/star-5.png",
             testimonial:
               "Thanks to Growth Echo, my Amazon business reached new heights. Their management services streamlined everything, from listings to ads!",

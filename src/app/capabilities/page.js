@@ -552,7 +552,7 @@ function Capabilities() {
             poppins={poppins}
             sliderArr={[
               {
-                name: "Paul",
+                name: "",
                 profession: "",
                 imgUrl: "/lis-m-test-1.svg",
                 stars: "/star-5.png",

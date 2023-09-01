@@ -88,6 +88,11 @@ table {
         @content;
     }
 }
+@mixin from-992-to-1300{
+    @media screen and (min-width:992px) and (max-width:1300px) {
+        @content;
+    }
+}
 @mixin from-400-to-500{
     @media screen and (min-width:400px) and (max-width:500px) {
         @content;
@@ -103,6 +108,11 @@ table {
         @content;
     }
 }
+@mixin above-992{
+    @media screen and (min-width:992px) {
+        @content;
+    }
+}
 .header-wrap{
     width: 100%;
     display: flex;
@@ -115,8 +125,8 @@ table {
         background-size: cover;
         width: 100%;
         background-repeat: no-repeat;
-        background-position-y:-200px;
-        height: 380px;
+        background-position-y:0px;
+        height: 175vw;
     }
     @include from-575-to-820{
         height: 330px;
@@ -163,8 +173,9 @@ table {
                     line-height: 40px;
                 }
                 @include from-320-to-575{
-                    font-size: 24px;
-                    width: 100%;
+                    font-size: 6.5vw;
+                    padding-top: 10vw;
+                    line-height: 10vw;
                 }
                     span{
                         color:#4663AC
@@ -213,7 +224,7 @@ table {
 }
 .triangle-bg{
     position: relative;
-    padding: 50px 70px;
+    padding: 50px 150px;
     display: flex;
     overflow-x: clip;
         flex-direction: column;
@@ -312,7 +323,7 @@ margin-top: 20px;
 }
 .step-wrap{
     display: flex;
-    padding: 70px 0px;
+    padding: 150px 0px 150px 0px;
     position: relative;
     @include above-1600{
         padding: 10vw 0vw;
@@ -349,7 +360,7 @@ margin-top: 20px;
     align-items: flex-start;
     position: relative;
     top: 10.8vw;
-    left: -2vw;
+    left: -3vw;
     @include from-575-to-992{ 
     left: -9vw;
     }
@@ -384,7 +395,7 @@ margin-top: 20px;
                         font-size: 10px;
                     }
                     @include above-1600{
-                        font-size: 1.1vw;
+                        font-size: 1.3vw;
                     }
                 }
         }
@@ -398,6 +409,10 @@ margin-top: 20px;
     position: relative;
     top: 9vw;
     left: -3vw;
+    @include from-992-to-1300{
+      top:6.5vw;
+      left: -2.5vw;  
+    }
     @include from-575-to-992{
         top: 2vw;
     }
@@ -435,7 +450,7 @@ margin-top: 20px;
                         font-size: 10px;
                     }
                     @include above-1600{
-                        font-size: 1.1vw;
+                        font-size: 1.3vw;
                         top: -2vw;
                         position: relative;
                     }
@@ -451,6 +466,9 @@ margin-top: 20px;
     position: relative;
     top: -7vw;
     left: 3vw;
+    @include from-992-to-1140{
+        top: -2.6vw;
+    }
     @include from-575-to-992{
         top: 4vw;
     
@@ -487,7 +505,7 @@ margin-top: 20px;
                         font-size: 10px;
                     }
                     @include above-1600{
-                        font-size: 1.1vw;
+                        font-size: 1.3vw;
                     }
                 }
         }
@@ -501,6 +519,9 @@ margin-top: 20px;
             position: relative;
             top: -8vw;
             left: 3vw;
+            @include from-992-to-1300{
+                top:-6vw;  
+              }
             @include from-575-to-992{
                 
     left: 10vw;
@@ -537,7 +558,7 @@ margin-top: 20px;
                         font-size: 10px;
                     }
                     @include above-1600{
-                        font-size: 1.1vw;
+                        font-size: 1.3vw;
                     }
                 }
         }
@@ -559,11 +580,17 @@ margin-top: 20px;
         width: 100px;
         height: 155px;
         position: absolute;
-        left: calc(100% - 109%);
+        left: calc(100% - 116%);
         top: -100px;
         background-repeat: no-repeat;
         @include from-575-to-992{
             left:-15%
+        }
+        @include from-992-to-1300{
+            left: -13.5vw;
+        }
+        @include from-992-to-1140{
+            left: -15vw;
         }
         @include above-1600{
             left: -8.5vw;
@@ -592,7 +619,7 @@ margin-top: 20px;
                 font-size: 14px;
             }
             @include above-1600{
-                font-size: 1.1vw;
+                font-size: 1.3vw;
             }
         }
         .serv-man{
@@ -603,12 +630,22 @@ margin-top: 20px;
             @include from-320-to-992{
                 display: none;
             }
+            @include from-992-to-1300{
+                right: -14vw;
+            }
+            @include from-992-to-1140{
+                right: -20vw;
+            }
         }
 }
 .service-card-wrap{
     position: relative;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.84) 0%, rgba(238, 238, 238, 0.84) 100%);
     box-shadow:0px 9px 14px #DADADA;
+    padding: 0px 20px;
+    @include above-992{
+        padding:0px 150px;
+    }
     .ticks{
         position: absolute;
         top:200px;
@@ -625,7 +662,7 @@ margin-top: 20px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding: 50px 70px;
+        padding: 50px 0px;
             .card{
                 display: flex;
                 flex-direction: column;
@@ -635,7 +672,7 @@ margin-top: 20px;
                 background: linear-gradient(180deg, #6A8AD0 0%, #35539B 100%);
                 box-shadow: 12px 7px 19px 0px rgba(0, 0, 0, 0.25);
                 transform: rotate(-5.796deg);
-                width: 40%;
+                width: 35%;
                 @include from-320-to-992{
                     width: 100%;
                 }
@@ -646,7 +683,7 @@ margin-top: 20px;
                     h2{
                         color: #fff;
                         margin-bottom: 10px;
-                        font-size: 20px;
+                        font-size: 18px;
                         text-align: center;
                         font-weight: 600;
                         @include from-320-to-575{
@@ -659,15 +696,15 @@ margin-top: 20px;
                     p{
                         color: #fff;
                         font-weight: 300;
-                        line-height: 25px;
-                        font-size: 16px;
+                        line-height: 20px;
+                        font-size: 14px;
                         text-align: center;
                         @include from-320-to-575{
                             font-size: 14px;
                             line-height: 20px;
                         }
                         @include above-1600{
-                            font-size: 1.1vw;
+                            font-size: 1.3vw;
                         }
                     }
                     button{
@@ -695,7 +732,7 @@ margin-top: 20px;
             .bottom{
                 margin: 20px 0px 20px 60px;
                 @include from-992-to-1140{
-                    margin: 20px 50px 20px 0px;
+                    margin: 20px -25px 20px 70px;
                 }
                 @include from-320-to-992{
                     margin:20px 0px;
@@ -764,7 +801,7 @@ margin-top: 20px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 50px 70px;
+    padding: 50px 150px;
     position: relative;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -804,7 +841,7 @@ margin-top: 20px;
         }
     }
         h1{
-            font-size: 40px;
+            font-size: 30px;
             font-weight: 600;
             text-align: center;
             margin-bottom: 10px;
@@ -830,7 +867,7 @@ margin-top: 20px;
                 font-size: 14px;
             }
             @include above-1600{
-                font-size: 1.1vw;
+                font-size: 1.3vw;
             }
         }
         .arrow-3{
@@ -864,7 +901,7 @@ margin-top: 20px;
 }
 .clients-wrap{
     margin-top: 50px;
-    padding: 50px 50px;
+    padding: 50px 150px;
     background: url('../../public/clip-path.svg');
     background-position: bottom;
     background-size: cover;
@@ -874,7 +911,7 @@ margin-top: 20px;
     }
         h1{
             text-align: center;
-            font-size: 40px;
+            font-size: 30px;
             color: #fff;
             font-weight: 600;
             margin-bottom: 20px;
@@ -898,7 +935,7 @@ margin-top: 20px;
                 font-size: 14px;
             }
             @include above-1600{
-                font-size: 1.1vw;
+                font-size: 1.3vw;
             }
         }
         .slider-wrap{
@@ -926,7 +963,7 @@ margin-top: 20px;
 .image-wrapper{
     width: 200px;
         img{
-            width: 90%;
+            width: 100%;
         }
 }
 .testimonial-wrap{
@@ -945,10 +982,10 @@ margin-top: 20px;
     }
         h1{
             text-align: center;
-            font-size: 48px;
+            font-size: 30px;
             text-transform: capitalize;
             margin-bottom: 30px;
-            font-size: 40px;
+            
             font-weight: 600;
             @include from-575-to-992{
                 font-size: 30px;
@@ -970,6 +1007,7 @@ margin-top: 20px;
             }
         }
 }
+
 .card-test{
     border-radius: 20px;
 background: #FFF;
@@ -1005,7 +1043,7 @@ width: 275px !important;
                     font-size: 15px;
                     font-weight: 300;
                     @include above-1600{
-                        font-size: 1.1vw;
+                        font-size: 1.3vw;
                     }
                 }
             }
@@ -1017,13 +1055,74 @@ width: 275px !important;
         margin-top: 10px;
         font-weight: 300;
         @include above-1600{
-            font-size: 1.1vw;
+            font-size: 1.3vw;
         }
     }
     .test-down{
         position: absolute;
         left: -10px;
         bottom: -130px;
+    }
+}
+.swiper-slide-active{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    .card-test{
+        border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 4px 18px 0px #4663AC;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    margin:20px 20px 0px 20px;
+    position: relative;
+    width: 275px !important;
+        .top-sec{
+            display: flex;
+            flex-wrap: nowrap;
+            margin-bottom: 20px;
+                .top-content-wrap{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-left: 10px;
+                    h1{
+                        text-align: left;
+                        font-size: 20px;
+                        line-height: 20px;
+                        margin-bottom: 0px;
+                        font-weight: 600;
+                        @include above-1600{
+                            font-size: 1.5vw;
+                        }
+                    }
+    
+                    p{
+                        width: 100%;
+                        font-size: 15px;
+                        font-weight: 300;
+                        @include above-1600{
+                            font-size: 1.3vw;
+                        }
+                    }
+                }
+        }
+        p{
+            font-size: 15px;
+            width: 100%;
+            line-height: 25px;
+            margin-top: 10px;
+            font-weight: 300;
+            @include above-1600{
+                font-size: 1.3vw;
+            }
+        }
+        .test-down{
+            position: absolute;
+            left: -10px;
+            bottom: -130px;
+        }
     }
 }
 .test-slider{
@@ -1071,18 +1170,19 @@ width: 275px !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    padding: 50px 70px;
+    padding: 70px 70px;
     @include from-992-to-1140{
         height: auto;
     }
     @include from-320-to-575{
         padding: 0px 0px;
+        background-position-y:100px;
     }
         h1{
             text-align: center;
-            font-size: 48px;
-            margin-top: 20px;
-            font-size: 40px;
+            font-size: 30px;
+            margin-top: 40px;
+            margin-bottom: 50px;
             font-weight: 600;
             @include above-1600{
                 font-size: 2.5vw;
@@ -1154,9 +1254,7 @@ width: 275px !important;
   .case-st-all-btn{
     display: flex;
     justify-content: center;
-    @include from-320-to-575{
-        padding-bottom: 20px;
-    }
+    padding-bottom: 50px;
         .explore-all{
             display: flex;
             flex-wrap: nowrap;
@@ -1181,13 +1279,13 @@ width: 275px !important;
         }
   }
   .quote-sec{
-    padding: 50px 70px;
+    padding: 50px 150px;
     margin-top: 0px;
     display: flex;
     flex-direction: column;
     background: linear-gradient(180deg, #38559C 0%, #5879C1 100%);
     @include from-320-to-575{
-        margin-top: 50px;
+        margin-top: 20px;
         padding:40px 20px;
         position: relative;
         top: -20px;
@@ -1199,7 +1297,7 @@ width: 275px !important;
             text-align: center;
             width: 100%;
             align-self: center;
-            font-size: 32px;
+            font-size: 24px;
             color: #fff;
             text-transform: capitalize;
             line-height: normal;
@@ -1253,7 +1351,7 @@ width: 275px !important;
                 margin-bottom: 20px;
             }
             @include above-1600{
-                font-size: 1.1vw;
+                font-size: 1.3vw;
             }
         }
         a{
@@ -1262,7 +1360,7 @@ width: 275px !important;
                 font-size: 14px;
             }
             @include above-1600{
-                font-size: 1.1vw;
+                font-size: 1.3vw;
             }
         }
   }
@@ -1283,6 +1381,8 @@ width: 275px !important;
     display: none;
     @include from-320-to-575{
         display: block;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
     .swiper{
         padding-top: 0px;
@@ -1383,7 +1483,7 @@ display: none;
                 left: -15px;
                 top:-12px;
                 @include above-1600{
-                    font-size: 1.1vw;
+                    font-size: 1.3vw;
                 }
             }
     }
@@ -1473,5 +1573,74 @@ display: none;
             img{
                 width: 60%;
             }
+    }
+ }
+
+ .swiper-slide-prev {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-end !important;
+    .card-test{
+        width: 180px !important;
+            .top-sec{
+                img{
+                    width: 15%;
+                    height: auto;
+                }
+                .top-content-wrap{
+                    h1{
+                        font-size: 14px;
+                    }
+                }
+            }
+            .stars{
+                width: 30%;
+                height: auto;
+            }
+            p{
+                font-size: 10px;
+                line-height: 15px;
+            }
+            .test-down{
+                width: 108%;
+            }
+    }
+ }
+ .swiper-slide-next {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    .card-test{
+        width: 180px !important;
+            .top-sec{
+                img{
+                    width: 15%;
+                    height: auto;
+                }
+                .top-content-wrap{
+                    h1{
+                        font-size: 14px;
+                    }
+                }
+            }
+            .stars{
+                width: 30%;
+                height: auto;
+            }
+            p{
+                font-size: 10px;
+                line-height: 15px;
+            }
+            .test-down{
+                width: 108%;
+            }
+    }
+ }
+
+ .mobileCap{
+    .swiper-wrapper{
+        .swiper-slide-active{
+            align-items: flex-end !important;
+        }
     }
  }

@@ -9,8 +9,7 @@ function MobileSlider({ images }) {
   return (
     <section className="mobileSlider-con">
       <Swiper
-        spaceBetween={20}
-        effect={"coverflow"}
+        spaceBetween={0}
         loop={true}
         autoplay={{
           delay: 2500,
@@ -19,12 +18,9 @@ function MobileSlider({ images }) {
         }}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={2}
-        coverflowEffect={{
-          rotate: 5,
-        }}
-        modules={[Autoplay, EffectCoverflow]}
-        className="mySwiper"
+        slidesPerView={1}
+        modules={[Autoplay]}
+        className="mobileCap"
       >
         {images.map((i) => {
           return (
