@@ -329,7 +329,7 @@ function Navbar() {
               className={path == "/capabilities" ? "activeLink" : ""}
               href={"/capabilities"}
             >
-              Our Expertise +
+              Our Expertise
             </Link>
             {showCapa ? (
               <p
