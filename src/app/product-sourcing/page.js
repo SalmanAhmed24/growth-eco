@@ -48,8 +48,10 @@ function Service() {
         headerBG={"/product-sourcing-bg.png"}
       />
       <ServiceWhy
-        headingMain={"Why do you need "}
+        headingMain={"Why do you need"}
         spanMain={"Product Sourcing services?"}
+        mainImg={"/product-sourcing-section-1.png"}
+        secImg={"/product-sourcing-section-2.png"}
         mainPara={
           "To get access to a vast network of suppliers, saving time and costs while ensuring high-quality products meet their specific needs. We optimize the procurement process, enabling your Amazon businesses to focus on core operations and growth."
         }

@@ -24,6 +24,8 @@ function ServiceCounter({
           <h1 className={poppins.className}>{headingMain}</h1>
           <p className={poppins.className}>{paraMain}</p>
         </div>
+      </div>
+      <div className="slider-ser-wrap">
         <div className="singleItem">
           <h1 className={poppins.className}>{headingSub1}</h1>
           <p className={poppins.className}>{paraSub1}</p>
@@ -32,9 +34,6 @@ function ServiceCounter({
           <h1 className={poppins.className}>{headingSub2}</h1>
           <p className={poppins.className}>{paraSub2}</p>
         </div>
-      </div>
-      <div className="slider-ser-wrap">
-        <SliderSubComp />
       </div>
     </section>
   );

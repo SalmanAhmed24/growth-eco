@@ -71,14 +71,14 @@
         
         .step-by-step-wrap{
             position: absolute;
-            width: 25%;
+            width: 30%;
             bottom: 150px;
             right: 150px;
             @include from-992-1250{
                 bottom: 100px;
             }
             @include from-575-992{
-                bottom:45px;
+                bottom:55px;
                 right: 80px;
             }
             @include from-320-850{
@@ -95,25 +95,35 @@
             }
                 h1{
                     text-transform: capitalize;
-                    font-size: 32px;
+                    font-size: 20px;
                     line-height: normal;
                     @include from-320-850{
                         font-size: 18px;
                     }
                     @include from-320-575{
+                        font-size: 12px;
+                    }
+                    @include from-575-992{
                         font-size: 13px;
                     }
                 }
                 p{
-                    font-size: 18px;
+                    font-size: 16px;
                     text-align: justify;
                     line-height: normal;
                     @include from-320-850{
                         font-size: 12px;
                     }
-                    @include from-320-400{
+                    @include from-320-575{
                         font-size: 10px;
-                        line-height: 9px;
+                        line-height: 10px;
+                    }
+                    @include from-575-992{
+                        font-size: 12px;
+                        line-height: 15px;
+                    }
+                    @include from-320-400{
+                        font-size: 9px;
                     }
                 }
         }

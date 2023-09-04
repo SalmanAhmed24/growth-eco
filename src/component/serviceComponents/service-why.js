@@ -14,6 +14,8 @@ function ServiceWhy({
   whyCardsArr,
   trustHeading,
   trustCardsArr,
+  mainImg,
+  secImg,
 }) {
   return (
     <section className="amazon-ser-con">
@@ -23,12 +25,7 @@ function ServiceWhy({
       </h1>
       <div className="amazon-ser-card">
         <div className="image-wrap">
-          <Image
-            alt="growth eco"
-            src={"/amazon-cards-img.png"}
-            width={563}
-            height={429}
-          />
+          <Image alt="growth eco" src={mainImg} width={563} height={429} />
         </div>
         <div className="info-con">
           <p className={poppins.className}>{mainPara}</p>
@@ -80,7 +77,7 @@ function ServiceWhy({
           </div>
         </div>
         <div className="grow-sec-img">
-          <img src={"/amazon-ser-grow.png"} />
+          <img src={secImg} />
         </div>
       </div>
     </section>
