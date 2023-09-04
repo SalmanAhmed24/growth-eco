@@ -157,7 +157,7 @@ function Navbar() {
                 }
                 href={"/capabilities"}
               >
-                Capabilities +
+                Our Expertise +
               </Link>
               <div className="drop-div">
                 <div className="droplist">
@@ -329,7 +329,7 @@ function Navbar() {
               className={path == "/capabilities" ? "activeLink" : ""}
               href={"/capabilities"}
             >
-              Capabilities
+              Our Expertise +
             </Link>
             {showCapa ? (
               <p

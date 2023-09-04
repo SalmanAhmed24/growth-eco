@@ -151,7 +151,7 @@
     }
         h1{
             text-align: center;
-            font-size: 30px;
+            font-size: 24px;
             font-weight: 600;
             line-height: normal;
             text-transform: capitalize;
@@ -165,7 +165,7 @@
         .why-cap-card-wrap{
             display: flex;
             justify-content: space-between;
-            padding: 70px 100px 50px 100px;
+            padding: 70px 150px 50px 150px;
             @include from-320-992{
                 flex-wrap: wrap;
             }
@@ -180,7 +180,7 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    padding: 10px 20px;
+                    padding: 10px 10px;
                     transition: 0.3s ease-in-out;
                         &:hover{
                             background: linear-gradient(180deg, #4663AC 0%, #36508F 100%);
@@ -211,7 +211,7 @@
                         }
                         
                         h1{
-                            font-size: 18px;
+                            font-size: 16px;
                             font-weight: 600;
                             margin-bottom: 10px;
                             text-align: center;

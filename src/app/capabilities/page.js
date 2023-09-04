@@ -552,7 +552,7 @@ function Capabilities() {
             poppins={poppins}
             sliderArr={[
               {
-                name: "",
+                name: "Ekaterina",
                 profession: "",
                 imgUrl: "/lis-m-test-1.svg",
                 stars: "/star-5.png",
@@ -576,7 +576,7 @@ function Capabilities() {
                   "Efficient and effective! GrowthEcho's expertise optimized our listings, resulting in increased conversions and improved visibility on Amazon.",
               },
               {
-                name: "Paul",
+                name: "Ekaterina",
                 profession: "",
                 imgUrl: "/lis-m-test-1.svg",
                 stars: "/star-5.png",
@@ -632,7 +632,7 @@ function Capabilities() {
                   "GrowthEcho's Brand Storefront was a game-changer! A captivating storefront that showcased our brand and products beautifully.",
               },
               {
-                name: "Emily Williams",
+                name: "James Williams",
                 profession: "",
                 imgUrl: "/store-test-2.svg",
                 stars: "/stars.png",
@@ -656,7 +656,7 @@ function Capabilities() {
                   "GrowthEcho's Brand Storefront was a game-changer! A captivating storefront that showcased our brand and products beautifully.",
               },
               {
-                name: "Emily Williams",
+                name: "James Williams",
                 profession: "",
                 imgUrl: "/store-test-2.svg",
                 stars: "/stars.png",
@@ -712,7 +712,7 @@ function Capabilities() {
                   "Life-savers! GrowthEcho's team expertly handled our suspension issues, resulting in a swift account reinstatement. Thank you!",
               },
               {
-                name: "Tim Martinez",
+                name: "Sarah Martinez",
                 profession: "",
                 imgUrl: "/rein-test-3.svg",
                 stars: "/star-5.png",
@@ -736,7 +736,7 @@ function Capabilities() {
                   "Life-savers! GrowthEcho's team expertly handled our suspension issues, resulting in a swift account reinstatement. Thank you!",
               },
               {
-                name: "Tim Martinez",
+                name: "Sarah Martinez",
                 profession: "",
                 imgUrl: "/rein-test-3.svg",
                 stars: "/star-5.png",
