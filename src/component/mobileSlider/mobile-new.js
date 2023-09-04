@@ -16,7 +16,6 @@ function SliderMobileNew({ images }) {
         autoplay={true}
         autoplaySpeed={2500}
         infinite={true}
-        centerMode={true}
         slidesPerRow={1}
         slidesToShow={1}
         arrows={false}
@@ -27,7 +26,7 @@ function SliderMobileNew({ images }) {
           },
           {
             breakpoint: 575,
-            settings: { slidesPerRow: 1, slidesToShow: 1 },
+            settings: { slidesPerRow: 1, slidesToShow: 1, centerMode: true },
           },
         ]}
         className="about-slider"
