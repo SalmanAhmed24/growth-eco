@@ -705,6 +705,7 @@ margin-top: 20px;
                         }
                         @include above-1600{
                             font-size: 1.3vw;
+                            line-height: 25px;
                         }
                     }
                     button{
@@ -1034,7 +1035,7 @@ width: 275px !important;
                     margin-bottom: 0px;
                     font-weight: 600;
                     @include above-1600{
-                        font-size: 1.5vw;
+                        font-size: 1.1vw;
                     }
                 }
 
@@ -1043,7 +1044,7 @@ width: 275px !important;
                     font-size: 15px;
                     font-weight: 300;
                     @include above-1600{
-                        font-size: 1.3vw;
+                        font-size: 1vw;
                     }
                 }
             }
@@ -1055,7 +1056,7 @@ width: 275px !important;
         margin-top: 10px;
         font-weight: 300;
         @include above-1600{
-            font-size: 1.3vw;
+            font-size: 1.1vw;
         }
     }
     .test-down{
@@ -1094,7 +1095,7 @@ width: 275px !important;
                         margin-bottom: 0px;
                         font-weight: 600;
                         @include above-1600{
-                            font-size: 1.5vw;
+                            font-size: 1.1vw;
                         }
                     }
     
@@ -1103,7 +1104,7 @@ width: 275px !important;
                         font-size: 15px;
                         font-weight: 300;
                         @include above-1600{
-                            font-size: 1.3vw;
+                            font-size: 1vw;
                         }
                     }
                 }
@@ -1115,7 +1116,7 @@ width: 275px !important;
             margin-top: 10px;
             font-weight: 300;
             @include above-1600{
-                font-size: 1.3vw;
+                font-size: 1vw;
             }
         }
         .test-down{

@@ -15,6 +15,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import BackToTop from "@/component/backToTop";
 import { useRouter } from "next/navigation";
+import SliderMobileNew from "@/component/mobileSlider/mobile-new";
 // const futuraHv = localFont({
 //   src: "./fonts/FutuHv.ttf",
 //   weight: "400",
@@ -418,7 +419,7 @@ export default function Home() {
         />
         <Image
           alt="growth eco"
-          src={"/sales-mobile.png"}
+          src={"/sales-mobile-new.png"}
           width={297}
           height={780}
           className="sales-count-mobile"
@@ -666,7 +667,10 @@ export default function Home() {
           </div>
         ) : null} */}
 
-        <MobileSlider images={["/case-1.png", "/case-2.png", "/case-3.png"]} />
+        <SliderMobileNew
+          images={["/case-1.png", "/case-2.png", "/case-3.png"]}
+        />
+        {/* <MobileSlider images={["/case-1.png", "/case-2.png", "/case-3.png"]} /> */}
         {/* {activeLink == "Campaigns" ? (
           <MobileSlider
             images={["/case-2.png", "/case-3.png", "/case-1.png"]}
