@@ -23,8 +23,10 @@
     background-color: #F1F8FE;
     padding: 50px 50px;
     position: relative;
+    display: none;
     @include from-320-575{
         padding: 20px;
+        display: block;
     }
     .about-arr{
         position: absolute;
@@ -57,7 +59,7 @@
             .slick-slide{
                 div{
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: center;
                     img{
                         width: 303px !important;
                     }

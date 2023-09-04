@@ -8,21 +8,26 @@ const poppins = Poppins({
   subsets: ["latin"],
   display: "swap",
 });
-function ServiceHeader({ heading1, para1 }) {
+function ServiceHeader({ heading1, para1, headerBG }) {
   return (
-    <header className="header">
+    <header
+      className="header"
+      style={{
+        backgroundImage: `url(${headerBG})`,
+      }}
+    >
       <h1 className={poppins.className}>{heading1}</h1>
       <p className={poppins.className}>{para1}</p>
       <Link href={"/"} className={poppins.className}>
         Start Now
       </Link>
-      <Image
+      {/* <Image
         alt="growth eco"
         className="amazon-avatar"
         src={"/amazon-ser-header-avatar.png"}
         width={419}
         height={479}
-      />
+      /> */}
     </header>
   );
 }

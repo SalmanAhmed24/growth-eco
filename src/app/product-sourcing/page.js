@@ -42,9 +42,10 @@ function Service() {
     <section className={poppins.className}>
       <BackToTop route={"#home"} />
       <ServiceHeader
-        heading1={"Product Sourcing"}
-        para1={"Empowering your brand through product sourcing"}
+        heading1={"Empowering your Amazon brand through product sourcing"}
+        para1={""}
         poppins={poppins}
+        headerBG={"/product-sourcing-bg.png"}
       />
       <ServiceWhy
         headingMain={"Why do you need "}

@@ -26,7 +26,7 @@ function SliderMobileNew({ images }) {
           },
           {
             breakpoint: 575,
-            settings: { slidesPerRow: 1, slidesToShow: 1, centerMode: true },
+            settings: { slidesPerRow: 1, slidesToShow: 1 },
           },
         ]}
         className="about-slider"
