@@ -52,6 +52,19 @@
     }
 }
 .about-slider{
+    .slick-list{
+        .slick-track{
+            .slick-slide{
+                div{
+                    display: flex;
+                    justify-content: space-between;
+                    img{
+                        width: 303px !important;
+                    }
+                }
+            }
+        }
+    }
     .slick-dots{
         li {
             button{

@@ -2,8 +2,13 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./slider.scss";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 function SliderMobileNew({ images }) {
+  const router = useRouter();
+  const handleRouting = () => {
+    router.push("/case-studies");
+  };
   return (
     <section className="slider-about">
       <Slider
@@ -11,6 +16,7 @@ function SliderMobileNew({ images }) {
         autoplay={true}
         autoplaySpeed={2500}
         infinite={true}
+        centerMode={true}
         slidesPerRow={1}
         slidesToShow={1}
         arrows={false}
@@ -28,7 +34,14 @@ function SliderMobileNew({ images }) {
       >
         {images.map((i) => {
           return (
-            <Image key={i} alt="growth eco" src={i} width={303} height={387} />
+            <Image
+              onClick={handleRouting}
+              key={i}
+              alt="growth eco"
+              src={i}
+              width={303}
+              height={387}
+            />
           );
         })}
       </Slider>
