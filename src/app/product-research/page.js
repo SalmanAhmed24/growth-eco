@@ -38,8 +38,7 @@ function Service() {
       <ServiceHeader
         heading1={"Product Research for Amazon Success"}
         para1={"Redefining the way you do business on Amazon "}
-        futuraHv={futuraHv}
-        futuraLTBT={futuraLTBT}
+        headerBG={"/done-amazon-bg-header.png"}
       />
       <ServiceWhy
         headingMain={"Why do you need"}
@@ -52,6 +51,8 @@ function Service() {
           { cardText: "Reduce Risk" },
           { cardText: "Increase ROI" },
         ]}
+        mainImg={"/amazon-product-inner-1.png"}
+        secImg={"/amazon-product-inner-2.png"}
         trustHeading={
           "Trusted by 100+ business owners for Amazon product research services"
         }
@@ -123,7 +124,7 @@ function Service() {
             cardsH1: "Market Analysis",
             color: "white",
             cardPara:
-              "We research Amazon's marketplace to identify high-demand product categories and potential niches by utilizing tools and data to assess competition levels and market trends.",
+              "We research Amazon's marketplace to identify high-demand product categories and potential niches to assess competition levels and market trends.",
           },
           {
             cardsH1: "Product Criteria",
@@ -135,13 +136,13 @@ function Service() {
             cardsH1: "Competitor Research",
             color: "white",
             cardPara:
-              "After analyzing top competitors in your chosen niche to understand their pricing strategies, product features, and customer reviews.",
+              "Then we analyze top competitors in your chosen niche to understand their pricing strategies, product features, and customer reviews.",
           },
           {
             cardsH1: "Validate with Samples",
             color: "blue",
             cardPara:
-              "Before committing to a large inventory, we order samples of potential products to assess quality and packaging. And then test the market by launching a small batch of the most promising products and gathering feedback for further refinement.",
+              "We order samples of potential products to assess quality and packaging. Then launch a small batch and gather feedback for further refinement.",
           },
         ]}
         futuraHv={futuraHv}

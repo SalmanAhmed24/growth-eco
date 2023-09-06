@@ -32,6 +32,23 @@ function ServiceCards({ cardsArr }) {
                 width={86}
                 height={86}
               />
+              <Image
+                alt="growth eco"
+                className="count-img-mobile"
+                src={`/mobile-number-${
+                  ind == 0
+                    ? "1"
+                    : ind == 1
+                    ? "2"
+                    : ind == 2
+                    ? "3"
+                    : ind == 3
+                    ? "4"
+                    : ""
+                }.png`}
+                width={44}
+                height={45}
+              />
               <h1 className={poppins.className}>{i.cardsH1}</h1>
               <p className={poppins.className}>{i.cardPara}</p>
             </div>

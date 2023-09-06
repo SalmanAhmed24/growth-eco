@@ -38,12 +38,13 @@ function Service() {
       <ServiceHeader
         heading1={"Amazon Storefront for your brand"}
         para1={"Grow your brand on Amazon with full potential!"}
-        futuraHv={futuraHv}
-        futuraLTBT={futuraLTBT}
+        headerBG={"/amazon-brand-header.png"}
       />
       <ServiceWhy
         headingMain={"Why do you need Amazon Product "}
         spanMain={"Listing & Optimization?"}
+        mainImg={"/amazon-brand-inner-1.png"}
+        secImg={"/amazon-brand-inner-2.png"}
         mainPara={
           "You want your brand to be the powerful launchpad to success. To step out with your unique story and products that add value to your customers’ lives, you don’t have to sell. You have to craft an unforgettable brand narrative and connect with customers on a deeper level."
         }
@@ -143,7 +144,7 @@ function Service() {
             cardsH1: "Post-Purchase Delight",
             color: "blue",
             cardPara:
-              "We ten foster customer engagement through interactive elements such as quizzes, polls, and customer reviews. Encourage social proof by showcasing positive feedback and testimonials",
+              "We foster customer engagement through interactive elements such as customer reviews. And encourage social proof by showcasing positive feedback and testimonials",
           },
         ]}
         futuraHv={futuraHv}

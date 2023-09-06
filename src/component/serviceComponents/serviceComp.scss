@@ -48,10 +48,15 @@
         @content;
     }
 }
+@mixin below-992{
+    @media screen and (max-width:992px){
+        @content;
+    }
+}
 .header{
     background-size: cover;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 480px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -222,6 +227,9 @@
     @include from-320-575{
         padding: 20px;
     }
+    @include from-992-1250{
+        padding: 30px 70px;
+    }
     &::after{
         content: '';
         background-image: url('../../../public/amazon-ser-line.png');
@@ -267,9 +275,9 @@
                     @include from-320-575{
                         width: 100%;
                     }
-                    @include from-992-1250{
-                        width: 50%;
-                    }
+                    // @include from-992-1250{
+                    //     width: 50%;
+                    // }
                     img{
                         width: 100%;
                         height: auto;
@@ -318,6 +326,7 @@
                                 border-radius: 0px 20px 20px 20px;
                                 background: #EBEBEB;
                                 display: flex;
+                                padding: 5px;
                                 flex-direction: column;
                                 justify-content: center;
                                 align-items: center; 
@@ -334,6 +343,7 @@
                                 }
                                     p{
                                         text-align: center;
+                                        font-size: 14px;
                                         @include above-1400{
                                             font-size: 1.1vw;
                                         }
@@ -453,10 +463,11 @@
             }
             img{
                 @include from-992-1250{
-                    width: 50%;
+                    width: 100%;
+                    height: auto;
                 }
                 @include from-320-992{
-                    width: 50%;
+                    width: 100%;
                 }
                 @include from-320-575{
                     width: 100%;
@@ -706,9 +717,22 @@ padding: 20px;
                     width: 30%;
                     margin: 20px 0px;
                 }
-                @include from-320-850{
+                @include from-320-992{
                     padding: 10px;
                     width: 40%;
+                    &:nth-child(1){
+                        background-color: #4663AC !important;
+                        color: #fff;
+                    }
+                    &:nth-child(2){
+                        background-color: #F0F0F0 !important;
+                        h1{
+                            color: #000 !important;
+                        }
+                        p{
+                            color: #000 !important;
+                        }
+                    }
                 }
                 @include from-992-1250{
                     width: 18%;
@@ -717,6 +741,9 @@ padding: 20px;
                         position: absolute;
                         top: -40px;
                         left: -40px;
+                        @include from-320-992{
+                            display: none;
+                        }
                         @include from-320-575{
                             width: 45%;
                             height: auto;
@@ -728,6 +755,20 @@ padding: 20px;
                             height: auto;
                             top:-25px;
                             left: -18px;
+                        }
+                    }
+                    .count-img-mobile{
+                        display: none;
+                        position: absolute;
+                        top: -40px;
+                        left: -40px;
+                        @include from-320-992{
+                            height: auto;
+                            top:-25px;
+                            left: -18px;
+                        }
+                        @include below-992{
+                            display: inline-block;
                         }
                     }
             }

@@ -37,13 +37,10 @@ function Service() {
       <BackToTop route={"#home"} />
       <ServiceHeader
         heading1={
-          "Grow your Amazon with Done for You Amazon Account Management Services"
-        }
-        para1={
           "Taking day-to-day operations off your shoulders so you can focus on other business aspects"
         }
-        futuraHv={futuraHv}
-        futuraLTBT={futuraLTBT}
+        para1={""}
+        headerBG={"/done-amazon-bg-header.png"}
       />
       <ServiceWhy
         headingMain={"Why do you need done for you "}
@@ -51,6 +48,8 @@ function Service() {
         mainPara={
           "Our done-for-you Amazon account management service helps you get rid of worries of day-to-day operations while making tons of money. Whether it’s product research or inventory sourcing, we keep expertise in doing it all with a proven strategy"
         }
+        mainImg={"/amazon-done-inner-1.png"}
+        secImg={"/amazon-done-inner-2.png"}
         whyCardsArr={[
           { cardText: "Time-saving Expertise" },
           { cardText: "Sales and Profit Growth" },
@@ -133,19 +132,19 @@ function Service() {
             cardsH1: "Optimize Listings",
             color: "blue",
             cardPara:
-              "We optimize listings with targeted keywords, compelling content, and high-quality visuals to drive conversions and boost sales.",
+              "We then optimize listings with targeted keywords, compelling content, and high-quality visuals to drive conversions and boost sales.",
           },
           {
             cardsH1: "Inventory sourcing",
             color: "white",
             cardPara:
-              "We use sourcing methods to secure inventory, ensuring a steady supply of high-quality products for your business success",
+              "After that, We use sourcing methods to secure inventory, ensuring a steady supply of high-quality products for your business success",
           },
           {
             cardsH1: "Advertising Campaigns",
             color: "blue",
             cardPara:
-              "We execute high-converting advertising campaigns using data-driven insights and targeted strategies to drive the largest ROI for your business",
+              "At the end. we execute high-converting advertising campaigns using data-driven insights and targeted strategies to drive the largest ROI for your business",
           },
         ]}
         futuraHv={futuraHv}

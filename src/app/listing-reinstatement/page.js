@@ -36,10 +36,9 @@ function Service() {
     <section className="amazon-sec-wrap">
       <BackToTop route={"#home"} />
       <ServiceHeader
-        heading1={"Listing Reinstatement"}
-        para1={"Regain Your Amazon Presence with Listing Reinstatement. "}
-        futuraHv={futuraHv}
-        futuraLTBT={futuraLTBT}
+        heading1={"Regain Your Amazon Presence with Listing Reinstatement."}
+        para1={""}
+        headerBG={"/listing-rein-bg.png"}
       />
       <ServiceWhy
         headingMain={"Why do you need "}
@@ -47,6 +46,8 @@ function Service() {
         mainPara={
           "Got suspended on Amazon and want to encounter listing suspension? We know how daunting it feels. Our Listing Reinstatement service will be your strategic partner in navigating this challenge and restoring your products to the digital shelf. With a strategic approach, we resolve issues and present compelling appeals that reignite your momentum in Amazon’s marketplace."
         }
+        mainImg={"/reinstate-inner.png"}
+        secImg={"/reinstate-inner-2.png"}
         whyCardsArr={[
           { cardText: "Suspension Resolution" },
           { cardText: "Expert Guidance" },
@@ -128,7 +129,7 @@ function Service() {
             cardsH1: "Issue Resolution and Plan of Action",
             color: "blue",
             cardPara:
-              "We then create a clear and concise plan of action to address the identified issues. After making necessary corrections to the listing content, images, or other elements, we craft a compelling appeal that outlines the actions taken and provides assurance of future compliance.",
+              "Then create a plan of action to address the identified issues and make necessary corrections to craft an appeal that outlines the future actions.",
           },
           {
             cardsH1: "Persuasive Communication",
@@ -140,7 +141,7 @@ function Service() {
             cardsH1: "Follow-Up and Adaptation",
             color: "blue",
             cardPara:
-              "Monitor the response from the platform administrators. If further information is requested or changes are needed, promptly address them. And maintain open communication throughout the process. Then, adapt your strategy based on feedback and adjust the appeal if necessary for maximum effectiveness.",
+              "If further information changes are needed, we promptly address and maintain open communication. And adjust the appeal if necessary.",
           },
         ]}
         futuraHv={futuraHv}

@@ -38,6 +38,7 @@ function Service() {
       <ServiceHeader
         heading1={"Amazon Seller Account Suspension & How to Avoid"}
         para1={"Get your account back with our innovative solution!"}
+        headerBG={"/amazon-account-header.png"}
       />
       <ServiceWhy
         headingMain={"Why do you need an "}
@@ -45,6 +46,8 @@ function Service() {
         mainPara={
           "Got your product suspended on Amazon? We help you prevent unauthorized activities and maintain a secure online environment with our robust account suspension service, ensuring user compliance while enhancing trust and user experience."
         }
+        mainImg={"/amazon-account-inner-1.png"}
+        secImg={"/amazon-account-inner-2.png"}
         whyCardsArr={[
           { cardText: "Swift Resolution" },
           { cardText: "Personalized Plans" },
@@ -107,10 +110,10 @@ function Service() {
         futuraMD={futuraMDBT}
         futuraHv={futuraHv}
         futuraLTBT={futuraLTBT}
-        step1={"Assessment and Analysis"}
-        step2={"Plan of Action Preparation"}
-        step3={"Submission and Follow-up"}
-        step4={"Preventive Measures & Ongoing Compliance"}
+        step1={"Analysis"}
+        step2={"POA Preparation"}
+        step3={"Follow-up"}
+        step4={"Preventive Measures"}
         content={
           "We at GrowthEcho make a strategic approach coupled with clear communication and commitment to compliance that will pave the way for a successful resolution and continued growth on the Amazon platform."
         }
@@ -118,28 +121,28 @@ function Service() {
       <ServiceCards
         cardsArr={[
           {
-            cardsH1: "Assessment & Analysis",
+            cardsH1: "Analysis",
             color: "white",
             cardPara:
-              "We begin by reviewing the suspension notice to identify the exact policy violation. And analyze your account and product listings to pinpoint any potential issues.",
+              "We begin by reviewing the suspension notice to identify the exact policy violation and analyze your account to pinpoint any potential issues.",
           },
           {
-            cardsH1: "Plan of Action Preparation",
+            cardsH1: "POA Preparation",
             color: "blue",
             cardPara:
-              "We then craft a detailed Plan of Action (POA) that addresses the violation, explains the measures you've taken to rectify it, and outlines preventive actions for the future.",
+              "We then craft a detailed Plan of Action that addresses the violation, explains the measures you've taken to rectify it, and outlines preventive actions for the future.",
           },
           {
-            cardsH1: "Submission and Follow-up",
+            cardsH1: "Follow-up",
             color: "white",
             cardPara:
-              "After that, we submit your well-structured POA through the designated Amazon Seller Central channel. Then we monitor the response and maintain open communication with Amazon's Seller Performance team. If necessary, we provide additional information to expedite the review process.",
+              "After that, we submit your well-structured POA through the designated Amazon Seller channel and maintain open communication with Amazon's Seller team.",
           },
           {
-            cardsH1: "Preventive Measures & Ongoing Compliance",
+            cardsH1: "Preventive Measures",
             color: "blue",
             cardPara:
-              "Once your account is reinstated, we implement the preventive measures outlined in your POA rigorously. Then we monitor your account's compliance with Amazon's policies, keeping your product listings accurate, customer service top-notch, and staying updated on policy changes to prevent future suspensions.",
+              "Once your account is reinstated, we implement the preventive measures and stay updated on policy changes to prevent future suspensions.",
           },
         ]}
         futuraHv={futuraHv}

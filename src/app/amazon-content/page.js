@@ -36,12 +36,11 @@ function Service() {
     <section className="amazon-sec-wrap">
       <BackToTop route={"#home"} />
       <ServiceHeader
-        heading1={"Amazon A+ Enhanced Brand Content Designing Services"}
-        para1={
-          "Boost Your Brand Story with Captivating Enhanced Brand Content A+ Services!"
+        heading1={
+          "Boost Your Brand Story with Captivating A+ Enhanced Brand Content!"
         }
-        futuraHv={futuraHv}
-        futuraLTBT={futuraLTBT}
+        para1={""}
+        headerBG={"/amazon-content-bg.png"}
       />
       <ServiceWhy
         headingMain={"Why do you need Amazon "}
@@ -49,6 +48,8 @@ function Service() {
         mainPara={
           "With creativity and a sprinkle of innovation, we elevate your product listings to a whole new level, attracting customers with eye-catching visuals, compelling storytelling, and informative graphics. Don't just tell your brand's story; show it with a dazzling display of engaging content that mesmerizes, inspires, and ultimately drives customers to click that 'Add to Cart' button without a second thought."
         }
+        mainImg={"/amazon-content-inner-1.png"}
+        secImg={"/amazon-content-inner-2.png"}
         whyCardsArr={[
           { cardText: "Immersive Brand Storytelling" },
           { cardText: "Stunning Visual Enhancements" },
@@ -111,10 +112,10 @@ function Service() {
         futuraMD={futuraMDBT}
         futuraHv={futuraHv}
         futuraLTBT={futuraLTBT}
-        step1={"Research & Analysis"}
+        step1={"Research"}
         step2={"Content Creation"}
-        step3={"Tailored Implementation"}
-        step4={"Performance Monitoring"}
+        step3={"Implementation"}
+        step4={"Performance & Monitoring"}
         content={
           "We at GrowthEcho take care of the A+ content your Amazon business needs to be successful. Starting with research in the competitive market, analyzing what’s working and how can we stand out in the crowd. Then design the infographics, images, and put out captivating videos that take your Amazon business to another level."
         }
@@ -143,7 +144,7 @@ function Service() {
             cardsH1: "Performance Monitoring",
             color: "blue",
             cardPara:
-              "We keep our eyes on the performance of A+ content using Amazon’s analytics. Then track metrics with click-through rates, conversion rates, and sales. And make changes if needed.",
+              "We keep our eyes on the performance of A+ content using Amazon’s analytics. Then track metrics with click-through rates, conversion rates, and sales.",
           },
         ]}
         futuraHv={futuraHv}

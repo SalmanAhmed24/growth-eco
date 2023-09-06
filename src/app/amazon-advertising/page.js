@@ -39,13 +39,14 @@ function Service() {
         heading1={
           "Increase visibility and boost sales with Amazon Advertising Services"
         }
-        para1={"Unlock Your Brand's Potential with Amazon Advertising"}
-        futuraHv={futuraHv}
-        futuraLTBT={futuraLTBT}
+        para1={""}
+        headerBG={"/advertising-header-img.png"}
       />
       <ServiceWhy
         headingMain={"Why do you need Amazon "}
         spanMain={"Advertising services?"}
+        mainImg={"/amazon-adv-inner.png"}
+        secImg={"/amazon-adv-inner-2.png"}
         mainPara={
           "By Amazon Advertising, your brand gains visibility and access to a vast, ready-to-buy audience, making your products to the top of search results and relevant product listings. With precise ad targeting and analytics, you can reach your ideal customers, driving traffic to your product pages and converting random scrollers into loyal buyers. "
         }
@@ -113,8 +114,8 @@ function Service() {
         futuraLTBT={futuraLTBT}
         step1={"Strategy Development "}
         step2={"Ad Campaign Setup"}
-        step3={"Compelling Ad Creatives & A/B Testing"}
-        step4={"Monitoring Amazon listing optimization"}
+        step3={"Compelling Ad Creatives"}
+        step4={"Monitoring and optimization"}
         content={
           "With our step-by-step solution, your Amazon business will experience significant growth, increased sales, and improved brand visibility, solidifying your position as a dominant player in the competitive Amazon marketplace"
         }
@@ -131,19 +132,19 @@ function Service() {
             cardsH1: "Ad Campaign Setup",
             color: "blue",
             cardPara:
-              "We use advanced targeting capabilities to reach the right customers at the right time. Through Amazon keyword research and audience segmentation, we create targeted sponsored products and sponsored brand campaigns.",
+              "We use advanced targeting capabilities to reach the right customers at the right time. Through Amazon keyword research and audience segmentation, we create targeted sponsored brand campaigns.",
           },
           {
-            cardsH1: "Compelling Ad Creatives & A/B Testing",
+            cardsH1: "Compelling Ad Creatives",
             color: "white",
             cardPara:
               "We create ad creatives that resonate with your target audience and run A/B tests on different ad variations to identify which visuals and messaging yield the highest engagement and conversion rates.",
           },
           {
-            cardsH1: "Monitoring Amazon listing optimization",
+            cardsH1: "Monitoring and optimization",
             color: "blue",
             cardPara:
-              "We monitor the performance of your Amazon PPC campaigns using real-time analytics. By tracking key metrics like click-through rates, conversion rates, and return on ad spend (ROAS), we gain valuable insights into campaign effectiveness, ensuring your advertising dollars are invested wisely.",
+              "We monitor the performance of your Amazon PPC campaigns and gain valuable insights into campaign effectiveness, ensuring your advertising dollars are invested wisely.",
           },
         ]}
         futuraHv={futuraHv}
