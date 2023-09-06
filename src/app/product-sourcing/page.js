@@ -123,7 +123,7 @@ function Service() {
             cardsH1: "Market Analysis",
             color: "white",
             cardPara:
-              "We conduct a thorough analysis of market trends, customer preferences, and competitor Amazon products to identify profitable niches and high-demand items.",
+              "We then research suppliers and manufacturers to ensure reliability, product quality, and competitive pricing.",
           },
           {
             cardsH1: "Supplier Research",
@@ -135,7 +135,7 @@ function Service() {
             cardsH1: "Amazon Inventory Management",
             color: "white",
             cardPara:
-              "Implement efficient Amazon inventory management practices to maintain optimal stock levels, reduce stockouts, and ensure timely replenishment.",
+              "Monitor customer feedback and reviews to improve Amazon product quality and address any issues, enhancing your brand reputation and driving repeat sales.",
           },
           {
             cardsH1: "Customer Feedback",
