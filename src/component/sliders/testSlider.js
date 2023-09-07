@@ -20,7 +20,7 @@ export default function TestSlider() {
           // el: 'swiper-pagination',
         }}
         effect={"coverflow"}
-        slidesPerView={3}
+        slidesPerView={2}
         centeredSlides={false}
         coverflowEffect={{
           rotate: 50,
@@ -49,12 +49,12 @@ export default function TestSlider() {
             centeredSlides: true,
           },
           1024: {
-            slidesPerView: 3,
+            slidesPerView: 2,
             spaceBetween: 0,
             centeredSlides: true,
           },
           1500: {
-            slidesPerView: 3,
+            slidesPerView: 2,
             spaceBetween: 0,
             centeredSlides: true,
           },

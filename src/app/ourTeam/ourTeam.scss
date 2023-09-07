@@ -3,6 +3,11 @@
         @content;
     }
 }
+@mixin from-992-1100{
+    @media screen and (min-width:992.67px) and (max-width:1100px) {
+        @content;
+    }
+}
 @mixin from-1300-1700{
     @media screen and (min-width:1300px) and (max-width:1700px) {
         @content;
@@ -97,13 +102,14 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    padding: 0px 150px;
     @include from-320-992{
         padding: 20px;
     }
     @include from-320-400{
         padding: 20px;
         background-image: url('../../../public/skilled-mobile.png');
-        background-position-y: -26vw;
+        background-position-y: -31vw;
         height: 330px;
     }
     @include from-400-575{
@@ -133,11 +139,14 @@
             font-weight: 300;
             color: #fff;
             text-align: center;
-            width: 50%;
+            width: 60%;
             line-height: 25px;
             @include from-320-992{
                 width: 100%;
                 font-size: 12px;
+            }
+            @include from-320-575{
+                line-height: 20px;
             }
             @include above-1600{
                 font-size: 1.1vw;   
@@ -152,9 +161,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 50px;
+    padding: 20px 16vw;
+    @include from-575-992{
+        padding: 20px 40px;
+    }
     @include from-320-575(){
         background-image: none;
+        padding: 20px;
+    }
+    @include from-992-1100{
+        padding: 20px 100px;
+    }
+    @include above-1600{
+        padding: 20px 18vw;
     }
         h1{
             text-align: center;
@@ -184,7 +203,7 @@
                }
         }
         .upper-team{
-            width: 70%;
+            width: 100%;
             display: flex;
             justify-content: space-between;
             margin-top: 40px;
@@ -247,7 +266,7 @@
                 }
         }
         .mid-team{
-            width: 80%;
+            width: 100%;
             display: flex;
             justify-content: space-between;
             margin-top: 40px;
@@ -389,7 +408,7 @@
             height: 100%;
         }
         @include from-320-575{
-            width: 100%;
+            width: 133vw;
         }
     }
 }
@@ -425,14 +444,14 @@
     .contact-link{
         border-radius: 20px 0px 20px 20px;
         background: #FFF;
-        font-size: 18px;
+        font-size: 16px;
         text-decoration: none;
         padding: 5px 10px;
         color: #000;
         transition: 0.3s ease-in-out;
         border:1px solid #fff;
         @include from-320-575{
-            font-size: 20px;
+            font-size: 16px;
         }
         @include above-1600{
             font-size: 1.3vw;   
