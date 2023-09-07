@@ -82,3 +82,12 @@
         }  
     }
 }
+.about-slider .slick-list .slick-track .slick-slide div{
+    display: flex;
+    justify-content: center;
+}
+.about-slider .slick-list .slick-track .slick-slide div img{
+    @include from-320-575{
+        width: 50% !important;
+    }
+}

@@ -36,7 +36,7 @@
         background-image: url('../../../public/about-rocket.png');
         background-size: cover;
         background-repeat: no-repeat;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
     }
     @include from-320-992(){
         flex-wrap: wrap;
@@ -47,7 +47,7 @@
             width: 50%;
             align-items: center;
             @include from-320-992{
-                margin-bottom: 50px;
+                margin-bottom: 10px;
                 width: 100%;
             }
             .inner-wrap{
@@ -128,9 +128,9 @@
         }
 }
 .main-who-we{
-    padding: 50px;
-    @include from-320-575{
-        padding: 20px;
+    padding: 20px 150px;
+    @include from-320-992{
+        padding:0px 20px;
     } 
 }
 .mobile-layout{

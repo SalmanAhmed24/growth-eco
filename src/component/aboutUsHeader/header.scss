@@ -13,6 +13,11 @@
         @content;
     }
 }
+@mixin from-320-992{
+    @media screen and (min-width:320.67px) and (max-width:992px) {
+        @content;
+    }
+}
 @mixin from-575-992{
     @media screen and (min-width:575.67px) and (max-width:992px) {
         @content;
@@ -39,16 +44,18 @@
     justify-content: center;
     align-items: center;
     padding: 70px 50px;
-    height: 500px;
+    height: 45vw;
     position: relative;
     overflow-x: clip;
     background-image: url('../../../public/about-header-new.png');
-    background-position-y:-140px;
+    background-position-y:0px;
     background-size: cover;
     background-repeat: no-repeat;
-    @include from-320-575{
-        height: 400px;
-        padding: 20px;
+    @include from-320-992{
+        height: 450px;
+        padding: 10vw 20px 10vw 20px;
+        justify-content: flex-start;
+        background-position-y:0px;
     }
     @include above-1600{
         background-position-y: -270px;

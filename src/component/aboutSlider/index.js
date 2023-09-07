@@ -17,11 +17,11 @@ function SliderAbout({ futuraBK, futuraMDBT, futuraLtBT, futuraHv, poppins }) {
         responsive={[
           {
             breakpoint: 320,
-            settings: { slidesPerRow: 3, slidesToShow: 1 },
+            settings: { slidesPerRow: 1, slidesToShow: 1 },
           },
           {
             breakpoint: 575,
-            settings: { slidesPerRow: 3, slidesToShow: 1 },
+            settings: { slidesPerRow: 1, slidesToShow: 1 },
           },
           {
             breakpoint: 992,
