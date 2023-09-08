@@ -11,30 +11,11 @@ import CaseStudSlider from "@/component/case-stud-sub/case-slider";
 import BackToTop from "@/component/backToTop";
 import { Poppins } from "next/font/google";
 
-// const futuraHv = localFont({
-//   src: "../fonts/FuturaHeavyBT.ttf",
-//   weight: "400",
-//   style: "normal",
-// });
-// const futuraBK = localFont({
-//   src: "../fonts/FutuBk.ttf",
-//   weight: "400",
-//   style: "normal",
-// });
-// const futuraMDBT = localFont({
-//   src: "../fonts/FutuMd.ttf",
-//   weight: "400",
-//   style: "normal",
-// });
-// const futuraLTBT = localFont({
-//   src: "../fonts/FuturaLtBT.ttf",
-//   weight: "400",
-//   style: "normal",
-// });
 const poppins = Poppins({
   weight: ["300", "400", "600", "700", "900"],
-  style: ["normal"],
+  style: ["normal", "italic"],
   subsets: ["latin"],
+  display: "swap",
 });
 function SubCase() {
   return (
@@ -44,9 +25,9 @@ function SubCase() {
       <EXESUM poppins={poppins} />
       <CaseSteps poppins={poppins} />
       <CaseStudSlider />
-      <section className={`${poppins.className} business-con`}>
+      <section className={`business-con`}>
         <h1 className={poppins.className}>Ready to grow your business?</h1>
-        <Link href={"/"} className={`business-contact`}>
+        <Link href={"/"} className={`${poppins.className} business-contact`}>
           Contact Now
         </Link>
       </section>

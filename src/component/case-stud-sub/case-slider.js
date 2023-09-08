@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import "./header.scss";
 
 // import required modules
-import { Pagination, EffectCoverflow } from "swiper/modules";
+import { Pagination, EffectCoverflow, Autoplay } from "swiper/modules";
 import Image from "next/image";
 
 export default function CaseStudSlider() {
@@ -22,6 +22,12 @@ export default function CaseStudSlider() {
         effect={"coverflow"}
         slidesPerView={2}
         centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+          stopOnLastSlide: false,
+        }}
+        loop={true}
         breakpoints={{
           320: {
             slidesPerView: 1,
@@ -53,7 +59,7 @@ export default function CaseStudSlider() {
         coverflowEffect={{
           rotate: 20,
         }}
-        modules={[Pagination, EffectCoverflow]}
+        modules={[Autoplay, Pagination, EffectCoverflow]}
         className="mySwiper teamSwipper"
       >
         <SwiperSlide>

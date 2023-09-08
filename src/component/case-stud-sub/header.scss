@@ -30,7 +30,7 @@
     align-items: flex-end;
     height: 400px;
     padding: 70px 50px;
-    z-index: 2222;
+    z-index:1;
     @include from-320-575{
         background-image: url('../../../public/mobile-sub-case.png');
         background-size: cover;
@@ -126,6 +126,7 @@
             text-align: center;
             @include from-320-992{
                 font-size: 14px;
+                width: 100%;
             }
         }
 }
@@ -210,7 +211,7 @@
                     @include from-320-992{
                         text-align: left;
                         align-self: flex-start;
-                        width: 90%;
+                        width: 100%;
                         font-size: 13px;
                     }
                 }
@@ -221,10 +222,11 @@
             justify-content: flex-start;
             @include from-320-992{
                 width: 100%;
+                justify-content: center;
             }
             img{
                 @include from-320-992{
-                    width: 100%;
+                    width: 334px;
                     height: auto;
                 }
             }
@@ -292,7 +294,7 @@
                     @include from-320-992{
                         text-align: right;
                         align-self: flex-end;
-                        width: 90%;
+                        width: 100%;
                         list-style: none;
                         font-size: 13px;
                     }
@@ -304,10 +306,11 @@
             justify-content: flex-end;
             @include from-320-992{
                 width: 100%;
+                justify-content: center;
             }
             img{
                 @include from-320-992{
-                    width: 100%;
+                    width: 334px;
                     height: auto;
                 }
             }
@@ -373,7 +376,7 @@
                     @include from-320-992{
                         text-align: left;
                         align-self: flex-start;
-                        width: 90%;
+                        width: 100%;
                         font-size: 13px;
                     }
                 }
@@ -384,10 +387,11 @@
             justify-content: flex-start;
             @include from-320-992{
                 width: 100%;
+                justify-content: center;
             }
             img{
                 @include from-320-992{
-                    width: 100%;
+                    width: 334px;
                     height: auto;
                 }
             }
@@ -454,7 +458,7 @@
                     @include from-320-992{
                         text-align: right;
                         align-self: flex-end;
-                        width: 90%;
+                        width: 100%;
                         list-style: none;
                         font-size: 15px;
                     }
@@ -466,10 +470,11 @@
             justify-content: flex-end;
             @include from-320-992{
                 width: 100%;
+                justify-content: center;
             }
             img{
                 @include from-320-992{
-                    width: 100%;
+                    width: 334px;
                     height: auto;
                 }
             }
@@ -536,7 +541,7 @@
                     @include from-320-992{
                         text-align: left;
                         align-self: flex-start;
-                        width: 90%;
+                        width: 100%;
                         font-size: 15px;
                         list-style: none;
                     }
@@ -548,10 +553,11 @@
             justify-content: flex-start;
             @include from-320-992{
                 width: 100%;
+                justify-content: center;
             }
             img{
                 @include from-320-992{
-                    width: 100%;
+                    width: 334px;
                     height: auto;
                 }
             }
@@ -563,6 +569,9 @@
     align-items: center;
     position: relative;
     margin-bottom: 50px;
+    @include from-320-992{
+        padding:0px 20px;
+    }
             &::after{
                 content: '';
                 background-image: url('../../../public/case-step-6.png');
@@ -605,7 +614,7 @@
                     width: 65%;
                     @include from-320-992{
                         font-size: 15px;
-                        width: 90%;
+                        width: 100%;
                         list-style: none;
                     }
         }
