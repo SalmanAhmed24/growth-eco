@@ -1,17 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
 import "./header.scss";
-function HeaderCase({ futuraHv, futuraLTBT }) {
+function HeaderCase({ poppins }) {
   return (
     <header className="case-sub-header">
-      <div className="content-wrap">
-        <h1 className={futuraHv.className}>Case Study 1</h1>
-        <h2 className={futuraHv.className}>RFAQK</h2>
-        <p className={futuraLTBT.className}>
+      <div className={`${poppins.className} content-wrap`}>
+        <h1>Case Study 1</h1>
+        <h2>RFAQK</h2>
+        <p>
           RFAQK&apos;s Cake Decorating Kit for all skill level solves as
           ever-lasting issue of buying different tools from here and there
         </p>
-        <Link href={"/"} className={`${futuraHv.className} visit-web`}>
+        <Link href={"/"} className={`visit-web`}>
           VISIT WEBSITE
         </Link>
       </div>

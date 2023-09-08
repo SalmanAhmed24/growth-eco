@@ -1,8 +1,8 @@
 import Image from "next/image";
 import "./header.scss";
-function CaseSteps({ futuraHv, futuraLTBT }) {
+function CaseSteps({ poppins }) {
   return (
-    <section>
+    <section className={poppins.className}>
       <section className="snake-step-con">
         <Image
           alt="growth eco"
@@ -13,8 +13,8 @@ function CaseSteps({ futuraHv, futuraLTBT }) {
         />
         <div className="step1-wrap">
           <div className="step1-content">
-            <h1 className={futuraHv.className}>Overview</h1>
-            <p className={futuraLTBT.className}>
+            <h1>Overview</h1>
+            <p>
               We were contacted by a multinational consumer personal healthcare
               brand to help manage their Amazon Vendor Central account. Our
               client had only achieved 8% growth in year-over-year sales.
@@ -40,8 +40,8 @@ function CaseSteps({ futuraHv, futuraLTBT }) {
             />
           </div>
           <div className="step2-content">
-            <h1 className={futuraHv.className}>Goals</h1>
-            <ul className={`${futuraLTBT.className} goals-ul`}>
+            <h1>Goals</h1>
+            <ul className={`goals-ul`}>
               <li>Make top selling product best seller within its category.</li>
               <li>Expand sales through Amazon Marketing Services Campaigns.</li>
             </ul>
@@ -49,8 +49,8 @@ function CaseSteps({ futuraHv, futuraLTBT }) {
         </div>
         <div className="step3-wrap">
           <div className="step3-content">
-            <h1 className={futuraHv.className}>Challenge</h1>
-            <p className={futuraLTBT.className}>
+            <h1>Challenge</h1>
+            <p>
               Our challenge was to identify the best opportunities for growth
               within the product category. As a large corporation, there was a
               huge catalog of products to focus on.
@@ -76,8 +76,8 @@ function CaseSteps({ futuraHv, futuraLTBT }) {
             />
           </div>
           <div className="step4-content">
-            <h1 className={futuraHv.className}>Actions</h1>
-            <ul className={`${futuraLTBT.className} goals-ul`}>
+            <h1>Actions</h1>
+            <ul className={`goals-ul`}>
               <li>
                 Executed thorough market analysis to identify immediate areas
                 for growth
@@ -97,8 +97,8 @@ function CaseSteps({ futuraHv, futuraLTBT }) {
         </div>
         <div className="step5-wrap">
           <div className="step5-content">
-            <h1 className={futuraHv.className}>Results</h1>
-            <ul className={`${futuraLTBT.className} goals-ul-right`}>
+            <h1>Results</h1>
+            <ul className={`goals-ul-right`}>
               <li>
                 Top selling product is now a best seller with 30,000+ units
                 shipped through first 6 month of 2017
@@ -122,8 +122,8 @@ function CaseSteps({ futuraHv, futuraLTBT }) {
         </div>
       </section>
       <div className="last-step">
-        <h1 className={futuraHv.className}>Statistics</h1>
-        <ul className={futuraLTBT.className}>
+        <h1>Statistics</h1>
+        <ul>
           <li>
             Our client was extremely satisfied with the results we were achieved
             in such a short time period. The strategy we implemented for them

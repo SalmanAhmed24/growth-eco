@@ -104,30 +104,33 @@
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+    padding: 0px 150px;
     @include from-320-992{
         margin-top: 100px;
+        padding:0px 20px 0px 20px;
     }
         h1{
-            font-size: 36px;
+            font-size: 30px;
             line-height: normal;
             margin-bottom: 20px;
             text-align: center;
             @include from-320-992{
-                font-size: 30px;
+                font-size: 24px;
             }
         }
         p{
-            font-size: 20px;
+            font-size: 16px;
+            font-weight: 300;
             line-height: normal;
             width: 70%;
             text-align: center;
             @include from-320-992{
-                font-size: 13px;
+                font-size: 14px;
             }
         }
 }
 .snake-step-con{
-    padding:100px 100px 50px 100px;
+    padding:100px 150px 50px 150px;
     position: relative;
     height: 1800px;
     @include from-320-992{
@@ -184,7 +187,7 @@
             }
                 h1{
                     text-align: right;
-                    font-size: 24px;
+                    font-size: 18px;
                     align-self: flex-end;
                     background-color: #4663AC;
                     color: #fff;
@@ -198,8 +201,9 @@
                     }
                 }
                 p{
-                    font-size: 20px;
+                    font-size: 16px;
                     line-height: normal;
+                    font-weight: 300;
                     margin-top: 10px;
                     align-self: flex-end;
                     text-align: right;
@@ -207,7 +211,7 @@
                         text-align: left;
                         align-self: flex-start;
                         width: 90%;
-                        font-size: 15px;
+                        font-size: 13px;
                     }
                 }
         }
@@ -264,7 +268,7 @@
             }
                 h1{
                     text-align: left;
-                    font-size: 24px;
+                    font-size: 18px;
                     align-self: flex-start;
                     background-color: #4663AC;
                     color: #fff;
@@ -278,8 +282,9 @@
                     }
                 }
                 .goals-ul{
-                    font-size: 20px;
+                    font-size: 16px;
                     line-height: normal;
+                    font-weight: 300;
                     margin-top: 10px;
                     align-self: flex-start;
                     text-align: left;
@@ -289,7 +294,7 @@
                         align-self: flex-end;
                         width: 90%;
                         list-style: none;
-                        font-size: 15px;
+                        font-size: 13px;
                     }
                 }
         }
@@ -345,7 +350,7 @@
             }
                 h1{
                     text-align: right;
-                    font-size: 24px;
+                    font-size: 18px;
                     align-self: flex-end;
                     background-color: #4663AC;
                     color: #fff;
@@ -359,7 +364,8 @@
                     }
                 }
                 p{
-                    font-size: 20px;
+                    font-size: 16px;
+                    font-weight: 300;
                     line-height: normal;
                     margin-top: 10px;
                     align-self: flex-end;
@@ -368,7 +374,7 @@
                         text-align: left;
                         align-self: flex-start;
                         width: 90%;
-                        font-size: 15px;
+                        font-size: 13px;
                     }
                 }
         }
@@ -424,7 +430,7 @@
             }
                 h1{
                     text-align: left;
-                    font-size: 24px;
+                    font-size: 18px;
                     align-self: flex-start;
                     background-color: #4663AC;
                     color: #fff;
@@ -438,7 +444,8 @@
                     }
                 }
                 .goals-ul{
-                    font-size: 20px;
+                    font-size: 16px;
+                    font-weight: 300;
                     line-height: normal;
                     margin-top: 10px;
                     align-self: flex-start;
@@ -505,7 +512,7 @@
             }
                 h1{
                     text-align: right;
-                    font-size: 24px;
+                    font-size: 18px;
                     align-self: flex-end;
                     background-color: #4663AC;
                     color: #fff;
@@ -519,7 +526,8 @@
                     }
                 }
                 .goals-ul-right{
-                    font-size: 20px;
+                    font-size: 16px;
+                    font-weight: 300;
                     line-height: normal;
                     margin-top: 10px;
                     align-self: flex-end;
@@ -573,7 +581,7 @@
                 }
             }
         h1{
-            font-size: 24px;
+            font-size: 18px;
                     align-self: flex-end;
                     background-color: #4663AC;
                     color: #fff;
@@ -586,7 +594,8 @@
                     }
         }
         ul{
-            font-size: 20px;
+            font-size: 16px;
+            font-weight: 300;
                     line-height: normal;
                     margin-top: 10px;
                     align-self: flex-end;
@@ -673,7 +682,10 @@
             color: #fff;
             margin-bottom: 20px;
             text-transform: capitalize;
-            font-size: 32px;
+            font-size: 30px;
+            @include from-320-992{
+                font-size: 24px;
+            }
         }
         .business-contact{
             border-radius: 20px 0px 20px 20px;
