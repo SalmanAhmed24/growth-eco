@@ -92,6 +92,7 @@
                     }
                     @include from-575-992{
                         width: 15.3%;
+                        overflow-wrap: anywhere;
     height: 23.5%;
     left: 11%;
     bottom: 33%;
@@ -101,10 +102,12 @@
     height: 23.5%;
     font-size: 10px;
     left: 9%;
+    overflow-wrap: anywhere;
     bottom: 30%;
                     }
                     @include from-320-400{
                         width: 15.3%;
+                        overflow-wrap: anywhere;
     height: 23.5%;
     font-size: 8px;
     left: 9%;
@@ -115,6 +118,7 @@
                         height: 23.5%;
                         left: 11%;
                         bottom: 33%; 
+                        overflow-wrap: anywhere;
                     }
                 }
                 .circle2{
@@ -144,6 +148,7 @@
     height: 23.5%;
     right: 48.5%;
     bottom: 60%;
+    overflow-wrap: anywhere;
                     }
                     @include from-320-575{
                         width: 15.3%;
@@ -151,9 +156,11 @@
                         font-size: 10px;
                         right: 48.5%;
                         bottom: 60%;
+                        overflow-wrap: anywhere;
                     }
                     @include from-320-400{
                         width: 15.3%;
+                        overflow-wrap: anywhere;
     height: 23.5%;
     font-size: 8px;
     right: 48.5%;
@@ -163,6 +170,7 @@
                         width: 15.3%;
     height: 23.5%;
     right: 49.5%;
+    overflow-wrap: anywhere;
     bottom: 60%;
                     }
                     
@@ -194,6 +202,7 @@
                         height: 23.5%;
                         right: 25.5%;
                         top: 1%;
+                        overflow-wrap: anywhere;
                     }
                 
                     @include from-400-575{
@@ -202,9 +211,11 @@
                         font-size: 10px;
                         right: 25.5%;
                         top: 1%;
+                        overflow-wrap: anywhere;
                     }
                     @include from-320-400{
                         width: 15.3%;
+                        overflow-wrap: anywhere;
     height: 23.5%;
     font-size: 8px;
     right: 26%;
@@ -212,6 +223,7 @@
                     }
                     @include from-767-to-992{
                         width: 15.3%;
+                        overflow-wrap: anywhere;
     height: 23.5%;
     right: 26%;
                     }
@@ -247,6 +259,7 @@
                         height: 23.5%;
                         border-radius: 50%;
                         right: -1.7%;
+                        overflow-wrap: anywhere;
     top: -15%;
                     }
                     @include from-400-575{
@@ -254,10 +267,12 @@
                         height: 23.5%;
                         font-size: 10px;
                         right: -1.7%;
+                        overflow-wrap: anywhere;
     top: -15%;
                     }
                     @include from-320-400{
                         width: 15.3%;
+                        overflow-wrap: anywhere;
     height: 23.5%;
     font-size: 8px;
     right: -1.7%;
