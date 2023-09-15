@@ -88,16 +88,18 @@ function Service() {
         paraMain={
           "Revamping our client’s Amazon listings with captivating Amazon A + content design Services led to a 30% sales surge in the first month. With interactive visuals, persuasive copy, and engaging videos, conversion rates improved by 20% and click-through rates by 25%. Sustained growth followed, with monthly revenue increasing by an average of 15% over six months. A+ Content became a game-changer, elevating their brand as a preferred choice in the competitive market."
         }
-        headingSub1={"599+"}
+        headingSub1={"600+"}
         paraSub1={
-          "599+ satisfied clients that reached their goals with our service!"
+          "599+ satisfied clients that reached their milestone of jaw-dropping goals with our amazing service!"
         }
         headingSub2={"7 years"}
         paraSub2={
           "Started in 2017, now helping business owners scale their Amazon business with a proven strategy"
         }
-        futuraHv={futuraHv}
-        futuraLTBT={futuraLTBT}
+        headingSub3={"250+"}
+        paraSub3={
+          "250+ always on-time inventory suppliers to meet our clients’ product sourcing requirements"
+        }
       />
       <ServiceGrowth
         headingText={"How We Help You Grow Your "}
@@ -119,6 +121,7 @@ function Service() {
         content={
           "We at GrowthEcho take care of the A+ content your Amazon business needs to be successful. Starting with research in the competitive market, analyzing what’s working and how can we stand out in the crowd. Then design the infographics, images, and put out captivating videos that take your Amazon business to another level."
         }
+        imgUrl={"/scale-content.png"}
       />
       <ServiceCards
         cardsArr={[

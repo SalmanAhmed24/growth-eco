@@ -33,6 +33,11 @@
         @content;
     }
 }
+@mixin from-320-767{
+    @media screen and (min-width:320.67px) and (max-width:767px) {
+        @content;
+    }
+}
 @mixin from-320-400{
     @media screen and (min-width:320.67px) and (max-width:400px) {
         @content;
@@ -584,18 +589,38 @@ padding: 5px 10px;
     @include from-320-575{
         padding: 20px;
     }
+    .card-wrap{
+        display: flex;
+        flex-wrap: nowrap;
+        @include from-320-767{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
         .singleItem{
             width: 200px;
             border-radius: 0px 50px 50px 50px;
 background: #E1F1FD;
 box-shadow: 3px 5px 19px 0px rgba(0, 0, 0, 0.10);
 padding: 20px;
+margin: 10px;
+@include from-320-992{
+    width: 35%;
+    padding: 10px;
+}
+@include from-320-575{
+    width: 40%;
+    padding: 10px;
+    margin: 5px 2px;
+}
             h1{
                 font-size: 24px;
                 text-align: center;
                 margin-bottom: 10px;
-                @include from-320-575{
+                @include from-320-992{
                     font-size: 16px;
+                }
+                @include from-320-575{
+                    font-size: 14px;
                 }
             }
             p{
@@ -603,18 +628,23 @@ padding: 20px;
                 text-align: center;
                 font-weight: 300;
                 line-height: 25px;
-                @include from-320-575{
+                @include from-320-992{
                     font-size: 12px;
                     line-height: 15px;
                 }
+                @include from-320-575{
+                    font-size: 10px;
+                    line-height: 12px;
+                }
             }
-&:first-child{
-    margin-right: 50px;
+&:last-child{
+    margin-right: 0px;
     @include from-320-575{
         margin-right: 5px;
     }
 }
         }
+    }
     @include from-320-850{
         top: 270px;
     }
@@ -637,6 +667,7 @@ padding: 20px;
     @include from-320-992{
         background-size: cover;
         background-position: center;
+        height: 300px;
     }
     @include from-320-850{
         margin-top: 70px;
@@ -683,7 +714,7 @@ padding: 20px;
             line-height: normal;
             @include from-320-850{
                 width: 95%;
-                font-size: 16px;
+                font-size: 14px;
             }
             @include above-1400{
                 font-size: 1.1vw;
@@ -705,7 +736,7 @@ padding: 20px;
         }
             .card{
                 padding: 40px 20px 20px 10px;
-                width: 15%;
+                width: 20%;
                 position: relative;
                 display: flex;
                 flex-direction: column;
@@ -788,7 +819,7 @@ padding: 20px;
                     font-size: 9px;
                 }
                 @include above-1400{
-                    font-size: 0.9vw;
+                    font-size: 0.7vw;
                 }
                 }
                 h1{
@@ -802,7 +833,7 @@ padding: 20px;
                         margin-top: 20px;
                     }
                     @include above-1400{
-                        font-size: 1.1vw;
+                        font-size: 0.9vw;
                     }
                 }
             }
@@ -817,7 +848,7 @@ padding: 20px;
                         margin-top: 20px;
                     }
                     @include above-1400{
-                        font-size: 1.1vw;
+                        font-size: 0.9vw;
                     }
                 }
                 p{
@@ -830,7 +861,7 @@ padding: 20px;
                     font-size: 9px;
                 }
                 @include above-1400{
-                    font-size: 0.9vw;
+                    font-size: 0.7vw;
                 }
             }
             }

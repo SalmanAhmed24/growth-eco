@@ -88,14 +88,16 @@ function Service() {
         }
         headingSub1={"600+"}
         paraSub1={
-          "600+ satisfied clients that reached their goals with our service!"
+          "599+ satisfied clients that reached their milestone of jaw-dropping goals with our amazing service!"
         }
         headingSub2={"7 years"}
         paraSub2={
           "Started in 2017, now helping business owners scale their Amazon business with a proven strategy"
         }
-        futuraHv={futuraHv}
-        futuraLTBT={futuraLTBT}
+        headingSub3={"250+"}
+        paraSub3={
+          "250+ always on-time inventory suppliers to meet our clients’ product sourcing requirements"
+        }
       />
       <ServiceGrowth
         headingText={"How We Help You Grow Your Amazon business through"}
@@ -117,6 +119,7 @@ function Service() {
         content={
           "We at GrowthEcho make a strategic approach coupled with clear communication and commitment to compliance that will pave the way for a successful resolution and continued growth on the Amazon platform."
         }
+        imgUrl={"/scale-account.png"}
       />
       <ServiceCards
         cardsArr={[

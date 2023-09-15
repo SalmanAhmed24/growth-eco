@@ -20,6 +20,8 @@ function ServiceCounter({
   paraSub1,
   headingSub2,
   paraSub2,
+  headingSub3,
+  paraSub3,
 }) {
   const [counterFlag, setCounterFlag] = useState(false);
   return (
@@ -34,6 +36,7 @@ function ServiceCounter({
         <ScrollTrigger
           onEnter={() => setCounterFlag(true)}
           onExit={() => setCounterFlag(false)}
+          className="card-wrap"
         >
           <div className="singleItem">
             <h1 className={poppins.className}>
@@ -45,17 +48,27 @@ function ServiceCounter({
             </h1>
             <p className={poppins.className}>{paraSub1}</p>
           </div>
+          <div className="singleItem">
+            <h1 className={poppins.className}>
+              {counterFlag ? (
+                <CountUp duration={5} startOnMount={false} end={7} />
+              ) : (
+                "7"
+              )}
+            </h1>
+            <p className={poppins.className}>{paraSub2}</p>
+          </div>
+          <div className="singleItem">
+            <h1 className={poppins.className}>
+              {counterFlag ? (
+                <CountUp duration={5} startOnMount={false} end={250} />
+              ) : (
+                "250"
+              )}
+            </h1>
+            <p className={poppins.className}>{paraSub3}</p>
+          </div>
         </ScrollTrigger>
-        <div className="singleItem">
-          <h1 className={poppins.className}>
-            {counterFlag ? (
-              <CountUp duration={5} startOnMount={false} end={7} />
-            ) : (
-              "7"
-            )}
-          </h1>
-          <p className={poppins.className}>{paraSub2}</p>
-        </div>
       </div>
     </section>
   );

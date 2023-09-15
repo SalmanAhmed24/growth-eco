@@ -43,8 +43,8 @@
         @content;
     }
 }
-@mixin above-850{
-    @media screen and (min-width:850.67px){
+@mixin from-767-to-992{
+    @media screen and (min-width:767px) and (max-width:992.67px){
         @content;
     }
 }
@@ -66,8 +66,8 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    width: 100px;
-                    height: 100px;
+                    width: 13%;
+    height: 19.5%;
                     border-radius: 50%;
                     background: linear-gradient(180deg, #F0F0F0 0%, #FFF 100%);;
                     box-shadow: 5px 8px 19px rgba(0, 0, 0, 0.25);
@@ -79,29 +79,34 @@
                     text-transform: uppercase;
                     text-align: center;
                     font-size: 13px;
+                    @include from-1300-1700{
+                        font-size: 1.2vw;
+                    }
                     @include from-575-992{
-                        width: 120px;
-                        height: 120px;
-                        right: 70%;
-                        bottom: 35%;
+                        width: 15%;
+    height: 22.5%;
+    right: calc(100% - 27.5%);
+    bottom: 33%;
                     }
                     @include from-400-575{
-                        width: 65px;
-                        height: 65px;
-                        font-size: 8px;
-                        right: 74.7vw;
+                        width: 15%;
+    height: 22.5%;
+    font-size: 10px;
+    right: calc(100% - 25.5%);
     bottom: 30%;
                     }
                     @include from-320-400{
-                        width: 65px;
-                        height: 65px;
-                        font-size: 8px;
-                        right: 72.5vw;
+                        width: 15%;
+    height: 22.5%;
+    font-size: 8px;
+    right: calc(100% - 25.5%);
     bottom: 30%;
                     }
-                    @include above-850{
-                        width: 120px;
-                        height: 120px;
+                    @include from-767-to-992{
+                        width: 15%;
+                        height: 22.5%;
+                        right: calc(100% - 25.5%);
+                        bottom: 33%; 
                     }
                 }
                 .circle2{
@@ -111,41 +116,48 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    width: 100px;
-                    height: 100px;
+                    width: 13%;
+    height: 19.5%;
                     border-radius: 50%;
                     border-radius: 50%;
                     background: linear-gradient(180deg, #F0F0F0 0%, #FFF 100%);;
                     box-shadow: 5px 8px 19px rgba(0, 0, 0, 0.25);
                     bottom: 60%;
-                    right: 50.3%;
+                    right: 50%;
                     z-index: 2222;
                     text-transform: uppercase;
                     text-align: center;
                     font-size: 13px;
+                    @include from-1300-1700{
+                        font-size: 1.2vw;
+                    }
                     @include from-575-992{
-                        width: 120px;
-                        height: 120px;
-                        border-radius: 50%;
-                        bottom: 62%;
-    right: 48.3%;
+                        width: 15%;
+    height: 22.5%;
+    right: 48.5%;
+    bottom: 60%;
                     }
                     @include from-320-575{
-                        width: 65px;
-                        height: 65px;
-                        font-size: 8px;
-                        bottom: 58%;
-    left: 34.3vw;
+                        width: 15%;
+                        height: 22.5%;
+                        font-size: 10px;
+                        right: 48.5%;
+                        bottom: 60%;
                     }
                     @include from-320-400{
-                        width: 65px;
-                        height: 65px;
-                        right: 60vw;
+                        width: 15%;
+    height: 22.5%;
+    font-size: 8px;
+    right: 48.5%;
+    bottom: 60%;
                     }
-                    @include above-850{
-                        width: 120px;
-                        height: 120px;
+                    @include from-767-to-992{
+                        width: 15%;
+    height: 22.5%;
+    right: 49.5%;
+    bottom: 60%;
                     }
+                    
                 }
                 .circle3{
                     display: flex;
@@ -154,44 +166,48 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    width: 100px;
-                    height: 100px;
+                    width: 13%;
+    height: 19.5%;
                     border-radius: 50%;
                     border-radius: 50%;
                     background: linear-gradient(180deg, #F0F0F0 0%, #FFF 100%);;
                     box-shadow: 5px 8px 19px rgba(0, 0, 0, 0.25);
                     top: 12%;
-                    right:30.3%;
+                    right:29.5%;
                     z-index: 2222;
                     text-transform: uppercase;
                     text-align: center;
                     font-size: 13px;
+                    @include from-1300-1700{
+                        font-size: 1.2vw;
+                    }
                     @include from-575-992{
-                        width: 120px;
-                        height: 120px;
-                        border-radius: 50%;
-                        top: -2%;
-    right: 26.3%;
+                        width: 15%;
+                        height: 22.5%;
+                        right: 25.5%;
+                        top: 1%;
                     }
                 
                     @include from-400-575{
-                        width: 65px;
-                        height: 65px;
-                        font-size: 8px;
-                        top: 1vw;
-    right: 27.5vw;
+                        width: 15%;
+                        height: 22.5%;
+                        font-size: 10px;
+                        right: 25.5%;
+                        top: 1%;
                     }
                     @include from-320-400{
-                        width: 65px;
-                        height: 65px;
-                        font-size: 8px;
-                        top: -1vw;
-    right: 25vw;
+                        width: 15%;
+    height: 22.5%;
+    font-size: 8px;
+    right: 25.5%;
+    top: 1%;
                     }
-                    @include above-850{
-                        width: 120px;
-                        height: 120px;
+                    @include from-767-to-992{
+                        width: 15%;
+    height: 22.5%;
+    right: 27.5%;
                     }
+                    
                 }
                 .circle4{
                     display: flex;
@@ -200,42 +216,42 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    width: 100px;
-                    height: 100px;
+                    width: 13%;
+    height: 19.5%;
                     border-radius: 50%;
                     border-radius: 50%;
                     background: linear-gradient(180deg, #F0F0F0 0%, #FFF 100%);;
                     box-shadow: 5px 8px 19px rgba(0, 0, 0, 0.25);
-                    right: 5%;
+                    right: 4%;
                     top: -4%;
                     z-index: 2222;
                     text-transform: uppercase;
                     text-align: center;
                     font-size: 13px;
+                    @include from-1300-1700{
+                        font-size: 1.2vw;
+                    }
                     @include from-575-992{
-                        width: 120px;
-                        height: 120px;
+                        width: 15%;
+                        height: 22.5%;
                         border-radius: 50%;
-                        right: 0%;
-    top: -13%;
+                        right: -1.5%;
+    top: -15%;
                     }
                     @include from-400-575{
-                        width: 65px;
-                        height: 65px;
+                        width: 15%;
+                        height: 22.5%;
                         font-size: 8px;
-                        right: 0.5%;
-    top: -9vw;
+                        right: -1.5%;
+    top: -15%;
                     }
                     @include from-320-400{
-                        width: 65px;
-                        height: 65px;
-                        font-size: 8px;
-                        right: -0.5%;
-    top: -11vw;
+                        width: 15%;
+    height: 22.5%;
+    font-size: 8px;
+    right: -1.5%;
+    top: -15%;
                     }
-                    @include above-850{
-                        width: 120px;
-                        height: 120px;
-                    }
+                    
                 }
         }

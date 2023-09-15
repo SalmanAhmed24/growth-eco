@@ -6,10 +6,10 @@ const poppins = Poppins({
   subsets: ["latin"],
   display: "swap",
 });
-function ScaleComp({ step1, step2, step3, step4, content }) {
+function ScaleComp({ step1, step2, step3, step4, content, imgUrl }) {
   return (
     <section className="growth-img">
-      <img src={"/scales.png"} />
+      <img src={imgUrl} />
       {/* <img className="mobileGraph" src={"/mobile-graph.png"} /> */}
       <div className={`${poppins.className} circle1`}>{step1}</div>
       <div className={`${poppins.className} circle2`}>{step2}</div>
