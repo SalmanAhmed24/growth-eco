@@ -48,6 +48,11 @@
         @content;
     }
 }
+@mixin above-1200{
+    @media screen and (min-width:1200px){
+        @content;
+    }
+}
 .growth-img{
     img{
         position: relative;
@@ -66,19 +71,22 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    width: 13%;
-    height: 19.5%;
+                    width: 11%;
+    height: 17%;
                     border-radius: 50%;
                     background: linear-gradient(180deg, #F0F0F0 0%, #FFF 100%);;
                     box-shadow: 5px 8px 19px rgba(0, 0, 0, 0.25);
                     position: absolute;
                     z-index: 222;
-                    right: 72.5%;
+                    left: calc(100% - 84%);
                     bottom: 35%;
                     z-index: 2222;
                     text-transform: uppercase;
                     text-align: center;
                     font-size: 13px;
+                    @include above-1200{
+                    left: calc(100% - 85%);
+                    }
                     @include from-1300-1700{
                         font-size: 1.2vw;
                     }
@@ -116,14 +124,14 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    width: 13%;
-    height: 19.5%;
+                    width: 11%;
+    height: 17%;
                     border-radius: 50%;
                     border-radius: 50%;
                     background: linear-gradient(180deg, #F0F0F0 0%, #FFF 100%);;
                     box-shadow: 5px 8px 19px rgba(0, 0, 0, 0.25);
                     bottom: 60%;
-                    right: 50%;
+                    right: 51%;
                     z-index: 2222;
                     text-transform: uppercase;
                     text-align: center;
@@ -166,14 +174,14 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    width: 13%;
-    height: 19.5%;
+                    width: 11%;
+    height: 17%;
                     border-radius: 50%;
                     border-radius: 50%;
                     background: linear-gradient(180deg, #F0F0F0 0%, #FFF 100%);;
                     box-shadow: 5px 8px 19px rgba(0, 0, 0, 0.25);
                     top: 12%;
-                    right:29.5%;
+                    right:calc(100% - 69.5%);
                     z-index: 2222;
                     text-transform: uppercase;
                     text-align: center;
@@ -216,18 +224,21 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    width: 13%;
-    height: 19.5%;
+                    width: 11%;
+    height: 17%;
                     border-radius: 50%;
                     border-radius: 50%;
                     background: linear-gradient(180deg, #F0F0F0 0%, #FFF 100%);;
                     box-shadow: 5px 8px 19px rgba(0, 0, 0, 0.25);
-                    right: 4%;
+                    right: calc(100% - 94.5%);
                     top: -4%;
                     z-index: 2222;
                     text-transform: uppercase;
                     text-align: center;
                     font-size: 13px;
+                    @include above-1200{
+                        right: calc(100% - 96%);
+                    }
                     @include from-1300-1700{
                         font-size: 1.2vw;
                     }
