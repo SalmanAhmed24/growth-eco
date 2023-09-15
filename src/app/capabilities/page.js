@@ -823,7 +823,7 @@ function Capabilities() {
       <div className="show-more">
         <button
           onClick={() => setShowMore(!showMore)}
-          className="show-more-btn"
+          className={`${poppins.className} show-more-btn`}
         >
           {showMore ? "Show Less Services" : "Show More Services"}
         </button>
