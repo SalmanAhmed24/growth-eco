@@ -162,18 +162,10 @@ function Navbar() {
               <div className="drop-div">
                 <div className="droplist">
                   <Link
-                    className={path == "/product-sourcing" ? "activeInner" : ""}
-                    href={"/product-sourcing"}
+                    className={path == "/done-amazon" ? "activeInner" : ""}
+                    href={"/done-amazon"}
                   >
-                    Product Sourcing
-                  </Link>
-                  <Link
-                    className={
-                      path == "/listing-reinstatement" ? "activeInner" : ""
-                    }
-                    href={"/listing-reinstatement"}
-                  >
-                    Listing Reinstatement
+                    Account Management
                   </Link>
                   <Link
                     className={
@@ -184,22 +176,30 @@ function Navbar() {
                     Amazon Advertising
                   </Link>
                   <Link
+                    className={
+                      path == "/listing-optimization" ? "activeInner" : ""
+                    }
+                    href={"/listing-optimization"}
+                  >
+                    Listing Optimization
+                  </Link>
+                  <Link
                     className={path == "/amazon-content" ? "activeInner" : ""}
                     href={"/amazon-content"}
                   >
-                    Amazon Content
-                  </Link>
-                  <Link
-                    className={path == "/done-amazon" ? "activeInner" : ""}
-                    href={"/done-amazon"}
-                  >
-                    Amazon Done
+                    Amazon A+ content
                   </Link>
                   <Link
                     className={path == "/product-research" ? "activeInner" : ""}
                     href={"/product-research"}
                   >
                     Product Research
+                  </Link>
+                  <Link
+                    className={path == "/product-sourcing" ? "activeInner" : ""}
+                    href={"/product-sourcing"}
+                  >
+                    Product Sourcing
                   </Link>
                   <Link
                     className={path == "/brand-storefront" ? "activeInner" : ""}
@@ -214,6 +214,14 @@ function Navbar() {
                     href={"/account-suspension"}
                   >
                     Account Suspension
+                  </Link>
+                  <Link
+                    className={
+                      path == "/listing-reinstatement" ? "activeInner" : ""
+                    }
+                    href={"/listing-reinstatement"}
+                  >
+                    Listing Reinstatement
                   </Link>
                 </div>
               </div>
@@ -350,19 +358,10 @@ function Navbar() {
               <div className="sub-links">
                 <Link
                   onClick={() => setMobileNav(false)}
-                  className={path == "/product-sourcing" ? "activeInner" : ""}
-                  href={"/product-sourcing"}
+                  className={path == "/done-amazon" ? "activeInner" : ""}
+                  href={"/done-amazon"}
                 >
-                  Product Sourcing
-                </Link>
-                <Link
-                  onClick={() => setMobileNav(false)}
-                  className={
-                    path == "/listing-reinstatement" ? "activeInner" : ""
-                  }
-                  href={"/listing-reinstatement"}
-                >
-                  Listing Reinstatement
+                  Account Management
                 </Link>
                 <Link
                   onClick={() => setMobileNav(false)}
@@ -373,17 +372,19 @@ function Navbar() {
                 </Link>
                 <Link
                   onClick={() => setMobileNav(false)}
-                  className={path == "/amazon-content" ? "activeInner" : ""}
-                  href={"/amazon-content"}
+                  className={
+                    path == "/listing-optimization" ? "activeInner" : ""
+                  }
+                  href={"/listing-optimization"}
                 >
-                  Amazon Content
+                  Listing Optimization
                 </Link>
                 <Link
                   onClick={() => setMobileNav(false)}
-                  className={path == "/done-amazon" ? "activeInner" : ""}
-                  href={"/done-amazon"}
+                  className={path == "/amazon-content" ? "activeInner" : ""}
+                  href={"/amazon-content"}
                 >
-                  Amazon Done
+                  Amazon A+ content
                 </Link>
                 <Link
                   onClick={() => setMobileNav(false)}
@@ -391,6 +392,13 @@ function Navbar() {
                   href={"/product-research"}
                 >
                   Product Research
+                </Link>
+                <Link
+                  onClick={() => setMobileNav(false)}
+                  className={path == "/product-sourcing" ? "activeInner" : ""}
+                  href={"/product-sourcing"}
+                >
+                  Product Sourcing
                 </Link>
                 <Link
                   onClick={() => setMobileNav(false)}
@@ -405,6 +413,15 @@ function Navbar() {
                   href={"/account-suspension"}
                 >
                   Account Suspension
+                </Link>
+                <Link
+                  onClick={() => setMobileNav(false)}
+                  className={
+                    path == "/listing-reinstatement" ? "activeInner" : ""
+                  }
+                  href={"/listing-reinstatement"}
+                >
+                  Listing Reinstatement
                 </Link>
               </div>
             ) : null}

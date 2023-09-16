@@ -1,0 +1,122 @@
+@mixin from-992-1300{
+    @media screen and (min-width:992.67px) and (max-width:1300px) {
+        @content;
+    }
+}
+@mixin from-992-1250{
+    @media screen and (min-width:992.67px) and (max-width:1250px) {
+        @content;
+    }
+}
+@mixin from-1300-1700{
+    @media screen and (min-width:1300px) and (max-width:1700px) {
+        @content;
+    }
+}
+@mixin from-575-992{
+    @media screen and (min-width:575.67px) and (max-width:992px) {
+        @content;
+    }
+}
+@mixin from-320-575{
+    @media screen and (min-width:320.67px) and (max-width:575px) {
+        @content;
+    }
+}
+@mixin from-320-992{
+    @media screen and (min-width:320.67px) and (max-width:992px) {
+        @content;
+    }
+}
+@mixin from-320-850{
+    @media screen and (min-width:320.67px) and (max-width:850px) {
+        @content;
+    }
+}
+@mixin from-320-400{
+    @media screen and (min-width:320.67px) and (max-width:400px) {
+        @content;
+    }
+}
+.amazon-sec-wrap{
+    overflow-x: clip;
+}
+.growth-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 50px 70px;
+    background-image: url('../../../public/about-arrows.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    @include from-320-575{
+        padding: 0px;
+    }
+    @include from-575-992{
+        padding: 20px;
+    }
+        img{
+            width: 100%;
+            @include from-320-575{
+                width: 100%;
+            }
+            @include from-575-992{
+                width: 100%;
+            }
+        }
+        
+        .step-by-step-wrap{
+            position: absolute;
+            width: 45%;
+            bottom: 150px;
+            right: 150px;
+            @include from-992-1250{
+                bottom: 100px;
+            }
+            @include from-575-992{
+                bottom: 60px;
+                right: 20px;
+            }
+            @include from-320-575{
+                width: 50%;
+                bottom: 30px;
+                right: 10px;
+            }
+            @include from-320-400{
+                width: 47%;
+                bottom: 20px;
+                right: 9px;
+            }
+                h1{
+                    text-transform: capitalize;
+                    font-size: 32px;
+                    line-height: normal;
+                    @include from-575-992{
+                        font-size: 18px;
+                    }
+                    @include from-320-575{
+                        font-size: 13px;
+                    }
+                    @include from-320-400{
+                        font-size: 11px;
+                    }
+                }
+                p{
+                    font-size: 18px;
+                    text-align: justify;
+                    line-height: normal;
+                    @include from-575-992{
+                        font-size: 12px;
+                    }
+                    @include from-320-575{
+                        font-size: 9px;
+                    }
+                    @include from-320-400{
+                        font-size: 8px;
+                        line-height: 8px !important;
+                    }
+                }
+        }
+}

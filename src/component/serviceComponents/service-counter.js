@@ -15,6 +15,8 @@ const poppins = Poppins({
 });
 function ServiceCounter({
   headingMain,
+  heading2Count = null,
+  heading3Count = null,
   paraMain,
   headingSub1,
   paraSub1,
@@ -41,9 +43,15 @@ function ServiceCounter({
           <div className="singleItem">
             <h1 className={poppins.className}>
               {counterFlag ? (
-                <CountUp duration={5} startOnMount={false} end={600} />
-              ) : (
+                <CountUp
+                  duration={5}
+                  startOnMount={false}
+                  end={heading2Count == null ? 600 : heading2Count}
+                />
+              ) : heading2Count == null ? (
                 "600"
+              ) : (
+                `${heading2Count}`
               )}
             </h1>
             <p className={poppins.className}>{paraSub1}</p>
@@ -61,9 +69,15 @@ function ServiceCounter({
           <div className="singleItem">
             <h1 className={poppins.className}>
               {counterFlag ? (
-                <CountUp duration={5} startOnMount={false} end={250} />
-              ) : (
+                <CountUp
+                  duration={5}
+                  startOnMount={false}
+                  end={heading3Count == null ? 250 : heading3Count}
+                />
+              ) : heading3Count == null ? (
                 "250"
+              ) : (
+                `${heading3Count}`
               )}
             </h1>
             <p className={poppins.className}>{paraSub3}</p>

@@ -546,7 +546,7 @@ function Capabilities() {
             ]}
             layout={"left"}
             arrow={4}
-            url={"/amazon-advertising"}
+            url={"/listing-optimization"}
           />
           <Testimonials
             poppins={poppins}
