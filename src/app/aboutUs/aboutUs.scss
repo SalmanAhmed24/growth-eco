@@ -18,105 +18,15 @@
         @content;
     }
 }
-.about-main-wrap{    
-    background: #E1F1FD;
-    padding: 100px 0px;
+.who-we-comp{
+    margin-top: 50px;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow-x: clip;
-    @include from-575-992{
-        padding: 50px 75px;
-    }
-    @include from-320-575{
-        padding: 20px;
-    }
-        .content-wrapper{          
-            background: #fff;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 50px 100px;
-            width: 50%;
-            @include from-575-992{
-                padding: 25px;
-                width: 80%;
-                z-index: 1111;
-            }
-            @include from-320-575{
-                padding: 10px;
-                width: 70%;
-                z-index: 1111;
-            }
-            .main-head{            
-            font-size: 30px;
-            text-align: center;
-            margin-bottom: 50px;
-            @include from-320-575{
-                margin-bottom: 20px;
-            }
-            }
-            p{
-                margin-bottom: 20px;
-                line-height: normal;
-                @include from-320-575{
-                    font-size: 12px;
-                    font-weight: 300;
-                    margin-bottom: 5px;
-                }
-                @include above-1300{
-                    font-size: 1.3vw;
-                }
-            }
-        }
-        .grow-img-about-wrap{
+    overflow-x: hidden;
+        .about-rocket{
             position: absolute;
-    left: 3%;
-    top: 145px;
-    bottom: 0px;
-    margin: auto 0px;
-    width: 24%;
-    @include from-575-992{
-    left: -20%;
-    top: 145px;
-    width: 40%;
-    }
-    @include from-320-575{
-    left: -20%;
-    top: 117px;
-    width: 40%;
-    img{
-        width: 100%;
-    }
-    }
-            img{
-                width: 90%;
-            }
-        }
-        .team-about-wrap{
-            position: absolute;
-    right: -100px;
-    top: 150px;
-    bottom: 0px;
-    margin: auto 0px;
-    width: 30%;
-    @include from-575-992{
-    right: -91px;
-    top: 309px;
-    width: 40%;
-    }
-    @include from-320-575{
-    right: -57px;
-    top: 150px;
-    width: 45%;
-    img{
-        width: 100%;
-    }
-    }
-    img{
-        width: 80%;
-    }
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            z-index: -1;
         }
 }
