@@ -5,7 +5,7 @@ import FAQs from "@/component/faq";
 import WhoWeAre from "@/component/whoWeAreAbout";
 import { Poppins } from "next/font/google";
 import localFont from "@next/font/local";
-import "./aboutUs.scss";
+import "./style.scss";
 import Image from "next/image";
 import Achieve from "@/component/achieve";
 import BackToTop from "@/component/backToTop";
