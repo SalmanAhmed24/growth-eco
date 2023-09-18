@@ -49,7 +49,7 @@ function Service() {
       />
       <ServiceWhy
         headingMain={"Why do you need"}
-        spanMain={"Product Sourcing services?"}
+        spanMain={" Product Sourcing services?"}
         mainImg={"/product-sourcing-section-1.png"}
         secImg={"/product-sourcing-section-2.png"}
         mainPara={

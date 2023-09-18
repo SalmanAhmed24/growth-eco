@@ -1,6 +1,21 @@
 import Image from "next/image";
 import "./header.scss";
-function CaseSteps({ poppins }) {
+function CaseSteps({
+  poppins,
+  overviewPara,
+  step1Img,
+  goalsPara,
+  step2Img,
+  chalPara,
+  step3Img,
+  actionsPara,
+  actionList,
+  step4Img,
+  resultPara,
+  resultList,
+  statsPara,
+  step5Img,
+}) {
   return (
     <section className={poppins.className}>
       <section className="snake-step-con">
@@ -14,17 +29,13 @@ function CaseSteps({ poppins }) {
         <div className="step1-wrap">
           <div className="step1-content">
             <h1 className={poppins.className}>Overview</h1>
-            <p className={poppins.className}>
-              We were contacted by a multinational consumer personal healthcare
-              brand to help manage their Amazon Vendor Central account. Our
-              client had only achieved 8% growth in year-over-year sales.
-            </p>
+            <p className={poppins.className}>{overviewPara}</p>
           </div>
           <div className="step1-img">
             <Image
               alt="growth eco"
               className="img-steps"
-              src={"/case-step-inner-1.png"}
+              src={step1Img}
               width={296}
               height={196}
             />
@@ -34,36 +45,25 @@ function CaseSteps({ poppins }) {
           <div className="step2-img">
             <Image
               className="img-steps"
-              src={"/case-step-inner-2.png"}
+              src={step2Img}
               width={296}
               height={196}
             />
           </div>
           <div className="step2-content">
             <h1 className={poppins.className}>Goals</h1>
-            <ul className={`goals-ul`}>
-              <li className={poppins.className}>
-                Make top selling product best seller within its category.
-              </li>
-              <li className={poppins.className}>
-                Expand sales through Amazon Marketing Services Campaigns.
-              </li>
-            </ul>
+            <p className={`${poppins.className} goals-ul`}>{goalsPara}</p>
           </div>
         </div>
         <div className="step3-wrap">
           <div className="step3-content">
             <h1 className={poppins.className}>Challenge</h1>
-            <p className={poppins.className}>
-              Our challenge was to identify the best opportunities for growth
-              within the product category. As a large corporation, there was a
-              huge catalog of products to focus on.
-            </p>
+            <p className={poppins.className}>{chalPara}</p>
           </div>
           <div className="step3-img">
             <Image
               className="img-steps"
-              src={"/case-step-inner-3.png"}
+              src={step3Img}
               width={296}
               height={196}
             />
@@ -74,28 +74,22 @@ function CaseSteps({ poppins }) {
             <Image
               alt="growth eco"
               className="img-steps"
-              src={"/case-step-inner-4.png"}
+              src={step4Img}
               width={296}
               height={377}
             />
           </div>
           <div className="step4-content">
             <h1 className={poppins.className}>Actions</h1>
+            <p>{actionsPara}</p>
             <ul className={`goals-ul`}>
-              <li className={poppins.className}>
-                Executed thorough market analysis to identify immediate areas
-                for growth
-              </li>
-              <li className={poppins.className}>
-                Cleaned up Amazon catalog to reduce duplicates and take
-                advantage of opportunities
-              </li>
-              <li className={poppins.className}>
-                Performed in-depth keyword research into each product category
-              </li>
-              <li className={poppins.className}>
-                Introduced SEO content into frontend and backend of listings
-              </li>
+              {actionList.map((i, ind) => {
+                return (
+                  <li key={ind} className={poppins.className}>
+                    {i}
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>
@@ -103,24 +97,20 @@ function CaseSteps({ poppins }) {
           <div className="step5-content">
             <h1 className={poppins.className}>Results</h1>
             <ul className={`goals-ul-right`}>
-              <li className={poppins.className}>
-                Top selling product is now a best seller with 30,000+ units
-                shipped through first 6 month of 2017
-              </li>
-              <li className={poppins.className}>
-                Advertising campaigns that have generate more than $275,000 in
-                additional sales at 20.83% ACOS
-              </li>
-              <li className={poppins.className}>
-                Increased market share from 28.3% to
-              </li>
+              {resultList.map((i, ind) => {
+                return (
+                  <li key={ind} className={poppins.className}>
+                    {i}
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <div className="step5-img">
             <Image
               alt="growth eco"
               className="img-steps"
-              src={"/case-step-inner-5.png"}
+              src={step5Img}
               width={296}
               height={337}
             />
@@ -129,15 +119,7 @@ function CaseSteps({ poppins }) {
       </section>
       <div className="last-step">
         <h1 className={poppins.className}>Statistics</h1>
-        <ul>
-          <li className={poppins.className}>
-            Our client was extremely satisfied with the results we were achieved
-            in such a short time period. The strategy we implemented for them
-            allowed them to hit all their business’s goals for Amazon in 2017 by
-            May. We are now partnered with this client to launch them on Amazon
-            marketplaces in Europe.
-          </li>
-        </ul>
+        <p className={poppins.className}>{statsPara}</p>
       </div>
     </section>
   );

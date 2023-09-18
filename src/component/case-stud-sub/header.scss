@@ -27,15 +27,24 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     height: 400px;
     padding: 70px 50px;
     z-index:1;
-    @include from-320-575{
-        background-image: url('../../../public/mobile-sub-case.png');
-        background-size: cover;
-        background-repeat: no-repeat;
+    @include from-992-1300{
+        padding: 70px 150px;
     }
+    @include from-1300-1700{
+        padding: 70px 150px;
+    }
+    @include from-320-575{
+        align-items: flex-end;
+    }
+    // @include from-320-575{
+    //     background-image: url('../../../public/mobile-sub-case.png');
+    //     background-size: cover;
+    //     background-repeat: no-repeat;
+    // }
     @include from-320-992{
         padding: 20px;
     }
@@ -55,7 +64,7 @@
                     line-height: normal;
                     margin-bottom: 10px;
                     @include from-320-992{
-                        font-size: 25px;
+                        font-size: 20px;
                     }
                 }
                 h2{
@@ -85,9 +94,10 @@
         }
         .header-img{
             position: absolute;
-            top: 0px;
+            top: -22px;
             left: 0px;
             z-index: -1;
+            width: 100%;
             @include from-992-1300{
                 left: -200px;
             }
@@ -96,6 +106,17 @@
             }
             @include from-320-575{
                 display: none;
+            }
+        }
+        .header-img-mobile{
+            display: none;
+            @include from-320-575{
+                display: block;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: -1;
             }
         }
 }
@@ -602,12 +623,11 @@
                         font-size: 15px;
                     }
         }
-        ul{
+        p{
             font-size: 16px;
             font-weight: 300;
                     line-height: normal;
                     margin-top: 10px;
-                    align-self: flex-end;
                     text-align: center;
                     list-style: disc;
                     align-self: center;
