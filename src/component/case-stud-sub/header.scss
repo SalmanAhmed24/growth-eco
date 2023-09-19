@@ -405,8 +405,8 @@
                     font-weight: 300;
                     line-height: normal;
                     margin-top: 10px;
-                    align-self: flex-end;
-                    text-align: right;
+                    align-self: flex-start;
+                    text-align: left;
                     @include from-320-992{
                         text-align: left;
                         align-self: flex-start;
@@ -419,8 +419,8 @@
                     font-weight: 300;
                     line-height: normal;
                     margin-top: 10px;
-                    align-self: flex-end;
-                    text-align: right;
+                    align-self: flex-start;
+                    text-align: left;
                     list-style: disc;
                     @include from-320-992{
                         text-align: left;
@@ -595,16 +595,16 @@
                     font-weight: 300;
                     line-height: normal;
                     margin-top: 10px;
-                    align-self: flex-end;
-                    text-align: right; 
+                    align-self: flex-start;
+                    text-align: left; 
                 }
                 .goals-ul-right{
                     font-size: 16px;
                     font-weight: 300;
                     line-height: normal;
                     margin-top: 10px;
-                    align-self: flex-end;
-                    text-align: right;
+                    align-self: flex-start;
+                    text-align: left;
                     list-style: disc;
                     @include from-320-992{
                         text-align: left;
@@ -685,6 +685,22 @@
                         width: 100%;
                         list-style: none;
                     }
+        }
+        .goals-ul-main{
+            font-size: 16px;
+            font-weight: 300;
+            line-height: normal;
+            margin-top: 10px;
+            align-self: center;
+            text-align: center;
+            list-style:none;
+            @include from-320-992{
+                text-align: center;
+                align-self: center;
+                width: 100%;
+                list-style: none;
+                font-size: 15px;
+            }
         }
 }
 .swiper {

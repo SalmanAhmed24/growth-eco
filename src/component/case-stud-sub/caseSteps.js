@@ -17,6 +17,7 @@ function CaseSteps({
   step5Img,
   goalsList = null,
   chalList = null,
+  statsList = null,
 }) {
   return (
     <section className={poppins.className}>
@@ -145,6 +146,17 @@ function CaseSteps({
       <div className="last-step">
         <h1 className={poppins.className}>Statistics</h1>
         <p className={poppins.className}>{statsPara}</p>
+        {statsList == null ? null : (
+          <ul className={`goals-ul-main`}>
+            {statsList.map((i, ind) => {
+              return (
+                <li key={ind} className={poppins.className}>
+                  {i}
+                </li>
+              );
+            })}
+          </ul>
+        )}
       </div>
     </section>
   );

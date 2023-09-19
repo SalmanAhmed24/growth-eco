@@ -1,0 +1,12 @@
+@mixin from-992-1300{
+    @media screen and (min-width:992.67px) and (max-width:1300px) {
+        @content;
+    }
+}
+.case-sub-main{
+    background-image: url('../../../public/sub-service-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-x: clip;
+}
