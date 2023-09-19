@@ -15,6 +15,8 @@ function CaseSteps({
   resultList,
   statsPara,
   step5Img,
+  goalsList = null,
+  chalList = null,
 }) {
   return (
     <section className={poppins.className}>
@@ -36,8 +38,8 @@ function CaseSteps({
               alt="growth eco"
               className="img-steps"
               src={step1Img}
-              width={296}
-              height={196}
+              width={399}
+              height={303}
             />
           </div>
         </div>
@@ -46,26 +48,48 @@ function CaseSteps({
             <Image
               className="img-steps"
               src={step2Img}
-              width={296}
-              height={196}
+              width={399}
+              height={303}
             />
           </div>
           <div className="step2-content">
             <h1 className={poppins.className}>Goals</h1>
             <p className={`${poppins.className} goals-ul`}>{goalsPara}</p>
+            {goalsList == null ? null : (
+              <ul className={`goals-ul`}>
+                {goalsList.map((i, ind) => {
+                  return (
+                    <li key={ind} className={poppins.className}>
+                      {i}
+                    </li>
+                  );
+                })}
+              </ul>
+            )}
           </div>
         </div>
         <div className="step3-wrap">
           <div className="step3-content">
             <h1 className={poppins.className}>Challenge</h1>
             <p className={poppins.className}>{chalPara}</p>
+            {chalList == null ? null : (
+              <ul className={`goals-ul-right`}>
+                {chalList.map((i, ind) => {
+                  return (
+                    <li key={ind} className={poppins.className}>
+                      {i}
+                    </li>
+                  );
+                })}
+              </ul>
+            )}
           </div>
           <div className="step3-img">
             <Image
               className="img-steps"
               src={step3Img}
-              width={296}
-              height={196}
+              width={399}
+              height={303}
             />
           </div>
         </div>
@@ -75,8 +99,8 @@ function CaseSteps({
               alt="growth eco"
               className="img-steps"
               src={step4Img}
-              width={296}
-              height={377}
+              width={399}
+              height={303}
             />
           </div>
           <div className="step4-content">
@@ -96,6 +120,7 @@ function CaseSteps({
         <div className="step5-wrap">
           <div className="step5-content">
             <h1 className={poppins.className}>Results</h1>
+            <p>{resultPara}</p>
             <ul className={`goals-ul-right`}>
               {resultList.map((i, ind) => {
                 return (
@@ -111,8 +136,8 @@ function CaseSteps({
               alt="growth eco"
               className="img-steps"
               src={step5Img}
-              width={296}
-              height={337}
+              width={399}
+              height={303}
             />
           </div>
         </div>

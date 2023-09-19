@@ -32,10 +32,10 @@
     padding: 70px 50px;
     z-index:1;
     @include from-992-1300{
-        padding: 70px 150px;
+        padding: 70px 100px;
     }
     @include from-1300-1700{
-        padding: 70px 150px;
+        padding: 70px 100px;
     }
     @include from-320-575{
         align-items: flex-end;
@@ -49,12 +49,12 @@
         padding: 20px;
     }
         .content-wrap{
-            width: 30%;
+            width: 40%;
             @include from-1300-1700{
-                width: 30%;
+                width: 40%;
             }
             @include from-992-1300{
-                width: 25%;
+                width: 40%;
             }
             @include from-320-992{
                 width: 50%;
@@ -94,16 +94,17 @@
         }
         .header-img{
             position: absolute;
-            top: -22px;
+            top: 0px;
             left: 0px;
             z-index: -1;
             width: 100%;
-            @include from-992-1300{
-                left: -200px;
-            }
-            @include from-575-992{
-                left: -60%;
-            }
+            height: 100%;
+            // @include from-992-1300{
+            //     left: -200px;
+            // }
+            // @include from-575-992{
+            //     left: -60%;
+            // }
             @include from-320-575{
                 display: none;
             }
@@ -154,7 +155,7 @@
 .snake-step-con{
     padding:100px 150px 50px 150px;
     position: relative;
-    height: 1800px;
+    height: 2050px;
     @include from-320-992{
         padding: 20px;
         height: auto;
@@ -166,6 +167,7 @@
             top: 60px;
             bottom: 0px;
             margin: 0px auto;
+            height: 93%;
             @include from-320-992{
                 display: none;
             }
@@ -241,11 +243,13 @@
             width: 40%;
             display: flex;
             justify-content: flex-start;
+            
             @include from-320-992{
                 width: 100%;
                 justify-content: center;
             }
             img{
+                align-content: center;
                 @include from-320-992{
                     width: 334px;
                     height: auto;
@@ -304,6 +308,14 @@
                         font-size: 15px;
                     }
                 }
+                p{
+                    font-size: 16px;
+                    line-height: normal;
+                    font-weight: 300;
+                    margin-top: 10px;
+                    align-self: flex-start;
+                    text-align: left;
+                }
                 .goals-ul{
                     font-size: 16px;
                     line-height: normal;
@@ -330,6 +342,7 @@
                 justify-content: center;
             }
             img{
+                align-content: center;
                 @include from-320-992{
                     width: 334px;
                     height: auto;
@@ -401,6 +414,22 @@
                         font-size: 13px;
                     }
                 }
+                .goals-ul-right{
+                    font-size: 16px;
+                    font-weight: 300;
+                    line-height: normal;
+                    margin-top: 10px;
+                    align-self: flex-end;
+                    text-align: right;
+                    list-style: disc;
+                    @include from-320-992{
+                        text-align: left;
+                        align-self: flex-start;
+                        width: 100%;
+                        font-size: 15px;
+                        list-style: none;
+                    }
+                }
         }
         .step3-img{
             width: 40%;
@@ -411,6 +440,7 @@
                 justify-content: center;
             }
             img{
+                align-content: center;
                 @include from-320-992{
                     width: 334px;
                     height: auto;
@@ -440,8 +470,8 @@
                 content: '';
                 background-image: url('../../../public/case-step-4.png');
                 position: absolute;
-                top:-60px; 
-                left: -165px;
+                top:-100px; 
+                left: -200px;
                 width: 320px;
                 height: 100px;
                 z-index: 1;
@@ -467,6 +497,14 @@
                         align-self: flex-end;
                         font-size: 15px;
                     }
+                }
+                p{
+                    font-size: 16px;
+                    font-weight: 300;
+                    line-height: normal;
+                    margin-top: 10px;
+                    align-self: flex-start;
+                    text-align: left;   
                 }
                 .goals-ul{
                     font-size: 16px;
@@ -494,6 +532,7 @@
                 justify-content: center;
             }
             img{
+                align-content: center;
                 @include from-320-992{
                     width: 334px;
                     height: auto;
@@ -551,6 +590,14 @@
                         font-size: 15px;
                     }
                 }
+                p{
+                    font-size: 16px;
+                    font-weight: 300;
+                    line-height: normal;
+                    margin-top: 10px;
+                    align-self: flex-end;
+                    text-align: right; 
+                }
                 .goals-ul-right{
                     font-size: 16px;
                     font-weight: 300;
@@ -577,6 +624,7 @@
                 justify-content: center;
             }
             img{
+                align-content: center;
                 @include from-320-992{
                     width: 334px;
                     height: auto;

@@ -8,31 +8,35 @@ function HeaderCase({
   caseDeskImg,
   caseMobileImg,
   casePara,
+  color,
 }) {
   return (
     <header className="case-sub-header">
       <div className={`${poppins.className} content-wrap`}>
-        <h1 className={poppins.className}>{caseStudyNo}</h1>
-        <h2 className={poppins.className}>{caseHeadingMain}</h2>
-        <p className={poppins.className}>{casePara}</p>
+        <h1
+          style={color == "white" ? { color: "#fff" } : { color: "#000" }}
+          className={poppins.className}
+        >
+          {caseStudyNo}
+        </h1>
+        <h2
+          style={color == "white" ? { color: "#fff" } : { color: "#000" }}
+          className={poppins.className}
+        >
+          {caseHeadingMain}
+        </h2>
+        <p
+          style={color == "white" ? { color: "#fff" } : { color: "#000" }}
+          className={poppins.className}
+        >
+          {casePara}
+        </p>
         <Link href={"/"} className={`${poppins.className} visit-web`}>
           VISIT WEBSITE
         </Link>
       </div>
-      <Image
-        alt="growth eco"
-        src={caseDeskImg}
-        className="header-img"
-        width={1528}
-        height={500}
-      />
-      <Image
-        alt="growth eco"
-        src={caseMobileImg}
-        className="header-img-mobile"
-        width={359}
-        height={500}
-      />
+      <img alt="growth eco" src={caseDeskImg} className="header-img" />
+      <img alt="growth eco" src={caseMobileImg} className="header-img-mobile" />
     </header>
   );
 }

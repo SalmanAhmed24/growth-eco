@@ -36,18 +36,18 @@ function SubCase() {
       />
       <CaseSteps
         overviewPara={
-          "We were contacted by a multinational consumer personal healthcare brand to help manage their Amazon Vendor Central account. Our client had only achieved 8% growth in year-over-year sales."
+          "Within its first years, RFAQk surpassed initial sales and customer satisfaction goals through product innovations, an educational video course, revamped packaging, and responsiveness to feedback. The brand is now among the largest baking kit providers in the United States."
         }
-        step1Img={"/case-step-inner-1.png"}
+        step1Img={"/case-step1.png"}
         goalsPara={
           "It was designed with the aspiration to help beginner bakers, who were uncertain about their outcomes, to overcome their fears and uncertainties. The brand had a vision - to sell 1 million baking kits, and with their unwavering commitment to quality, they achieved this landmark."
         }
-        step2Img={"/case-step-inner-2.png"}
+        step2Img={"/case-step2.png"}
         chalPara={
           "The brand faced several hurdles along the way. Beginners were apprehensive about the result of their baking endeavors. The packaging was not up to the mark, making the product less appealing. Moreover, the customers had no idea how to decorate their baked goods."
         }
-        step3Img={"/case-step-inner-3.png"}
-        actionsPara={"We decided to take concrete action. "}
+        step3Img={"/case-step3.png"}
+        actionsPara={""}
         actionList={[
           "To help beginners understand the process better, we started numbering the icing tips. It brought clarity to the process and eased the fear of beginners.",
           "The packaging issue was another challenge that needed an immediate solution. We revamped the packaging, making it more aesthetic and attractive.",
@@ -55,19 +55,19 @@ function SubCase() {
           "The most notable innovation was the launch of the L-level - a groundbreaking addition that took the baking experience to a whole new level.",
           "To further assist the customers, we launched a video course on baking. This course was designed to guide beginners on how to use the kits efficiently and bake like a pro.",
         ]}
-        step4Img={"/case-step-inner-4.png"}
+        step4Img={"/case-step4.png"}
         resultList={[
           "Rfaqk became the largest baking kit brand in the USA. Sold envisioned 1 million baking kits, marking a significant milestone in their journey.",
           "Rfaqk’s story is a testament to our dedication, innovation, and relentless efforts to improve. We took the uncertainties of beginner bakers and transformed them into confident baking experiences.",
           "We took the feedback seriously and made necessary improvements. We innovated and added value to their product.",
         ]}
         poppins={poppins}
-        step5Img={"/case-step-inner-5.png"}
+        step5Img={"/case-step5.png"}
         statsPara={
-          "Our client was extremely satisfied with the results we were achieved in such a short time period. The strategy we implemented for them allowed them to hit all their business’s goals for Amazon in 2017 by May. We are now partnered with this client to launch them on Amazon marketplaces in Europe."
+          "Over 90% of customers who took the video baking course purchased additional kits within 6 months. Feedback also noted that nearly 80% reported feeling much more confident in their baking abilities."
         }
       />
-      <CaseStudSlider />
+      <CaseStudSlider slide1={"/case-studies-slider.png"} />
       <section className={`business-con`}>
         <h1 className={poppins.className}>Ready to grow your business?</h1>
         <Link href={"/"} className={`${poppins.className} business-contact`}>

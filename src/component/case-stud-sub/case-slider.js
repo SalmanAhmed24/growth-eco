@@ -11,7 +11,7 @@ import "./header.scss";
 import { Pagination, EffectCoverflow, Autoplay } from "swiper/modules";
 import Image from "next/image";
 
-export default function CaseStudSlider() {
+export default function CaseStudSlider({ slide1 }) {
   return (
     <div className="outer-wrap-slider-2">
       <Swiper
@@ -63,16 +63,16 @@ export default function CaseStudSlider() {
         className="mySwiper teamSwipper"
       >
         <SwiperSlide>
-          <img alt="growth eco" src={"/case-studies-slider.png"} />
+          <img alt="growth eco" src={slide1} />
         </SwiperSlide>
         <SwiperSlide>
-          <img alt="growth eco" src={"/case-studies-slider.png"} />
+          <img alt="growth eco" src={slide1} />
         </SwiperSlide>
         <SwiperSlide>
-          <img alt="growth eco" src={"/case-studies-slider.png"} />
+          <img alt="growth eco" src={slide1} />
         </SwiperSlide>
         <SwiperSlide>
-          <img alt="growth eco" src={"/case-studies-slider.png"} />
+          <img alt="growth eco" src={slide1} />
         </SwiperSlide>
       </Swiper>
     </div>

@@ -24,49 +24,57 @@ function SubCase2() {
         caseStudyNo="Case Study 2"
         caseHeadingMain="Brickell"
         casePara="Brickell launched on Amazon with a mission to make high-quality skincare effortless for men. Starting with just three essential products—a face wash, moisturizer, and lip balm—the brand aimed to empower customers through education and accessibility."
-        caseDeskImg="/brickell-bg-header.svg"
-        caseMobileImg="/brickell-bg-header.svg"
+        caseDeskImg="/brickell.png"
+        caseMobileImg="/brickell.png"
+        color="white"
         poppins={poppins}
       />
       <EXESUM
-        summary="Rfaqk was not an ordinary baking kit brand; it was the ultimate solution
-        to bring out the hidden baker in everyone."
+        summary="Launched in 2021, Brickell aimed to provide effective yet natural and organic
+        skin, hair, and body care products specially formulated for men's needs. The
+        brand's mission was to help men adopt simple skincare and grooming routines
+        using high-quality ingredients."
         poppins={poppins}
       />
       <CaseSteps
         overviewPara={
-          "We were contacted by a multinational consumer personal healthcare brand to help manage their Amazon Vendor Central account. Our client had only achieved 8% growth in year-over-year sales."
+          "Within its first year, Brickell surpassed initial marketplace share and rating goals through optimized product listings, sponsored ads, a generous returns policy, and educating customers on the benefits of natural ingredients and simple routines. The brand is now among the top performers in the men's natural grooming category on Amazon."
         }
-        step1Img={"/case-step-inner-1.png"}
-        goalsPara={
-          "It was designed with the aspiration to help beginner bakers, who were uncertain about their outcomes, to overcome their fears and uncertainties. The brand had a vision - to sell 1 million baking kits, and with their unwavering commitment to quality, they achieved this landmark."
-        }
-        step2Img={"/case-step-inner-2.png"}
-        chalPara={
-          "The brand faced several hurdles along the way. Beginners were apprehensive about the result of their baking endeavors. The packaging was not up to the mark, making the product less appealing. Moreover, the customers had no idea how to decorate their baked goods."
-        }
-        step3Img={"/case-step-inner-3.png"}
+        step1Img={"/brickell-1.png"}
+        goalsPara={"Brickell's central goals were to:"}
+        goalsList={[
+          "Capture 5% of the men's natural grooming category on Amazon within 12 months",
+          "Achieve a 4.5-star average rating across all products",
+        ]}
+        step2Img={"/brickell-2.png"}
+        chalPara={"  As a new brand, Brickell faced challenges in:"}
+        chalList={[
+          "Educating male customers unfamiliar with natural skincare",
+          " Standing out among competitors with bigger marketing budgets",
+          " Ensuring high star ratings early on with limited customer feedback",
+          "Optimizing listings and brand visibility on a crowded Amazon Marketplace.",
+        ]}
+        step3Img={"/brickell-3.png"}
         actionsPara={"We decided to take concrete action. "}
         actionList={[
-          "To help beginners understand the process better, we started numbering the icing tips. It brought clarity to the process and eased the fear of beginners.",
-          "The packaging issue was another challenge that needed an immediate solution. We revamped the packaging, making it more aesthetic and attractive.",
-          "We removed the turn table bottom issue, which was a major improvement in the kit.",
-          "The most notable innovation was the launch of the L-level - a groundbreaking addition that took the baking experience to a whole new level.",
-          "To further assist the customers, we launched a video course on baking. This course was designed to guide beginners on how to use the kits efficiently and bake like a pro.",
+          "Offering a generous 90-day returns policy to encourage risk-free purchasing",
+          "Providing thorough ingredient lists and how-to-use steps on all products",
+          "Optimizing product listings, sponsored ads, brand registry, and storefront",
         ]}
-        step4Img={"/case-step-inner-4.png"}
+        step4Img={"/brickell-4.png"}
+        resultPara={"Through these actions, within 12 months We achieved:"}
         resultList={[
-          "Rfaqk became the largest baking kit brand in the USA. Sold envisioned 1 million baking kits, marking a significant milestone in their journey.",
-          "Rfaqk’s story is a testament to our dedication, innovation, and relentless efforts to improve. We took the uncertainties of beginner bakers and transformed them into confident baking experiences.",
-          "We took the feedback seriously and made necessary improvements. We innovated and added value to their product.",
+          "Target 5% market share in the men's natural grooming category",
+          "An average 4.6-star rating across 4 SKUs launched",
+          "Strong seller-level metrics like fast shipping times and high positive reviews",
         ]}
         poppins={poppins}
-        step5Img={"/case-step-inner-5.png"}
+        step5Img={"/brickell-5.png"}
         statsPara={
-          "Our client was extremely satisfied with the results we were achieved in such a short time period. The strategy we implemented for them allowed them to hit all their business’s goals for Amazon in 2017 by May. We are now partnered with this client to launch them on Amazon marketplaces in Europe."
+          "Brickell achieved exceptional customer satisfaction, retaining over 90% of first-time customers who purchased additional products within 3 months of their initial order. Customer reviews noted high rates of seeing results from the natural formulas, with over 80% satisfying feedback."
         }
       />
-      <CaseStudSlider />
+      <CaseStudSlider slide1={"/brickell-slide.png"} />
       <section className={`business-con`}>
         <h1 className={poppins.className}>Ready to grow your business?</h1>
         <Link href={"/"} className={`${poppins.className} business-contact`}>
