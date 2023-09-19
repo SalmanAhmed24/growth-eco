@@ -7,6 +7,7 @@ import "./style.scss";
 import Image from "next/image";
 import React, { useState } from "react";
 import BackToTop from "@/component/backToTop";
+import { useRouter } from "next/navigation";
 // const futuraHv = localFont({
 //   src: "../fonts/FuturaHeavyBT.ttf",
 //   weight: "400",
@@ -38,6 +39,7 @@ function CaseStudies() {
   const handleLinks = (e) => {
     setActiveLink(e.target.innerHTML);
   };
+  const router = useRouter();
   return (
     <section className="case-studies-con">
       <BackToTop route={"#home"} />
@@ -102,21 +104,24 @@ function CaseStudies() {
           <div className="case-img-wrap page-wrap">
             <Image
               alt="growth eco"
-              src={"/case-1.png"}
+              src={"/case-stud-1.png"}
               width={303}
               height={387}
+              onClick={() => router.push("/boldify")}
             />
             <Image
               alt="growth eco"
-              src={"/case-2.png"}
+              src={"/case-stud-2.png"}
               width={303}
               height={387}
+              onClick={() => router.push("/brickell")}
             />
             <Image
               alt="growth eco"
-              src={"/case-3.png"}
+              src={"/case-stud-3.png"}
               width={303}
               height={387}
+              onClick={() => router.push("/rfaqk")}
             />
           </div>
 
