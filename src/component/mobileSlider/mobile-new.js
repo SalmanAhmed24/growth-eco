@@ -4,11 +4,8 @@ import "slick-carousel/slick/slick-theme.css";
 import "./slider.scss";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-function SliderMobileNew({ images }) {
+function SliderMobileNew({ images, links }) {
   const router = useRouter();
-  const handleRouting = () => {
-    router.push("/case-studies");
-  };
   return (
     <section className="slider-about">
       <Slider
@@ -34,10 +31,10 @@ function SliderMobileNew({ images }) {
         {images.map((i) => {
           return (
             <Image
-              onClick={handleRouting}
+              onClick={() => router.push(`${i.link}`)}
               key={i}
               alt="growth eco"
-              src={i}
+              src={i.imageUrl}
               width={303}
               height={387}
             />

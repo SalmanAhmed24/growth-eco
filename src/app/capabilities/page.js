@@ -8,7 +8,8 @@ import Testimonials from "@/component/testimonials";
 import FAQs from "@/component/faq";
 import { Poppins } from "next/font/google";
 import BackToTop from "@/component/backToTop";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 // const futuraHv = localFont({
 //   src: "../fonts/FutuHv.ttf",
 //   weight: "400",
@@ -37,6 +38,10 @@ const poppins = Poppins({
 });
 function Capabilities() {
   const [showMore, setShowMore] = useState(false);
+  const router = useRouter();
+  useEffect(() => {
+    router.refresh();
+  }, []);
   return (
     <section className="cap-main-con">
       <BackToTop route={"#home"} />

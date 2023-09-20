@@ -50,10 +50,11 @@ const settings = {
   slidesToScroll: 4,
 };
 export default function Home() {
+  const router = useRouter();
   useEffect(() => {
     AOS.init();
+    router.refresh();
   }, []);
-  const router = useRouter();
   const [activeLink, setActiveLink] = useState("Branding");
   const handleLinks = (e) => setActiveLink(e.target.innerText);
   return (
@@ -332,7 +333,12 @@ export default function Home() {
               skyrocket your sales on Amazon. Let us handle your Amazon Product
               Research with our expert team!
             </p>
-            <button className={poppins.className}>Uncover Within</button>
+            <button
+              className={poppins.className}
+              onClick={() => router.push("/product-research")}
+            >
+              Uncover Within
+            </button>
           </div>
           <div className="card top">
             <Image
@@ -350,7 +356,12 @@ export default function Home() {
               the edge it needs to thrive. Stand out from the crowd with our
               expert Product Listing and Optimization service!
             </p>
-            <button className={poppins.className}>Uncover Within</button>
+            <button
+              className={poppins.className}
+              onClick={() => router.push("/listing-optimization")}
+            >
+              Uncover Within
+            </button>
           </div>
           <div className="card bottom">
             <Image
@@ -366,7 +377,12 @@ export default function Home() {
               with competitive spend data, and design ads that hook the random
               scrolling audience and convert them into favorite customers.
             </p>
-            <button className={poppins.className}>Uncover Within</button>
+            <button
+              className={poppins.className}
+              onClick={() => router.push("/amazon-advertising")}
+            >
+              Uncover Within
+            </button>
           </div>
           <div className="card bottom">
             <Image
@@ -382,11 +398,21 @@ export default function Home() {
               high-demand items to boost your sales. Let&apos;s start sourcing
               success together!
             </p>
-            <button className={poppins.className}>Uncover Within</button>
+            <button
+              className={poppins.className}
+              onClick={() => router.push("/product-sourcing")}
+            >
+              Uncover Within
+            </button>
           </div>
         </div>
         <div className="uncover-wrap">
-          <button className={poppins.className}>Uncover unique fields</button>
+          <button
+            className={poppins.className}
+            onClick={() => router.push("/capabilities")}
+          >
+            Uncover unique fields
+          </button>
           <span>
             <Image
               alt="growth eco"
@@ -582,21 +608,24 @@ export default function Home() {
         <div className="case-img-wrap">
           <Image
             alt="growth eco"
-            src={"/case-1.png"}
+            src={"/case-stud-1.png"}
             width={303}
             height={387}
+            onClick={() => router.push("/boldify")}
           />
           <Image
             alt="growth eco"
-            src={"/case-2.png"}
+            src={"/case-stud-2.png"}
             width={303}
             height={387}
+            onClick={() => router.push("/brickell")}
           />
           <Image
             alt="growth eco"
-            src={"/case-3.png"}
+            src={"/case-stud-3.png"}
             width={303}
             height={387}
+            onClick={() => router.push("/rfaqk")}
           />
         </div>
 
@@ -668,7 +697,11 @@ export default function Home() {
         ) : null} */}
 
         <SliderMobileNew
-          images={["/case-1.png", "/case-2.png", "/case-3.png"]}
+          images={[
+            { imageUrl: "/case-stud-1.png", link: "/boldify" },
+            { imageUrl: "/case-stud-2.png", link: "/brickell" },
+            { imageUrl: "/case-stud-3.png", link: "/rfaqk" },
+          ]}
         />
         {/* <MobileSlider images={["/case-1.png", "/case-2.png", "/case-3.png"]} /> */}
         {/* {activeLink == "Campaigns" ? (
