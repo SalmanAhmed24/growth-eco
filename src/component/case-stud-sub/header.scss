@@ -31,6 +31,7 @@
     height: 400px;
     padding: 70px 50px;
     z-index:1;
+    overflow: clip;
     @include from-992-1300{
         padding: 70px 100px;
     }
@@ -40,11 +41,9 @@
     @include from-320-575{
         align-items: flex-end;
     }
-    // @include from-320-575{
-    //     background-image: url('../../../public/mobile-sub-case.png');
-    //     background-size: cover;
-    //     background-repeat: no-repeat;
-    // }
+    @include from-320-575{
+        height: 500px;
+    }
     @include from-320-992{
         padding: 20px;
     }
@@ -57,12 +56,12 @@
                 width: 40%;
             }
             @include from-320-992{
-                width: 50%;
+                width: 60%;
             }
                 h1{
                     font-size: 36px;
                     line-height: normal;
-                    margin-bottom: 10px;
+                    margin-bottom: 0px;
                     @include from-320-992{
                         font-size: 20px;
                     }
@@ -71,7 +70,7 @@
                     font-size: 36px;
                     line-height: normal;
                     @include from-320-992{
-                        font-size: 25px;
+                        font-size: 22px;
                     }
                 }
                 p{
@@ -80,6 +79,7 @@
                     margin-bottom: 30px;
                     @include from-320-992{
                         font-size: 12px;
+                        line-height: 15px;
                     }
                 }
                 .visit-web{
@@ -117,6 +117,7 @@
             top: 0px;
             left: 0px;
             width: 100%;
+            height: 100%;
             z-index: -1;
             }
         }
@@ -128,7 +129,7 @@
     margin-top: 20px;
     padding: 0px 150px;
     @include from-320-992{
-        margin-top: 100px;
+        margin-top: 50px;
         padding:0px 20px 0px 20px;
     }
         h1{
@@ -179,6 +180,7 @@
     padding: 20px 0px 50px 0px;
     @include from-320-992{
         flex-wrap: wrap-reverse;
+        padding-bottom: 10px;
     }
         .step1-content{
             display: flex;
@@ -263,6 +265,7 @@
     padding: 20px 0px 50px 0px;
     @include from-320-992{
         flex-wrap: wrap;
+        padding-bottom: 10px;
     }
         .step2-content{
             display: flex;
@@ -303,8 +306,8 @@
                     position: relative;
                     z-index: 10;
                     @include from-320-992{
-                        text-align: right;
-                        align-self: flex-end;
+                        text-align: left;
+                        align-self: flex-start;
                         font-size: 15px;
                     }
                 }
@@ -325,8 +328,8 @@
                     text-align: left;
                     list-style: disc;
                     @include from-320-992{
-                        text-align: right;
-                        align-self: flex-end;
+                        text-align: left;
+                        align-self: flex-start;
                         width: 100%;
                         list-style: none;
                         font-size: 13px;
@@ -356,6 +359,7 @@
     padding: 20px 0px 50px 0px;
     @include from-320-992{
         flex-wrap: wrap-reverse;
+        padding-bottom: 10px;
     }
         .step3-content{
             display: flex;
@@ -454,6 +458,7 @@
     padding: 20px 0px 50px 0px;
     @include from-320-992{
         flex-wrap: wrap;
+        padding-bottom: 10px;
     }
         .step4-content{
             display: flex;
@@ -493,8 +498,8 @@
                     position: relative;
                     z-index: 10;
                     @include from-320-992{
-                        text-align: right;
-                        align-self: flex-end;
+                        text-align: left;
+                        align-self: flex-start;
                         font-size: 15px;
                     }
                 }
@@ -515,8 +520,8 @@
                     text-align: left;
                     list-style: disc;
                     @include from-320-992{
-                        text-align: right;
-                        align-self: flex-end;
+                        text-align: left;
+                        align-self: flex-start;
                         width: 100%;
                         list-style: none;
                         font-size: 15px;
@@ -546,6 +551,7 @@
     padding: 20px 0px 50px 0px;
     @include from-320-992{
         flex-wrap: wrap-reverse;
+        padding-bottom: 10px;
     }
         .step5-content{
             display: flex;

@@ -25,7 +25,7 @@ function SubCase2() {
         caseHeadingMain="Brickell"
         casePara="Brickell launched on Amazon with a mission to make high-quality skincare effortless for men. Starting with just three essential products—a face wash, moisturizer, and lip balm—the brand aimed to empower customers through education and accessibility."
         caseDeskImg="/brickell.png"
-        caseMobileImg="/brickell.png"
+        caseMobileImg="/brickell-mobile.png"
         color="white"
         poppins={poppins}
       />

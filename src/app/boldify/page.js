@@ -25,7 +25,7 @@ function SubCase3() {
         caseHeadingMain="Boldify"
         casePara="The Boldofy set out to empower men experiencing thinning hair through effective, research-backed products and education."
         caseDeskImg="/boldify.png"
-        caseMobileImg="/boldify.png"
+        caseMobileImg="/boldify-mobile.png"
         poppins={poppins}
       />
       <EXESUM
