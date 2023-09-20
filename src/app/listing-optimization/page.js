@@ -30,7 +30,11 @@ const futuraLTBT = localFont({
   weight: "400",
   style: "normal",
 });
-
+export const metadata = {
+  title: "Amazon Product Listing and Optimization",
+  description:
+    "Boost sales on Amazon with expert product listing optimization. Increase visibility, attract buyers, and drive growth for your Amazon business.",
+};
 function Service() {
   return (
     <section className="amazon-sec-wrap">

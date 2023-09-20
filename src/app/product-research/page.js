@@ -30,7 +30,11 @@ const futuraLTBT = localFont({
   weight: "400",
   style: "normal",
 });
-
+export const metadata = {
+  title: "Product Research for Amazon Success",
+  description:
+    "Supercharge your Amazon business with data-driven Amazon product research services. Uncover profitable niches, win with low-competition products, and boost sales today on Amazon",
+};
 function Service() {
   return (
     <section className="amazon-sec-wrap">

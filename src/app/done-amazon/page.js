@@ -30,7 +30,12 @@ const futuraLTBT = localFont({
   weight: "400",
   style: "normal",
 });
-
+export const metadata = {
+  title:
+    "Grow your Amazon with Done for You Amazon Account Management Services",
+  description:
+    "Outsource your Amazon account management service for improved sales & growth. Expert team to optimize, manage, and grow your Amazon accounts to do for you",
+};
 function Service() {
   return (
     <section className="amazon-sec-wrap">

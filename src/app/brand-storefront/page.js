@@ -30,7 +30,11 @@ const futuraLTBT = localFont({
   weight: "400",
   style: "normal",
 });
-
+export const metadata = {
+  title: "Amazon Storefront for your brand",
+  description:
+    "Elevate the brand on Amazon with a brand Storefront. Showcase products, tell your story & boost sales. Engage customers like never before",
+};
 function Service() {
   return (
     <section className="amazon-sec-wrap">

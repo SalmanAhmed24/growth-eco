@@ -25,8 +25,9 @@ function SubCase() {
         caseStudyNo="Case Study 3"
         caseHeadingMain="RFAQK"
         casePara="In the heart of the USA, Rfaqk, a budding baking kit brand, was born with a mission to spread the joy of baking. However, the path to success was not devoid of challenges."
-        caseDeskImg="/case-sub-header-2.png"
+        caseDeskImg="/rafk.png"
         caseMobileImg="/mobile-sub-case.png"
+        rightAlign={true}
         poppins={poppins}
       />
       <EXESUM

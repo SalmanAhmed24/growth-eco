@@ -1,34 +1,10 @@
-"use client";
-import SliderAbout from "@/component/aboutSlider";
-import Header from "@/component/aboutUsHeader";
-import FAQs from "@/component/faq";
-import WhoWeAre from "@/component/whoWeAreAbout";
 import { Poppins } from "next/font/google";
-import localFont from "@next/font/local";
 import "./style.scss";
-import Image from "next/image";
-import Achieve from "@/component/achieve";
-import BackToTop from "@/component/backToTop";
-// const futuraHv = localFont({
-//   src: "../fonts/FuturaHeavyBT.ttf",
-//   weight: "400",
-//   style: "normal",
-// });
-// const futuraBK = localFont({
-//   src: "../fonts/FutuBk.ttf",
-//   weight: "400",
-//   style: "normal",
-// });
-// const futuraMDBT = localFont({
-//   src: "../fonts/FutuMd.ttf",
-//   weight: "400",
-//   style: "normal",
-// });
-// const futuraLTBT = localFont({
-//   src: "../fonts/FuturaLtBT.ttf",
-//   weight: "400",
-//   style: "normal",
-// });
+export const metadata = {
+  title: "Our Story",
+  description:
+    "Full potential to your Amazon business with our powerhouse solutions",
+};
 const poppins = Poppins({
   weight: ["300", "400", "600", "700", "900"],
   style: ["normal", "italic"],
@@ -38,7 +14,7 @@ const poppins = Poppins({
 function OurStory() {
   return (
     <section className={`${poppins.className} about-main-wrap`}>
-      <BackToTop route={"#home"} />
+      {/* <BackToTop route={"#home"} /> */}
       <div className={`${poppins.className} content-wrapper`}>
         <h1 className="main-head">Our Story</h1>
         <p>

@@ -37,6 +37,11 @@ const poppins = Poppins({
   subsets: ["latin"],
   display: "swap",
 });
+export const metadata = {
+  title: "How to Source Products for Your Amazon Store",
+  description:
+    "Find success on Amazon with our expert product sourcing services. Access reliable suppliers, boost efficiency, and grow your Amazon business today.",
+};
 function Service() {
   return (
     <section className={poppins.className}>

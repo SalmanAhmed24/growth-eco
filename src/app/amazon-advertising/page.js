@@ -30,7 +30,11 @@ const futuraLTBT = localFont({
   weight: "400",
   style: "normal",
 });
-
+export const metadata = {
+  title: "Increase visibility and boost sales with Amazon Advertising Services",
+  description:
+    "Drive sales and visibility with Amazon Advertising Services. Reach more customers, increase revenue, and boost your brand's presence on Amazon with Amazon ads.",
+};
 function Service() {
   return (
     <section className="amazon-sec-wrap">

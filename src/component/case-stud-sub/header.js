@@ -9,10 +9,17 @@ function HeaderCase({
   caseMobileImg,
   casePara,
   color,
+  rightAlign = false,
 }) {
   return (
     <header className="case-sub-header">
-      <div className={`${poppins.className} content-wrap`}>
+      <div
+        className={
+          rightAlign == false
+            ? `${poppins.className} content-wrap`
+            : `${poppins.className} content-wrap left-align`
+        }
+      >
         <h1
           style={color == "white" ? { color: "#fff" } : { color: "#000" }}
           className={poppins.className}

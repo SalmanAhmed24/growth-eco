@@ -30,7 +30,11 @@ const futuraLTBT = localFont({
   weight: "400",
   style: "normal",
 });
-
+export const metadata = {
+  title: "Suspended Amazon Listing Reinstatement",
+  description:
+    "Regain Amazon success swiftly with Listing Reinstatement service. Expert appeals and issue resolution propel your products back into the spotlight.",
+};
 function Service() {
   return (
     <section className="amazon-sec-wrap">

@@ -30,7 +30,11 @@ const futuraLTBT = localFont({
   weight: "400",
   style: "normal",
 });
-
+export const metadata = {
+  title: "Amazon Seller Account Suspension and How to Avoid",
+  description:
+    "Regain selling privileges with our Amazon Account Suspension services. Get expert guidance to navigate suspensions and ensure continuous growth",
+};
 function Service() {
   return (
     <section className="amazon-sec-wrap">

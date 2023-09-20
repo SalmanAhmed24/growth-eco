@@ -30,7 +30,11 @@ const futuraLTBT = localFont({
   weight: "400",
   style: "normal",
 });
-
+export const metadata = {
+  title: "Amazon A+ Enhanced Brand Content Designing Services",
+  description:
+    "Boost sales with professional Amazon A+ Enhanced Brand Content design services. Engaging, conversion-focused designs to maximize visibility and revenue.",
+};
 function Service() {
   return (
     <section className="amazon-sec-wrap">

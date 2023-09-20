@@ -16,26 +16,7 @@ import "aos/dist/aos.css";
 import BackToTop from "@/component/backToTop";
 import { useRouter } from "next/navigation";
 import SliderMobileNew from "@/component/mobileSlider/mobile-new";
-// const futuraHv = localFont({
-//   src: "./fonts/FutuHv.ttf",
-//   weight: "400",
-//   style: "normal",
-// });
-// const futuraBK = localFont({
-//   src: "./fonts/FutuBk.ttf",
-//   weight: "400",
-//   style: "normal",
-// });
-// const futuraMDBT = localFont({
-//   src: "./fonts/FutuMd.ttf",
-//   weight: "400",
-//   style: "normal",
-// });
-// const futuraLTBT = localFont({
-//   src: "./fonts/FuturaLtBT.ttf",
-//   weight: "400",
-//   style: "normal",
-// });
+import Head from "next/head";
 const poppins = Poppins({
   weight: ["300", "400", "600", "700", "900"],
   style: ["normal", "italic"],
@@ -59,6 +40,14 @@ export default function Home() {
   const handleLinks = (e) => setActiveLink(e.target.innerText);
   return (
     <main>
+      <Head>
+        <title>GrowthEco | Home</title>
+        <meta
+          name="description"
+          content="Full potential to your Amazon business with our powerhouse solutions"
+          key="desc"
+        />
+      </Head>
       <BackToTop route={"#home"} />
       <header className="header-wrap">
         <img src="/home-new-bg.svg" className="headerImg" alt="home-bg" />

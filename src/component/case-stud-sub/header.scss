@@ -92,6 +92,13 @@
                     border: 1px solid #4663AC;
                 }
         }
+        .left-align{
+            align-self: flex-end;
+            width: 35%;
+            @include from-320-575{
+                width: 60%;
+            }
+        }
         .header-img{
             position: absolute;
             top: 0px;
