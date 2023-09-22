@@ -53,6 +53,11 @@
         @content;
     }
 }
+@mixin above-1600{
+    @media screen and (min-width:1600px){
+        @content;
+    }
+}
 .growth-img{
     img{
         position: relative;
@@ -89,6 +94,9 @@
                     left: calc(100% - 85%);
                     }
                     @include from-1300-1700{
+                        font-size: 1.2vw;
+                    }
+                    @include above-1600{
                         font-size: 1.2vw;
                     }
                     @include from-575-992{
@@ -145,6 +153,9 @@
                     @include from-1300-1700{
                         font-size: 1.2vw;
                     }
+                    @include above-1600{
+                        font-size: 1.2vw;
+                    }
                     @include from-575-992{
                         width: 15.3%;
     height: 23.5%;
@@ -198,6 +209,9 @@
                     font-size: 13px;
                     font-weight: 600;
                     @include from-1300-1700{
+                        font-size: 1.2vw;
+                    }
+                    @include above-1600{
                         font-size: 1.2vw;
                     }
                     @include from-575-992{
@@ -256,6 +270,9 @@
                         right: calc(100% - 96%);
                     }
                     @include from-1300-1700{
+                        font-size: 1.2vw;
+                    }
+                    @include above-1600{
                         font-size: 1.2vw;
                     }
                     @include from-575-992{

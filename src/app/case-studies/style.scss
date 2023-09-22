@@ -23,6 +23,11 @@
         @content;
     }
 }
+@mixin above-1600{
+    @media screen and (min-width:1600px){
+        @content;
+    }
+}
 .case-studies-con{
     background-image: url('../../../public/case-studies-page.png');
     background-size: cover;
@@ -51,6 +56,9 @@
                 height: 300px;
                 background-image: url('../../../public/case-mobile-header.png');
             }
+            @include above-1600{
+                justify-content: center;
+            }
                 .header-content-wrap{
                     width: 35%;
                     display: flex;
@@ -63,6 +71,9 @@
                     @include from-1300-1700{
                         height: 80%;
                         justify-content: center;
+                    }
+                    @include above-1600{
+                        padding-left: 180px;
                     }
                     @include from-320-992{
                         margin-left: 0px;
@@ -87,6 +98,9 @@
                                 text-align: center;
                                 font-size: 30px;
                             }
+                            @include above-1600{
+                                font-size: 2.5vw;
+                            }
                         }
                         p{
                             font-size: 16px;
@@ -98,6 +112,9 @@
                             @include from-320-992{
                                 font-size: 14px;
                                 text-align: center;
+                            }
+                            @include above-1600{
+                                font-size: 1.1vw;
                             }
                         }
                         .headerLink{
@@ -117,6 +134,9 @@
                                 @include from-320-992{
                                     align-self: center;
                                 }
+                                @include above-1600{
+                                    font-size: 1.1vw;
+                                }
                         }
                 }
         }
@@ -132,6 +152,9 @@ color: #fff;
 border: 1px solid #4663AC;
 transition: 0.3s ease-in-out;
 padding: 10px 20px;
+@include above-1600{
+    font-size: 1.1vw;
+}
     }
     img{
         margin-left: 10px;
@@ -154,6 +177,9 @@ padding: 10px 20px;
                 text-align: center;
                 font-size: 24px;
             }
+            @include above-1600{
+                font-size: 2vw;
+            }
         }
         .blue-heading{
             color: #4663AC;
@@ -169,6 +195,9 @@ padding: 10px 20px;
                 width: 100%;
                 text-align: center;
                 font-size: 15px;
+            }
+            @include above-1600{
+                font-size: 1.2vw;
             }
         }
 }

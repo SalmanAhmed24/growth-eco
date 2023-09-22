@@ -44,8 +44,8 @@
         
     }
     @include above-1600{
-        background-position-y: -270px;
-        height: 550px;
+        background-position-y: -345px;
+    height: 650px
     }
     @include from-320-575{
         background-image: url('../../../public/service-mobile-bg.png');

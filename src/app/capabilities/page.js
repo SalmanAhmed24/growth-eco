@@ -14,7 +14,7 @@ export const metadata = {
 function CapabilitiesPage() {
   return (
     <section>
-      <Capabilities />
+      <Capabilities refreshFlag={true} />
     </section>
   );
 }

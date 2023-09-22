@@ -36,12 +36,12 @@ const poppins = Poppins({
   subsets: ["latin"],
   display: "swap",
 });
-function Capabilities() {
+function Capabilities({ refreshFlag = false }) {
   const [showMore, setShowMore] = useState(false);
   const router = useRouter();
   useEffect(() => {
     router.refresh();
-  }, []);
+  }, [refreshFlag]);
   return (
     <section className="cap-main-con">
       <BackToTop route={"#home"} />

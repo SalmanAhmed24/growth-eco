@@ -229,7 +229,7 @@ table {
     overflow-x: clip;
         flex-direction: column;
         @include above-1600{
-            padding:10vw 8vw;
+            padding:14vw 8vw;
         }
         @include from-320-to-575{
             padding: 20px 20px 20px 20px;
@@ -366,6 +366,7 @@ margin-top: 20px;
     }
     @include above-1600{
         top: 8.8vw;
+        left: -1.5vw;
     }
     img{
         width: 114px;
@@ -383,7 +384,7 @@ margin-top: 20px;
                         font-weight: 600;
                     }
                     @include above-1600{
-                        font-size: 1.3vw;
+                        font-size: 1.15vw;
                     }
                 }
                 ul{
@@ -395,7 +396,7 @@ margin-top: 20px;
                         font-size: 10px;
                     }
                     @include above-1600{
-                        font-size: 1.3vw;
+                        font-size: 1vw;
                     }
                 }
         }
@@ -417,7 +418,7 @@ margin-top: 20px;
         top: 2vw;
     }
     @include above-1600{
-        top:9vw
+        top:10vw
     }
     img{
         width: 114px;
@@ -435,8 +436,8 @@ margin-top: 20px;
                         font-weight: 600;
                     }
                     @include above-1600{
-                        font-size: 1.3vw;
-                        top: -2vw;
+                        font-size: 1.15vw;
+                        top: -3vw;
                         position: relative;
                     }
                 }
@@ -450,8 +451,8 @@ margin-top: 20px;
                         font-size: 10px;
                     }
                     @include above-1600{
-                        font-size: 1.3vw;
-                        top: -2vw;
+                        font-size: 1vw;
+                        top: -3vw;
                         position: relative;
                     }
                 }
@@ -474,7 +475,7 @@ margin-top: 20px;
     
     }
     @include above-1600{
-        top:-7.3vw
+        top:-8vw
     }
     img{
         width: 114px;
@@ -493,7 +494,7 @@ margin-top: 20px;
                         font-weight: 600;
                     }
                     @include above-1600{
-                        font-size: 1.3vw;
+                        font-size: 1.15vw;
                     }
                 }
                 ul{
@@ -505,7 +506,7 @@ margin-top: 20px;
                         font-size: 10px;
                     }
                     @include above-1600{
-                        font-size: 1.3vw;
+                        font-size: 1vw;
                     }
                 }
         }
@@ -527,7 +528,7 @@ margin-top: 20px;
     left: 10vw;
             }
             @include above-1600{
-                top: -9vw;
+                top: -8vw;
             }
             img{
                 width: 114px;
@@ -545,7 +546,7 @@ margin-top: 20px;
                         font-weight: 600;
                     }
                     @include above-1600{
-                        font-size: 1.3vw;
+                        font-size: 1.15vw;
                     }
                 }
                 ul{
@@ -558,7 +559,7 @@ margin-top: 20px;
                         font-size: 10px;
                     }
                     @include above-1600{
-                        font-size: 1.3vw;
+                        font-size: 1vw;
                     }
                 }
         }
@@ -1035,7 +1036,7 @@ width: 275px !important;
                     margin-bottom: 0px;
                     font-weight: 600;
                     @include above-1600{
-                        font-size: 1.1vw;
+                        font-size: 1vw;
                     }
                 }
 
@@ -1044,7 +1045,7 @@ width: 275px !important;
                     font-size: 15px;
                     font-weight: 300;
                     @include above-1600{
-                        font-size: 1vw;
+                        font-size: 0.9vw;
                     }
                 }
             }
@@ -1056,7 +1057,7 @@ width: 275px !important;
         margin-top: 10px;
         font-weight: 300;
         @include above-1600{
-            font-size: 1.1vw;
+            font-size: 0.9vw;
         }
     }
     .test-down{
@@ -1095,7 +1096,7 @@ width: 275px !important;
                         margin-bottom: 0px;
                         font-weight: 600;
                         @include above-1600{
-                            font-size: 1.1vw;
+                            font-size: 1vw;
                         }
                     }
     
@@ -1104,7 +1105,7 @@ width: 275px !important;
                         font-size: 15px;
                         font-weight: 300;
                         @include above-1600{
-                            font-size: 1vw;
+                            font-size: 0.9vw;
                         }
                     }
                 }
@@ -1116,7 +1117,7 @@ width: 275px !important;
             margin-top: 10px;
             font-weight: 300;
             @include above-1600{
-                font-size: 1vw;
+                font-size: 0.9vw;
             }
         }
         .test-down{

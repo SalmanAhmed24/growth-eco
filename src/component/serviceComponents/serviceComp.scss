@@ -53,6 +53,11 @@
         @content;
     }
 }
+@mixin above-1700{
+    @media screen and (min-width:1700px){
+        @content;
+    }
+}
 @mixin below-992{
     @media screen and (max-width:992px){
         @content;
@@ -89,6 +94,10 @@
     }
     @include above-1400{
         height: 600px;
+    }
+    @include above-1700{
+        height: 650px;
+        background-position-y:-270px ;
     }
     &::before{
         content: '';
@@ -495,6 +504,9 @@ padding: 5px 10px;
 @include above-1400{
     font-size: 1.3vw;
 }
+@include above-1700{
+    font-size: 1.1vw !important;
+}
     }
 }
 .ser-counter{
@@ -511,6 +523,11 @@ padding: 5px 10px;
     }
     @include from-320-575{
         background-image: url('../../../public/growth-mobile.png');
+    }
+    @include above-1700{
+        background-size: cover;
+        margin-bottom: 50px;
+        padding-bottom: 115px;
     }
         .counter-info-wrap{
             padding: 100px 150px 0px 150px;

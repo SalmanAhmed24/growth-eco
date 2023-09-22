@@ -31,9 +31,8 @@ import BackToTop from "@/component/backToTop";
 // });
 const poppins = Poppins({
   weight: ["300", "400", "600", "700", "900"],
-  style: ["normal", "italic"],
+  style: ["normal"],
   subsets: ["latin"],
-  display: "swap",
 });
 function AboutUs() {
   return (

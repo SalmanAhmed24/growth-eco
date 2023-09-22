@@ -59,6 +59,8 @@
     }
     @include above-1600{
         background-position-y: -270px;
+        justify-content: flex-start;
+        padding-top: 130px;
     }
         // &::before{
         //     content: '';
