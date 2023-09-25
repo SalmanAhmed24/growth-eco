@@ -131,12 +131,12 @@ function Navbar() {
                   >
                     Our Story
                   </Link>
-                  <Link
+                  {/* <Link
                     className={path == "/ourTeam" ? "activeInner" : ""}
                     href={"/ourTeam"}
                   >
                     Our Team
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>
@@ -235,12 +235,12 @@ function Navbar() {
               </Link>
             </div>
             <div className="nav-link-wraps">
-              <Link
+              {/* <Link
                 className={path == "/blog" ? "activeLink" : ""}
                 href={"/blog"}
               >
                 Blog
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
@@ -317,13 +317,13 @@ function Navbar() {
                 >
                   Our Story
                 </Link>
-                <Link
+                {/* <Link
                   onClick={() => setMobileNav(false)}
                   className={path == "/ourTeam" ? "activeInner" : ""}
                   href={"/ourTeam"}
                 >
                   Our Team
-                </Link>
+                </Link> */}
               </div>
             ) : null}
           </div>
@@ -440,7 +440,7 @@ function Navbar() {
             </Link>
           </div>
           <div className={`${poppins.className} mobile-links`}>
-            <Link
+            {/* <Link
               onClick={() => {
                 setMobileNav(false);
                 setShow(false);
@@ -450,7 +450,7 @@ function Navbar() {
               href={"/blog"}
             >
               Blog
-            </Link>
+            </Link> */}
           </div>
         </nav>
       </Drawer>
