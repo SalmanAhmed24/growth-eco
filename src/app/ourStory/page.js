@@ -50,6 +50,7 @@ function OurStory() {
           And now at Growth echo, I am helping other Amazon sellers with my team
           to be successful in the Amazon market.
         </p>
+        <img src="/our-story-arrows.png" className="story-arrow" />
       </div>
       <div className="grow-img-about-wrap">
         <img src="/about-grow.png" alt="about us" />

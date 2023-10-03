@@ -19,7 +19,10 @@
     }
 }
 .about-main-wrap{    
-    background: #E1F1FD;
+    background-image: url('../../../public/our-story-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 100px 0px;
     position: relative;
     display: flex;
@@ -27,14 +30,20 @@
     justify-content: center;
     align-items: center;
     overflow-x: clip;
+    margin-bottom: -100px;
+    z-index: -1;
     @include from-575-992{
         padding: 50px 75px;
+        margin-bottom: -20px;
     }
     @include from-320-575{
         padding: 20px;
+        background-color: #E1F1FD;
+        margin-bottom: -20px;
     }
         .content-wrapper{          
             background: #fff;
+            position: relative;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -61,6 +70,7 @@
             p{
                 margin-bottom: 20px;
                 line-height: normal;
+                z-index: 22;
                 @include from-320-575{
                     font-size: 12px;
                     font-weight: 300;
@@ -69,6 +79,16 @@
                 @include above-1300{
                     font-size: 1.3vw;
                 }
+            }
+            .story-arrow{
+                position: absolute;
+                width: 50%;
+                height: auto;
+                top: 0px;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+                margin:auto;
             }
         }
         .grow-img-about-wrap{
