@@ -3,9 +3,10 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { Poppins } from "next/font/google";
 import { RadioGroup } from "react-rainbow-components";
-import { PhoneInput } from "react-rainbow-components";
-
+// import { PhoneInput } from "react-rainbow-components";
+import PhoneInput from "react-phone-input-2";
 import "./style.scss";
+import "react-phone-input-2/lib/style.css";
 
 const Container = styled.div`
   max-width: 480px;
@@ -90,12 +91,20 @@ function ContactComp() {
               </div>
               <div className="input-wrap">
                 <label>Phone No*</label>
-                <PhoneInput
+                {/* <PhoneInput
                   placeholder="Enter your phone number"
                   onChange={setPhone}
                   className={`${poppins.className} phone-inp`}
                   value={phone}
                   required
+                  readOnly={false}
+                  
+                /> */}
+                <PhoneInput
+                  country={"pk"}
+                  value={phone}
+                  onChange={(phone) => setPhone(phone)}
+                  className={`${poppins.className} phone-inp`}
                 />
               </div>
               <div className="inputPrim">

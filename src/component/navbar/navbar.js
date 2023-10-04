@@ -447,8 +447,8 @@ function Navbar() {
               Case Studies
             </Link>
           </div>
-          <div className={`${poppins.className} mobile-links`}>
-            {/* <Link
+          {/* <div className={`${poppins.className} mobile-links`}> */}
+          {/* <Link
               onClick={() => {
                 setMobileNav(false);
                 setShow(false);
@@ -459,7 +459,7 @@ function Navbar() {
             >
               Blog
             </Link> */}
-          </div>
+          {/* </div> */}
           <div className={`${poppins.className} mobile-links`}>
             <Link
               onClick={() => {
