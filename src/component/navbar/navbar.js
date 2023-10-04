@@ -234,13 +234,21 @@ function Navbar() {
                 Case Studies
               </Link>
             </div>
-            <div className="nav-link-wraps">
-              {/* <Link
+            {/* <div className="nav-link-wraps"> */}
+            {/* <Link
                 className={path == "/blog" ? "activeLink" : ""}
                 href={"/blog"}
               >
                 Blog
               </Link> */}
+            {/* </div> */}
+            <div className="nav-link-wraps">
+              <Link
+                className={path == "/contactUs" ? "activeLink" : ""}
+                href={"/contactUs"}
+              >
+                Contact Us
+              </Link>
             </div>
           </div>
         </div>
@@ -451,6 +459,19 @@ function Navbar() {
             >
               Blog
             </Link> */}
+          </div>
+          <div className={`${poppins.className} mobile-links`}>
+            <Link
+              onClick={() => {
+                setMobileNav(false);
+                setShow(false);
+                setShowCapa(false);
+              }}
+              className={path == "/contactUs" ? "activeLink" : ""}
+              href={"/contactUs"}
+            >
+              Contact Us
+            </Link>
           </div>
         </nav>
       </Drawer>

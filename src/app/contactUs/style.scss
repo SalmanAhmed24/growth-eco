@@ -1,0 +1,382 @@
+@mixin from-992-to-1400{
+    @media screen and (min-width:992px) and (max-width:1400px) {
+        @content;
+    }
+}
+@mixin above-1400{
+    @media screen and (min-width:1400px){
+        @content;
+    }
+}
+@mixin from-320-to-992{
+    @media screen and (min-width:320px) and (max-width:991.67px) {
+        @content;
+    }
+}
+@mixin from-320-to-575{
+    @media screen and (min-width:320px) and (max-width:575.67px) {
+        @content;
+    }
+}
+.contact-us-wrap{
+    padding: 100px;
+    background-image:url('../../../public/contact-us-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    @include from-320-to-575{
+        padding: 20px;
+    }
+        .header-wrap-con{
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            @include from-320-to-992{
+                flex-wrap: wrap;
+            }
+                .inner-content{
+                    width: 45%;
+                    @include from-992-to-1400{
+                        width: 35%;
+                    }
+                    @include from-320-to-992{
+                        width: 100%;
+                    }
+                        h1{
+                            font-size: 60px;
+                            color: #fff;
+                            margin-bottom: 10px;
+                            @include from-992-to-1400{
+                                font-size: 40px;
+                            }
+                            @include from-320-to-992{
+                                font-size: 30px;
+                            }
+                            @include from-320-to-575{
+                                font-size: 24px;
+                                margin-top: 20px;
+                                padding: 10px;
+                            }
+                        }
+                        p{
+                            font-size: 16px;
+                            font-weight: 300;
+                            color: #fff;
+                            line-height: normal;
+                            @include from-320-to-992{
+                                font-size: 14px;
+                            }
+                            @include from-320-to-575{
+                                padding: 0px 10px;
+                            }
+                        }
+                }
+                .form-wrap{
+                    width: 50%;
+                    position: relative;
+                    @include from-992-to-1400{
+                        width: 57%;
+                    }
+                    @include from-320-to-992{
+                        width: 100%;
+                        margin-top: 50px;
+                    }
+                    .contact-form{
+                        position: absolute;
+                        top: 0%;
+                        right: 0px;
+                        left: 0px;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 50px 30px;
+                        border-radius: 44px;
+    background: #FFF;
+    box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.25);
+    @include from-992-to-1400{
+        padding: 30px 16px;
+    }
+    @include from-320-to-992{
+        position: relative;
+    }
+                        h2{
+                            text-align: center;
+                            font-size: 30px;
+                            margin-bottom: 10px;
+                            @include from-320-to-992{
+                                font-size: 20px;
+                            }
+                        }
+                        p{
+                            text-align: center;
+                            font-size: 18px;
+                            margin-bottom: 10px;
+                            @include from-320-to-992{
+                                font-size: 14px;
+                            }
+                        }
+                        .formFieldsWrap{
+                            display: flex;
+                            flex-direction: column;
+                            margin-top: 20px;
+                                .inputPrim{
+                                    width: 100%;
+                                    display: flex;
+                                    flex-wrap: nowrap;
+                                    justify-content: space-between;
+                                    @include from-320-to-992{
+                                        flex-wrap: wrap;
+                                    }
+                                        .inner-field{
+                                            display: flex;
+                                            flex-direction: column;
+                                            width: 45%;
+                                            @include from-992-to-1400{
+                                                width: 48%;
+                                            }
+                                            @include from-320-to-992{
+                                                width: 100%;
+                                            }
+                                                label{
+                                                    font-weight: 500;
+                                                    font-size: 18px;
+                                                    margin-bottom: 5px;
+                                                    @include from-992-to-1400{
+                                                        font-size: 15px;
+                                                    }
+                                                    @include from-320-to-992{
+                                                        font-size: 13px;
+                                                    }
+                                                }
+                                                .inp-cus{
+                                                    border-radius: 10px;
+                                                    border: 1px solid #D2D2D2;
+                                                    background: #FFF;
+                                                    font-size: 16px;
+                                                    padding: 5px;
+                                                    @include from-992-to-1400{
+                                                        font-size: 15px;
+                                                    }
+                                                }
+                                        }
+                                        .ser{
+                                            margin-top: 20px;
+                                            .no-border{
+                                                border: 0px;
+                                                @include from-992-to-1400{
+                                                    font-size: 14px;
+                                                }
+                                            }
+                                            &:last-child{
+                                                align-self: flex-end;
+                                            }
+                                        }
+                                        
+                                        
+                                }
+                                .input-wrap{
+                                    width: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    margin: 10px 0px;
+                                    label{
+                                        font-weight: 500;
+                                        font-size: 18px;
+                                        margin-bottom: 5px;
+                                        @include from-992-to-1400{
+                                            font-size: 15px;
+                                        }
+                                        @include from-320-to-992{
+                                            font-size: 13px;
+                                        }
+                                    }
+                                    .inp-cus{
+                                        border-radius: 10px;
+                                        border: 1px solid #D2D2D2;
+                                        background: #FFF;
+                                        font-size: 16px;
+                                        padding: 5px;
+                                        @include from-992-to-1400{
+                                            font-size: 15px;
+                                        }
+                                    }
+                                    .no-border{
+                                        border: 0px;
+                                    }
+                                    .textarea-cus{
+                                        border-radius: 10px;
+                                        border: 1px solid #D2D2D2;
+                                        background: #FFF;
+                                        font-size: 16px;
+                                        padding: 5px;
+                                        @include from-992-to-1400{
+                                            font-size: 15px;
+                                        }
+                                    }
+                                }
+                                .btn-wrap{
+                                    display: flex;
+                                    width: 100%;
+                                    justify-content: center;
+                                        .sendMsg{
+                                            border-radius: 0px 20px 20px 20px;
+                                            background: #415B9F;
+                                            color: #fff;
+                                            padding: 5px;
+                                            font-size: 16px;
+                                            border: 1px solid #415B9F;
+                                            margin-top: 20px;
+                                        }
+                                }
+                        }
+                    }
+                }    
+        }
+}
+.address-wrap-con{
+    background-image: url('../../../public/triangle-lines.png');
+    padding: 100px;
+    @include from-320-to-992{
+        margin-top: 550px;
+    }
+    @include from-320-to-575{
+        padding: 20px;
+        margin-top: 700px;
+    }
+        .content-wrap{
+            @include from-992-to-1400{
+                width: 40%;
+            }
+            @include from-320-to-992{
+                width: 100%;
+            }
+            .single-item{
+                display: flex;
+                flex-wrap: nowrap;
+                margin: 15px 0px;
+                img{
+                    margin-right: 10px;
+                }
+                .icons-wrap{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    h1{
+                        font-size: 18px;
+                        margin-bottom: 5px;
+                        @include from-320-to-575{
+                            font-size: 15px;
+                        }
+                    }
+                    p{
+                        color: #7C7C7C;
+                        font-weight: 300;
+                        @include from-992-to-1400{
+                            font-size: 15px;
+                        }
+                        @include from-320-to-575{
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+
+}
+.subs-sec-con{
+    padding: 50px 70px;
+    @include from-320-to-575{
+        padding: 20px 0px;
+    }
+        .main-con{
+            padding: 50px;
+            display: flex;
+            flex-direction: row;
+            background-color: #E1F1FD;
+            justify-content: space-between;
+            @include from-320-to-992{
+                flex-wrap: wrap-reverse;
+            }
+            @include from-320-to-575{
+                padding: 40px 20px;
+            }
+                .cardCon{
+                    padding: 15px;
+                    width: 30%;
+                    border-radius: 0px 20px 20px 20px;
+                    background: #FFF;
+                    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+                    @include from-320-to-992{
+                        width: 100%;
+                        margin-top: 20px;
+                    }    
+                    .card-content{
+                            padding: 10px 25px;
+                            h1{
+                                margin-top: 10px;
+                                margin-bottom: 10px;
+                                font-size: 18px;
+                                font-weight: 600;
+                                @include from-320-to-575{
+                                    font-size: 20px;
+                                    text-align: center;
+                                }
+                            }
+                            p{
+                                margin-bottom: 5px;
+                                @include from-320-to-575{
+                                    font-size: 16px;
+                                    text-align: center;
+                                }
+                            }
+                            a{
+                                display: inline-block;
+                                background: #000;
+                                padding: 10px;
+                                border-radius: 10px;
+                                color: #FFF;
+                                margin-top: 10px;
+                                text-decoration: none;
+                                @include from-320-to-575{
+                                    font-size: 16px;
+                                    text-align: center;
+                                    align-self: center;
+                                }
+                            }
+                        }
+                }
+                .main-content-con{
+                    width: 50%;
+                    @include from-320-to-992{
+                        width: 100%;
+                    }
+                        h1{
+                            font-size: 30px;
+                            margin-bottom: 10px;
+                            line-height: normal;
+                            @include from-320-to-575{
+                                font-size: 20px;
+                                text-align: center;
+                            }
+                        }
+                        p{
+                            font-weight: 300;
+                            line-height: normal;
+                            @include from-320-to-575{
+                                font-size: 14px;
+                                text-align: center;
+                            }
+                        }
+                }
+        }
+}
+.genoHs{
+    @include from-320-to-992{
+        font-size: 14px !important;
+    }
+    @include from-992-to-1400{
+        font-size: 14px !important;
+    }
+}
+.phone-inp{
+    overflow-x: clip;
+}
