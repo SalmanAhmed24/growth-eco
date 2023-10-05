@@ -4,9 +4,12 @@ export async function POST(request) {
   var nodemailer = require("nodemailer");
   console.log("here");
   var transporter = nodemailer.createTransport({
-    host: process.env.SMTP_HOST,
+    host: process.env.NEXT_PUBLIC_SMTP_HOST,
     port: 465,
-    auth: { user: process.env.MAIL_USER, pass: process.env.MAIL_PASS },
+    auth: {
+      user: process.env.NEXT_PUBLIC_MAIL_USER,
+      pass: process.env.NEXT_PUBLIC_MAIL_PASS,
+    },
     secure: true,
   });
   var mailOptions = {
