@@ -7,6 +7,7 @@ import "react-phone-input-2/lib/style.css";
 import "./style.scss";
 import axios from "axios";
 import { RadioGroup } from "react-rainbow-components";
+import Swal from "sweetalert2";
 // const Container = styled.div`
 //   max-width: 480px;
 //   margin: 30px auto;
@@ -50,7 +51,14 @@ function ContactComp() {
     };
     axios
       .post("/api/contact", dataObj)
-      .then((res) => console.log(res))
+      .then((res) =>
+        Swal.fire({
+          icon: "success",
+          titleText: "Success",
+          text: "Thanks for contacting us. We will get back to you as soon as possible.",
+          showClass: `${poppins.className}`,
+        })
+      )
       .catch((err) => console.log(err));
   };
   return (

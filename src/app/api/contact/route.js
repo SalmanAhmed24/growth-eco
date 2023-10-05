@@ -1,7 +1,28 @@
 import { NextResponse } from "next/server";
 export async function POST(request) {
   let payload = await request.json();
-  console.log(payload);
+  var nodemailer = require("nodemailer");
+  var transporter = nodemailer.createTransport({
+    host: process.env.SMTP_HOST,
+    port: 465,
+    auth: { user: process.env.MAIL_USER, pass: process.env.MAIL_PASS },
+    secure: true,
+  });
+  var mailOptions = {
+    from: "contact@growthecho.pro",
+    to: "contact@growthecho.pro",
+    subject: "Contact Form Submitted via GrowthEco",
+    html: `<h3>First Name:</h3><p>${payload.firstname}</p><h3>Last Name:</h3><p>${payload.lastname}</p><h3>Email:</h3><p>${payload.email}</p><h3>Phone:</h3><p>${payload.phone}</p><h3>Services:</h3><p>${payload.services}</p><h3>Message:</h3><p>${payload.message}</p>`,
+  };
+
+  transporter.sendMail(mailOptions, function (error, info) {
+    if (error) {
+      console.log(error);
+      return false;
+    } else {
+      console.log("Email sent: " + info.response);
+    }
+  });
   return NextResponse.json({ message: "Got the data" });
 }
 // export default function sendForm(req, res) {
