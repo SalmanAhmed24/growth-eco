@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 export async function POST(request) {
   let payload = await request.json();
   var nodemailer = require("nodemailer");
+  console.log("here");
   var transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
     port: 465,
