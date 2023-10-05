@@ -1,19 +1,18 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import styled from "styled-components";
+// import styled from "styled-components";
 import { Poppins } from "next/font/google";
-import { RadioGroup } from "react-rainbow-components";
-// import { PhoneInput } from "react-rainbow-components";
 import PhoneInput from "react-phone-input-2";
-import "./style.scss";
 import "react-phone-input-2/lib/style.css";
-
-const Container = styled.div`
-  max-width: 480px;
-  margin: 30px auto;
-  padding: 20px 10px;
-  min-height: 400px;
-`;
+import "./style.scss";
+import axios from "axios";
+import { RadioGroup } from "react-rainbow-components";
+// const Container = styled.div`
+//   max-width: 480px;
+//   margin: 30px auto;
+//   padding: 20px 10px;
+//   min-height: 400px;
+// `;
 
 const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700"],
@@ -41,6 +40,18 @@ function ContactComp() {
   ];
   const handleForm = (e) => {
     e.preventDefault();
+    const dataObj = {
+      firstname,
+      lastname,
+      email,
+      services,
+      phone,
+      message,
+    };
+    axios
+      .post("/api/contact", dataObj)
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
   };
   return (
     <section className={`${poppins.className} contact-inner`}>

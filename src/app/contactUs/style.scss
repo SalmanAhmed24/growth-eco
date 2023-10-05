@@ -378,5 +378,8 @@
     }
 }
 .phone-inp{
-    overflow-x: clip;
+    width: 100%;
+    .form-control{
+        width: 100% !important;
+    }
 }
