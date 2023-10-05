@@ -2,14 +2,10 @@ import { NextResponse } from "next/server";
 export async function POST(request) {
   let payload = await request.json();
   var nodemailer = require("nodemailer");
-  console.log("here");
   var transporter = nodemailer.createTransport({
-    host: process.env.NEXT_PUBLIC_SMTP_HOST,
+    host: "smtpout.secureserver.net",
     port: 465,
-    auth: {
-      user: process.env.NEXT_PUBLIC_MAIL_USER,
-      pass: process.env.NEXT_PUBLIC_MAIL_PASS,
-    },
+    auth: { user: "contact@growthecho.pro", pass: "Growthecho@123" },
     secure: true,
   });
   var mailOptions = {
