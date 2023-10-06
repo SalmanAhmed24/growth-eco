@@ -67,7 +67,7 @@ export default function Home() {
           </h2> */}
           <div className={`btnWrap`}>
             <button
-              onClick={() => router.push("/home#contact")}
+              onClick={() => router.push("/contactUs")}
               className={`${poppins.className} startBtn`}
             >
               Contact Us

@@ -1,8 +1,11 @@
+"use client";
 import Image from "next/image";
 import "./footer.scss";
-import localFont from "@next/font/local";
+import React, { useState } from "react";
 import { Poppins } from "next/font/google";
 import Link from "next/link";
+import axios from "axios";
+import Swal from "sweetalert2";
 const poppins = Poppins({
   weight: ["300", "400", "600", "700", "900"],
   style: ["normal", "italic"],
@@ -30,6 +33,22 @@ const poppins = Poppins({
 //   style: "normal",
 // });
 function Footer() {
+  const [email, setEmail] = useState("");
+  const handleNewsletter = (e) => {
+    e.preventDefault();
+    axios
+      .post("/api/newsletter", { email })
+      .then((res) => {
+        Swal.fire({
+          icon: "success",
+          titleText: "Success",
+          text: "Thanks for contacting us. We will get back to you as soon as possible.",
+          showClass: `${poppins.className}`,
+        });
+        setEmail("");
+      })
+      .catch((err) => console.log(err));
+  };
   return (
     <footer className="footer-wrap">
       <Image
@@ -95,10 +114,18 @@ function Footer() {
         </div>
         <div className="subscribe-wrap">
           <h1 className={poppins.className}>Sign-up to our newsletter</h1>
-          <div className="footer-form-wrap">
-            <input className={`${poppins.className} subsInp`} type="email" />
-            <button className={`${poppins.className} subsBtn`}>Submit</button>
-          </div>
+          <form onSubmit={handleNewsletter} className="footer-form-wrap">
+            <input
+              className={`${poppins.className} subsInp`}
+              onChange={(e) => setEmail(e.target.value)}
+              type="email"
+            />
+            <input
+              className={`${poppins.className} subsBtn`}
+              type="submit"
+              value="Submit"
+            />
+          </form>
         </div>
       </div>
     </footer>

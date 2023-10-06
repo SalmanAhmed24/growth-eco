@@ -55,7 +55,7 @@ function OurStoryComp() {
           <img src="/about-sub-img.png" alt="about growth eco" />
         </div>
       </section>
-      <section className="news-letter cus-space">
+      {/* <section className="news-letter cus-space">
         <h1 className={poppins.className}>
           Subscribe Our Newsletter For Latest Updates
         </h1>
@@ -74,7 +74,7 @@ function OurStoryComp() {
             Subscribe!
           </button>
         </div>
-      </section>
+      </section> */}
     </section>
   );
 }

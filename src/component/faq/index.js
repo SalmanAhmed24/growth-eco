@@ -8,6 +8,8 @@ const poppins = Poppins({
   display: "swap",
 });
 import "./index.scss";
+import axios from "axios";
+import Swal from "sweetalert2";
 function FAQs({
   question1,
   question2,
@@ -31,8 +33,27 @@ function FAQs({
   const handleMessage = (e) => {
     setMessage(e.target.value);
   };
-  const handleSubmit = () => {
-    console.log("handle submit");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const data = {
+      name: firstName,
+      email,
+      message,
+    };
+    axios
+      .post("/api/simpleContact", data)
+      .then((res) => {
+        Swal.fire({
+          icon: "success",
+          titleText: "Success",
+          text: "Thanks for contacting us. We will get back to you as soon as possible.",
+          showClass: `${poppins.className}`,
+        });
+      })
+      .catch((err) => console.log(err));
+    setEmail("");
+    setFirstName("");
+    setMessage("");
   };
   return (
     <section className="faqs-main-wrapper">
