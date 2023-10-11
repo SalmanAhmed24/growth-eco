@@ -12,7 +12,7 @@ const futuraLTBT = localFont({
 export const metadata = {
   title: "GrowthEco | Home",
   icons: {
-    icon: "/_next/static/media/favicon.png",
+    icon: "/favicon.png",
   },
   description:
     "Full potential to your Amazon business with our powerhouse solutions",
