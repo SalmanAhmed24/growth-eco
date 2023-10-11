@@ -69,17 +69,17 @@ function Footer() {
             <Link href={"/"} className={poppins.className}>
               Home
             </Link>
-            <Link href={"/aboutUs"} className={poppins.className}>
+            <Link href={"/about-us"} className={poppins.className}>
               About Us
             </Link>
-            <Link href={"/ourStory"} className={poppins.className}>
+            <Link href={"/our-story"} className={poppins.className}>
               Our Story
             </Link>
             {/* <Link href={"/ourTeam"} className={poppins.className}>
               Our Team
             </Link> */}
-            <Link href={"/capabilities"} className={poppins.className}>
-              Capabilities
+            <Link href={"/our-expertise"} className={poppins.className}>
+              Our Expertise
             </Link>
             <Link href={"/case-studies"} className={poppins.className}>
               Case Studies
@@ -87,15 +87,18 @@ function Footer() {
             {/* <Link href={"/blog"} className={poppins.className}>
               Blog
             </Link> */}
+            <Link href={"/contact-us"} className={poppins.className}>
+              Contact Us
+            </Link>
           </div>
         </div>
         <div className="links-wrap">
           <h1 className={poppins.className}>Services</h1>
           <div className={`${poppins.className} footer-ul`}>
-            <Link href={"/done-amazon"}>Account Management</Link>
+            <Link href={"/account-management"}>Account Management</Link>
             <Link href={"/amazon-advertising"}>Amazon Advertising</Link>
             <Link href={"/listing-optimization"}>Listing Optimization</Link>
-            <Link href={"/amazon-content"}>Amazon A+ Content</Link>
+            <Link href={"/amazon-a-content"}>Amazon A+ Content</Link>
             <Link href={"/product-research"}>Product Research</Link>
             <Link href={"/product-sourcing"}>Product Sourcing</Link>
             <Link href={"/brand-storefront"}>Brand Storefront</Link>

@@ -254,7 +254,10 @@ function Navbar() {
               </Link>
             </div>
             <div className="nav-link-wraps">
-              <a href="#" className={`${poppins.className} book-call`}>
+              <a
+                href="https://calendly.com/growth-echo"
+                className={`${poppins.className} book-call`}
+              >
                 Book A Call
               </a>
             </div>

@@ -748,6 +748,12 @@ margin-top: 20px;
                         font-size: 16px;
                         border:1px solid #fff;
                         text-transform: uppercase;
+                        transition: 0.3s ease-in-out;
+                        &:hover{
+                            cursor: pointer;
+                            background-color: transparent;
+                            color: #fff;
+                        }
                         @include from-320-to-575{
                             font-size: 14px;
                         }
@@ -1294,6 +1300,9 @@ width: 275px !important;
   }
   .case-img-wrap{
     img{
+        &:hover{
+            cursor: pointer;
+        }
         @include from-992-to-1140{
             width: 250px;
             height: 337px;
