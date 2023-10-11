@@ -51,7 +51,10 @@ function CaseStudies() {
             thrive in highly competitive environments, leveraging targeted
             strategies to boost visibility.
           </p>
-          <Link href={"/"} className={`${poppins.className} headerLink`}>
+          <Link
+            href={"/contactUs"}
+            className={`${poppins.className} headerLink`}
+          >
             Start Now
           </Link>
         </div>
@@ -67,7 +70,7 @@ function CaseStudies() {
           appealing.
         </p>
         <div className="grow-link-wrap">
-          <Link href={"/"} className={poppins.className}>
+          <Link href={"/contactUs"} className={poppins.className}>
             Ready To Grow
             <Image
               alt="growth eco"

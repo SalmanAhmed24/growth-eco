@@ -57,9 +57,8 @@ function ContactUs() {
           <div className="main-content-con">
             <h1 className={`${poppins.className}`}>We are here to help</h1>
             <p className={`${poppins.className}`}>
-              We envision a marketing website that provides an immersive and
-              captivating user experience. We envision a marketing website that
-              provides an immersive and captivating user experience.
+              We are here to help your business thrive on Amazon. Trust our
+              knowledge and strategies to move towards success on the platform.
             </p>
           </div>
         </section>

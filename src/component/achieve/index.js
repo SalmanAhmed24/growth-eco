@@ -20,7 +20,7 @@ function Achieve({ futuraBK, futuraMDBT, futuraLtBT, futuraHv, poppins }) {
         data-aos-delay="50"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
-        className="header-content-wrap"
+        className="ach-img"
         alt="growth eco"
         src={"/achieve.png"}
         width={1370}

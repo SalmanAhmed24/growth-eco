@@ -150,9 +150,9 @@
                 width: 100%;
                 text-align: left;
             }
-            @include above-1400{
-                font-size: 3vw;
-            }
+            // @include above-1400{
+            //     font-size: 3vw;
+            // }
         }
         p{
             width: 65%;
@@ -165,9 +165,9 @@
             padding-bottom: 20px;
             position: relative;
             z-index: 10;
-            @include above-1400{
-                font-size: 1.1vw;
-            }
+            // @include above-1400{
+            //     font-size: 1.1vw;
+            // }
             @include from-575-992{
                 width: 100%;
             }
@@ -189,9 +189,9 @@
             position: relative;
             z-index: 10;
             align-self: center;
-            @include above-1400{
-                font-size: 1.3vw;
-            }
+            // @include above-1400{
+            //     font-size: 1.3vw;
+            // }
             @include from-320-575{
                 align-self: flex-start;
             }
@@ -261,9 +261,9 @@
         font-size: 24px;
         font-weight: 600;
         line-height: normal;
-        @include above-1400{
-            font-size: 2.5vw;
-        }
+        // @include above-1400{
+        //     font-size: 2.5vw;
+        // }
         @include from-320-575{
             font-size: 24px;
         }
@@ -317,9 +317,9 @@
                         font-weight: 300;
                         line-height: normal;
                         text-align: justify;
-                        @include above-1400{
-                            font-size: 1.2vw;
-                        }
+                        // @include above-1400{
+                        //     font-size: 1.2vw;
+                        // }
                         @include from-320-575{
                             text-align: center;
                         }
@@ -358,9 +358,9 @@
                                     p{
                                         text-align: center;
                                         font-size: 14px;
-                                        @include above-1400{
-                                            font-size: 1.1vw;
-                                        }
+                                        // @include above-1400{
+                                        //     font-size: 1.1vw;
+                                        // }
                                         &:hover{
                                             cursor: context-menu;
                                         }
@@ -388,9 +388,9 @@
                                 border: 1px solid #4663AC;
                                 transition: 0.3s ease-in-out;
                                 text-transform: uppercase;
-                                @include above-1400{
-                                    font-size: 1.3vw;
-                                }
+                                // @include above-1400{
+                                //     font-size: 1.3vw;
+                                // }
                                     &:hover{
                                         background: #fff;
                                         color: #4663AC;
@@ -448,9 +448,9 @@
                                 @include from-320-575{
                                     font-size: 15px;
                                 }
-                                @include above-1400{
-                                    font-size: 1.5vw;
-                                }
+                                // @include above-1400{
+                                //     font-size: 1.5vw;
+                                // }
                             }
                             p{
                                 font-size: 16px;
@@ -459,9 +459,9 @@
                                 @include from-320-575{
                                     font-size: 12px;
                                 }
-                                @include above-1400{
-                                    font-size: 1.1vw;
-                                }
+                                // @include above-1400{
+                                //     font-size: 1.1vw;
+                                // }
                             }
                         }
                 }
@@ -501,12 +501,12 @@ color: #fff;
 border: 1px solid #4663AC;
 transition: 0.3s ease-in-out;
 padding: 5px 10px;
-@include above-1400{
-    font-size: 1.3vw;
-}
-@include above-1700{
-    font-size: 1.1vw !important;
-}
+// @include above-1400{
+//     font-size: 1.3vw;
+// }
+// @include above-1700{
+//     font-size: 1.1vw !important;
+// }
     }
 }
 .ser-counter{
@@ -558,9 +558,9 @@ padding: 5px 10px;
                         @include from-320-575{
                             font-size: 30px;
                         }
-                        @include above-1400{
-                            font-size: 2.5vw;
-                        }
+                        // @include above-1400{
+                        //     font-size: 2.5vw;
+                        // }
                     }
                     p{
                         color: #fff;
@@ -570,9 +570,9 @@ padding: 5px 10px;
                         @include from-320-575{
                             font-size: 14px;
                         }
-                        @include above-1400{
-                            font-size: 1.1vw;
-                        }
+                        // @include above-1400{
+                        //     font-size: 1.1vw;
+                        // }
                     }
             }
                 .first{
@@ -589,9 +589,9 @@ padding: 5px 10px;
                             text-align: center;
                             font-weight: 600;
                             line-height: normal;
-                            @include above-1400{
-                                font-size: 2.5vw;
-                            }
+                            // @include above-1400{
+                            //     font-size: 2.5vw;
+                            // }
                         }
                 }
         }
@@ -714,9 +714,9 @@ margin: 10px;
             @include from-320-575{
                 font-size: 24px;
             }
-            @include above-1400{
-                font-size: 2.5vw;
-            }
+            // @include above-1400{
+            //     font-size: 2.5vw;
+            // }
                 span{
                     color: #fff;
                     margin-left: 5px;
@@ -733,9 +733,9 @@ margin: 10px;
                 width: 95%;
                 font-size: 14px;
             }
-            @include above-1400{
-                font-size: 1.1vw;
-            }
+            // @include above-1400{
+            //     font-size: 1.1vw;
+            // }
         }
 }
 .grow-ser-card-con{
@@ -835,9 +835,9 @@ margin: 10px;
                 @include from-320-575{
                     font-size: 9px;
                 }
-                @include above-1400{
-                    font-size: 0.7vw;
-                }
+                // @include above-1400{
+                //     font-size: 0.7vw;
+                // }
                 }
                 h1{
                     color: #fff;
@@ -849,9 +849,9 @@ margin: 10px;
                         font-size: 11px;
                         margin-top: 20px;
                     }
-                    @include above-1400{
-                        font-size: 0.9vw;
-                    }
+                    // @include above-1400{
+                    //     font-size: 0.9vw;
+                    // }
                 }
             }
             .white{
@@ -864,9 +864,9 @@ margin: 10px;
                         font-size: 11px;
                         margin-top: 20px;
                     }
-                    @include above-1400{
-                        font-size: 0.9vw;
-                    }
+                    // @include above-1400{
+                    //     font-size: 0.9vw;
+                    // }
                 }
                 p{
                     line-height: normal;
@@ -877,9 +877,9 @@ margin: 10px;
                 @include from-320-575{
                     font-size: 9px;
                 }
-                @include above-1400{
-                    font-size: 0.7vw;
-                }
+                // @include above-1400{
+                //     font-size: 0.7vw;
+                // }
             }
             }
             
@@ -901,9 +901,9 @@ text-decoration: none;
 padding: 5px 10px;
 color: #fff;
 transition: 0.3s ease-in-out;
-@include above-1400{
-    font-size: 1.3vw;
-}
+// @include above-1400{
+//     font-size: 1.3vw;
+// }
 span{
     display: block;
     margin-left: 10px;

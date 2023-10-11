@@ -88,6 +88,11 @@ table {
         @content;
     }
 }
+@mixin from-992-to-1600{
+    @media screen and (min-width:992px) and (max-width:1599px) {
+        @content;
+    }
+}
 @mixin from-992-to-1300{
     @media screen and (min-width:992px) and (max-width:1300px) {
         @content;
@@ -108,6 +113,11 @@ table {
         @content;
     }
 }
+@mixin above-1900{
+    @media screen and (min-width:1900px) {
+        @content;
+    }
+}
 @mixin above-992{
     @media screen and (min-width:992px) {
         @content;
@@ -119,7 +129,9 @@ table {
     flex-direction: column;
     position: relative;
     height: 550px;
-
+    @include above-1600{
+        height: 100%;
+    }
     @include from-320-to-575{
         background-image: url('../../public/new-home-bg.svg');
         background-size: cover;
@@ -150,6 +162,14 @@ table {
             @include from-320-to-992{
                 padding: 20px;
             }
+            @include above-1600{
+                padding: 7vw;
+            }
+            @include above-1900{
+                position: relative;
+                background-image: url('../../public/final-home-bg.png');
+                background-size: cover;
+            }
             h1{
                 margin-bottom: 10px;
                 text-align: left;
@@ -159,10 +179,7 @@ table {
                 text-transform: capitalize;
                 margin-bottom: 20px;
                 line-height: 50px;
-                @include above-1600{
-                    font-size: 3vw;
-                    line-height: normal;
-                }
+                
                 @include from-992-to-1140{
                     width: 65%;
                     font-size: 38px;
@@ -205,9 +222,7 @@ table {
                     padding: 5px 10px;
                     border:1px solid #4663AC;
                     transition: 0.3s ease-in-out;
-                    @include above-1600{
-                        font-size: 1.4vw;
-                    }
+                    
                     &:hover{
                         background-color: #fff;
                         color: #4663AC;
@@ -221,6 +236,9 @@ table {
     @include from-320-to-575{
         display: none;
     }
+    @include above-1900{
+        display: none;
+    }
 }
 .triangle-bg{
     position: relative;
@@ -229,7 +247,7 @@ table {
     overflow-x: clip;
         flex-direction: column;
         @include above-1600{
-            padding:14vw 8vw;
+            padding:4vw 8vw;
         }
         @include from-320-to-575{
             padding: 20px 20px 20px 20px;
@@ -246,9 +264,7 @@ table {
             text-align: center;
             margin-bottom: 10px;
             font-weight: 600;
-            @include above-1600{
-                font-size: 2.5vw;
-            }
+            
             @include from-320-to-992{
                 font-size: 24px;
             }
@@ -261,10 +277,7 @@ table {
             font-size: 16px;
             line-height: 25px;
             font-weight: 300;
-            @include above-1600{
-                font-size: 1.3vw;
-                line-height: normal;
-            }
+            
             @include from-320-to-992{
                 font-size: 15px;
             }
@@ -300,9 +313,7 @@ margin-top: 20px;
                     padding: 5px 10px;
                     border:1px solid #4663AC;
                     transition: 0.3s ease-in-out;
-                    @include above-1600{
-                        font-size: 1.5vw;
-                    }
+                    
                     @include from-320-to-575{
                         font-size: 14px;
                     }
@@ -327,6 +338,7 @@ margin-top: 20px;
     position: relative;
     @include above-1600{
         padding: 10vw 0vw;
+        justify-content: center;
     }
     @include from-320-to-575{
         display: none;
@@ -351,6 +363,15 @@ margin-top: 20px;
                 @include from-320-to-575{
                     display: none;
                 }
+                @include from-575-to-992{
+                    width: 100%;
+                }
+                @include from-992-to-1600{
+                    width: 100%;
+                }
+                @include above-1600{
+                    width: auto;
+                }
         }
         .single-step{
             width: 25%;
@@ -365,8 +386,9 @@ margin-top: 20px;
     left: -9vw;
     }
     @include above-1600{
-        top: 8.8vw;
-        left: -1.5vw;
+        width:fit-content;
+        left: -85px;
+    top: 75px;
     }
     img{
         width: 114px;
@@ -383,9 +405,7 @@ margin-top: 20px;
                         font-size: 12px;
                         font-weight: 600;
                     }
-                    @include above-1600{
-                        font-size: 1.15vw;
-                    }
+                    
                 }
                 ul{
                     list-style: initial;
@@ -395,9 +415,7 @@ margin-top: 20px;
                     @include from-320-to-992{
                         font-size: 10px;
                     }
-                    @include above-1600{
-                        font-size: 1vw;
-                    }
+                    
                 }
         }
         .single-step2{
@@ -418,7 +436,9 @@ margin-top: 20px;
         top: 2vw;
     }
     @include above-1600{
-        top:10vw
+        width: fit-content;
+        left: -70px;
+        top: 60px;
     }
     img{
         width: 114px;
@@ -435,11 +455,7 @@ margin-top: 20px;
                         font-size: 12px;
                         font-weight: 600;
                     }
-                    @include above-1600{
-                        font-size: 1.15vw;
-                        top: -3vw;
-                        position: relative;
-                    }
+                    
                 }
                 ul{
                     list-style: initial;
@@ -450,11 +466,7 @@ margin-top: 20px;
                     @include from-320-to-992{
                         font-size: 10px;
                     }
-                    @include above-1600{
-                        font-size: 1vw;
-                        top: -3vw;
-                        position: relative;
-                    }
+                    
                 }
         }
         .single-step3{
@@ -475,7 +487,9 @@ margin-top: 20px;
     
     }
     @include above-1600{
-        top:-8vw
+        width: fit-content;
+    left: 0px;
+    top: -20px;
     }
     img{
         width: 114px;
@@ -494,7 +508,9 @@ margin-top: 20px;
                         font-weight: 600;
                     }
                     @include above-1600{
-                        font-size: 1.15vw;
+                        // font-size: 1.15vw;
+                    line-height: normal;
+
                     }
                 }
                 ul{
@@ -506,7 +522,9 @@ margin-top: 20px;
                         font-size: 10px;
                     }
                     @include above-1600{
-                        font-size: 1vw;
+                        // font-size: 1vw;
+                    line-height: normal;
+
                     }
                 }
         }
@@ -528,7 +546,9 @@ margin-top: 20px;
     left: 10vw;
             }
             @include above-1600{
-                top: -8vw;
+                width: fit-content;
+                left: 90px;
+                top: -105px;
             }
             img{
                 width: 114px;
@@ -546,7 +566,9 @@ margin-top: 20px;
                         font-weight: 600;
                     }
                     @include above-1600{
-                        font-size: 1.15vw;
+                        // font-size: 1.15vw;
+                    line-height: normal;
+
                     }
                 }
                 ul{
@@ -559,7 +581,9 @@ margin-top: 20px;
                         font-size: 10px;
                     }
                     @include above-1600{
-                        font-size: 1vw;
+                        // font-size: 1vw;
+                    line-height: normal;
+
                     }
                 }
         }
@@ -607,7 +631,9 @@ margin-top: 20px;
                 font-size: 24px;
             }
             @include above-1600{
-                font-size: 2.5vw;
+                // font-size: 2.5vw;
+                line-height: normal;
+
             }
         }
         p{
@@ -620,7 +646,9 @@ margin-top: 20px;
                 font-size: 14px;
             }
             @include above-1600{
-                font-size: 1.3vw;
+                // font-size: 1.3vw;
+                line-height: normal;
+
             }
         }
         .serv-man{
@@ -691,7 +719,9 @@ margin-top: 20px;
                             font-size: 16px;
                         }
                         @include above-1600{
-                            font-size: 1.5vw;
+                            // font-size: 1.5vw;
+                    line-height: normal;
+
                         }
                     }
                     p{
@@ -705,8 +735,9 @@ margin-top: 20px;
                             line-height: 20px;
                         }
                         @include above-1600{
-                            font-size: 1.3vw;
-                            line-height: 25px;
+                            // font-size: 1.3vw;
+                            line-height: normal;
+
                         }
                     }
                     button{
@@ -721,7 +752,9 @@ margin-top: 20px;
                             font-size: 14px;
                         }
                         @include above-1600{
-                            font-size: 1.3vw;
+                            // font-size: 1.3vw;
+                    line-height: normal;
+
                         }
                     }
             }
@@ -767,7 +800,9 @@ margin-top: 20px;
             color: #fff;
             transition: 0.3s ease-in-out;
             @include above-1600{
-                font-size: 1.3vw;
+                // font-size: 1.3vw;
+                line-height: normal;
+
             }
             &:hover{
                 background: #fff;
@@ -854,7 +889,9 @@ margin-top: 20px;
                 font-size: 24px;
             }
             @include above-1600{
-                font-size: 2.5vw;
+                // font-size: 2.5vw;
+                line-height: normal;
+
             }
         }
         p{
@@ -869,7 +906,9 @@ margin-top: 20px;
                 font-size: 14px;
             }
             @include above-1600{
-                font-size: 1.3vw;
+                // font-size: 1.3vw;
+                line-height: normal;
+
             }
         }
         .arrow-3{
@@ -924,7 +963,9 @@ margin-top: 20px;
                 font-size: 24px;
             }
             @include above-1600{
-                font-size: 2.5vw;
+                // font-size: 2.5vw;
+                line-height: normal;
+
             }
         }
         p{
@@ -937,7 +978,9 @@ margin-top: 20px;
                 font-size: 14px;
             }
             @include above-1600{
-                font-size: 1.3vw;
+                // font-size: 1.3vw;
+                line-height: normal;
+
             }
         }
         .slider-wrap{
@@ -998,7 +1041,9 @@ margin-top: 20px;
                 padding: 0px 30px;
             }
             @include above-1600{
-                font-size: 2.5vw;
+                // font-size: 2.5vw;
+                line-height: normal;
+
             }
         }
         .swiper{
@@ -1036,7 +1081,9 @@ width: 275px !important;
                     margin-bottom: 0px;
                     font-weight: 600;
                     @include above-1600{
-                        font-size: 1vw;
+                        // font-size: 1vw;
+                    line-height: normal;
+
                     }
                 }
 
@@ -1045,7 +1092,9 @@ width: 275px !important;
                     font-size: 15px;
                     font-weight: 300;
                     @include above-1600{
-                        font-size: 0.9vw;
+                        // font-size: 0.9vw;
+                    line-height: normal;
+
                     }
                 }
             }
@@ -1057,7 +1106,9 @@ width: 275px !important;
         margin-top: 10px;
         font-weight: 300;
         @include above-1600{
-            font-size: 0.9vw;
+            // font-size: 0.9vw;
+            line-height: normal;
+
         }
     }
     .test-down{
@@ -1096,7 +1147,9 @@ width: 275px !important;
                         margin-bottom: 0px;
                         font-weight: 600;
                         @include above-1600{
-                            font-size: 1vw;
+                            // font-size: 1vw;
+                    line-height: normal;
+
                         }
                     }
     
@@ -1105,7 +1158,9 @@ width: 275px !important;
                         font-size: 15px;
                         font-weight: 300;
                         @include above-1600{
-                            font-size: 0.9vw;
+                            // font-size: 0.9vw;
+                    line-height: normal;
+
                         }
                     }
                 }
@@ -1117,7 +1172,9 @@ width: 275px !important;
             margin-top: 10px;
             font-weight: 300;
             @include above-1600{
-                font-size: 0.9vw;
+                // font-size: 0.9vw;
+                line-height: normal;
+
             }
         }
         .test-down{
@@ -1187,7 +1244,9 @@ width: 275px !important;
             margin-bottom: 50px;
             font-weight: 600;
             @include above-1600{
-                font-size: 2.5vw;
+                // font-size: 2.5vw;
+                line-height: normal;
+
             }
             @include from-320-to-575{
                 padding: 0px 30px;
@@ -1264,7 +1323,9 @@ width: 275px !important;
             text-transform: uppercase;
             color: #000;
             @include above-1600{
-                font-size: 1.5vw;
+                // font-size: 1.5vw;
+                line-height: normal;
+
             }
                 span{
                     padding-left: 10px;
@@ -1305,7 +1366,9 @@ width: 275px !important;
             line-height: normal;
             font-weight: 500;
             @include above-1600{
-                font-size: 2.5vw;
+                // font-size: 2.5vw;
+                line-height: normal;
+
             }
             @include from-320-to-575{
                 width: 100%;
@@ -1324,7 +1387,9 @@ width: 275px !important;
                     padding: 5px 20px;
                     transition: 0.3s ease-in-out;
                     @include above-1600{
-                        font-size: 1.3vw;
+                        // font-size: 1.3vw;
+                    line-height: normal;
+
                     }
                     &:hover{
                         cursor: pointer;
@@ -1353,7 +1418,9 @@ width: 275px !important;
                 margin-bottom: 20px;
             }
             @include above-1600{
-                font-size: 1.3vw;
+                // font-size: 1.3vw;
+                line-height: normal;
+
             }
         }
         a{
@@ -1362,7 +1429,9 @@ width: 275px !important;
                 font-size: 14px;
             }
             @include above-1600{
-                font-size: 1.3vw;
+                // font-size: 1.3vw;
+                line-height: normal;
+
             }
         }
   }
@@ -1476,7 +1545,9 @@ display: none;
                 left: -15px;
                 top:-12px;
                 @include above-1600{
-                    font-size: 1.5vw;
+                    // font-size: 1.5vw;
+                    line-height: normal;
+
                 }
             }
             ul{
@@ -1485,7 +1556,9 @@ display: none;
                 left: -15px;
                 top:-12px;
                 @include above-1600{
-                    font-size: 1.3vw;
+                    // font-size: 1.3vw;
+                    line-height: normal;
+
                 }
             }
     }

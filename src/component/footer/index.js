@@ -75,31 +75,32 @@ function Footer() {
             <Link href={"/ourStory"} className={poppins.className}>
               Our Story
             </Link>
-            <Link href={"/ourTeam"} className={poppins.className}>
+            {/* <Link href={"/ourTeam"} className={poppins.className}>
               Our Team
-            </Link>
+            </Link> */}
             <Link href={"/capabilities"} className={poppins.className}>
               Capabilities
             </Link>
             <Link href={"/case-studies"} className={poppins.className}>
               Case Studies
             </Link>
-            <Link href={"/blog"} className={poppins.className}>
+            {/* <Link href={"/blog"} className={poppins.className}>
               Blog
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className="links-wrap">
           <h1 className={poppins.className}>Services</h1>
           <div className={`${poppins.className} footer-ul`}>
-            <Link href={"/product-sourcing"}>Product Sourcing</Link>
-            <Link href={"/listing-reinstatement"}>Listing Reinstatement</Link>
+            <Link href={"/done-amazon"}>Account Management</Link>
             <Link href={"/amazon-advertising"}>Amazon Advertising</Link>
-            <Link href={"/amazon-content"}>Amazon Content</Link>
-            <Link href={"/done-amazon"}>Amazon Done</Link>
+            <Link href={"/listing-optimization"}>Listing Optimization</Link>
+            <Link href={"/amazon-content"}>Amazon A+ Content</Link>
             <Link href={"/product-research"}>Product Research</Link>
+            <Link href={"/product-sourcing"}>Product Sourcing</Link>
             <Link href={"/brand-storefront"}>Brand Storefront</Link>
             <Link href={"/account-suspension"}>Account Suspension</Link>
+            <Link href={"/listing-reinstatement"}>Listing Reinstatement</Link>
           </div>
         </div>
         <div className="links-wrap">

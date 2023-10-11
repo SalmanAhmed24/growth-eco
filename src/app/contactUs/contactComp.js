@@ -67,8 +67,7 @@ function ContactComp() {
         <div className="inner-content">
           <h1>Contact Us</h1>
           <p>
-            We envision a marketing website that provides an immersive and
-            captivating user experience.
+            Contact us now to take your Amazon business to successful heights!
           </p>
         </div>
         <div className="form-wrap">

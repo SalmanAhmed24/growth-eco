@@ -54,7 +54,10 @@ function Capabilities({ refreshFlag = false }) {
           approach, we cater to the needs of our clients, who are wondering how
           to sell products on Amazon and enable them to achieve success!
         </p>
-        <Link href={"/"} className={`${poppins.className} cap-start-link`}>
+        <Link
+          href={"/contactUs"}
+          className={`${poppins.className} cap-start-link`}
+        >
           Start Now
         </Link>
       </header>

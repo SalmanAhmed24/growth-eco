@@ -46,9 +46,9 @@ background-color: #fff;
         @include from-320-to-575{
             font-size: 24px;
         }
-        @include above-1600{
-            font-size: 2.5vw;
-        }
+        // @include above-1600{
+        //     font-size: 2.5vw;
+        // }
     }
     p{
         line-height: normal;
@@ -62,9 +62,9 @@ background-color: #fff;
         @include from-320-to-575{
             font-size: 15px;
         }
-        @include above-1600{
-            font-size: 1.1vw;
-        }
+        // @include above-1600{
+        //     font-size: 1.1vw;
+        // }
     }
     button{
         background-color: transparent;
@@ -77,9 +77,9 @@ background-color: #fff;
         padding: 0px;
         position: relative;
         width: 95%;
-        @include above-1600{
-            font-size: 1.1vw;
-        }
+        // @include above-1600{
+        //     font-size: 1.1vw;
+        // }
         @include from-320-to-575{
             font-size: 15px;
             text-align: start;
@@ -150,9 +150,9 @@ background-color: #fff;
             @include from-320-to-575{
                 font-size: 20px;
             }
-            @include above-1600{
-                font-size: 1.5vw;
-            }
+            // @include above-1600{
+            //     font-size: 1.5vw;
+            // }
         }
         .form-wrap{
             display: flex;
@@ -165,9 +165,9 @@ background-color: #fff;
                     color: #fff;
                     border-bottom: 1px solid #fff;
                     padding: 15px 0px;
-                    @include above-1600{
-                        font-size: 1.1vw;
-                    }
+                    // @include above-1600{
+                    //     font-size: 1.1vw;
+                    // }
                     &::placeholder {
                         color: #fff;
                         opacity: 1; /* Firefox */
@@ -181,9 +181,9 @@ background-color: #fff;
                     color: #fff;
                     border-bottom: 1px solid #fff;
                     padding: 15px 0px;
-                    @include above-1600{
-                        font-size: 1.1vw;
-                    }
+                    // @include above-1600{
+                    //     font-size: 1.1vw;
+                    // }
                     &::placeholder {
                         color: #fff;
                         opacity: 1; /* Firefox */
@@ -198,9 +198,9 @@ background-color: #fff;
                     margin-top: 20px;
                     padding: 5px 10px;
                     transition: 0.3s ease-in-out;
-                    @include above-1600{
-                        font-size: 1.3vw;
-                    }
+                    // @include above-1600{
+                    //     font-size: 1.3vw;
+                    // }
                         &:hover{
                             background: transparent;
                             color: #FFF;

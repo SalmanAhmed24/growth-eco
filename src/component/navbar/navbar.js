@@ -113,21 +113,21 @@ function Navbar() {
             <div className="nav-link-wraps dropdown-wrap">
               <Link
                 className={
-                  path == "/aboutUs" ||
+                  path == "/about-us" ||
                   path == "/ourStory" ||
                   path == "/ourTeam"
                     ? "activeLink"
                     : ""
                 }
-                href={"/aboutUs"}
+                href={"/about-us"}
               >
                 About Us +
               </Link>
               <div className="drop-div">
                 <div className="droplist">
                   <Link
-                    className={path == "/ourStory" ? "activeInner" : ""}
-                    href={"/ourStory"}
+                    className={path == "/our-story" ? "activeInner" : ""}
+                    href={"/our-story"}
                   >
                     Our Story
                   </Link>
@@ -250,6 +250,11 @@ function Navbar() {
                 Contact Us
               </Link>
             </div>
+            <div className="nav-link-wraps">
+              <a href="#" className={`${poppins.className} book-call`}>
+                Book A Call
+              </a>
+            </div>
           </div>
         </div>
         <div className="menu-bars-wrap">
@@ -296,8 +301,8 @@ function Navbar() {
                 setShow(false);
                 setShowCapa(false);
               }}
-              className={path == "/aboutUs" ? "activeLink" : ""}
-              href={"/aboutUs"}
+              className={path == "/about-us" ? "activeLink" : ""}
+              href={"/about-us"}
             >
               About Us
             </Link>
@@ -321,7 +326,7 @@ function Navbar() {
                 <Link
                   onClick={() => setMobileNav(false)}
                   className={path == "/ourStory" ? "activeInner" : ""}
-                  href={"/ourStory"}
+                  href={"/our-story"}
                 >
                   Our Story
                 </Link>

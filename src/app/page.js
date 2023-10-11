@@ -50,7 +50,7 @@ export default function Home() {
       </Head>
       <BackToTop route={"#home"} />
       <header className="header-wrap">
-        <img src="/home-new-bg.svg" className="headerImg" alt="home-bg" />
+        <img src="/final-home-bg.png" className="headerImg" alt="home-bg" />
         <section
           data-aos="fade-right"
           data-aos-offset="00"
@@ -87,10 +87,10 @@ export default function Home() {
           </p>
           <div className="boost-btn-wrap">
             <button
-              onClick={() => router.push("/home#contact")}
+              onClick={() => router.push("/contactUs")}
               className={poppins.className}
             >
-              Boost Your Visibility{" "}
+              Boost Your Visibility
               <span>
                 <Image
                   alt="growth eco"
@@ -111,7 +111,7 @@ export default function Home() {
           layout="responsive"
         />
         <div className="step-wrap">
-          <Image
+          <img
             data-aos="fade-up"
             data-aos-offset="200"
             data-aos-delay="50"
@@ -120,9 +120,9 @@ export default function Home() {
             alt="growth eco"
             src={"/vector.png"}
             className="vector-wrap"
-            width={830}
-            height={275}
-            layout="responsive"
+            // width={830}
+            // height={275}
+            // layout="responsive"
           />
           <div
             className="single-step"
@@ -429,7 +429,7 @@ export default function Home() {
           src={"/sales-main.svg"}
           width={1010}
           height={418}
-          layout="responsive"
+          // layout="responsive"
           className="sales-count"
         />
         <Image
@@ -709,7 +709,10 @@ export default function Home() {
           />
         ) : null} */}
         <div className="case-st-all-btn">
-          <Link className={`${poppins.className} explore-all`} href={"#"}>
+          <Link
+            className={`${poppins.className} explore-all`}
+            href={"/case-studies"}
+          >
             Explore All
             <span>
               <Image
@@ -730,7 +733,12 @@ export default function Home() {
         </h1>
         <div className="quote-btn-wrap">
           <Image alt="growth eco" src={"/rocket2.png"} width={25} height={25} />
-          <button className={poppins.className}>Start Now</button>
+          <button
+            className={poppins.className}
+            onClick={() => router.push("/contactUs")}
+          >
+            Start Now
+          </button>
           <Image alt="growth eco" src={"/rocket1.png"} width={25} height={25} />
         </div>
       </section>

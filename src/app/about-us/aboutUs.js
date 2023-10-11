@@ -44,13 +44,13 @@ function AboutUs() {
         // futuraLtBT={futuraLTBT}
         // futuraHv={futuraHv}
       />
-      <SliderAbout
+      {/* <SliderAbout
         poppins={poppins}
         // futuraBK={futuraBK}
         // futuraMDBT={futuraMDBT}
         // futuraLtBT={futuraLTBT}
         // futuraHv={futuraHv}
-      />
+      /> */}
       <section className="who-we-comp">
         <WhoWeAre
           title={"What is Growth Echo?"}

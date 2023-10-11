@@ -98,9 +98,9 @@
                                 text-align: center;
                                 font-size: 30px;
                             }
-                            @include above-1600{
-                                font-size: 2.5vw;
-                            }
+                            // @include above-1600{
+                            //     font-size: 2.5vw;
+                            // }
                         }
                         p{
                             font-size: 16px;
@@ -113,9 +113,9 @@
                                 font-size: 14px;
                                 text-align: center;
                             }
-                            @include above-1600{
-                                font-size: 1.1vw;
-                            }
+                            // @include above-1600{
+                            //     font-size: 1.1vw;
+                            // }
                         }
                         .headerLink{
                             font-size: 16px;
@@ -134,9 +134,9 @@
                                 @include from-320-992{
                                     align-self: center;
                                 }
-                                @include above-1600{
-                                    font-size: 1.1vw;
-                                }
+                                // @include above-1600{
+                                //     font-size: 1.1vw;
+                                // }
                         }
                 }
         }
@@ -152,9 +152,9 @@ color: #fff;
 border: 1px solid #4663AC;
 transition: 0.3s ease-in-out;
 padding: 10px 20px;
-@include above-1600{
-    font-size: 1.1vw;
-}
+// @include above-1600{
+//     font-size: 1.1vw;
+// }
     }
     img{
         margin-left: 10px;
@@ -177,9 +177,9 @@ padding: 10px 20px;
                 text-align: center;
                 font-size: 24px;
             }
-            @include above-1600{
-                font-size: 2vw;
-            }
+            // @include above-1600{
+            //     font-size: 2vw;
+            // }
         }
         .blue-heading{
             color: #4663AC;
@@ -196,9 +196,9 @@ padding: 10px 20px;
                 text-align: center;
                 font-size: 15px;
             }
-            @include above-1600{
-                font-size: 1.2vw;
-            }
+            // @include above-1600{
+            //     font-size: 1.2vw;
+            // }
         }
 }
 .no-bg{

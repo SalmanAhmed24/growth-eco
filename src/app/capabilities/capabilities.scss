@@ -97,9 +97,9 @@
                 font-size: 30px;
                 margin-top: 20px;
             }
-            @include above-1600{
-                font-size: 2.5vw;
-            }
+            // @include above-1600{
+            //     font-size: 2.5vw;
+            // }
         }
         p{
             text-align: center;
@@ -110,9 +110,9 @@
             line-height: normal;
             margin-top: 10px;
             margin-bottom: 20px;
-            @include above-1600{
-                font-size: 1.1vw;
-            }
+            // @include above-1600{
+            //     font-size: 1.1vw;
+            // }
             @include from-320-575{
                 width: 100%;
                 font-size:14px;
@@ -128,9 +128,9 @@
             border: 1px solid #F9F9F9;
             transition: 0.3s ease-in-out;
             text-transform: uppercase;
-            @include above-1600{
-                font-size: 1.3vw;
-            }
+            // @include above-1600{
+            //     font-size: 1.3vw;
+            // }
                 &:hover{
                     cursor: pointer;
                     background: transparent;
@@ -158,9 +158,9 @@
             @include from-320-575{
                 font-size: 24px;
             }
-            @include above-1600{
-                font-size: 2.5vw;
-            }
+            // @include above-1600{
+            //     font-size: 2.5vw;
+            // }
         }
         .why-cap-card-wrap{
             display: flex;
@@ -222,9 +222,9 @@
                                 display: none;
                                 font-size: 16px;
                             }
-                            @include above-1600{
-                                font-size: 1.2vw;
-                            }
+                            // @include above-1600{
+                            //     font-size: 1.2vw;
+                            // }
                         }
                         .thin-head{
                             display: none;
@@ -249,9 +249,9 @@
                             @include from-320-575{
                                 display: none;
                             }
-                            @include above-1600{
-                                font-size: 1vw;
-                            }
+                            // @include above-1600{
+                            //     font-size: 1vw;
+                            // }
                         }
                         .blue{
                             display: block;
@@ -320,9 +320,9 @@
             border: 1px solid #4663AC;
             transition: 0.3s ease-in-out;
             text-transform: uppercase;
-            @include above-1600{
-                font-size: 1.3vw;
-            }
+            // @include above-1600{
+            //     font-size: 1.3vw;
+            // }
                 &:hover{
                     cursor: pointer;
                     background: transparent;

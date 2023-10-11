@@ -8,6 +8,11 @@
         @content;
     }
 }
+@mixin above-1900{
+    @media screen and (min-width:1900px){
+        @content;
+    }
+}
 @mixin from-575-992{
     @media screen and (min-width:575.67px) and (max-width:992px) {
         @content;
@@ -42,6 +47,9 @@
     justify-content: center;
     align-items: center;
     background-position-y:-10px !important;
+    @include above-1900{
+        background-position-y: -40px !important;
+    }
     h1{
         width: 60%;
         font-size: 40px;
@@ -76,6 +84,9 @@
         padding: 20px;
         background-color: #E1F1FD;
         margin-bottom: -20px;
+    }
+    @include above-1900{
+        height: 1000px;
     }
         .content-wrapper{          
             position: relative;
@@ -112,9 +123,9 @@
                     font-weight: 300;
                     margin-bottom: 5px;
                 }
-                @include above-1300{
-                    font-size: 1.3vw;
-                }
+                // @include above-1300{
+                //     font-size: 1.3vw;
+                // }
             }
             .ceo-name{
                 text-align: right;
@@ -141,6 +152,7 @@
     bottom: 0px;
     margin: auto 0px;
     width: 24%;
+    height: 100%;
     @include from-575-992{
     left: -20%;
     top: 10px;
@@ -161,6 +173,10 @@
     }
             img{
                 width: 90%;
+                @include above-1900{
+                    width: fit-content;
+                }
+
             }
         }
         .team-about-wrap{
@@ -175,6 +191,10 @@
     top: 309px;
     width: 40%;
     }
+    @include above-1900{
+        width: fit-content;
+        right: 135px;
+    }
     @include from-320-575{
     right: -57px;
     top: 150px;
@@ -185,6 +205,9 @@
     }
     img{
         width: 80%;
+        @include above-1900{
+            width: fit-content;
+        }
     }
         }
 }

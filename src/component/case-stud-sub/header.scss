@@ -75,9 +75,9 @@
                     @include from-320-992{
                         font-size: 20px;
                     }
-                    @include above-1600{
-                        font-size: 1.7vw;
-                    }
+                    // @include above-1600{
+                    //     font-size: 1.7vw;
+                    // }
                 }
                 h2{
                     font-size: 36px;
@@ -85,9 +85,9 @@
                     @include from-320-992{
                         font-size: 22px;
                     }
-                    @include above-1600{
-                        font-size: 2.3vw;
-                    }
+                    // @include above-1600{
+                    //     font-size: 2.3vw;
+                    // }
                 }
                 p{
                     font-size: 16px;
@@ -97,9 +97,9 @@
                         font-size: 12px;
                         line-height: 15px;
                     }
-                    @include above-1600{
-                        font-size: 1vw;
-                    }
+                    // @include above-1600{
+                    //     font-size: 1vw;
+                    // }
                 }
                 .visit-web{
                     border-radius: 0px 20px 20px 20px;
@@ -166,9 +166,9 @@
             @include from-320-992{
                 font-size: 24px;
             }
-            @include above-1600{
-                font-size: 2vw;
-            }
+            // @include above-1600{
+            //     font-size: 2vw;
+            // }
         }
         p{
             font-size: 16px;
@@ -180,9 +180,9 @@
                 font-size: 14px;
                 width: 100%;
             }
-            @include above-1600{
-                font-size: 1vw;
-            }
+            // @include above-1600{
+            //     font-size: 1vw;
+            // }
         }
 }
 .snake-step-con{
@@ -263,9 +263,9 @@
                         align-self: flex-start;
                         font-size: 15px;
                     }
-                    @include above-1600{
-                        font-size: 1.5vw;
-                    }
+                    // @include above-1600{
+                    //     font-size: 1.5vw;
+                    // }
                 }
                 p{
                     font-size: 16px;
@@ -280,9 +280,9 @@
                         width: 100%;
                         font-size: 13px;
                     }
-                    @include above-1600{
-                        font-size: 1vw;
-                    }
+                    // @include above-1600{
+                    //     font-size: 1vw;
+                    // }
                 }
         }
         .step1-img{
@@ -360,9 +360,9 @@
                         align-self: flex-start;
                         font-size: 15px;
                     }
-                    @include above-1600{
-                        font-size: 1.5vw;
-                    }
+                    // @include above-1600{
+                    //     font-size: 1.5vw;
+                    // }
                 }
                 p{
                     font-size: 16px;
@@ -372,9 +372,9 @@
                     align-self: flex-start;
                     text-align: left;
                 }
-                @include above-1600{
-                    font-size: 1vw;
-                }
+                // @include above-1600{
+                //     font-size: 1vw;
+                // }
                 .goals-ul{
                     font-size: 16px;
                     line-height: normal;
@@ -391,9 +391,9 @@
                         font-size: 13px;
                         padding-left: 10px;
                     }
-                    @include above-1600{
-                        font-size: 1vw;
-                    }
+                    // @include above-1600{
+                    //     font-size: 1vw;
+                    // }
                 }
         }
         .step2-img{
@@ -469,9 +469,9 @@
                         align-self: flex-start;
                         font-size: 15px;
                     }
-                    @include above-1600{
-                        font-size: 1.5vw;
-                    }
+                    // @include above-1600{
+                    //     font-size: 1.5vw;
+                    // }
                 }
                 p{
                     font-size: 16px;
@@ -486,9 +486,9 @@
                         width: 100%;
                         font-size: 13px;
                     }
-                    @include above-1600{
-                        font-size: 1vw;
-                    }
+                    // @include above-1600{
+                    //     font-size: 1vw;
+                    // }
                 }
                 .goals-ul-right{
                     font-size: 16px;
@@ -506,9 +506,9 @@
                         list-style: disc;
                         padding-left: 10px;
                     }
-                    @include above-1600{
-                        font-size: 1vw;
-                    }
+                    // @include above-1600{
+                    //     font-size: 1vw;
+                    // }
                 }
         }
         .step3-img{
@@ -584,9 +584,9 @@
                         align-self: flex-start;
                         font-size: 15px;
                     }
-                    @include above-1600{
-                        font-size: 1.5vw;
-                    }
+                    // @include above-1600{
+                    //     font-size: 1.5vw;
+                    // }
                 }
                 p{
                     font-size: 16px;
@@ -595,9 +595,9 @@
                     margin-top: 10px;
                     align-self: flex-start;
                     text-align: left; 
-                    @include above-1600{
-                        font-size: 1vw;
-                    }  
+                    // @include above-1600{
+                    //     font-size: 1vw;
+                    // }  
                 }
                 .goals-ul{
                     font-size: 16px;
@@ -615,9 +615,9 @@
                         font-size: 15px;
                         padding-left: 10px;
                     }
-                    @include above-1600{
-                        font-size: 1vw;
-                    }
+                    // @include above-1600{
+                    //     font-size: 1vw;
+                    // }
                 }
         }
         .step4-img{
@@ -690,9 +690,9 @@
                         align-self: flex-start;
                         font-size: 15px;
                     }
-                    @include above-1600{
-                        font-size: 1.5vw;
-                    }
+                    // @include above-1600{
+                    //     font-size: 1.5vw;
+                    // }
                 }
                 p{
                     font-size: 16px;
@@ -701,9 +701,9 @@
                     margin-top: 10px;
                     align-self: flex-start;
                     text-align: left; 
-                    @include above-1600{
-                        font-size: 1vw;
-                    }
+                    // @include above-1600{
+                    //     font-size: 1vw;
+                    // }
                 }
                 .goals-ul-right{
                     font-size: 16px;
@@ -721,9 +721,9 @@
                         list-style: disc;
                         padding-left: 10px;
                     }
-                    @include above-1600{
-                        font-size: 1vw;
-                    }
+                    // @include above-1600{
+                    //     font-size: 1vw;
+                    // }
                 }
         }
         .step5-img{
@@ -781,9 +781,9 @@
                     @include from-320-992{
                         font-size: 15px;
                     }
-                    @include above-1600{
-                        font-size: 1.5vw;
-                    }
+                    // @include above-1600{
+                    //     font-size: 1.5vw;
+                    // }
         }
         p{
             font-size: 16px;
@@ -799,9 +799,9 @@
                         width: 100%;
                         list-style: none;
                     }
-                    @include above-1600{
-                        font-size: 1vw;
-                    }
+                    // @include above-1600{
+                    //     font-size: 1vw;
+                    // }
         }
         .goals-ul-main{
             font-size: 16px;
@@ -818,9 +818,9 @@
                 list-style: none;
                 font-size: 15px;
             }
-            @include above-1600{
-                font-size: 1vw;
-            }
+            // @include above-1600{
+            //     font-size: 1vw;
+            // }
         }
 }
 .swiper {
@@ -899,9 +899,9 @@
             @include from-320-992{
                 font-size: 24px;
             }
-            @include above-1600{
-                font-size: 2vw;
-            }
+            // @include above-1600{
+            //     font-size: 2vw;
+            // }
         }
         .business-contact{
             border-radius: 20px 0px 20px 20px;
@@ -916,8 +916,8 @@
                     background: transparent;
                     color: #fff;
                 }
-                @include above-1600{
-                    font-size: 1vw;
-                }
+                // @include above-1600{
+                //     font-size: 1vw;
+                // }
         }
 }

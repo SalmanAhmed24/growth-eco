@@ -38,6 +38,11 @@
         @content;
     }
 }
+@mixin above-2800{
+    @media screen and (min-width:2800px) {
+        @content;
+    }
+}
 .footer-wrap{
     min-height: 460px;
     height: 100%;
@@ -54,6 +59,11 @@
     }
     @include above-1600{
         background-position-y: -165px;
+        background-repeat:no-repeat;
+        min-height: 750px;
+    }
+    @include above-2800{
+        background-position-y: -365px;
         background-repeat:no-repeat;
         min-height: 750px;
     }
@@ -87,9 +97,9 @@
             line-height: normal;
             font-size: 16px;
             font-weight: 300;
-            @include above-1600{
-                font-size: 1.1vw;
-            }
+            // @include above-1600{
+            //     font-size: 1.1vw;
+            // }
             @include from-320-to-992{
                 width: 100%;
                 font-size: 14px;
@@ -125,9 +135,9 @@
                     @include from-320-to-992{
                         font-size: 16px;
                     }
-                    @include above-1600{
-                        font-size: 1.3vw;
-                    }
+                    // @include above-1600{
+                    //     font-size: 1.3vw;
+                    // }
                 }
                 .footer-ul{
                     display: flex;
@@ -139,9 +149,9 @@
                         text-decoration: none;
                         color: #fff;
                         font-weight: 300;
-                        @include above-1600{
-                            font-size: 1.1vw;
-                        }
+                        // @include above-1600{
+                        //     font-size: 1.1vw;
+                        // }
                         @include from-320-to-992{
                             font-size: 14px;
                         }
@@ -154,9 +164,9 @@
                         
                         color: #fff;
                         line-height: 27px;
-                        @include above-1600{
-                            font-size: 1.1vw;
-                        }
+                        // @include above-1600{
+                        //     font-size: 1.1vw;
+                        // }
                     }
                 }
         }
@@ -187,9 +197,9 @@
                         font-size: 16px;
                         margin-bottom: 0px;
                     }
-                    @include above-1600{
-                        font-size: 1.3vw;
-                    }
+                    // @include above-1600{
+                    //     font-size: 1.3vw;
+                    // }
                 }
                 .footer-form-wrap{
                     display: flex;
@@ -208,9 +218,9 @@
                             background-color: transparent;
                             font-size: 16px;
                             line-height: normal;
-                            @include above-1600{
-                                font-size: 1.1vw;
-                            }
+                            // @include above-1600{
+                            //     font-size: 1.1vw;
+                            // }
                                 &::placeholder{
                                     color: #fff;
                                 }
@@ -236,9 +246,9 @@
                             font-size: 16px;
                             font-weight: 400;
                             padding: 5px 10px;
-                            @include above-1600{
-                                font-size: 1.2vw;
-                            }
+                            // @include above-1600{
+                            //     font-size: 1.2vw;
+                            // }
                             @include from-575-to-992{
                                 width: 40%;
                             }
