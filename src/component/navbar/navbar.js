@@ -143,27 +143,30 @@ function Navbar() {
             <div className="nav-link-wraps dropdown-wrap">
               <Link
                 className={
-                  path == "/capabilities" ||
+                  path == "/our-expertise" ||
                   path == "/product-sourcing" ||
                   path == "/listing-reinstatement" ||
+                  path == "/listing-optimization" ||
                   path == "/amazon-advertising" ||
-                  path == "/amazon-content" ||
-                  path == "/done-amazon" ||
+                  path == "/amazon-a-content" ||
+                  path == "/account-management" ||
                   path == "/product-research" ||
                   path == "/brand-storefront" ||
                   path == "/account-suspension"
                     ? "activeLink"
                     : ""
                 }
-                href={"/capabilities"}
+                href={"/our-expertise"}
               >
                 Our Expertise +
               </Link>
               <div className="drop-div">
                 <div className="droplist">
                   <Link
-                    className={path == "/done-amazon" ? "activeInner" : ""}
-                    href={"/done-amazon"}
+                    className={
+                      path == "/account-management" ? "activeInner" : ""
+                    }
+                    href={"/account-management"}
                   >
                     Account Management
                   </Link>
@@ -184,8 +187,8 @@ function Navbar() {
                     Listing Optimization
                   </Link>
                   <Link
-                    className={path == "/amazon-content" ? "activeInner" : ""}
-                    href={"/amazon-content"}
+                    className={path == "/amazon-a-content" ? "activeInner" : ""}
+                    href={"/amazon-a-content"}
                   >
                     Amazon A+ content
                   </Link>
@@ -244,8 +247,8 @@ function Navbar() {
             {/* </div> */}
             <div className="nav-link-wraps">
               <Link
-                className={path == "/contactUs" ? "activeLink" : ""}
-                href={"/contactUs"}
+                className={path == "/contact-us" ? "activeLink" : ""}
+                href={"/contact-us"}
               >
                 Contact Us
               </Link>
@@ -347,8 +350,8 @@ function Navbar() {
                 setShow(false);
                 setShowCapa(false);
               }}
-              className={path == "/capabilities" ? "activeLink" : ""}
-              href={"/capabilities"}
+              className={path == "/our-expertise" ? "activeLink" : ""}
+              href={"/our-expertise"}
             >
               Our Expertise
             </Link>
@@ -371,8 +374,8 @@ function Navbar() {
               <div className="sub-links">
                 <Link
                   onClick={() => setMobileNav(false)}
-                  className={path == "/done-amazon" ? "activeInner" : ""}
-                  href={"/done-amazon"}
+                  className={path == "/account-management" ? "activeInner" : ""}
+                  href={"/account-management"}
                 >
                   Account Management
                 </Link>
@@ -395,7 +398,7 @@ function Navbar() {
                 <Link
                   onClick={() => setMobileNav(false)}
                   className={path == "/amazon-content" ? "activeInner" : ""}
-                  href={"/amazon-content"}
+                  href={"/amazon-a-content"}
                 >
                   Amazon A+ content
                 </Link>
@@ -472,8 +475,8 @@ function Navbar() {
                 setShow(false);
                 setShowCapa(false);
               }}
-              className={path == "/contactUs" ? "activeLink" : ""}
-              href={"/contactUs"}
+              className={path == "/contact-us" ? "activeLink" : ""}
+              href={"/contact-us"}
             >
               Contact Us
             </Link>

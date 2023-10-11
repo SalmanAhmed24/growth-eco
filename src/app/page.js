@@ -67,7 +67,7 @@ export default function Home() {
           </h2> */}
           <div className={`btnWrap`}>
             <button
-              onClick={() => router.push("/contactUs")}
+              onClick={() => router.push("/contact-us")}
               className={`${poppins.className} startBtn`}
             >
               Contact Us
@@ -87,7 +87,7 @@ export default function Home() {
           </p>
           <div className="boost-btn-wrap">
             <button
-              onClick={() => router.push("/contactUs")}
+              onClick={() => router.push("/contact-us")}
               className={poppins.className}
             >
               Boost Your Visibility
@@ -398,7 +398,7 @@ export default function Home() {
         <div className="uncover-wrap">
           <button
             className={poppins.className}
-            onClick={() => router.push("/capabilities")}
+            onClick={() => router.push("/our-expertise")}
           >
             Uncover unique fields
           </button>
@@ -735,7 +735,7 @@ export default function Home() {
           <Image alt="growth eco" src={"/rocket2.png"} width={25} height={25} />
           <button
             className={poppins.className}
-            onClick={() => router.push("/contactUs")}
+            onClick={() => router.push("/contact-us")}
           >
             Start Now
           </button>

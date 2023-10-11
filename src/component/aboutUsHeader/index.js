@@ -15,7 +15,10 @@ function Header({ poppins }) {
         in highly competitive environments, leveraging targeted strategies to
         boost visibility.
       </p>
-      <Link href="/contactUs" className={`${poppins.className} header-about-a`}>
+      <Link
+        href="/contact-us"
+        className={`${poppins.className} header-about-a`}
+      >
         Start Now
       </Link>
     </header>

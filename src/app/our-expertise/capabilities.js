@@ -55,7 +55,7 @@ function Capabilities({ refreshFlag = false }) {
           to sell products on Amazon and enable them to achieve success!
         </p>
         <Link
-          href={"/contactUs"}
+          href={"/contact-us"}
           className={`${poppins.className} cap-start-link`}
         >
           Start Now
@@ -188,7 +188,7 @@ function Capabilities({ refreshFlag = false }) {
         ]}
         layout={"right"}
         arrow={1}
-        url={"/done-amazon"}
+        url={"/account-management"}
       />
       <div className="cus-cap-test">
         <Testimonials
@@ -335,7 +335,7 @@ function Capabilities({ refreshFlag = false }) {
         ]}
         layout={"right"}
         arrow={3}
-        url={"/amazon-content"}
+        url={"/amazon-a-content"}
       />
       <Testimonials
         poppins={poppins}

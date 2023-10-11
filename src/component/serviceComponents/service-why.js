@@ -39,7 +39,7 @@ function ServiceWhy({
             })}
           </div>
           <div className="amazon-inner-link">
-            <Link href={"/contactUs"} className={poppins.className}>
+            <Link href={"/contact-us"} className={poppins.className}>
               Start Now
             </Link>
           </div>
@@ -65,7 +65,7 @@ function ServiceWhy({
             );
           })}
           <div className="grow-link-wrap">
-            <Link href={"/contactUs"} className={poppins.className}>
+            <Link href={"/contact-us"} className={poppins.className}>
               Ready To Grow{" "}
               <Image
                 alt="growth eco"

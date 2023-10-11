@@ -118,7 +118,7 @@ function AboutUs() {
           width={370}
           height={380}
           linkFlag={true}
-          link={"/capabilities"}
+          link={"/our-expertise"}
         />
         <Image
           className="about-rocket"

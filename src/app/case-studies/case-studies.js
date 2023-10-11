@@ -52,7 +52,7 @@ function CaseStudies() {
             strategies to boost visibility.
           </p>
           <Link
-            href={"/contactUs"}
+            href={"/contact-us"}
             className={`${poppins.className} headerLink`}
           >
             Start Now
@@ -70,7 +70,7 @@ function CaseStudies() {
           appealing.
         </p>
         <div className="grow-link-wrap">
-          <Link href={"/contactUs"} className={poppins.className}>
+          <Link href={"/contact-us"} className={poppins.className}>
             Ready To Grow
             <Image
               alt="growth eco"

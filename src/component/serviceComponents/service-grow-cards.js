@@ -58,7 +58,7 @@ function ServiceCards({ cardsArr }) {
       <div className="grow-btn-link">
         <Link
           className={`${poppins.className} grow-btn-link`}
-          href={"/contactUs"}
+          href={"/contact-us"}
         >
           Ready To Grow
           <span>

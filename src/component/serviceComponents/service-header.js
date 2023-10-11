@@ -18,7 +18,7 @@ function ServiceHeader({ heading1, para1, headerBG }) {
     >
       <h1 className={poppins.className}>{heading1}</h1>
       <p className={poppins.className}>{para1}</p>
-      <Link href={"/contactUs"} className={poppins.className}>
+      <Link href={"/contact-us"} className={poppins.className}>
         Start Now
       </Link>
       {/* <Image
